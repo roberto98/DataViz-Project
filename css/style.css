@@ -7,14 +7,13 @@ body {
 }
 
 .title {
-    font-family: "Roboto Slab", sans-serif;
-    color: #002677;
+    font-family: "Inter", sans-serif;
+    color: #070708;
 }
 
 .subtitle {
     font-family: "Fira Sans", sans-serif;
-    font-size: medium;
-    font-weight: lighter;
+    font-size: 15pt;
 }
 
 .img-logo {
