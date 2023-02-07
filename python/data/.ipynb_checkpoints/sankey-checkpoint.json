@@ -1,0 +1,1037 @@
+{"nodes": [ 
+
+{ "node": "0", "name": "Communicable, maternal, perinatal and nutritional conditions"},
+
+{ "node": "1", "name": "nan"},
+
+{ "node": "2", "name": "Infectious and parasitic diseases"},
+
+{ "node": "3", "name": "Tuberculosis"},
+
+{ "node": "4", "name": "STDs excluding HIV"},
+
+{ "node": "5", "name": "HIV/AIDS"},
+
+{ "node": "6", "name": "Diarrhoeal diseases"},
+
+{ "node": "7", "name": "Childhood-cluster diseases"},
+
+{ "node": "8", "name": "Meningitis"},
+
+{ "node": "9", "name": "Encephalitis"},
+
+{ "node": "10", "name": "Hepatitis"},
+
+{ "node": "11", "name": "Parasitic and vector diseases"},
+
+{ "node": "12", "name": "Intestinal nematode infections"},
+
+{ "node": "13", "name": "Leprosy"},
+
+{ "node": "14", "name": "Other infectious diseases"},
+
+{ "node": "15", "name": "Respiratory Infectious "},
+
+{ "node": "16", "name": "Lower respiratory infections"},
+
+{ "node": "17", "name": "Upper respiratory infections"},
+
+{ "node": "18", "name": "Otitis media"},
+
+{ "node": "19", "name": "Maternal conditions"},
+
+{ "node": "20", "name": "Neonatal conditions"},
+
+{ "node": "21", "name": "Preterm birth complications"},
+
+{ "node": "22", "name": "Birth asphyxia and birth trauma"},
+
+{ "node": "23", "name": "Neonatal sepsis and infections"},
+
+{ "node": "24", "name": "Other neonatal conditions"},
+
+{ "node": "25", "name": "Nutritional deficiencies"},
+
+{ "node": "26", "name": "Protein-energy malnutrition"},
+
+{ "node": "27", "name": "Iodine deficiency"},
+
+{ "node": "28", "name": "Vitamin A deficiency"},
+
+{ "node": "29", "name": "Iron-deficiency anaemia"},
+
+{ "node": "30", "name": "Other nutritional deficiencies"},
+
+{ "node": "31", "name": "Noncommunicable diseases"},
+
+{ "node": "32", "name": "Malignant neoplasms"},
+
+{ "node": "33", "name": "Mouth and oropharynx cancers"},
+
+{ "node": "34", "name": "Oesophagus cancer"},
+
+{ "node": "35", "name": "Stomach cancer"},
+
+{ "node": "36", "name": "Colon and rectum cancers"},
+
+{ "node": "37", "name": "Liver cancer"},
+
+{ "node": "38", "name": "Pancreas cancer"},
+
+{ "node": "39", "name": "Trachea, bronchus, lung cancers"},
+
+{ "node": "40", "name": "Melanoma and other skin cancers"},
+
+{ "node": "41", "name": "Breast cancer"},
+
+{ "node": "42", "name": "Cervix uteri cancer"},
+
+{ "node": "43", "name": "Corpus uteri cancer"},
+
+{ "node": "44", "name": "Ovary cancer"},
+
+{ "node": "45", "name": "Prostate cancer"},
+
+{ "node": "46", "name": "Testicular cancer"},
+
+{ "node": "47", "name": "Kidney cancer"},
+
+{ "node": "48", "name": "Bladder cancer"},
+
+{ "node": "49", "name": "Brain and nervous system cancers"},
+
+{ "node": "50", "name": "Gallbladder and biliary tract cancer"},
+
+{ "node": "51", "name": "Larynx cancer"},
+
+{ "node": "52", "name": "Thyroid cancer"},
+
+{ "node": "53", "name": "Mesothelioma"},
+
+{ "node": "54", "name": "Lymphomas, multiple myeloma"},
+
+{ "node": "55", "name": "Leukaemia"},
+
+{ "node": "56", "name": "Other malignant neoplasms"},
+
+{ "node": "57", "name": "Other neoplasms"},
+
+{ "node": "58", "name": "Diabetes mellitus"},
+
+{ "node": "59", "name": "Endocrine, blood, immune disorders"},
+
+{ "node": "60", "name": "Thalassaemias"},
+
+{ "node": "61", "name": "Sickle cell disorders and trait"},
+
+{ "node": "62", "name": "Other haemoglobinopathies and haemolytic anaemias"},
+
+{ "node": "63", "name": "Other endocrine, blood and immune disorders"},
+
+{ "node": "64", "name": "Mental and substance use disorders"},
+
+{ "node": "65", "name": "Depressive disorders"},
+
+{ "node": "66", "name": "Bipolar disorder"},
+
+{ "node": "67", "name": "Schizophrenia"},
+
+{ "node": "68", "name": "Alcohol use disorders"},
+
+{ "node": "69", "name": "Drug use disorders"},
+
+{ "node": "70", "name": "Anxiety disorders"},
+
+{ "node": "71", "name": "Eating disorders"},
+
+{ "node": "72", "name": "Autism and Asperger syndrome"},
+
+{ "node": "73", "name": "Childhood behavioural disorders"},
+
+{ "node": "74", "name": "Idiopathic intellectual disability"},
+
+{ "node": "75", "name": "Other mental and behavioural disorders"},
+
+{ "node": "76", "name": "Neurological conditions"},
+
+{ "node": "77", "name": "Alzheimer disease and other dementias"},
+
+{ "node": "78", "name": "Parkinson disease"},
+
+{ "node": "79", "name": "Epilepsy"},
+
+{ "node": "80", "name": "Multiple sclerosis"},
+
+{ "node": "81", "name": "Migraine"},
+
+{ "node": "82", "name": "Non-migraine headache"},
+
+{ "node": "83", "name": "Other neurological conditions"},
+
+{ "node": "84", "name": "Sense organ diseases"},
+
+{ "node": "85", "name": "Cardiovascular diseases"},
+
+{ "node": "86", "name": "Rheumatic heart disease"},
+
+{ "node": "87", "name": "Hypertensive heart disease"},
+
+{ "node": "88", "name": "Ischaemic heart disease"},
+
+{ "node": "89", "name": "Stroke"},
+
+{ "node": "90", "name": "Cardiomyopathy, myocarditis, endocarditis"},
+
+{ "node": "91", "name": "Other circulatory diseases"},
+
+{ "node": "92", "name": "Respiratory diseases"},
+
+{ "node": "93", "name": "Chronic obstructive pulmonary disease"},
+
+{ "node": "94", "name": "Asthma"},
+
+{ "node": "95", "name": "Other respiratory diseases"},
+
+{ "node": "96", "name": "Digestive diseases"},
+
+{ "node": "97", "name": "Peptic ulcer disease"},
+
+{ "node": "98", "name": "Cirrhosis of the liver"},
+
+{ "node": "99", "name": "Appendicitis"},
+
+{ "node": "100", "name": "Gastritis and duodenitis"},
+
+{ "node": "101", "name": "Paralytic ileus and intestinal obstruction"},
+
+{ "node": "102", "name": "Inflammatory bowel disease"},
+
+{ "node": "103", "name": "Gallbladder and biliary diseases"},
+
+{ "node": "104", "name": "Pancreatitis"},
+
+{ "node": "105", "name": "Other digestive diseases"},
+
+{ "node": "106", "name": "Genitourinary diseases"},
+
+{ "node": "107", "name": "Kidney diseases"},
+
+{ "node": "108", "name": "Benign prostatic hyperplasia"},
+
+{ "node": "109", "name": "Urolithiasis"},
+
+{ "node": "110", "name": "Other urinary diseases"},
+
+{ "node": "111", "name": "Infertility"},
+
+{ "node": "112", "name": "Gynecological diseases"},
+
+{ "node": "113", "name": "Skin diseases"},
+
+{ "node": "114", "name": "Musculoskeletal diseases"},
+
+{ "node": "115", "name": "Rheumatoid arthritis"},
+
+{ "node": "116", "name": "Osteoarthritis"},
+
+{ "node": "117", "name": "Gout"},
+
+{ "node": "118", "name": "Back and neck pain"},
+
+{ "node": "119", "name": "Other musculoskeletal disorders"},
+
+{ "node": "120", "name": "Congenital anomalies"},
+
+{ "node": "121", "name": "Neural tube defects"},
+
+{ "node": "122", "name": "Cleft lip and cleft palate"},
+
+{ "node": "123", "name": "Down syndrome"},
+
+{ "node": "124", "name": "Congenital heart anomalies"},
+
+{ "node": "125", "name": "Other chromosomal anomalies"},
+
+{ "node": "126", "name": "Other congenital anomalies"},
+
+{ "node": "127", "name": "Oral conditions"},
+
+{ "node": "128", "name": "Sudden infant death syndrome"},
+
+{ "node": "129", "name": "Injuries"},
+
+{ "node": "130", "name": "Unintentional injuries"},
+
+{ "node": "131", "name": "Road injury"},
+
+{ "node": "132", "name": "Poisonings"},
+
+{ "node": "133", "name": "Falls"},
+
+{ "node": "134", "name": "Fire, heat and hot substances"},
+
+{ "node": "135", "name": "Drowning"},
+
+{ "node": "136", "name": "Exposure to mechanical forces"},
+
+{ "node": "137", "name": "Natural disasters"},
+
+{ "node": "138", "name": "Other unintentional injuries"},
+
+{ "node": "139", "name": "Intentional injuries"},
+
+{ "node": "140", "name": "Self-harm"},
+
+{ "node": "141", "name": "Interpersonal violence"}
+], "links": [ 
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "14.4"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.9"},
+
+{"source": "Infectious and parasitic diseases", "target": "Tuberculosis", "value": "0.9"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "STDs excluding HIV", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "STDs excluding HIV", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "STDs excluding HIV", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "STDs excluding HIV", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "STDs excluding HIV", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "STDs excluding HIV", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "STDs excluding HIV", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "1.6"},
+
+{"source": "Infectious and parasitic diseases", "target": "HIV/AIDS", "value": "1.6"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.5"},
+
+{"source": "Infectious and parasitic diseases", "target": "Diarrhoeal diseases", "value": "0.5"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Childhood-cluster diseases", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Childhood-cluster diseases", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Childhood-cluster diseases", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "Childhood-cluster diseases", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Childhood-cluster diseases", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.5"},
+
+{"source": "Infectious and parasitic diseases", "target": "Meningitis", "value": "0.5"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Encephalitis", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "1.4"},
+
+{"source": "Infectious and parasitic diseases", "target": "Hepatitis", "value": "1.4"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "1.1"},
+
+{"source": "Infectious and parasitic diseases", "target": "Hepatitis", "value": "1.1"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.1"},
+
+{"source": "Infectious and parasitic diseases", "target": "Hepatitis", "value": "0.1"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.1"},
+
+{"source": "Infectious and parasitic diseases", "target": "Hepatitis", "value": "0.1"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Hepatitis", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "2.8"},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "2.8"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.6"},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "0.6"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "1.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "1.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "1.1"},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "1.1"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Parasitic and vector diseases", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Intestinal nematode infections", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Intestinal nematode infections", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "Intestinal nematode infections", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "Intestinal nematode infections", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "."},
+
+{"source": "Infectious and parasitic diseases", "target": "Intestinal nematode infections", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "0.0"},
+
+{"source": "Infectious and parasitic diseases", "target": "Leprosy", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Infectious and parasitic diseases", "value": "6.5"},
+
+{"source": "Infectious and parasitic diseases", "target": "Other infectious diseases", "value": "6.5"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Respiratory Infectious ", "value": "11.3"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Respiratory Infectious ", "value": "11.2"},
+
+{"source": "Respiratory Infectious ", "target": "Lower respiratory infections", "value": "11.2"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Respiratory Infectious ", "value": "0.0"},
+
+{"source": "Respiratory Infectious ", "target": "Upper respiratory infections", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Respiratory Infectious ", "value": "0.0"},
+
+{"source": "Respiratory Infectious ", "target": "Otitis media", "value": "0.0"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Maternal conditions", "value": "0.5"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Neonatal conditions", "value": "5.8"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Neonatal conditions", "value": "3.7"},
+
+{"source": "Neonatal conditions", "target": "Preterm birth complications", "value": "3.7"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Neonatal conditions", "value": "0.8"},
+
+{"source": "Neonatal conditions", "target": "Birth asphyxia and birth trauma", "value": "0.8"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Neonatal conditions", "value": "0.8"},
+
+{"source": "Neonatal conditions", "target": "Neonatal sepsis and infections", "value": "0.8"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Neonatal conditions", "value": "0.6"},
+
+{"source": "Neonatal conditions", "target": "Other neonatal conditions", "value": "0.6"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Nutritional deficiencies", "value": "2.1"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Nutritional deficiencies", "value": "1.5"},
+
+{"source": "Nutritional deficiencies", "target": "Protein-energy malnutrition", "value": "1.5"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Nutritional deficiencies", "value": "."},
+
+{"source": "Nutritional deficiencies", "target": "Iodine deficiency", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Nutritional deficiencies", "value": "."},
+
+{"source": "Nutritional deficiencies", "target": "Vitamin A deficiency", "value": "."},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Nutritional deficiencies", "value": "0.4"},
+
+{"source": "Nutritional deficiencies", "target": "Iron-deficiency anaemia", "value": "0.4"},
+
+{"source": "Communicable, maternal, perinatal and nutritional conditions", "target": "Nutritional deficiencies", "value": "0.1"},
+
+{"source": "Nutritional deficiencies", "target": "Other nutritional deficiencies", "value": "0.1"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "57.3"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "1.0"},
+
+{"source": "Malignant neoplasms", "target": "Mouth and oropharynx cancers", "value": "1.0"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.6"},
+
+{"source": "Malignant neoplasms", "target": "Mouth and oropharynx cancers", "value": "0.6"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.0"},
+
+{"source": "Malignant neoplasms", "target": "Mouth and oropharynx cancers", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.3"},
+
+{"source": "Malignant neoplasms", "target": "Mouth and oropharynx cancers", "value": "0.3"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "2.4"},
+
+{"source": "Malignant neoplasms", "target": "Oesophagus cancer", "value": "2.4"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "3.5"},
+
+{"source": "Malignant neoplasms", "target": "Stomach cancer", "value": "3.5"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "6.7"},
+
+{"source": "Malignant neoplasms", "target": "Colon and rectum cancers", "value": "6.7"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "2.0"},
+
+{"source": "Malignant neoplasms", "target": "Liver cancer", "value": "2.0"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.3"},
+
+{"source": "Malignant neoplasms", "target": "Liver cancer", "value": "0.3"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.7"},
+
+{"source": "Malignant neoplasms", "target": "Liver cancer", "value": "0.7"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.6"},
+
+{"source": "Malignant neoplasms", "target": "Liver cancer", "value": "0.6"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.3"},
+
+{"source": "Malignant neoplasms", "target": "Liver cancer", "value": "0.3"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "3.4"},
+
+{"source": "Malignant neoplasms", "target": "Pancreas cancer", "value": "3.4"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "9.0"},
+
+{"source": "Malignant neoplasms", "target": "Trachea, bronchus, lung cancers", "value": "9.0"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.7"},
+
+{"source": "Malignant neoplasms", "target": "Melanoma and other skin cancers", "value": "0.7"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.4"},
+
+{"source": "Malignant neoplasms", "target": "Melanoma and other skin cancers", "value": "0.4"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.3"},
+
+{"source": "Malignant neoplasms", "target": "Melanoma and other skin cancers", "value": "0.3"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "5.9"},
+
+{"source": "Malignant neoplasms", "target": "Breast cancer", "value": "5.9"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "1.8"},
+
+{"source": "Malignant neoplasms", "target": "Cervix uteri cancer", "value": "1.8"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "1.0"},
+
+{"source": "Malignant neoplasms", "target": "Corpus uteri cancer", "value": "1.0"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "1.1"},
+
+{"source": "Malignant neoplasms", "target": "Ovary cancer", "value": "1.1"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "4.2"},
+
+{"source": "Malignant neoplasms", "target": "Prostate cancer", "value": "4.2"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.2"},
+
+{"source": "Malignant neoplasms", "target": "Testicular cancer", "value": "0.2"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "1.5"},
+
+{"source": "Malignant neoplasms", "target": "Kidney cancer", "value": "1.5"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "1.5"},
+
+{"source": "Malignant neoplasms", "target": "Bladder cancer", "value": "1.5"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "1.1"},
+
+{"source": "Malignant neoplasms", "target": "Brain and nervous system cancers", "value": "1.1"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "1.5"},
+
+{"source": "Malignant neoplasms", "target": "Gallbladder and biliary tract cancer", "value": "1.5"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "1.1"},
+
+{"source": "Malignant neoplasms", "target": "Larynx cancer", "value": "1.1"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.2"},
+
+{"source": "Malignant neoplasms", "target": "Thyroid cancer", "value": "0.2"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.1"},
+
+{"source": "Malignant neoplasms", "target": "Mesothelioma", "value": "0.1"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "2.5"},
+
+{"source": "Malignant neoplasms", "target": "Lymphomas, multiple myeloma", "value": "2.5"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.2"},
+
+{"source": "Malignant neoplasms", "target": "Lymphomas, multiple myeloma", "value": "0.2"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "1.6"},
+
+{"source": "Malignant neoplasms", "target": "Lymphomas, multiple myeloma", "value": "1.6"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "0.7"},
+
+{"source": "Malignant neoplasms", "target": "Lymphomas, multiple myeloma", "value": "0.7"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "2.0"},
+
+{"source": "Malignant neoplasms", "target": "Leukaemia", "value": "2.0"},
+
+{"source": "Noncommunicable diseases", "target": "Malignant neoplasms", "value": "3.0"},
+
+{"source": "Malignant neoplasms", "target": "Other malignant neoplasms", "value": "3.0"},
+
+{"source": "Noncommunicable diseases", "target": "Other neoplasms", "value": "2.3"},
+
+{"source": "Noncommunicable diseases", "target": "Diabetes mellitus", "value": "6.8"},
+
+{"source": "Noncommunicable diseases", "target": "Endocrine, blood, immune disorders", "value": "2.7"},
+
+{"source": "Noncommunicable diseases", "target": "Endocrine, blood, immune disorders", "value": "0.0"},
+
+{"source": "Endocrine, blood, immune disorders", "target": "Thalassaemias", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Endocrine, blood, immune disorders", "value": "0.0"},
+
+{"source": "Endocrine, blood, immune disorders", "target": "Sickle cell disorders and trait", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Endocrine, blood, immune disorders", "value": "0.9"},
+
+{"source": "Endocrine, blood, immune disorders", "target": "Other haemoglobinopathies and haemolytic anaemias", "value": "0.9"},
+
+{"source": "Noncommunicable diseases", "target": "Endocrine, blood, immune disorders", "value": "1.8"},
+
+{"source": "Endocrine, blood, immune disorders", "target": "Other endocrine, blood and immune disorders", "value": "1.8"},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "1.4"},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Depressive disorders", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Depressive disorders", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Depressive disorders", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Bipolar disorder", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "0.0"},
+
+{"source": "Mental and substance use disorders", "target": "Schizophrenia", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "0.8"},
+
+{"source": "Mental and substance use disorders", "target": "Alcohol use disorders", "value": "0.8"},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "0.6"},
+
+{"source": "Mental and substance use disorders", "target": "Drug use disorders", "value": "0.6"},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "0.3"},
+
+{"source": "Mental and substance use disorders", "target": "Drug use disorders", "value": "0.3"},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "0.0"},
+
+{"source": "Mental and substance use disorders", "target": "Drug use disorders", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "0.0"},
+
+{"source": "Mental and substance use disorders", "target": "Drug use disorders", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Drug use disorders", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "0.2"},
+
+{"source": "Mental and substance use disorders", "target": "Drug use disorders", "value": "0.2"},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Anxiety disorders", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Eating disorders", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Autism and Asperger syndrome", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Childhood behavioural disorders", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Childhood behavioural disorders", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Childhood behavioural disorders", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "0.0"},
+
+{"source": "Mental and substance use disorders", "target": "Idiopathic intellectual disability", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Mental and substance use disorders", "value": "."},
+
+{"source": "Mental and substance use disorders", "target": "Other mental and behavioural disorders", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Neurological conditions", "value": "4.8"},
+
+{"source": "Noncommunicable diseases", "target": "Neurological conditions", "value": "2.3"},
+
+{"source": "Neurological conditions", "target": "Alzheimer disease and other dementias", "value": "2.3"},
+
+{"source": "Noncommunicable diseases", "target": "Neurological conditions", "value": "0.7"},
+
+{"source": "Neurological conditions", "target": "Parkinson disease", "value": "0.7"},
+
+{"source": "Noncommunicable diseases", "target": "Neurological conditions", "value": "0.2"},
+
+{"source": "Neurological conditions", "target": "Epilepsy", "value": "0.2"},
+
+{"source": "Noncommunicable diseases", "target": "Neurological conditions", "value": "0.1"},
+
+{"source": "Neurological conditions", "target": "Multiple sclerosis", "value": "0.1"},
+
+{"source": "Noncommunicable diseases", "target": "Neurological conditions", "value": "."},
+
+{"source": "Neurological conditions", "target": "Migraine", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Neurological conditions", "value": "."},
+
+{"source": "Neurological conditions", "target": "Non-migraine headache", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Neurological conditions", "value": "1.4"},
+
+{"source": "Neurological conditions", "target": "Other neurological conditions", "value": "1.4"},
+
+{"source": "Noncommunicable diseases", "target": "Sense organ diseases", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Cardiovascular diseases", "value": "90.0"},
+
+{"source": "Noncommunicable diseases", "target": "Cardiovascular diseases", "value": "0.3"},
+
+{"source": "Cardiovascular diseases", "target": "Rheumatic heart disease", "value": "0.3"},
+
+{"source": "Noncommunicable diseases", "target": "Cardiovascular diseases", "value": "2.1"},
+
+{"source": "Cardiovascular diseases", "target": "Hypertensive heart disease", "value": "2.1"},
+
+{"source": "Noncommunicable diseases", "target": "Cardiovascular diseases", "value": "52.0"},
+
+{"source": "Cardiovascular diseases", "target": "Ischaemic heart disease", "value": "52.0"},
+
+{"source": "Noncommunicable diseases", "target": "Cardiovascular diseases", "value": "25.2"},
+
+{"source": "Cardiovascular diseases", "target": "Stroke", "value": "25.2"},
+
+{"source": "Noncommunicable diseases", "target": "Cardiovascular diseases", "value": "11.5"},
+
+{"source": "Cardiovascular diseases", "target": "Stroke", "value": "11.5"},
+
+{"source": "Noncommunicable diseases", "target": "Cardiovascular diseases", "value": "13.7"},
+
+{"source": "Cardiovascular diseases", "target": "Stroke", "value": "13.7"},
+
+{"source": "Noncommunicable diseases", "target": "Cardiovascular diseases", "value": "3.5"},
+
+{"source": "Cardiovascular diseases", "target": "Cardiomyopathy, myocarditis, endocarditis", "value": "3.5"},
+
+{"source": "Noncommunicable diseases", "target": "Cardiovascular diseases", "value": "6.9"},
+
+{"source": "Cardiovascular diseases", "target": "Other circulatory diseases", "value": "6.9"},
+
+{"source": "Noncommunicable diseases", "target": "Respiratory diseases", "value": "30.8"},
+
+{"source": "Noncommunicable diseases", "target": "Respiratory diseases", "value": "20.1"},
+
+{"source": "Respiratory diseases", "target": "Chronic obstructive pulmonary disease", "value": "20.1"},
+
+{"source": "Noncommunicable diseases", "target": "Respiratory diseases", "value": "0.7"},
+
+{"source": "Respiratory diseases", "target": "Asthma", "value": "0.7"},
+
+{"source": "Noncommunicable diseases", "target": "Respiratory diseases", "value": "10.0"},
+
+{"source": "Respiratory diseases", "target": "Other respiratory diseases", "value": "10.0"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "11.8"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "0.4"},
+
+{"source": "Digestive diseases", "target": "Peptic ulcer disease", "value": "0.4"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "2.6"},
+
+{"source": "Digestive diseases", "target": "Cirrhosis of the liver", "value": "2.6"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "0.4"},
+
+{"source": "Digestive diseases", "target": "Cirrhosis of the liver", "value": "0.4"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "0.9"},
+
+{"source": "Digestive diseases", "target": "Cirrhosis of the liver", "value": "0.9"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "0.8"},
+
+{"source": "Digestive diseases", "target": "Cirrhosis of the liver", "value": "0.8"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "0.5"},
+
+{"source": "Digestive diseases", "target": "Cirrhosis of the liver", "value": "0.5"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "0.0"},
+
+{"source": "Digestive diseases", "target": "Appendicitis", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "0.1"},
+
+{"source": "Digestive diseases", "target": "Gastritis and duodenitis", "value": "0.1"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "1.0"},
+
+{"source": "Digestive diseases", "target": "Paralytic ileus and intestinal obstruction", "value": "1.0"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "0.1"},
+
+{"source": "Digestive diseases", "target": "Inflammatory bowel disease", "value": "0.1"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "0.6"},
+
+{"source": "Digestive diseases", "target": "Gallbladder and biliary diseases", "value": "0.6"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "0.7"},
+
+{"source": "Digestive diseases", "target": "Pancreatitis", "value": "0.7"},
+
+{"source": "Noncommunicable diseases", "target": "Digestive diseases", "value": "6.3"},
+
+{"source": "Digestive diseases", "target": "Other digestive diseases", "value": "6.3"},
+
+{"source": "Noncommunicable diseases", "target": "Genitourinary diseases", "value": "10.5"},
+
+{"source": "Noncommunicable diseases", "target": "Genitourinary diseases", "value": "9.4"},
+
+{"source": "Genitourinary diseases", "target": "Kidney diseases", "value": "9.4"},
+
+{"source": "Noncommunicable diseases", "target": "Genitourinary diseases", "value": "0.0"},
+
+{"source": "Genitourinary diseases", "target": "Kidney diseases", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Genitourinary diseases", "value": "2.6"},
+
+{"source": "Genitourinary diseases", "target": "Kidney diseases", "value": "2.6"},
+
+{"source": "Noncommunicable diseases", "target": "Genitourinary diseases", "value": "6.8"},
+
+{"source": "Genitourinary diseases", "target": "Kidney diseases", "value": "6.8"},
+
+{"source": "Noncommunicable diseases", "target": "Genitourinary diseases", "value": "0.1"},
+
+{"source": "Genitourinary diseases", "target": "Benign prostatic hyperplasia", "value": "0.1"},
+
+{"source": "Noncommunicable diseases", "target": "Genitourinary diseases", "value": "0.0"},
+
+{"source": "Genitourinary diseases", "target": "Urolithiasis", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Genitourinary diseases", "value": "1.0"},
+
+{"source": "Genitourinary diseases", "target": "Other urinary diseases", "value": "1.0"},
+
+{"source": "Noncommunicable diseases", "target": "Genitourinary diseases", "value": "."},
+
+{"source": "Genitourinary diseases", "target": "Infertility", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Genitourinary diseases", "value": "."},
+
+{"source": "Genitourinary diseases", "target": "Gynecological diseases", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Skin diseases", "value": "0.5"},
+
+{"source": "Noncommunicable diseases", "target": "Musculoskeletal diseases", "value": "0.6"},
+
+{"source": "Noncommunicable diseases", "target": "Musculoskeletal diseases", "value": "0.1"},
+
+{"source": "Musculoskeletal diseases", "target": "Rheumatoid arthritis", "value": "0.1"},
+
+{"source": "Noncommunicable diseases", "target": "Musculoskeletal diseases", "value": "0.0"},
+
+{"source": "Musculoskeletal diseases", "target": "Osteoarthritis", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Musculoskeletal diseases", "value": "0.0"},
+
+{"source": "Musculoskeletal diseases", "target": "Gout", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Musculoskeletal diseases", "value": "0.0"},
+
+{"source": "Musculoskeletal diseases", "target": "Back and neck pain", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Musculoskeletal diseases", "value": "0.4"},
+
+{"source": "Musculoskeletal diseases", "target": "Other musculoskeletal disorders", "value": "0.4"},
+
+{"source": "Noncommunicable diseases", "target": "Congenital anomalies", "value": "3.7"},
+
+{"source": "Noncommunicable diseases", "target": "Congenital anomalies", "value": "0.4"},
+
+{"source": "Congenital anomalies", "target": "Neural tube defects", "value": "0.4"},
+
+{"source": "Noncommunicable diseases", "target": "Congenital anomalies", "value": "0.0"},
+
+{"source": "Congenital anomalies", "target": "Cleft lip and cleft palate", "value": "0.0"},
+
+{"source": "Noncommunicable diseases", "target": "Congenital anomalies", "value": "0.2"},
+
+{"source": "Congenital anomalies", "target": "Down syndrome", "value": "0.2"},
+
+{"source": "Noncommunicable diseases", "target": "Congenital anomalies", "value": "1.6"},
+
+{"source": "Congenital anomalies", "target": "Congenital heart anomalies", "value": "1.6"},
+
+{"source": "Noncommunicable diseases", "target": "Congenital anomalies", "value": "0.1"},
+
+{"source": "Congenital anomalies", "target": "Other chromosomal anomalies", "value": "0.1"},
+
+{"source": "Noncommunicable diseases", "target": "Congenital anomalies", "value": "1.5"},
+
+{"source": "Congenital anomalies", "target": "Other congenital anomalies", "value": "1.5"},
+
+{"source": "Noncommunicable diseases", "target": "Oral conditions", "value": "."},
+
+{"source": "Noncommunicable diseases", "target": "Sudden infant death syndrome", "value": "0.5"},
+
+{"source": "Injuries", "target": "Unintentional injuries", "value": "13.2"},
+
+{"source": "Injuries", "target": "Unintentional injuries", "value": "4.2"},
+
+{"source": "Unintentional injuries", "target": "Road injury", "value": "4.2"},
+
+{"source": "Injuries", "target": "Unintentional injuries", "value": "0.2"},
+
+{"source": "Unintentional injuries", "target": "Poisonings", "value": "0.2"},
+
+{"source": "Injuries", "target": "Unintentional injuries", "value": "0.4"},
+
+{"source": "Unintentional injuries", "target": "Falls", "value": "0.4"},
+
+{"source": "Injuries", "target": "Unintentional injuries", "value": "0.5"},
+
+{"source": "Unintentional injuries", "target": "Fire, heat and hot substances", "value": "0.5"},
+
+{"source": "Injuries", "target": "Unintentional injuries", "value": "0.9"},
+
+{"source": "Unintentional injuries", "target": "Drowning", "value": "0.9"},
+
+{"source": "Injuries", "target": "Unintentional injuries", "value": "0.5"},
+
+{"source": "Unintentional injuries", "target": "Exposure to mechanical forces", "value": "0.5"},
+
+{"source": "Injuries", "target": "Unintentional injuries", "value": "0.0"},
+
+{"source": "Unintentional injuries", "target": "Natural disasters", "value": "0.0"},
+
+{"source": "Injuries", "target": "Unintentional injuries", "value": "6.6"},
+
+{"source": "Unintentional injuries", "target": "Other unintentional injuries", "value": "6.6"},
+
+{"source": "Injuries", "target": "Intentional injuries", "value": "6.1"},
+
+{"source": "Injuries", "target": "Intentional injuries", "value": "3.4"},
+
+{"source": "Intentional injuries", "target": "Self-harm", "value": "3.4"},
+
+{"source": "Injuries", "target": "Intentional injuries", "value": "2.7"},
+
+{"source": "Intentional injuries", "target": "Interpersonal violence", "value": "2.7"}
+]} 
