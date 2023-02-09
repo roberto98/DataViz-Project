@@ -1,19 +1,20 @@
-// set the dimensions and margins of the graph
-const margin = {top: 10, right: 10, bottom: 75, left: 50},
-    width = 800 - margin.left - margin.right,
-    height = 450 - margin.top - margin.bottom;
-
-// append the svg object to the body of the page
-const svg = d3.select("#time_line")
-    .append("svg")
-    .attr('width', '100%')
-    .attr('viewBox', '0 0 ' + (width + margin.left + margin.right) + ' ' + (height + margin.top + margin.bottom))
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`);
 
 
 d3.csv("./python/CSV/time_line.csv").then(function (data) {
+
+  // set the dimensions and margins of the graph
+  const margin = {top: 10, right: 10, bottom: 75, left: 50},
+      width = 800 - margin.left - margin.right,
+      height = 450 - margin.top - margin.bottom;
+
+  // append the svg object to the body of the page
+  const svg = d3.select("#time_line")
+      .append("svg")
+      .attr('width', '100%')
+      .attr('viewBox', '0 0 ' + (width + margin.left + margin.right) + ' ' + (height + margin.top + margin.bottom))
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
 
   // update the graph based on the dropdown selections
   var selectedOption = d3.select("#variable_select").property("value");
