@@ -1,4 +1,4 @@
-,Country,Year,LifeExpectancy,InfantDeaths,AdultMortality,Deaths<5
+,Country,Year,LifeExpectancy,InfantDeaths,AdultMortality,DeathsUnder5
 0,Afghanistan,2015,65.0,62,263.0,83
 1,Afghanistan,2014,59.9,64,271.0,86
 2,Afghanistan,2013,59.9,66,268.0,89
