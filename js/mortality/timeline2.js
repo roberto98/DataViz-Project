@@ -63,7 +63,10 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
     .style("fill", "none")
 
 
-
+    // create a tooltip
+    const tooltip = d3.select("#time_line")
+    .append("div")
+    .attr("class", "tooltip")
 
   // Add the points
   svg
@@ -76,6 +79,22 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
       .attr("cy", function(d) { return y(+d.LifeExpectancy) } )
       .attr("r", 5)
       .attr("fill", "red")
+      .on("mouseover", function (event, d) {
+
+        tooltip.transition()
+            .duration(200)
+            .style("opacity", 1);
+
+        tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Life expectancy: " + d.LifeExpectancy 
+        + "<br>"+ "Year: " + d.Year + "</span>")
+            .style("left", (event.pageX) + "px")
+            .style("top", (event.pageY - 28) + "px");
+    })
+    .on("mouseout", function () {
+      tooltip.transition()
+          .duration(200)
+          .style("opacity", 0);
+  });
 
 
 
@@ -125,6 +144,22 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
           .attr("cy", function(d) { return y(+d.LifeExpectancy) } )
           .attr("r", 5)
           .attr("fill", "red")
+          .on("mouseover", function (event, d) {
+
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+    
+            tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Life expectancy: " + d.LifeExpectancy 
+            + "<br>"+ "Year: "+ d.Year + "</span>")
+                .style("left", (event.pageX) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function () {
+          tooltip.transition()
+              .duration(200)
+              .style("opacity", 0);
+      });
 
     }
 
@@ -165,6 +200,22 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
           .attr("cy", function(d) { return y(+d.AdultMortality) } )
           .attr("r", 5)
           .attr("fill", "red")
+          .on("mouseover", function (event, d) {
+
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+    
+            tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Adult Mortality: " + d.AdultMortality 
+            + "<br>"+ "Year: "+ d.Year + "</span>")
+                .style("left", (event.pageX) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function () {
+          tooltip.transition()
+              .duration(200)
+              .style("opacity", 0);
+      });
 
 
 
