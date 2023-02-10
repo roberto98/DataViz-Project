@@ -104,7 +104,8 @@
       <input type="range" style="width:50%;" min="0" max="15" value="15" id="date_slider">
 
       <h3 class="title left">Time linechart</h3> <!-- ############################################ LINECHART  ### -->
-        <select class="select2-search--dropdown" id="country_select" style="width: 25%;">
+      <!--  
+      <select class="select2-search--dropdown" id="country_select" style="width: 25%;">
             <option value="Aruba">Aruba</option>
             <option value="Albania">Albania</option>
             <option value="Angola">Angola</option>
@@ -304,8 +305,9 @@
           <option value="Life">Life Expectancy</option>
           <option value="Deaths">Deaths</option>
         </select>
-
+      --><select id="selectButton"></select>
         <div id = "time_line" class="font svg-container"></div>
+        
         <p class="subtitle left">
           ......... few lines of description ..........
         </p>
@@ -406,8 +408,9 @@
   <script src="./js/slider_handler.js"></script>
 
   <!-- D3 charts -->
-  <script src="./js/mortality/timeline.js"></script>
+  <script src="./js/mortality/timeline2.js"></script>
   <script src="./js/mortality/heatmap.js"></script>
+  <!--<script src="./js/mortality/histogram.js"></script>-->
 
 </body>
 </html>
