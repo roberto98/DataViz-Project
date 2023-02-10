@@ -1,7 +1,6 @@
 
-
 d3.csv("./python/CSV/time_line.csv").then(function (data) {
-
+  
   // set the dimensions and margins of the graph
   const margin = {top: 10, right: 10, bottom: 75, left: 50},
       width = 800 - margin.left - margin.right,
@@ -16,89 +15,245 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
-  // update the graph based on the dropdown selections
-  var selectedOption = d3.select("#variable_select").property("value");
-  var selectedCountry = d3.select("#country_select").property("value");
-  var mappedData;
 
-  updateGraph(data);
+  // List of groups (here I have one group per column)
+  const allGroup = new Set(data.map(d => d.Country))
 
-  d3.select("#variable_select").on("change", function() {
-  selectedOption = d3.select("#variable_select").property("value");
-  updateGraph(data);
+  // add the options to the button
+  d3.select("#CountryButton")
+    .selectAll('myOptions')
+    .data(allGroup)
+    .enter()
+    .append('option')
+    .text(function (d) { return d; }) // text showed in the menu
+    .attr("value", function (d) { return d; }) // corresponding value returned by the button
+    
+  d3.select("#CountryButton")
+    .property("value", "Italy");
+
+ 
+  var x = d3.scaleTime()
+    .domain(d3.extent(data, function(d) {return new Date(d.Year, 0, 1)}))
+    .range([0, width]);
+ 
+  svg.append("g")
+  .attr("transform", "translate(0," + height + ")")
+  .call(d3.axisBottom(x).ticks(d3.timeYear.every(1)));
+ 
+
+
+  var y = d3.scaleLinear()
+    .domain([d3.min(data, function(d) { return +d.LifeExpectancy; }), d3.max(data, function(d) { return +d.LifeExpectancy; })])
+    .range([ height, 0 ]);
+  svg.append("g")
+    .call(d3.axisLeft(y));
+
+
+  // Initialize line with first group of the list
+  var line = svg
+  .append('g')
+  .append("path")
+    .datum(data.filter(function(d){return d.Country=="Italy"}))
+    .attr("d", d3.line()
+      .x(function(d) { return x(new Date(d.Year, 0, 1)) })
+      .y(function(d) {return y(+d.LifeExpectancy) })
+    )
+    .attr("stroke", "red" )
+    .style("stroke-width", 4)
+    .style("fill", "none")
+
+
+    // create a tooltip
+    const tooltip = d3.select("#time_line")
+    .append("div")
+    .attr("class", "tooltip")
+
+  // Add the points
+  svg
+    .append("g")
+    .selectAll("dot")
+    .data(data.filter(function(d){return d.Country=="Italy"}))
+    .enter()
+    .append("circle")
+      .attr("cx", function(d) { return x(new Date(d.Year, 0, 1)) } )
+      .attr("cy", function(d) { return y(+d.LifeExpectancy) } )
+      .attr("r", 5)
+      .attr("fill", "red")
+      .on("mouseover", function (event, d) {
+
+        tooltip.transition()
+            .duration(200)
+            .style("opacity", 1);
+
+        tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Life expectancy: " + d.LifeExpectancy 
+        + "<br>"+ "Year: " + d.Year + "</span>")
+            .style("left", (event.pageX) + "px")
+            .style("top", (event.pageY - 28) + "px");
+    })
+    .on("mouseout", function () {
+      tooltip.transition()
+          .duration(200)
+          .style("opacity", 0);
   });
 
-  d3.select("#country_select").on("change", function() {
-  selectedCountry = d3.select("#country_select").property("value");
-  updateGraph(data);
-  });
 
 
-  function updateGraph(data) {
-    console.log(selectedOption);
-    console.log(selectedCountry);
-
-    // filter the data based on the dropdown value
-    mappedData = data.filter(d => d.Country == selectedCountry);
-
-    // set the range of the x-axis
-    var x = d3.scaleTime()
-      .domain(d3.extent(mappedData, d => new Date(d.Year, 0, 1)))
+  
+  function update() {
+    //d3.selectAll("g > *").remove();
+    d3.select("#time_line").selectAll("svg > g > *").remove();
+    
+    x = d3.scaleTime()
+      .domain(d3.extent(data, function(d) {return new Date(d.Year, 0, 1)}))
       .range([0, width]);
-
-    if (selectedOption === "Life") { // -------------------------------- LIFE
-      // set the range of the y-axis
-      var y = d3.scaleLinear()
-        .domain(d3.extent(mappedData, d => +d.LifeExpectancy))
-        .range([height, 0]);
-    } else if (selectedOption === "Deaths") { // ------------------------ DEATHS
-      // set the range of the y-axis
-      var y = d3.scaleLinear()
-          .domain(d3.extent(mappedData, d => [
-            +d.AdultMortality,
-            +d.DeathsUnder5,
-            +d.InfantDeaths
-          ]))
-          .range([height, 0]);
-    }
-
-    // remove existing x-axis and y-axis
-    svg.selectAll(".x.axis").remove();
-    svg.selectAll(".y.axis").remove();
-    svg.selectAll("path").remove();
-
-    // label the x-axis
+    
     svg.append("g")
-      .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x).ticks(d3.timeYear.every(1)));
+    
+    // Create new data with the selection?
+    const dataFilter = data.filter(function(d){return d.Country==selectedOption})
+    
+    if(selectedVariable === "Life"){
+      y = d3.scaleLinear()
+        .domain([d3.min(data, function(d) { return +d.LifeExpectancy; }), d3.max(data, function(d) { return +d.LifeExpectancy; })])
+        .range([ height, 0 ]);
+      svg.append("g")
+        .call(d3.axisLeft(y));
+        //.call(g => g.select('.domain').remove());
+      // Give these new data to update line
+      line = svg
+          .append('g')
+          .append("path")
+          .datum(dataFilter)
+          .attr("d", d3.line()
+            .x(function(d) { return x(new Date(d.Year, 0, 1)) })
+            .y(function(d) {return y(+d.LifeExpectancy) })
+          )
+          .attr("stroke", "red" )
+          .style("stroke-width", 4)
+          .style("fill", "none")
 
-    // label the y-axis
-    svg.append("g")
-      .attr("class", "y axis")
-      .call(d3.axisLeft(y))
-      .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 0 - margin.left)
-      .attr("x", 0 - (height / 2))
-      .attr("dy", "1em")
-      .style("text-anchor", "middle")
-      .text(selectedOption);
 
-      // add the line to the graph
-      svg.selectAll("path") // Senza selectALL ma con solo select, non va una ceppa
-        .data(mappedData)
+        // Add the points
+        svg
+        .append("g")
+        .selectAll("dot")
+        .data(dataFilter)
         .enter()
-        .append("path")
-        .attr("class", "line")
-        .attr("fill", "none")
-        .attr("stroke", "steelblue")
-        .attr("stroke-width", 2)
-        .style("opacity", 1)
-        .attr("d", d3.line()
-        .x(d => x(new Date(d.Year, 0, 1)))
-        .y(d => y(+d[selectedOption])) // ???????? Non va neanche il grafico singolo Life
-        .curve(d3.curveCatmullRom.alpha(0.5)));
-  }
+        .append("circle")
+          .attr("cx", function(d) { return x(new Date(d.Year, 0, 1)) } )
+          .attr("cy", function(d) { return y(+d.LifeExpectancy) } )
+          .attr("r", 5)
+          .attr("fill", "red")
+          .on("mouseover", function (event, d) {
 
-});
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+    
+            tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Life expectancy: " + d.LifeExpectancy 
+            + "<br>"+ "Year: "+ d.Year + "</span>")
+                .style("left", (event.pageX) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function () {
+          tooltip.transition()
+              .duration(200)
+              .style("opacity", 0);
+      });
+
+    }
+
+
+    else if(selectedVariable === "Deaths"){
+
+      const minValue = d3.min(data, d => d3.min([Math.floor(d.AdultMortality)]));
+      const maxValue = d3.max(data, d => d3.max([Math.floor(d.AdultMortality)]));
+
+      y = d3.scaleLinear()
+        .domain([minValue, maxValue])
+        .range([ height, 0 ]);
+      svg.append("g")
+        .call(d3.axisLeft(y));
+      
+      // Draw the line
+      var adult_line = svg
+      .append('g')
+      .append("path")
+      .datum(dataFilter)
+      .attr("d", d3.line()
+        .x(function(d) { return x(new Date(d.Year, 0, 1)) })
+        .y(function(d) {return y(+d.AdultMortality) })
+      )
+      .attr("stroke", "red" )
+      .style("stroke-width", 4)
+      .style("fill", "none")
+
+
+      // Add the points
+      svg
+        .append("g")
+        .selectAll("dot")
+        .data(dataFilter)
+        .enter()
+        .append("circle")
+          .attr("cx", function(d) { return x(new Date(d.Year, 0, 1)) } )
+          .attr("cy", function(d) { return y(+d.AdultMortality) } )
+          .attr("r", 5)
+          .attr("fill", "red")
+          .on("mouseover", function (event, d) {
+
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+    
+            tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Adult Mortality: " + d.AdultMortality 
+            + "<br>"+ "Year: "+ d.Year + "</span>")
+                .style("left", (event.pageX) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function () {
+          tooltip.transition()
+              .duration(200)
+              .style("opacity", 0);
+      });
+
+
+
+    }
+  }
+  
+  var selectedOption = "Italy";
+  var selectedVariable = "Life";
+
+
+  // When the button is changed, run the updateChart function
+  d3.select("#CountryButton").on("change", function(event,d) {
+    // recover the option that has been chosen
+    selectedOption = d3.select(this).property("value")
+    // run the updateChart function with this selected option
+    update()
+  })
+
+  // When the button is changed, run the updateChart function
+  d3.select("#VariableButton").on("change", function(event,d) {
+    // recover the option that has been chosen
+    selectedVariable = d3.select(this).property("value")
+    // run the updateChart function with this selected option
+    update()
+  })
+
+
+ 
+
+
+  
+
+ 
+  
+  
+
+  
+  
+})

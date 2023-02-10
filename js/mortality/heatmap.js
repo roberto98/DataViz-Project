@@ -2,9 +2,7 @@
 //Read the data
 d3.csv("./python/CSV/heatmap.csv").then(data => {
 
-  console.log(data);
-
-  const margin = {top: 10, right: 0, bottom: 75, left: 90};
+  const margin = {top: 30, right: 0, bottom: 75, left: 90};
   const width = 450 - margin.left - margin.right;
   const height = 450 - margin.top - margin.bottom;
 
@@ -44,45 +42,19 @@ d3.csv("./python/CSV/heatmap.csv").then(data => {
     .select(".domain").remove()
 
   // Build color scale
+  color_arr = d3.schemeGreens[8].slice(1);
+ 
+  const myColor = d3.scalePow(/*d3.interpolateBlues*/)
+      .domain([-1, 1])
+      .range([color_arr[0], color_arr[color_arr.length-1]])
+      .exponent(0.6);
 
 
-  const myColor = d3.scaleSequential()
-    .interpolator(d3.interpolateInferno)
-    .domain([-1,1])
-
-  // create a tooltip
   const tooltip = d3.select("#heatmap")
-    .append("div")
-    .style("opacity", 0)
-    .attr("class", "tooltip")
-    .style("background-color", "white")
-    .style("border", "solid")
-    .style("border-width", "0.5px")
-    .style("border-radius", "5px")
-    .style("padding", "1px")
+  .append("div")
+  .attr("class", "tooltip")
 
-  // Three function that change the tooltip when user hover / move / leave a cell
-  const mouseover = function(event,d) {
-    tooltip
-      .style("opacity", 1)
-    d3.select(this)
-      .style("stroke", "black")
-      .style("opacity", 1)
-  }
-  const mousemove = function(event,d) {
-    tooltip
-      .html("The exact value of<br>this cell is: " + d.corr)
-      .style("left", (event.x)/2 + "px")
-      .style("top", (event.y)/2 + "px")
-  }
-  const mouseleave = function(event,d) {
-    tooltip
-      .style("opacity", 0)
-    d3.select(this)
-      .style("stroke", "none")
-      .style("opacity", 0.8)
-  }
-
+  
   // add the squares
   svg.selectAll()
     .data(data, function(d) {return d.Group1+':'+d.Group2;})
@@ -97,7 +69,38 @@ d3.csv("./python/CSV/heatmap.csv").then(data => {
       .style("stroke-width", 2)
       .style("stroke", "none")
       .style("opacity", 0.8)
-    .on("mouseover", mouseover)
-    .on("mousemove", mousemove)
-    .on("mouseleave", mouseleave)
+      .on("mouseover", function (event, d) {
+
+        tooltip.transition()
+            .duration(200)
+            .style("opacity", 1)
+            
+        tooltip.html("<span class='tooltiptext'>" + "Correlation: " + Math.round(d.corr *100) /100 + "</span>")
+            .style("left", (event.pageX) + "px")
+            .style("top", (event.pageY - 28) + "px")
+
+            d3.select(this)
+            .style("stroke", "black")                
+    })
+    .on("mouseout", function () {
+      tooltip.transition()
+          .duration(200)
+          .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "none")
+  });
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
