@@ -1,0 +1,17 @@
+
+
+
+- Timeline ->
+      aggiungere nomi assi
+      aggiungere opzione per selezionare più paesi per volta per confrontarli (tipo Ferrari)
+
+- Scatter economic ->
+      dai filtri per scegliere i top 10 paesi, aggiungere opzione crescente e decrescente
+
+
+- Violin ->
+      la density è buggata e fissa, non so come riparare
+      aggiungere label asse y
+
+- Heatmap ->
+      aggiungere la colorlegend 

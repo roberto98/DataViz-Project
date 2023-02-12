@@ -1,8 +1,8 @@
 
 d3.csv("./python/CSV/time_line.csv").then(function (data) {
-  
+
   // set the dimensions and margins of the graph
-  const margin = {top: 10, right: 10, bottom: 75, left: 50},
+  const margin = {top: 30, right: 10, bottom: 75, left: 50},
       width = 800 - margin.left - margin.right,
       height = 450 - margin.top - margin.bottom;
 
@@ -15,7 +15,6 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
-
   // List of groups (here I have one group per column)
   const allGroup = new Set(data.map(d => d.Country))
 
@@ -27,19 +26,17 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
     .append('option')
     .text(function (d) { return d; }) // text showed in the menu
     .attr("value", function (d) { return d; }) // corresponding value returned by the button
-    
+
   d3.select("#CountryButton")
     .property("value", "Italy");
 
- 
   var x = d3.scaleTime()
     .domain(d3.extent(data, function(d) {return new Date(d.Year, 0, 1)}))
     .range([0, width]);
- 
   svg.append("g")
   .attr("transform", "translate(0," + height + ")")
   .call(d3.axisBottom(x).ticks(d3.timeYear.every(1)));
- 
+  svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Years").style("font-size", 10)
 
 
   var y = d3.scaleLinear()
@@ -47,6 +44,7 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
     .range([ height, 0 ]);
   svg.append("g")
     .call(d3.axisLeft(y));
+  svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Life Expectancy").style("font-size", 10)
 
 
   // Initialize line with first group of the list
@@ -61,7 +59,6 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
     .attr("stroke", "red" )
     .style("stroke-width", 4)
     .style("fill", "none")
-
 
     // create a tooltip
     const tooltip = d3.select("#time_line")
@@ -80,47 +77,46 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
       .attr("r", 5)
       .attr("fill", "red")
       .on("mouseover", function (event, d) {
-
         tooltip.transition()
             .duration(200)
             .style("opacity", 1);
 
-        tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Life expectancy: " + d.LifeExpectancy 
+        tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Life expectancy: " + d.LifeExpectancy
         + "<br>"+ "Year: " + d.Year + "</span>")
             .style("left", (event.pageX) + "px")
             .style("top", (event.pageY - 28) + "px");
-    })
-    .on("mouseout", function () {
-      tooltip.transition()
-          .duration(200)
-          .style("opacity", 0);
-  });
+      })
+      .on("mouseout", function () {
+        tooltip.transition()
+            .duration(200)
+            .style("opacity", 0);
+      });
 
 
 
-  
-  function update() {
+  function updateChart() {
     //d3.selectAll("g > *").remove();
     d3.select("#time_line").selectAll("svg > g > *").remove();
-    
+
     x = d3.scaleTime()
       .domain(d3.extent(data, function(d) {return new Date(d.Year, 0, 1)}))
       .range([0, width]);
-    
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x).ticks(d3.timeYear.every(1)));
-    
+    svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Years").style("font-size", 10)
+
     // Create new data with the selection?
     const dataFilter = data.filter(function(d){return d.Country==selectedOption})
-    
+
     if(selectedVariable === "Life"){
       y = d3.scaleLinear()
         .domain([d3.min(data, function(d) { return +d.LifeExpectancy; }), d3.max(data, function(d) { return +d.LifeExpectancy; })])
         .range([ height, 0 ]);
       svg.append("g")
         .call(d3.axisLeft(y));
-        //.call(g => g.select('.domain').remove());
+      svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Life Expectancy").style("font-size", 10)
+
       // Give these new data to update line
       line = svg
           .append('g')
@@ -133,7 +129,10 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
           .attr("stroke", "red" )
           .style("stroke-width", 4)
           .style("fill", "none")
-
+          .style("opacity", 0) // fade in animation
+          .transition()
+          .duration(1000)
+          .style("opacity", 1);
 
         // Add the points
         svg
@@ -147,26 +146,26 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
           .attr("r", 5)
           .attr("fill", "red")
           .on("mouseover", function (event, d) {
-
             tooltip.transition()
                 .duration(200)
                 .style("opacity", 1);
-    
-            tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Life expectancy: " + d.LifeExpectancy 
+
+            tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Life expectancy: " + d.LifeExpectancy
             + "<br>"+ "Year: "+ d.Year + "</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY - 28) + "px");
-        })
-        .on("mouseout", function () {
-          tooltip.transition()
-              .duration(200)
-              .style("opacity", 0);
-      });
+          })
+          .on("mouseout", function () {
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
+          })
+          .style("opacity", 0) // fade in animation
+          .transition()
+          .duration(1000)
+          .style("opacity", 1);
 
-    }
-
-
-    else if(selectedVariable === "Deaths"){
+    } else if(selectedVariable === "Deaths") {
 
       const minValue = d3.min(data, d => d3.min([Math.floor(d.AdultMortality)]));
       const maxValue = d3.max(data, d => d3.max([Math.floor(d.AdultMortality)]));
@@ -176,7 +175,8 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
         .range([ height, 0 ]);
       svg.append("g")
         .call(d3.axisLeft(y));
-      
+      svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Adult Deaths").style("font-size", 10)
+
       // Draw the line
       var adult_line = svg
       .append('g')
@@ -189,7 +189,10 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
       .attr("stroke", "red" )
       .style("stroke-width", 4)
       .style("fill", "none")
-
+      .style("opacity", 0)
+      .transition()
+      .duration(1000)
+      .style("opacity", 1);
 
       // Add the points
       svg
@@ -203,57 +206,39 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
           .attr("r", 5)
           .attr("fill", "red")
           .on("mouseover", function (event, d) {
-
             tooltip.transition()
                 .duration(200)
                 .style("opacity", 1);
-    
-            tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Adult Mortality: " + d.AdultMortality 
+
+            tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Adult Mortality: " + d.AdultMortality
             + "<br>"+ "Year: "+ d.Year + "</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY - 28) + "px");
-        })
-        .on("mouseout", function () {
-          tooltip.transition()
-              .duration(200)
-              .style("opacity", 0);
-      });
-
-
-
+          })
+          .on("mouseout", function () {
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
+          })
+          .style("opacity", 0)
+          .transition()
+          .duration(1000)
+          .style("opacity", 1);
     }
   }
-  
+
   var selectedOption = "Italy";
   var selectedVariable = "Life";
 
-
-  // When the button is changed, run the updateChart function
   d3.select("#CountryButton").on("change", function(event,d) {
-    // recover the option that has been chosen
     selectedOption = d3.select(this).property("value")
-    // run the updateChart function with this selected option
-    update()
+    updateChart()
   })
 
-  // When the button is changed, run the updateChart function
   d3.select("#VariableButton").on("change", function(event,d) {
-    // recover the option that has been chosen
     selectedVariable = d3.select(this).property("value")
-    // run the updateChart function with this selected option
-    update()
+    updateChart()
   })
 
 
- 
-
-
-  
-
- 
-  
-  
-
-  
-  
-})
+});
