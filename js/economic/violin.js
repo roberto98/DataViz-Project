@@ -111,6 +111,7 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
       .domain([-maxNum,maxNum])
 
     // ----------------------------- Plot  ------------------------- //
+
       svg
         .selectAll("myViolin")
         .data(sumstats)
@@ -120,7 +121,10 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
         .append("path")
             .datum(function([key, value]){ return(kde(filteredData.filter(d => d.Status === key).map(d => d.LifeExpectancy)))})
             .style("stroke", "none")
-            .style("fill","blue")
+            .style("fill", function(d){
+              var [key, value] = this.parentNode.__data__;
+              return key === 'Developing' ? "#ff595e" : "#1982c4";
+            })
             .attr("d", d3.area()
               .x0(function(d){ return(xNum(-d[1]))})
               .x1(function(d){ return(xNum(d[1]))})

@@ -168,9 +168,10 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
     filteredData = filteredData.filter(d => top10Countries.includes(d.Country));
 
+    const colors = ["#FF595E", "#FF924C", "#FFCA3A", "#C5CA30", "#8AC926", "#36949D", "#1982C4", "#4267AC", "#565AA0", "#6A4C93"];
     const color = d3.scaleOrdinal()
         .domain(top10Countries)
-        .range(['#ff595e', '#ffca3a', '#8ac926', '#1982c4', '#6a4c93', '#023047']);
+        .range(colors);
 
     // Create the scatter variable: where both the circles and the brush take place
     const scatter = svg.append('g')
@@ -206,6 +207,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
         tooltip.html("<span class='tooltiptext'>" + "Year: "+ d.Year + "<br>"
                                                   + "Country: " + d.Country + "<br>"
+                                                  + "Life Expectancy: " + d.LifeExpectancy + "<br>"
                                                   + `${xVal}: ` + d[xVal]  +"</span>")
             .style("left", (event.pageX) + "px")
             .style("top", (event.pageY - 28) + "px");

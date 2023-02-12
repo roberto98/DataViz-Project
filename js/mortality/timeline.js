@@ -66,7 +66,7 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
         .range([ height, 0 ]);
       svg.append("g")
         .call(d3.axisLeft(y));
-      svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Life Expectancy").style("font-size", 10)
+      svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text(selectedVariable).style("font-size", 10)
 
 
     // ------------------------------ Plot ---------------------- //
@@ -163,8 +163,8 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
 });
 
 
-
-const colors = ["#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#17becf"];
+const colors = ["#ff595e", "#ffca3a", "#8ac926", "#1982c4", "#6a4c93"]; //,'#023047'];
+//const colors = ["#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#17becf"];
 
 var old_selection = [];
 var available_colors = [...colors];

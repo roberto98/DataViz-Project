@@ -41,27 +41,26 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav row" style="width:100%;">
           <li class="nav-item col-3">
-            <a class="navbar-brand nav-link active white" href="#tab0" id="tab0-link" data-toggle="tab">
+            <a class="navbar-brand nav-link active white" href="index.html">
                <img alt="Logo" src="img/logo_white.svg" class="img-logo">
             </a>
           </li>
           <li class="nav-item col-3">
-            <a class="nav-link white" href="#tab1" id="tab1-link" data-toggle="tab">Mortality</a>
+            <a class="nav-link white" href="mortality.html">Mortality</a>
           </li>
           <li class="nav-item col-3">
-            <a class="nav-link white" href="#tab2" id="tab2-link" data-toggle="tab">Disease factors</a>
+            <a class="nav-link white" href="diseases.html">Disease factors</a>
           </li>
           <li class="nav-item col-3">
-            <a class="nav-link white" href="#tab3" id="tab3-link" data-toggle="tab">Economic factors</a>
+            <a class="nav-link white" href="economic.html">Economic factors</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="tab-content container center mt-5 pt-5">
+  <div class="container center mt-5 pt-5">
     <!-- ################################################### HOMEPAGE ########################################## -->
-    <div id="tab0" class="tab-pane fade active show">
       <h1 class="title"><b>Life Expectancy:<br> The Ultimate Survival Guide</b></h1>
       <h2 class="subtitle">" An apple a day keeps the doctor away "</h3>
       <hr>
@@ -89,122 +88,6 @@
         </div>
      </div>
      <img src="img/home/medicine.svg" class="img" alt="">
-    </div>
-    <br>
-
-  <!-- ################################################### MORTALITY  ########################################## -->
-    <div id="tab1" class="tab-pane fade">
-      <h1 class="title">Mortality</h1>
-      <p class="subtitle left">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-         numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-      </p>
-
-      <h3 class="title left">Time linechart</h3> <!-- ############################################ LINECHART  ### -->
-        <select id="CountryButton"  class="select2-multiple" multiple="multiple" data-use-select2="true"></select>
-        <select id="VariableButton">
-          <option value="LifeExpectancy">Life Expectancy</option>
-          <option value="AdultMortality">Deaths</option>
-        </select>
-        <div id = "time_line" class="font svg-container"></div>
-
-
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
-
-      <h3 class="title left">Heatmap</h3> <!-- ############################################ HEATMAP  ### -->
-        <div id = "heatmap" class="font svg-container"></div>
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
-
-      <h3 class="title left">Histogram</h3> <!-- ############################################ HISTOGRAM  ### -->
-        <div id = "histogram" class="font svg-container"></div>
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
-
-      <h3 class="title left">Stacked Bar chart</h3> <!-- ############################################ STACKED BAR CHART  ### -->
-        <div id = "stacked" class="font svg-container"></div>
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
-    </div>
-
-    <!-- ################################################### DISEASES  ########################################## -->
-    <div id="tab2" class="tab-pane fade">
-      <h1 class="title">Disease factors</h1>
-      <p class="subtitle left">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-         numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-      </p>
-
-      <h3 class="title left">Horizontal Barchart</h3> <!-- ############################################ BARCHART  ### -->
-        <div id="barchart" class="font svg-container"> </div>
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
-
-      <h3 class="title left">Scatterplot</h3> <!-- ############################################ SCATTERPLOT  ### -->
-        <div id="scatter1" class="font svg-container"> </div>
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
-
-      <h3 class="title left">Sankey</h3> <!-- ############################################ SANKEY  ### -->
-        <div id="sankey" class="font svg-container"> </div>
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
-
-    </div>
-    <!-- ################################################### ECONOMIC  ########################################## -->
-    <div id="tab3" class="tab-pane fade">
-      <h1 class="title">Economic factors</h1>
-      <p class="subtitle left">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-         numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-      </p>
-
-
-      <h3 class="title left">Violin boxplot</h3> <!-- ############################################ VIOLIN  ### -->
-        <p>Year: <span id="Violin_yearDisplay"></span></p>
-        <button id="Violin_yearPlay">Play</button>
-        <input type="range" style="width:50%;" min="2000" max="2015" value="2015" id="Violin_yearSlider">
-        <br>
-        <div id="violin" class="font svg-container"> </div>
-
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
-
-      <h3 class="title left">Scatter plot</h3> <!-- ############################################ SCATTER PLOT  ### -->
-        <p>Year: <span id="Scatter2_yearDisplay"></span></p>
-        <button id="Scatter2_yearPlay">Play</button>
-        <input type="range" style="width:50%;" min="2000" max="2015" value="2015" id="Scatter2_yearSlider">
-        <br>
-        <p> Select the Variables you want to visualize on y-axis:
-            <select id="scatter2Variable" ></select>
-            <br>
-            and in which way you to filters the top 10 countries:
-            <select id="scatter2Countries" ></select>
-        </p>
-        <br>
-        <div id="scatter2" class="font svg-container"> </div>
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
-
-      <h3 class="title left">Map</h3> <!-- ############################################ CHOROPLET MAP  ### -->
-        <div id="map" class="font svg-container"> </div>
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
-    </div>
   </div>
 
   <!-- ################################# FOOTER #################################### -->
@@ -220,24 +103,12 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="bootstrap/js/jquery.slim.min.js"></script>
   <script src="bootstrap/js/popper.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="bootstrap/select2.min.js"></script>
   <script type="text/javascript" src="bootstrap/d3-legend.js"></script>
 
 
-  <!-- Navbar tabs toogle -->
-  <script src="js/navbar-tabs.js"></script>
-  <script src="./js/slider_handler.js"></script>
-
-  <!-- D3 charts -->
-  <script src="./js/mortality/timeline.js"></script>
-  <script src="./js/mortality/heatmap.js"></script>
-  <script src="./js/economic/violin.js"></script>
-  <script src="./js/economic/scatterplot.js"></script>
-  <!--<script src="./js/mortality/histogram.js"></script>-->
-
-
-
+  <!-- Navbar tabs toogle
+  <script src="js/navbar-tabs.js"></script> -->
 
 </body>
 </html>
