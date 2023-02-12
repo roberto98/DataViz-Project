@@ -105,7 +105,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
   // -------------------------------------------------------------------------------------------------------------------------------- //
   // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
   function updateChart(year, variable, countries) {
-    d3.select("#scatter2").selectAll("svg > g >   *").remove();
+    d3.select("#scatter2").selectAll("svg > g > *").remove();
     selectedYear = String(year);
     xVal = String(variable);
     yVal = "LifeExpectancy";
@@ -204,7 +204,9 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
             .duration(200)
             .style("opacity", 1);
 
-        tooltip.html("<span class='tooltiptext'>" + `${xVal}: ` + d[xVal] + "</span>")
+        tooltip.html("<span class='tooltiptext'>" + "Year: "+ d.Year + "<br>"
+                                                  + "Country: " + d.Country + "<br>"
+                                                  + `${xVal}: ` + d[xVal]  +"</span>")
             .style("left", (event.pageX) + "px")
             .style("top", (event.pageY - 28) + "px");
     }
@@ -221,7 +223,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
             .style("opacity", 0)
     }
 
-
+    // --------------------------------- Plot ---------------------------- //
     // Add circles
     scatter.append("g")
         .selectAll("dot")

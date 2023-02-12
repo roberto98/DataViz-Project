@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="stylesheet" href="bootstrap/select2.min.css">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,10 +103,10 @@
       </p>
 
       <h3 class="title left">Time linechart</h3> <!-- ############################################ LINECHART  ### -->
-        <select id="CountryButton"></select>
+        <select id="CountryButton"  class="select2-multiple" multiple="multiple" data-use-select2="true"></select>
         <select id="VariableButton">
-          <option value="Life">Life Expectancy</option>
-          <option value="Deaths">Deaths</option>
+          <option value="LifeExpectancy">Life Expectancy</option>
+          <option value="AdultMortality">Deaths</option>
         </select>
         <div id = "time_line" class="font svg-container"></div>
 
@@ -220,6 +222,8 @@
   <script src="bootstrap/js/jquery.slim.min.js"></script>
   <script src="bootstrap/js/popper.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/select2.min.js"></script>
+  <script type="text/javascript" src="bootstrap/d3-legend.js"></script>
 
 
   <!-- Navbar tabs toogle -->

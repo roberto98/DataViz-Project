@@ -73,7 +73,7 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
   // -------------------------------------------------------------------------------------------------------------------------------- //
   // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
   function updateChart(year) {
-    d3.select("#violin").selectAll("svg > g >   *").remove();
+    d3.select("#violin").selectAll("svg > g > *").remove();
     selectedYear = String(year);
     const filteredData = data.filter(function(d){return d.Year === selectedYear});
     var maxVal = d3.max(filteredData, d => d.LifeExpectancy);
@@ -136,11 +136,10 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
                 .duration(200)
                 .style("opacity", 1);
 
-              const yPos = y.invert(d3.pointer(event, this.parentNode)[1]);
-              //console.log(yPos);
-              const bisect = d3.bisector(d => d[0]).left;
-              const closestIndex = bisect(d, yPos);
-              //console.log(closestIndex);
+              // compute index of closest point in the array
+              var closestIndex = d3.bisectCenter(filteredDataElement.map(d => y(d.LifeExpectancy)), d3.pointer(event)[1]);
+              console.log(closestIndex);
+
               tooltip.html("<span class='tooltiptext'>" +
                 "Year: " + filteredDataElement[closestIndex].Year + "<br>" +
                 "Status: " + key + "<br>" +

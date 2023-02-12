@@ -1,12 +1,8 @@
-
 d3.csv("./python/CSV/time_line.csv").then(function (data) {
-
-  // set the dimensions and margins of the graph
-  const margin = {top: 30, right: 10, bottom: 75, left: 50},
+  const margin = {top: 120, right: 15, bottom: 75, left: 50},
       width = 800 - margin.left - margin.right,
-      height = 450 - margin.top - margin.bottom;
+      height = 550 - margin.top - margin.bottom;
 
-  // append the svg object to the body of the page
   const svg = d3.select("#time_line")
       .append("svg")
       .attr('width', '100%')
@@ -15,6 +11,11 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
+  const tooltip = d3.select("#time_line")
+      .append("div")
+      .attr("class", "tooltip")
+  // -------------------------------------------------------------------------------------------------------------------------------- //
+  // --------------------------------------------------------------- SELECT BUTTONS ---------------------------------------------------- //
   // List of groups (here I have one group per column)
   const allGroup = new Set(data.map(d => d.Country))
 
@@ -27,77 +28,29 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
     .text(function (d) { return d; }) // text showed in the menu
     .attr("value", function (d) { return d; }) // corresponding value returned by the button
 
-  d3.select("#CountryButton")
-    .property("value", "Italy");
+  // ------------------------------------------------ DEFAULT STATE -------------------------------- //
+  selectedVariable = d3.select("#VariableButton").property("value");
+  start_select2_handler();
+  updateChart(selectedVariable);
 
-  var x = d3.scaleTime()
-    .domain(d3.extent(data, function(d) {return new Date(d.Year, 0, 1)}))
-    .range([0, width]);
-  svg.append("g")
-  .attr("transform", "translate(0," + height + ")")
-  .call(d3.axisBottom(x).ticks(d3.timeYear.every(1)));
-  svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Years").style("font-size", 10)
+  // ------------------------------------------------ CHANGING STATE -------------------------------- //
+  d3.select("#CountryButton").on("change", function(event,d) {
+    selectedVariable = d3.select("#VariableButton").property("value");
+    start_select2_handler();
+    updateChart(selectedVariable);
+  })
 
+  d3.select("#VariableButton").on("change", function(event,d) {
+    selectedVariable = d3.select("#VariableButton").property("value");
+    start_select2_handler();
+    updateChart(selectedVariable);
+  })
 
-  var y = d3.scaleLinear()
-    .domain([d3.min(data, function(d) { return +d.LifeExpectancy; }), d3.max(data, function(d) { return +d.LifeExpectancy; })])
-    .range([ height, 0 ]);
-  svg.append("g")
-    .call(d3.axisLeft(y));
-  svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Life Expectancy").style("font-size", 10)
-
-
-  // Initialize line with first group of the list
-  var line = svg
-  .append('g')
-  .append("path")
-    .datum(data.filter(function(d){return d.Country=="Italy"}))
-    .attr("d", d3.line()
-      .x(function(d) { return x(new Date(d.Year, 0, 1)) })
-      .y(function(d) {return y(+d.LifeExpectancy) })
-    )
-    .attr("stroke", "red" )
-    .style("stroke-width", 4)
-    .style("fill", "none")
-
-    // create a tooltip
-    const tooltip = d3.select("#time_line")
-    .append("div")
-    .attr("class", "tooltip")
-
-  // Add the points
-  svg
-    .append("g")
-    .selectAll("dot")
-    .data(data.filter(function(d){return d.Country=="Italy"}))
-    .enter()
-    .append("circle")
-      .attr("cx", function(d) { return x(new Date(d.Year, 0, 1)) } )
-      .attr("cy", function(d) { return y(+d.LifeExpectancy) } )
-      .attr("r", 5)
-      .attr("fill", "red")
-      .on("mouseover", function (event, d) {
-        tooltip.transition()
-            .duration(200)
-            .style("opacity", 1);
-
-        tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Life expectancy: " + d.LifeExpectancy
-        + "<br>"+ "Year: " + d.Year + "</span>")
-            .style("left", (event.pageX) + "px")
-            .style("top", (event.pageY - 28) + "px");
-      })
-      .on("mouseout", function () {
-        tooltip.transition()
-            .duration(200)
-            .style("opacity", 0);
-      });
-
-
-
-  function updateChart() {
-    //d3.selectAll("g > *").remove();
-    d3.select("#time_line").selectAll("svg > g > *").remove();
-
+  // -------------------------------------------------------------------------------------------------------------------------------- //
+  // --------------------------------------------------------------- UPDATE CHARTS ---------------------------------------------------- //
+  function updateChart(selectedVariable) {
+     d3.select("#time_line").selectAll("svg > g > *").remove();
+    // --------------------------- X axis ------------------------ //
     x = d3.scaleTime()
       .domain(d3.extent(data, function(d) {return new Date(d.Year, 0, 1)}))
       .range([0, width]);
@@ -106,139 +59,263 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
       .call(d3.axisBottom(x).ticks(d3.timeYear.every(1)));
     svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Years").style("font-size", 10)
 
-    // Create new data with the selection?
-    const dataFilter = data.filter(function(d){return d.Country==selectedOption})
 
-    if(selectedVariable === "Life"){
+    // ----------------------------- Y axis ------------------------- //
       y = d3.scaleLinear()
-        .domain([d3.min(data, function(d) { return +d.LifeExpectancy; }), d3.max(data, function(d) { return +d.LifeExpectancy; })])
+        .domain(d3.extent(data, function(d) {return +d[selectedVariable]}))
         .range([ height, 0 ]);
       svg.append("g")
         .call(d3.axisLeft(y));
       svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Life Expectancy").style("font-size", 10)
 
-      // Give these new data to update line
-      line = svg
-          .append('g')
-          .append("path")
-          .datum(dataFilter)
-          .attr("d", d3.line()
-            .x(function(d) { return x(new Date(d.Year, 0, 1)) })
-            .y(function(d) {return y(+d.LifeExpectancy) })
-          )
-          .attr("stroke", "red" )
-          .style("stroke-width", 4)
-          .style("fill", "none")
-          .style("opacity", 0) // fade in animation
-          .transition()
-          .duration(1000)
-          .style("opacity", 1);
 
-        // Add the points
-        svg
-        .append("g")
-        .selectAll("dot")
-        .data(dataFilter)
-        .enter()
-        .append("circle")
-          .attr("cx", function(d) { return x(new Date(d.Year, 0, 1)) } )
-          .attr("cy", function(d) { return y(+d.LifeExpectancy) } )
-          .attr("r", 5)
-          .attr("fill", "red")
-          .on("mouseover", function (event, d) {
+    // ------------------------------ Plot ---------------------- //
+      const sumstat = d3.group(data, d => d.Country);
+
+      // Add the plot
+      var path = svg.selectAll("path:not(.domain)")
+          .data(sumstat)
+          .join(
+              // if we are adding a new path then animate it being "drawn"
+              enter => enter.append("path")
+                  .attr("fill", "none")
+                  .attr("stroke", "gray")
+                  .attr("stroke-width", 4)
+                  .attr("stroke-dashoffset", width * 10)
+                  .attr("stroke-dasharray", width * 10)
+                  .style("opacity", 0.25)
+                  .attr("d", function (d) {
+                      return d3.line()
+                          .x(d => x(new Date(d.Year, 0, 1)))
+                          .y(d => y(+d[selectedVariable]))
+                          (d[1])
+                  })
+                  .attr("class", function (d) {
+                      return d[0].split(/\s/).join(""); // remove whitespace from class names
+                  })
+                  .call(enter => enter.transition()
+                      .transition()
+                      .ease(d3.easeLinear)
+                      .duration(100 * 7)
+                      .attr("stroke-dashoffset", 0)
+                  ),
+          );
+
+    // ------------------------------ Tooltip ---------------------- //
+    
+      // Add the circles
+      var circles = svg.selectAll("circles:not(.domain)")
+        .data(sumstat)
+        .join(
+          enter => enter.selectAll("circle")
+            .data(d => d[1])
+            .join(
+              enter => enter.append("circle")
+                .attr("cx", d => x(new Date(d.Year, 0, 1)))
+                .attr("cy", d => y(+d[selectedVariable]))
+                .attr("r", 4)
+                .style("fill", "grey")
+                .style("opacity", 0.25)
+                .call(enter => enter.transition()
+                    .transition()
+                    .ease(d3.easeLinear)
+                    .duration(100 * 7)
+                    .attr("stroke-dashoffset", 0)
+                ),
+            ),
+        );
+
+
+        // Add the tooltip
+        circles.on("mouseover", function(event, d) {
+          var selected = $('#CountryButton').select2('data');
+          var country_data = d[1];
+
+          // if we don't have a selection then highlight the current path
+          if (selected.length == 0) {
+              // adding extra opacity to current selection
+              console.log(d[0]);
+
+              var curr_line = d3.selectAll(`.${d[0].split(/\s/).join("")}:not(.domain)`)
+
+              circles.transition()
+                  .ease(d3.easeQuadOut)
+                  .duration(500)
+                  .style("opacity", 1)
+
+              curr_line.transition()
+                  .ease(d3.easeQuadOut)
+                  .duration(500)
+                  .style("opacity", 1)
+                  .attr("stroke-width", 4)
+
+              curr_line.raise()    // and bring the current selection to the front
+              circles.raise()
+          }
+
             tooltip.transition()
                 .duration(200)
                 .style("opacity", 1);
 
-            tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Life expectancy: " + d.LifeExpectancy
-            + "<br>"+ "Year: "+ d.Year + "</span>")
+            tooltip.html("<span class='tooltiptext'>" + "Year: " + d.Year + "<br>"
+                                                      + "Country: " + d.Country + "<br>"
+                                                      + `${selectedVariable}: ` + d[selectedVariable] +"</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY - 28) + "px");
-          })
-          .on("mouseout", function () {
+        })
+        .on("mouseout", function() {
             tooltip.transition()
                 .duration(200)
                 .style("opacity", 0);
-          })
-          .style("opacity", 0) // fade in animation
-          .transition()
-          .duration(1000)
-          .style("opacity", 1);
+        });
 
-    } else if(selectedVariable === "Deaths") {
-
-      const minValue = d3.min(data, d => d3.min([Math.floor(d.AdultMortality)]));
-      const maxValue = d3.max(data, d => d3.max([Math.floor(d.AdultMortality)]));
-
-      y = d3.scaleLinear()
-        .domain([minValue, maxValue])
-        .range([ height, 0 ]);
-      svg.append("g")
-        .call(d3.axisLeft(y));
-      svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Adult Deaths").style("font-size", 10)
-
-      // Draw the line
-      var adult_line = svg
-      .append('g')
-      .append("path")
-      .datum(dataFilter)
-      .attr("d", d3.line()
-        .x(function(d) { return x(new Date(d.Year, 0, 1)) })
-        .y(function(d) {return y(+d.AdultMortality) })
-      )
-      .attr("stroke", "red" )
-      .style("stroke-width", 4)
-      .style("fill", "none")
-      .style("opacity", 0)
-      .transition()
-      .duration(1000)
-      .style("opacity", 1);
-
-      // Add the points
-      svg
-        .append("g")
-        .selectAll("dot")
-        .data(dataFilter)
-        .enter()
-        .append("circle")
-          .attr("cx", function(d) { return x(new Date(d.Year, 0, 1)) } )
-          .attr("cy", function(d) { return y(+d.AdultMortality) } )
-          .attr("r", 5)
-          .attr("fill", "red")
-          .on("mouseover", function (event, d) {
-            tooltip.transition()
-                .duration(200)
-                .style("opacity", 1);
-
-            tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Adult Mortality: " + d.AdultMortality
-            + "<br>"+ "Year: "+ d.Year + "</span>")
-                .style("left", (event.pageX) + "px")
-                .style("top", (event.pageY - 28) + "px");
-          })
-          .on("mouseout", function () {
-            tooltip.transition()
-                .duration(200)
-                .style("opacity", 0);
-          })
-          .style("opacity", 0)
-          .transition()
-          .duration(1000)
-          .style("opacity", 1);
-    }
   }
 
-  var selectedOption = "Italy";
-  var selectedVariable = "Life";
-
-  d3.select("#CountryButton").on("change", function(event,d) {
-    selectedOption = d3.select(this).property("value")
-    updateChart()
-  })
-
-  d3.select("#VariableButton").on("change", function(event,d) {
-    selectedVariable = d3.select(this).property("value")
-    updateChart()
-  })
-
-
 });
+
+
+
+const colors = ["#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#17becf"];
+
+var old_selection = [];
+var available_colors = [...colors];
+var country_color_dict = {}
+
+function start_select2_handler() {
+
+    $(document).ready(function () {
+        $(".select2-multiple").select2({
+            maximumSelectionLength: 5,
+        });
+    })
+
+    $("#CountryButton").select2().on("change", function (event) {
+        var selected = $('#CountryButton').select2('data');
+
+        if (selected.length != 0) {
+            // we have a selection, make all path less visible to highlight it
+            let selected_classes_str = selected.map(e => e.id)
+                .reduce((prev, e) => `.${e},` + prev, '.domain, .Country, .bar, .link') // the axes should never be touched, nor other paths from maps
+
+            // -------------------- Controllo che Path e Circles non facciano parte della selezione --------------- //
+            d3.selectAll(`path:not(${selected_classes_str})`)
+                .attr("pointer-events", "none")
+                .transition()
+                .ease(d3.easeQuadOut)
+                .duration(500)
+                .style("opacity", 0.1)
+
+            d3.selectAll(`circles:not(${selected_classes_str})`)
+                .attr("pointer-events", "none")
+                .transition()
+                .ease(d3.easeQuadOut)
+                .duration(500)
+                .style("opacity", 0.1);
+            // if we have a selection also add a legend
+            for (const v of selected) {
+                if (!(v.id in country_color_dict))
+                    country_color_dict[v.id] = available_colors.pop();
+            }
+
+            var country_scale = d3.scaleOrdinal()
+                .domain(selected.map(e => e.text))
+                .range(selected.map(e => country_color_dict[e.id]));
+
+            var linechart_legend = d3.legendColor()
+                .scale(country_scale)
+                .orient("vertical")
+                .title("Selected Countries")
+
+            var linechart_svg = d3.select("#time_line").select("svg");
+
+            var l = linechart_svg.select("#legend")
+            if (!l.empty()) {
+                l.remove()
+            }
+
+            linechart_svg.append("g")
+                .attr("transform", `translate(100, 30)`) // change position to the legend
+                .attr("id", "legend")
+                .call(linechart_legend);
+        }
+
+        if (selected.length == 0) {
+            // no selection, then make everything back to default
+            d3.selectAll("path:not(.domain, .Country, .bar, .link)")
+                .attr("pointer-events", "all")
+                .transition()
+                .ease(d3.easeQuadOut)
+                .duration(500)
+                .style("opacity", 0.25)
+
+            d3.selectAll("circles:not(.domain, .Country, .bar, .link)")
+                .attr("pointer-events", "all")
+                .transition()
+                .ease(d3.easeQuadOut)
+                .duration(500)
+                .style("opacity", 0.25);
+
+            var l = d3.select("#time_line").select("#legend")
+            if (!l.empty()) {
+                l.remove()
+            }
+        }
+
+        // remove old ones
+        for (const v of old_selection) {
+            if (!selected.includes(v)) {
+                var old_path = d3.selectAll(`.${v.id}`);
+                var old_circle = d3.selectAll(`.circle.${v.id}`);
+                // make the current color available to other paths
+                available_colors.push(country_color_dict[v.id]);
+                delete country_color_dict[v.id];
+
+                old_path.transition()
+                    .ease(d3.easeQuadOut)
+                    .duration(500)
+                    .attr("stroke", "gray")
+                    .style("opacity", selected.length != 0 ? 0.1 : 0.25);
+
+                old_circle.transition()
+                    .ease(d3.easeQuadOut)
+                    .duration(500)
+                    .style("fill", "gray")
+                    .style("opacity", selected.length != 0 ? 0.1 : 0.25);
+            }
+        }
+        // add selection
+        for (const [i, v] of selected.entries()) {
+
+            //if (old_selection.includes(v))
+            //    continue;   // no need to transition if we were already plotted
+            var curr_path = d3.selectAll(`.${v.id}`)
+            var curr_circle = d3.selectAll(`.circle.${v.id}`)
+
+            curr_path
+                .attr("pointer-events", "all")
+                .transition()
+                .ease(d3.easeQuadOut)
+                .duration(500)
+                .attr("stroke", country_color_dict[v.id])
+                .style("opacity", 1);
+            curr_path.raise();
+
+            curr_circle
+                .attr("pointer-events", "all")
+                .transition()
+                .ease(d3.easeQuadOut)
+                .duration(500)
+                .style("fill", country_color_dict[v.id])
+                .style("opacity", 1);
+            curr_circle.raise();
+        }
+        old_selection = selected;
+    });
+
+    // default selection
+    // get animated after lines are drawn in
+    setTimeout(function () {
+        $("#CountryButton").val(["Italy", "Zimbabwe", "Canada"]);
+        $("#CountryButton").trigger("change");
+    }, 1000);
+}
