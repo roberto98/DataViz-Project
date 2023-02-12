@@ -1,7 +1,7 @@
 //Read the data
 d3.csv("./python/CSV/country_heatmap.csv").then(data => {
 
-  const margin = {top: 50, right: 0, bottom: 75, left: 90};
+  const margin = {top: 40, right: 15, bottom: 100, left: 40};
   const width = 450 - margin.left - margin.right;
   const height = 450 - margin.top - margin.bottom;
 
@@ -36,6 +36,7 @@ d3.csv("./python/CSV/country_heatmap.csv").then(data => {
 
   // -------------------------------------------------------------------------------------------------------------------------------- //
   // --------------------------------------------------------------- PLAY BUTTON ---------------------------------------------------- //
+  /*
   function Play(){
       var playButton = d3.select("#heatmap_yearPlay")
       var slider = d3.select("#heatmap_yearSlider")
@@ -88,17 +89,16 @@ d3.csv("./python/CSV/country_heatmap.csv").then(data => {
 
   window.addEventListener('load',Play());
 
-
-
+*/
+selectedCountry = d3.select("#heatmapCountry").property("value");
+updateChart(selectedCountry)
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- UPDATE CHARTS ---------------------------------------------------- //
-  function updateChart(selectedYear, selectedCountry){
+  function updateChart(selectedCountry){
     d3.select("#heatmap").selectAll("svg > g > *").remove();
-    console.log(selectedYear, selectedCountry);
-    console.log(data);
 
-    const filteredData = data.filter(d => d.Country === selectedCountry && d.Year === selectedYear);
-    console.log(filteredData);
+    const filteredData = data.filter(d => d.Country === selectedCountry);
+
     const myGroups = Array.from(new Set(filteredData.map(d => d.Group1)))
     const myVars = Array.from(new Set(filteredData.map(d => d.Group2)))
 
@@ -168,27 +168,58 @@ d3.csv("./python/CSV/country_heatmap.csv").then(data => {
 
       // ------------------------------------------- LEGEND ---------------------------------------- //
       // https://d3-legend.susielu.com/
+      // Build color scale
 
-      // Add legend
-      /*
-      const size = 10
-      const legend = svg.append("g")
-        .attr("transform", `translate(10, 0)`)
-        .attr("font-size", size)
 
-      const legendLinear = d3.legendColor()
-        .shapeWidth(50)
-        .orient('vertical')
-        .scale(myColor)
+      // ------------------------------------------- LEGEND ---------------------------------------- //
 
-      legend.call(legendLinear) */
+      // Define the size and position of the legend
+      const legendMargin = {top: 10, right: 0, bottom: 10, left: 40};
+
+      // Create the SVG element for the legend
+      const legendSvg = d3.select("#heatmap").select("svg").append("g")
+      .attr("width", "100%")
+      .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+      .attr("preserveAspectRatio", "xMinYMin meet");
+
+      // Create the color gradient for the legend
+      const gradient = legendSvg.append("defs")
+        .append("linearGradient")
+        .attr("id", "heatmap-gradient")
+        .attr("x1", "0%")
+        .attr("y1", "0%")
+        .attr("x2", "100%")
+        .attr("y2", "0%");
+
+      // Define the color stops for the gradient
+      gradient.selectAll("stop")
+        .data(myColor.ticks().map(d => myColor(d)))
+        .enter().append("stop")
+        .attr("offset", (d, i) => i / (myColor.ticks().length - 1))
+        .attr("stop-color", d => d);
+
+      // Create the colorbar rectangle
+      legendSvg.append("rect")
+        .attr("x", legendMargin.left)
+        .attr("y", legendMargin.top)
+        .attr("width", width)
+        .attr("height", 10)
+        .style("fill", "url(#heatmap-gradient)");
+
+      // Create the axis for the legend
+      const legendAxis = d3.axisBottom(d3.scaleLinear().domain([-1, 1]).range([0, width]));
+      legendSvg.append("g")
+        .attr("transform", `translate(${legendMargin.left }, ${legendMargin.top + 10})`)
+        .style("font-size", 8)
+        .call(legendAxis);
+
   }
 
 // ------------------------------------------------ CHANGING STATE -------------------------------- //
   d3.select("#heatmapCountry").on("change", function(event,d) {
-    selectedYear = d3.select("#heatmap_yearSlider").property("value");
+    //selectedYear = d3.select("#heatmap_yearSlider").property("value");
     selectedCountry = d3.select("#heatmapCountry").property("value");
-    updateChart(selectedYear, selectedCountry);
+    updateChart(selectedCountry);
   })
 
 

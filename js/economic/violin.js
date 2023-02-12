@@ -1,18 +1,18 @@
 
 d3.csv("./python/CSV/violin.csv").then(function (data) {
 
-  const margin ={top: 30, right: 30, bottom: 30, left: 40},
-      width = 460 - margin.left - margin.right,
+  const margin ={top: 40, right: 30, bottom: 30, left: 35},
+      width = 700 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
   const svg = d3.select("#violin")
       .append("svg")
-      .attr('width', width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
+      .attr('width', '100%')
       .attr('viewBox', '0 0 ' + (width + margin.left + margin.right) + ' ' + (height + margin.top + margin.bottom))
       .attr("preserveAspectRatio", "xMinYMin meet")
       .append("g")
-      .attr("transform", `translate(${margin.left},${margin.top})`);
+      .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
 
 
   // -------------------------------------------------------------------------------------------------------------------------------- //

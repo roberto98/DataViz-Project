@@ -1,9 +1,9 @@
 
 d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
-  const margin = {top: 40, right: 100, bottom: 60, left: 35},
+  const margin = {top: 40, right: 30, bottom: 50, left: 35},
       width = 700 - margin.left - margin.right,
-      height = 420 - margin.top - margin.bottom;
+      height = 400 - margin.top - margin.bottom;
 
   // append the svg object to the body of the page
   const svg = d3.select("#scatter2")

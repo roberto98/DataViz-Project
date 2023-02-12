@@ -11,6 +11,7 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
+
   const tooltip = d3.select("#time_line")
       .append("div")
       .attr("class", "tooltip")
