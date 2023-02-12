@@ -2,7 +2,7 @@
 //Read the data
 d3.csv("./python/CSV/heatmap.csv").then(data => {
 
-  const margin = {top: 30, right: 0, bottom: 75, left: 90};
+  const margin = {top: 100, right: 0, bottom: 75, left: 90};
   const width = 450 - margin.left - margin.right;
   const height = 450 - margin.top - margin.bottom;
 
@@ -43,7 +43,7 @@ d3.csv("./python/CSV/heatmap.csv").then(data => {
 
   // Build color scale
   color_arr = d3.schemeGreens[8].slice(1);
- 
+
   const myColor = d3.scalePow(/*d3.interpolateBlues*/)
       .domain([-1, 1])
       .range([color_arr[0], color_arr[color_arr.length-1]])
@@ -54,7 +54,7 @@ d3.csv("./python/CSV/heatmap.csv").then(data => {
   .append("div")
   .attr("class", "tooltip")
 
-  
+
   // add the squares
   svg.selectAll()
     .data(data, function(d) {return d.Group1+':'+d.Group2;})
@@ -74,13 +74,13 @@ d3.csv("./python/CSV/heatmap.csv").then(data => {
         tooltip.transition()
             .duration(200)
             .style("opacity", 1)
-            
+
         tooltip.html("<span class='tooltiptext'>" + "Correlation: " + Math.round(d.corr *100) /100 + "</span>")
             .style("left", (event.pageX) + "px")
             .style("top", (event.pageY - 28) + "px")
 
             d3.select(this)
-            .style("stroke", "black")                
+            .style("stroke", "black")
     })
     .on("mouseout", function () {
       tooltip.transition()
@@ -88,19 +88,23 @@ d3.csv("./python/CSV/heatmap.csv").then(data => {
           .style("opacity", 0);
           d3.select(this)
             .style("stroke", "none")
-  });
+    });
+
+// ------------------------------------------- LEGEND ---------------------------------------- //
+// https://d3-legend.susielu.com/
+
+// Add legend
+  const size = 10
+  const legend = svg.append("g")
+    .attr("transform", `translate(10, 0)`)
+    .attr("font-size", size)
+
+  const legendLinear = d3.legendColor()
+    .shapeWidth(50)
+    .orient('vertical')
+    .scale(myColor)
+
+  legend.call(legendLinear)
+
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-

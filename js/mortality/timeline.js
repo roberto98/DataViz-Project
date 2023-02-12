@@ -102,73 +102,62 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
           );
 
     // ------------------------------ Tooltip ---------------------- //
-    
-      // Add the circles
-      var circles = svg.selectAll("circles:not(.domain)")
-        .data(sumstat)
-        .join(
-          enter => enter.selectAll("circle")
-            .data(d => d[1])
-            .join(
-              enter => enter.append("circle")
-                .attr("cx", d => x(new Date(d.Year, 0, 1)))
-                .attr("cy", d => y(+d[selectedVariable]))
-                .attr("r", 4)
-                .style("fill", "grey")
-                .style("opacity", 0.25)
-                .call(enter => enter.transition()
-                    .transition()
-                    .ease(d3.easeLinear)
-                    .duration(100 * 7)
-                    .attr("stroke-dashoffset", 0)
-                ),
-            ),
-        );
 
 
-        // Add the tooltip
-        circles.on("mouseover", function(event, d) {
-          var selected = $('#CountryButton').select2('data');
-          var country_data = d[1];
+    path
+        .on("mouseover", function (event, d) {
+            var selected = $('#CountryButton').select2('data');
+            var country_data = d[1];
 
-          // if we don't have a selection then highlight the current path
-          if (selected.length == 0) {
-              // adding extra opacity to current selection
-              console.log(d[0]);
+            // compute index of closest point in the array
+            var i = d3.bisectCenter(country_data.map(d => x(d.Year)), x.invert(d3.pointer(event)[0]));
+            console.log(i);
+            // if we don't have a selection then highlight the current path
+            if (selected.length == 0) {
+                // adding extra opacity to current selection
+                var curr_line = d3.selectAll(`.${d[0].split(/\s/).join("")}:not(.domain)`)
 
-              var curr_line = d3.selectAll(`.${d[0].split(/\s/).join("")}:not(.domain)`)
+                path.transition()
+                    .ease(d3.easeQuadOut)
+                    .duration(500)
+                    .style("opacity", 0.1)
 
-              circles.transition()
-                  .ease(d3.easeQuadOut)
-                  .duration(500)
-                  .style("opacity", 1)
+                curr_line.transition()
+                    .ease(d3.easeQuadOut)
+                    .duration(500)
+                    .style("opacity", 1)
+                    .attr("stroke-width", 4)
 
-              curr_line.transition()
-                  .ease(d3.easeQuadOut)
-                  .duration(500)
-                  .style("opacity", 1)
-                  .attr("stroke-width", 4)
-
-              curr_line.raise()    // and bring the current selection to the front
-              circles.raise()
-          }
+                curr_line.raise()    // and bring the current selection to the front
+            }
 
             tooltip.transition()
                 .duration(200)
                 .style("opacity", 1);
 
-            tooltip.html("<span class='tooltiptext'>" + "Year: " + d.Year + "<br>"
-                                                      + "Country: " + d.Country + "<br>"
-                                                      + `${selectedVariable}: ` + d[selectedVariable] +"</span>")
+            tooltip.html("<span class='tooltiptext'>" + "Year: " + country_data[i].Year + "<br>"
+                                                      + "Country: " +  country_data[i].Country + "<br>"
+                                                      + `${selectedVariable}: ` +  country_data[i][selectedVariable] +"</span>")
                 .style("left", (event.pageX) + "px")
-                .style("top", (event.pageY - 28) + "px");
+                .style("top", (event.pageY) + "px");
         })
-        .on("mouseout", function() {
+        .on("mouseout", function () {
+            // If we have a selection then just remove the tooltip
+            // if we didn't then bring back everything to default styles
+            var selected = $('#CountryButton').select2('data');
+            if (selected.length == 0) {
+                d3.selectAll("path:not(.domain)")
+                    .transition()
+                    .ease(d3.easeQuadOut)
+                    .duration(500)
+                    .style("opacity", 0.25)
+                    .attr("stroke-width", 2)
+            }
+
             tooltip.transition()
                 .duration(200)
                 .style("opacity", 0);
         });
-
   }
 
 });
@@ -205,12 +194,6 @@ function start_select2_handler() {
                 .duration(500)
                 .style("opacity", 0.1)
 
-            d3.selectAll(`circles:not(${selected_classes_str})`)
-                .attr("pointer-events", "none")
-                .transition()
-                .ease(d3.easeQuadOut)
-                .duration(500)
-                .style("opacity", 0.1);
             // if we have a selection also add a legend
             for (const v of selected) {
                 if (!(v.id in country_color_dict))
@@ -248,13 +231,6 @@ function start_select2_handler() {
                 .duration(500)
                 .style("opacity", 0.25)
 
-            d3.selectAll("circles:not(.domain, .Country, .bar, .link)")
-                .attr("pointer-events", "all")
-                .transition()
-                .ease(d3.easeQuadOut)
-                .duration(500)
-                .style("opacity", 0.25);
-
             var l = d3.select("#time_line").select("#legend")
             if (!l.empty()) {
                 l.remove()
@@ -265,7 +241,6 @@ function start_select2_handler() {
         for (const v of old_selection) {
             if (!selected.includes(v)) {
                 var old_path = d3.selectAll(`.${v.id}`);
-                var old_circle = d3.selectAll(`.circle.${v.id}`);
                 // make the current color available to other paths
                 available_colors.push(country_color_dict[v.id]);
                 delete country_color_dict[v.id];
@@ -275,12 +250,6 @@ function start_select2_handler() {
                     .duration(500)
                     .attr("stroke", "gray")
                     .style("opacity", selected.length != 0 ? 0.1 : 0.25);
-
-                old_circle.transition()
-                    .ease(d3.easeQuadOut)
-                    .duration(500)
-                    .style("fill", "gray")
-                    .style("opacity", selected.length != 0 ? 0.1 : 0.25);
             }
         }
         // add selection
@@ -289,7 +258,6 @@ function start_select2_handler() {
             //if (old_selection.includes(v))
             //    continue;   // no need to transition if we were already plotted
             var curr_path = d3.selectAll(`.${v.id}`)
-            var curr_circle = d3.selectAll(`.circle.${v.id}`)
 
             curr_path
                 .attr("pointer-events", "all")
@@ -300,14 +268,6 @@ function start_select2_handler() {
                 .style("opacity", 1);
             curr_path.raise();
 
-            curr_circle
-                .attr("pointer-events", "all")
-                .transition()
-                .ease(d3.easeQuadOut)
-                .duration(500)
-                .style("fill", country_color_dict[v.id])
-                .style("opacity", 1);
-            curr_circle.raise();
         }
         old_selection = selected;
     });
@@ -315,7 +275,7 @@ function start_select2_handler() {
     // default selection
     // get animated after lines are drawn in
     setTimeout(function () {
-        $("#CountryButton").val(["Italy", "Zimbabwe", "Canada"]);
+        $("#CountryButton").val(["Italy", "Zimbabwe", "Canada", "Chad"]);
         $("#CountryButton").trigger("change");
     }, 1000);
 }
