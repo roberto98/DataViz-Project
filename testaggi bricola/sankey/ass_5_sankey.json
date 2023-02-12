@@ -1,0 +1,154 @@
+{
+  "nodes": [
+    {
+      "node": 0,
+      "name": "Carbon Storage (kg)"
+    },
+    {
+      "node": 1,
+      "name": "Acer campestre"
+    },
+    {
+      "node": 2,
+      "name": "Aesculus hippocastanum"
+    },
+    {
+      "node": 3,
+      "name": "Carpinus betulus"
+    },
+    {
+      "node": 4,
+      "name": "Celtis australis"
+    },
+    {
+      "node": 5,
+      "name": "Cupresssus"
+    },
+    {
+      "node": 6,
+      "name": "Platanus x hispanica"
+    },
+    {
+      "node": 7,
+      "name": "Sophora japonica"
+    },
+    {
+      "node": 8,
+      "name": "Tilia cordata"
+    },
+    {
+      "node": 9,
+      "name": "Tilia x europaea"
+    },
+    {
+      "node": 10,
+      "name": "other"
+    },
+    {
+      "node": 11,
+      "name": "Total Annual Benefits (eur/yr)"
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1,
+      "value": 36849.8
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "value": 438610.9
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "value": 62980.1
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "value": 70736.5
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "value": 198211
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "value": 1083313.4
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "value": 80562.6
+    },
+    {
+      "source": 0,
+      "target": 8,
+      "value": 65967.6
+    },
+    {
+      "source": 0,
+      "target": 9,
+      "value": 406394.2
+    },
+    {
+      "source": 0,
+      "target": 10,
+      "value": 8525849.3
+    },
+    {
+      "source": 1,
+      "target": 11,
+      "value": 254.72
+    },
+    {
+      "source": 2,
+      "target": 11,
+      "value": 2113.89
+    },
+    {
+      "source": 3,
+      "target": 11,
+      "value": 512.03
+    },
+    {
+      "source": 4,
+      "target": 11,
+      "value": 1706.43
+    },
+    {
+      "source": 5,
+      "target": 11,
+      "value": 800.0699999999999
+    },
+    {
+      "source": 6,
+      "target": 11,
+      "value": 2845.63
+    },
+    {
+      "source": 7,
+      "target": 11,
+      "value": 565.97
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "value": 602.89
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "value": 1697.52
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "value": 39097.74
+    }
+  ]
+}
