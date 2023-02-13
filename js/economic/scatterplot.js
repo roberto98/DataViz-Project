@@ -288,7 +288,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
       .attr("cy", (d, i) => i * (size + 5))
       .attr("r", 7)
       .style("fill", d => color(d))
-      .on("click", highlight)
+      .on("mouseover", highlight)
       .on("mouseleave", doNotHighlight);
 
     // Add labels beside legend dots
@@ -302,7 +302,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
       .text(d => d)
       .attr("text-anchor", "left")
       .style("alignment-baseline", "middle")
-      .on("click", highlight)
+      .on("mouseover", highlight)
       .on("mouseleave", doNotHighlight);
 
 
