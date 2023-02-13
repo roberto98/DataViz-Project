@@ -78,7 +78,7 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
     const filteredData = data.filter(function(d){return d.Year === selectedYear});
     var maxVal = d3.max(data, d => d.LifeExpectancy);
     var minVal = d3.min(data, d => d.LifeExpectancy);
-    console.log(maxVal);
+    //console.log(maxVal);
 
     // ----------------------------- Y axis ------------------------- //
     y = d3.scaleLinear()
