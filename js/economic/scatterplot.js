@@ -1,7 +1,7 @@
 
 d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
-  const margin = {top: 40, right: 30, bottom: 50, left: 35},
+  const margin = {top: 40, right: 190, bottom: 50, left: 35},
       width = 700 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
@@ -266,31 +266,47 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
         })
 
     // --------------------------------- Legend ---------------------------- //
+    size = 20;
+    const allGroup = new Set(data.map(d => d.Country))
+
+    // Add a container for the legend items
+    const legendContainer = svg.append("g")
+      .attr("transform", "translate(500, 10)");
+
+    // Add a scrollable view to the container
+    const scroll = legendContainer.append("rect")
+      .attr("width", size * 1.2)
+      .attr("height", size * 1.5)
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("fill", "white")
+      .attr("stroke", "black");
+
     // Add one dot in the legend for each name.
-    const size = 20
-    svg.selectAll("myrect")
-        .data(top10Countries)
-        .join("circle")
-        .attr("cx", 490)
-        .attr("cy", (d, i) => 10 + i * (size + 5)) // 100 is where the first dot appears. 25 is the distance between dots
-        .attr("r", 7)
-        .style("fill", d => color(d))
-        .on("mouseover", highlight)
-        .on("mouseleave", doNotHighlight)
+    legendContainer.selectAll("myrect")
+      .data(allGroup)
+      .join("circle")
+      .attr("cx", size * 0.6)
+      .attr("cy", (d, i) => i * (size + 5))
+      .attr("r", 7)
+      .style("fill", d => color(d))
+      .on("mouseover", highlight)
+      .on("mouseleave", doNotHighlight);
 
     // Add labels beside legend dots
-    svg.selectAll("mylabels")
-        .data(top10Countries)
-        .enter()
-        .append("text")
-        .attr("x", 490 + size * .8)
-        .attr("y", (d, i) => i * (size + 5) + (size / 2)) // 100 is where the first dot appears. 25 is the distance between dots
-        .style("fill", d => color(d))
-        .text(d => d)
-        .attr("text-anchor", "left")
-        .style("alignment-baseline", "middle")
-        .on("mouseover", highlight)
-        .on("mouseleave", doNotHighlight)
+    legendContainer.selectAll("mylabels")
+      .data(allGroup)
+      .enter()
+      .append("text")
+      .attr("x", size * 1.2)
+      .attr("y", (d, i) => i * (size + 5) + (size / 2))
+      .style("fill", d => color(d))
+      .text(d => d)
+      .attr("text-anchor", "left")
+      .style("alignment-baseline", "middle")
+      .on("mouseover", highlight)
+      .on("mouseleave", doNotHighlight);
+
   }
 
 
