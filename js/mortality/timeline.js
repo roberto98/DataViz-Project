@@ -101,7 +101,17 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
                       .attr("stroke-dashoffset", 0)
                   ),
           );
-
+        /*
+          var dot = svg
+          .selectAll('circle')
+          .data(sumstat)
+          .enter()
+          .append('circle')
+            .attr("cx", function(d) { return x(d => x(new Date(d.Year, 0, 1))) })
+            .attr("cy", function(d) { return d => y(+d[selectedVariable])})
+            .attr("r", 7)
+            .style("fill", "#69b3a2")
+        */
     // ------------------------------ Tooltip ---------------------- //
 
 
@@ -110,9 +120,13 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
             var selected = $('#CountryButton').select2('data');
             var country_data = d[1];
 
-            // compute index of closest point in the array
-            var i = d3.bisectCenter(country_data.map(d => x(d.Year)), x.invert(d3.pointer(event)[0]));
-            console.log(i);
+            var dateString = x.invert(d3.pointer(event)[0])
+            var date = new Date(dateString);
+            var year = date.getFullYear();
+            
+            var arr_years = country_data.map(d => d.Year);
+            var i = arr_years.indexOf(String(year));
+
             // if we don't have a selection then highlight the current path
             if (selected.length == 0) {
                 // adding extra opacity to current selection
