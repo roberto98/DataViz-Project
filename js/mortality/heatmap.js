@@ -1,7 +1,7 @@
 //Read the data
 d3.csv("./python/CSV/country_heatmap.csv").then(data => {
 
-  const margin = {top: 40, right: 15, bottom: 100, left: 40};
+  const margin = {top: 40, right: 15, bottom: 20, left: 40};
   const width = 450 - margin.left - margin.right;
   const height = 450 - margin.top - margin.bottom;
 

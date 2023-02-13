@@ -154,23 +154,24 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
         .attr("x", 0)
         .attr("y", 0);
 
-
+    //const allCountries = new Set(data.map(d => d.Country))
     // Color scale: give me a specie name, I return a color
-    const top10Countries = data.sort((a, b) => b[CountriesFilter] - a[CountriesFilter])
+
+    const allCountries = data.sort((a, b) => b[CountriesFilter] - a[CountriesFilter])
                             .reduce((unique, item) => {
                                 if (!unique.some(d => d.Country === item.Country)) {
                                     unique.push(item);
                                 }
                                 return unique;
                             }, [])
-                            .slice(0, 10)
+                            .slice(0, 20)
                             .map(d => d.Country);
 
-    filteredData = filteredData.filter(d => top10Countries.includes(d.Country));
+    filteredData = filteredData.filter(d => allCountries.includes(d.Country));
 
     const colors = ["#FF595E", "#FF924C", "#FFCA3A", "#C5CA30", "#8AC926", "#36949D", "#1982C4", "#4267AC", "#565AA0", "#6A4C93"];
     const color = d3.scaleOrdinal()
-        .domain(top10Countries)
+        .domain(allCountries)
         .range(colors);
 
     // Create the scatter variable: where both the circles and the brush take place
@@ -266,36 +267,33 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
         })
 
     // --------------------------------- Legend ---------------------------- //
-    size = 20;
-    const allGroup = new Set(data.map(d => d.Country))
-
-    // Add a container for the legend items
-    const legendContainer = svg.append("g")
-      .attr("transform", "translate(500, 10)");
+    size = 12;
+    const legendContainer =  d3.select("#scatter2").select("svg").append("g")
+      .attr("transform", "translate( 550, 10)")
 
     // Add a scrollable view to the container
-    const scroll = legendContainer.append("rect")
-      .attr("width", size * 1.2)
-      .attr("height", size * 1.5)
-      .attr("x", 0)
-      .attr("y", 0)
+    const scroll = legendContainer.append("g")
       .attr("fill", "white")
-      .attr("stroke", "black");
+      .attr("stroke", "black")
+      .attr("clip-path", "url(#clip2)")
+      .style("overflow", "auto")
+
+
 
     // Add one dot in the legend for each name.
     legendContainer.selectAll("myrect")
-      .data(allGroup)
+      .data(allCountries)
       .join("circle")
       .attr("cx", size * 0.6)
       .attr("cy", (d, i) => i * (size + 5))
       .attr("r", 7)
       .style("fill", d => color(d))
-      .on("mouseover", highlight)
+      .on("click", highlight)
       .on("mouseleave", doNotHighlight);
 
     // Add labels beside legend dots
     legendContainer.selectAll("mylabels")
-      .data(allGroup)
+      .data(allCountries)
       .enter()
       .append("text")
       .attr("x", size * 1.2)
@@ -304,8 +302,9 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
       .text(d => d)
       .attr("text-anchor", "left")
       .style("alignment-baseline", "middle")
-      .on("mouseover", highlight)
+      .on("click", highlight)
       .on("mouseleave", doNotHighlight);
+
 
   }
 
