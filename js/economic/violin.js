@@ -76,8 +76,9 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
     d3.select("#violin").selectAll("svg > g > *").remove();
     selectedYear = String(year);
     const filteredData = data.filter(function(d){return d.Year === selectedYear});
-    var maxVal = d3.max(filteredData, d => d.LifeExpectancy);
-    var minVal = d3.min(filteredData, d => d.LifeExpectancy);
+    var maxVal = d3.max(data, d => d.LifeExpectancy);
+    var minVal = d3.min(data, d => d.LifeExpectancy);
+    console.log(maxVal);
 
     // ----------------------------- Y axis ------------------------- //
     y = d3.scaleLinear()
@@ -88,14 +89,14 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
 
     // --------------------------- X axis ------------------------ //
     x = d3.scaleBand()
-      .range([ 0, width ])
+      .range([ 0, width])
       .domain(["Developing", "Developed"])
       .padding(0.05)
     svg.append("g").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x))
     svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Country Status").style("font-size", 10)
 
     // ----------------------------- Kernel Density ------------------------- //
-    kde = kernelDensityEstimator(kernelEpanechnikov(2), y.ticks(50))
+    kde = kernelDensityEstimator(kernelEpanechnikov(2), y.ticks(20))
     sumstats = d3.rollup(filteredData, v => d3.mean(v, d => d.LifeExpectancy), d => d.Status);
 
     var maxNum = 0
@@ -132,7 +133,7 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
               .curve(d3.curveCatmullRom)
             )
             // -----------------------------  Tooltip ------------------------- //
-            .on("mousemove", function(d) {
+            .on("mousemove", function(event, d) {
               var [key, value] = this.parentNode.__data__;
               const filteredDataElement = filteredData.filter(function(d) {return d.Status === key;});
               //console.log(filteredDataElement);
@@ -140,14 +141,39 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
                 .duration(200)
                 .style("opacity", 1);
 
-              // compute index of closest point in the array
-              var closestIndex = d3.bisectCenter(filteredDataElement.map(d => y(d.LifeExpectancy)), d3.pointer(event)[1]);
-              console.log(closestIndex);
+
+              var val = d3.pointer(event)[1]
+              //console.log(val);
+              
+              var arr = filteredDataElement.map(d => y(d.LifeExpectancy));
+              //console.log(arr);
+
+              function findClosest(array, targetValue){
+                let closestIndex = 0;
+                let closestDifference = Math.abs(array[0] - targetValue);
+                for(let i = 1; i < array.length; i++){
+                  let difference = Math.abs(array[i] - targetValue);
+                  if(difference < closestDifference){
+                    closestDifference = difference;
+                    closestIndex = i;
+                  }
+                }
+                return closestIndex;
+              }
+
+              
+              var closestIndex = findClosest(arr, val);
+
+              kde_arr = kde(filteredData.filter(d => d.Status === key).map(d => d.LifeExpectancy));
+              kde_index = findClosest(arr, val);
+              console.log(kde_arr);
+              console.log(kde_index);
 
               tooltip.html("<span class='tooltiptext'>" +
                 "Year: " + filteredDataElement[closestIndex].Year + "<br>" +
                 "Status: " + key + "<br>" +
-                "Life expectancy: " + filteredDataElement[closestIndex].LifeExpectancy + "</span>")
+                "Life expectancy: " + filteredDataElement[closestIndex].LifeExpectancy + " age" + "<br>" +
+                "KDE: " +  kde_arr[kde_index] + "</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY) + "px");
             })
