@@ -176,7 +176,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             .on("mouseleave", hideTooltip )
         
 
-        d3.select(".tooltip").remove();
+       
         
     }
 
