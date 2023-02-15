@@ -69,6 +69,13 @@
       </p>
 
       <h3 class="title left">Horizontal Barchart</h3> <!-- ############################################ BARCHART  ### -->
+        <p>Year: <span id="barchart_yearDisplay"></span></p>
+        <button id="barchart_yearPlay">Play</button>
+        <input type="range" style="width:50%;" min="0" max="2" value="0" id="barchart_yearSlider">
+        <br>
+        <p>Select Country:
+          <select id="barchart_bottom" ></select>
+        </p>
         <div id="barchart" class="font svg-container"> </div>
         <p class="subtitle left">
           ......... few lines of description ..........
@@ -105,7 +112,6 @@
   <script type="text/javascript" src="bootstrap/d3-legend.js"></script>
   <script src="./js/diseases/sankey.js"></script>
   <script src="./js/diseases/sankey_chart.js"></script>
-
-
+  <script src="./js/diseases/barchart.js"></script>
   </body>
   </html>

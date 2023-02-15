@@ -116,7 +116,7 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
 
 
     path
-        .on("mouseover", function (event, d) {
+        .on("mousemove", function (event, d) {
             var selected = $('#CountryButton').select2('data');
             var country_data = d[1];
 
