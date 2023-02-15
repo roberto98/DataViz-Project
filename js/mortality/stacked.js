@@ -138,7 +138,7 @@ d3.csv("./python/CSV/stacked.csv").then(function (data) {
         .data(stackedData)
         .join("g")
         .attr("fill", d => color(d.key))
-        .attr("class", d => "myRect " + d.key.replaceAll(' ', '_')) // Add a class to each subgroup: their name
+        .attr("class", d => "myRect range" + d.key.replaceAll('-', '_').replaceAll('+', '')) // Add a class to each subgroup: their name
         .selectAll("rect")
         // enter a second time = loop subgroup per subgroup to add all rectangles
         .data(d => d)
@@ -168,7 +168,7 @@ d3.csv("./python/CSV/stacked.csv").then(function (data) {
 
             // Highlight all rects of this subgroup with opacity 1.
             // It is possible to select them since they have a specific class = their name.
-            d3.selectAll("." + rangeClass.replaceAll(' ', '_'))
+            d3.selectAll(".range" + rangeClass.replaceAll('-', '_').replaceAll('+', ''))
                 .style("opacity", 1)
 
         })
