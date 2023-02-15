@@ -1,0 +1,139 @@
+,source,target,value
+2,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,14.4
+4,Infectious and parasitic diseases,Tuberculosis,0.9
+5,Infectious and parasitic diseases,STDs excluding HIV,0.0
+6,Infectious and parasitic diseases,HIV/AIDS,1.6
+7,Infectious and parasitic diseases,Diarrhoeal diseases,0.5
+8,Infectious and parasitic diseases,Childhood-cluster diseases,0.0
+9,Infectious and parasitic diseases,Meningitis,0.5
+10,Infectious and parasitic diseases,Encephalitis,0.0
+11,Infectious and parasitic diseases,Hepatitis,1.4
+12,Infectious and parasitic diseases,Parasitic and vector diseases,2.8
+13,Infectious and parasitic diseases,Intestinal nematode infections,0.0
+14,Infectious and parasitic diseases,Leprosy,0.0
+15,Infectious and parasitic diseases,Other infectious diseases,6.5
+16,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,11.3
+18,Respiratory Infectious ,Lower respiratory infections,11.2
+19,Respiratory Infectious ,Upper respiratory infections,0.0
+20,Respiratory Infectious ,Otitis media,0.0
+21,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.5
+23,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,5.8
+25,Neonatal conditions,Preterm birth complications,3.7
+26,Neonatal conditions,Birth asphyxia and birth trauma,0.8
+27,Neonatal conditions,Neonatal sepsis and infections,0.8
+28,Neonatal conditions,Other neonatal conditions,0.6
+29,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,2.1
+31,Nutritional deficiencies,Protein-energy malnutrition,1.5
+32,Nutritional deficiencies,Iodine deficiency,0.0
+33,Nutritional deficiencies,Vitamin A deficiency,0.0
+34,Nutritional deficiencies,Iron-deficiency anaemia,0.4
+35,Nutritional deficiencies,Other nutritional deficiencies,0.1
+37,Noncommunicable diseases,Malignant neoplasms,57.3
+39,Malignant neoplasms,Mouth and oropharynx cancers,1.0
+40,Malignant neoplasms,Oesophagus cancer,2.4
+41,Malignant neoplasms,Stomach cancer,3.5
+42,Malignant neoplasms,Colon and rectum cancers,6.7
+43,Malignant neoplasms,Liver cancer,2.0
+44,Malignant neoplasms,Pancreas cancer,3.4
+45,Malignant neoplasms,"Trachea, bronchus, lung cancers",9.0
+46,Malignant neoplasms,Melanoma and other skin cancers,0.7
+47,Malignant neoplasms,Breast cancer,5.9
+48,Malignant neoplasms,Cervix uteri cancer,1.8
+49,Malignant neoplasms,Corpus uteri cancer,1.0
+50,Malignant neoplasms,Ovary cancer,1.1
+51,Malignant neoplasms,Prostate cancer,4.2
+52,Malignant neoplasms,Testicular cancer,0.2
+53,Malignant neoplasms,Kidney cancer,1.5
+54,Malignant neoplasms,Bladder cancer,1.5
+55,Malignant neoplasms,Brain and nervous system cancers,1.1
+56,Malignant neoplasms,Gallbladder and biliary tract cancer,1.5
+57,Malignant neoplasms,Larynx cancer,1.1
+58,Malignant neoplasms,Thyroid cancer,0.2
+59,Malignant neoplasms,Mesothelioma,0.1
+60,Malignant neoplasms,"Lymphomas, multiple myeloma",2.5
+61,Malignant neoplasms,Leukaemia,2.0
+62,Malignant neoplasms,Other malignant neoplasms,3.0
+63,Noncommunicable diseases,Other neoplasms,2.3
+65,Noncommunicable diseases,Diabetes mellitus,6.8
+67,Noncommunicable diseases,"Endocrine, blood, immune disorders",2.7
+69,"Endocrine, blood, immune disorders",Thalassaemias,0.0
+70,"Endocrine, blood, immune disorders",Sickle cell disorders and trait,0.0
+71,"Endocrine, blood, immune disorders",Other haemoglobinopathies and haemolytic anaemias,0.9
+72,"Endocrine, blood, immune disorders","Other endocrine, blood and immune disorders",1.8
+73,Noncommunicable diseases,Mental and substance use disorders,1.4
+75,Mental and substance use disorders,Depressive disorders,0.0
+76,Mental and substance use disorders,Bipolar disorder,0.0
+77,Mental and substance use disorders,Schizophrenia,0.0
+78,Mental and substance use disorders,Alcohol use disorders,0.8
+79,Mental and substance use disorders,Drug use disorders,0.6
+80,Mental and substance use disorders,Anxiety disorders,0.0
+81,Mental and substance use disorders,Eating disorders,0.0
+82,Mental and substance use disorders,Autism and Asperger syndrome,0.0
+83,Mental and substance use disorders,Childhood behavioural disorders,0.0
+84,Mental and substance use disorders,Idiopathic intellectual disability,0.0
+85,Mental and substance use disorders,Other mental and behavioural disorders,0.0
+86,Noncommunicable diseases,Neurological conditions,4.8
+88,Neurological conditions,Alzheimer disease and other dementias,2.3
+89,Neurological conditions,Parkinson disease,0.7
+90,Neurological conditions,Epilepsy,0.2
+91,Neurological conditions,Multiple sclerosis,0.1
+92,Neurological conditions,Migraine,0.0
+93,Neurological conditions,Non-migraine headache,0.0
+94,Neurological conditions,Other neurological conditions,1.4
+95,Noncommunicable diseases,Sense organ diseases,0.0
+97,Noncommunicable diseases,Cardiovascular diseases,90.0
+99,Cardiovascular diseases,Rheumatic heart disease,0.3
+100,Cardiovascular diseases,Hypertensive heart disease,2.1
+101,Cardiovascular diseases,Ischaemic heart disease,52.0
+102,Cardiovascular diseases,Stroke,25.2
+103,Cardiovascular diseases,"Cardiomyopathy, myocarditis, endocarditis",3.5
+104,Cardiovascular diseases,Other circulatory diseases,6.9
+105,Noncommunicable diseases,Respiratory diseases,30.8
+107,Respiratory diseases,Chronic obstructive pulmonary disease,20.1
+108,Respiratory diseases,Asthma,0.7
+109,Respiratory diseases,Other respiratory diseases,10.0
+110,Noncommunicable diseases,Digestive diseases,11.8
+112,Digestive diseases,Peptic ulcer disease,0.4
+113,Digestive diseases,Cirrhosis of the liver,2.6
+114,Digestive diseases,Appendicitis,0.0
+115,Digestive diseases,Gastritis and duodenitis,0.1
+116,Digestive diseases,Paralytic ileus and intestinal obstruction,1.0
+117,Digestive diseases,Inflammatory bowel disease,0.1
+118,Digestive diseases,Gallbladder and biliary diseases,0.6
+119,Digestive diseases,Pancreatitis,0.7
+120,Digestive diseases,Other digestive diseases,6.3
+121,Noncommunicable diseases,Genitourinary diseases,10.5
+123,Genitourinary diseases,Kidney diseases,9.4
+124,Genitourinary diseases,Benign prostatic hyperplasia,0.1
+125,Genitourinary diseases,Urolithiasis,0.0
+126,Genitourinary diseases,Other urinary diseases,1.0
+127,Genitourinary diseases,Infertility,0.0
+128,Genitourinary diseases,Gynecological diseases,0.0
+129,Noncommunicable diseases,Skin diseases,0.5
+131,Noncommunicable diseases,Musculoskeletal diseases,0.6
+133,Musculoskeletal diseases,Rheumatoid arthritis,0.1
+134,Musculoskeletal diseases,Osteoarthritis,0.0
+135,Musculoskeletal diseases,Gout,0.0
+136,Musculoskeletal diseases,Back and neck pain,0.0
+137,Musculoskeletal diseases,Other musculoskeletal disorders,0.4
+138,Noncommunicable diseases,Congenital anomalies,3.7
+140,Congenital anomalies,Neural tube defects,0.4
+141,Congenital anomalies,Cleft lip and cleft palate,0.0
+142,Congenital anomalies,Down syndrome,0.2
+143,Congenital anomalies,Congenital heart anomalies,1.6
+144,Congenital anomalies,Other chromosomal anomalies,0.1
+145,Congenital anomalies,Other congenital anomalies,1.5
+146,Noncommunicable diseases,Oral conditions,0.0
+148,Noncommunicable diseases,Sudden infant death syndrome,0.5
+151,Injuries,Unintentional injuries,13.2
+153,Unintentional injuries,Road injury,4.2
+154,Unintentional injuries,Poisonings,0.2
+155,Unintentional injuries,Falls,0.4
+156,Unintentional injuries,"Fire, heat and hot substances",0.5
+157,Unintentional injuries,Drowning,0.9
+158,Unintentional injuries,Exposure to mechanical forces,0.5
+159,Unintentional injuries,Natural disasters,0.0
+160,Unintentional injuries,Other unintentional injuries,6.6
+161,Injuries,Intentional injuries,6.1
+163,Intentional injuries,Self-harm,3.4
+164,Intentional injuries,Interpersonal violence,2.7
