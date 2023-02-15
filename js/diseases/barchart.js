@@ -117,6 +117,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
             .selectAll("text")
                 .attr("transform", "translate(-10,0)rotate(-45)")
                 .style("text-anchor", "end");
+        svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Number of deaths").style("font-size", 12)
 
 
         // Y axis
@@ -126,6 +127,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
             .padding(.1);
         svg.append("g")
             .call(d3.axisLeft(y))
+        svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Diseases").style("font-size", 14)
 
 
         // create a tooltip
@@ -159,7 +161,9 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
                     .duration(200)
                     .style("opacity", 1);
 
-                tooltip.html("<span class='tooltiptext'>" + "Country: " + d.Country + "<br>" + "Year: " + d.Year + "<br>" + "Diseases: " + d.Disease + "<br>" + "Number of deaths: " + (+d.Deaths).toFixed(2)+"</span>")
+                tooltip.html("<span class='tooltiptext'>" + 
+                  d.Disease + "<br>" + 
+                  "Deaths: " + (+d.Deaths).toFixed(2)+"</span>")
                     .style("left", (event.pageX) + "px")
                     .style("top", (event.pageY - 28) + "px");
             })

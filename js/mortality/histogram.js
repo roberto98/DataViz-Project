@@ -1,5 +1,5 @@
 d3.csv("./python/CSV/histogram.csv").then(function (data) {
-    const margin = {top: 60, right: 15, bottom: 75, left: 50},
+    const margin = {top: 60, right: 15, bottom: 75, left: 55},
     width = 1000 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -117,7 +117,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
         svg.append("g")
             .call(d3.axisLeft(y));
         
-        svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Count").style("font-size", 15)
+        svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Number of Countries").style("font-size", 12)
 
 
         //--------------------TOOLTIP--------------------
@@ -137,8 +137,8 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
                 .transition()
                 .duration(200)
                 .style("opacity", 1)
-            tooltip.html("<span class='tooltiptext'>" + "Range: " + d.x0 + " - " + d.x1 + "<br>" 
-                + "Count: " + d.length + "</span>")
+            tooltip.html("<span class='tooltiptext'>" + "Age range: " + d.x0 + " - " + d.x1 + "<br>" 
+                + "Number of countries: " + d.length + "</span>")
             .style("left", (event.pageX) + "px")
             .style("top", (event.pageY - 28) + "px")
 
