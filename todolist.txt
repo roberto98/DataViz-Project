@@ -2,8 +2,10 @@
 
 
 - Timeline ->
-      aggiungere nomi assi
-      aggiungere opzione per selezionare più paesi per volta per confrontarli (tipo Ferrari)
+      cambiare nome asse y (specificare che adult mortslity è numero di morti)
+
+- Histogram ->
+      disattivare tooltip quando è in play
 
 - Scatter economic ->
       dai filtri per scegliere i top 10 paesi, aggiungere opzione crescente e decrescente
@@ -13,8 +15,3 @@
 - Violin ->
       la density è buggata e fissa, non so come riparare
       aggiungere label asse y
-
-- Heatmap ->
-      aggiungere la colorlegend
-      Correlazione la si fa o scegliendo i paesi (in 15 anni) oppure scegliendo l'anno (per ogni paese),
-        se filtro per entrambi avrò una sola riga con 1 solo valore per colonna e non ha senso la correlazione (ritorna nan)
