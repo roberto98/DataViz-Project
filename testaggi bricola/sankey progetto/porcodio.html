@@ -59,10 +59,10 @@ var sankey = d3.sankey()
 
 var path = sankey.link();
 
-// load the data
-d3.csv("argentina_sankey.csv", function(data) {
- 
-  //set up graph in same style as original example but empty
+var selectedCountry = "Argentina"
+d3.csv("global_sankey.csv", function(data) {
+  var data = data.filter(function(d){return d.Zimbabwe==selectedCountry})
+  
   graph = {"nodes" : [], "links" : []};
 
   for (var i = 0; i < data.length; i++) {
