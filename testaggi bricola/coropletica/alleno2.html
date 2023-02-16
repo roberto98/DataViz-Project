@@ -3,12 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<title>D3: Loading GeoJSON data and generating SVG paths</title>
-		<script type="text/javascript" src="../d3.js"></script>
+		<!--<script type="text/javascript" src="../d3.js"></script>-->
+		  <script src="https://d3js.org/d3.v4.min.js"></script>
 		<style type="text/css">
 		</style>
 	</head>
 	<body>
+<select id="selection-x" ></select>
+<select id="selection-y" ></select>
 <svg id="my_dataviz" width="400" height="300"></svg>
+i
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
 <script type="text/javascript">
@@ -27,7 +31,7 @@
 	var formatDecimals = d3.format(".3")
 	var color = d3.scaleQuantize()
 		.range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
-	
+
 	d3.csv("kaggle_dataset.csv",function(data){
 
 		const xItem = ["Adult Mortality", "infant deaths", "Alcohol", "percentage expenditure", "Hepatitis B", "Measles "," BMI ","under-five deaths ","Polio","Total expenditure","Diphtheria "," HIV/AIDS","GDP"," thinness  1-19 years"," thinness 5-9 years","Income composition of resources","Schooling"]
@@ -58,12 +62,14 @@
 				return d;
 		})
 
-		function display(xVal, yVal){
+		function display(xVal, yVal, data){
+	    d3.select("#my_dataviz").selectAll("svg > path").remove();
+			d3.select("#my_dataviz").selectAll("svg > text").remove();
 			var targetCol = xVal;
 			var targetYear = yVal;
-			
-			var data = data.filter(function(d){return d.Year==targetYear})
 
+			var data = data.filter(function(d){return d.Year==targetYear})
+			console.log(data);
 			var allExpectancies = []
 			var allValues = []
 			d3.json("world.json", function(json){
@@ -109,7 +115,7 @@
 					.attr("stroke", "white")
 					.attr("stroke-width", function(d){
 						var font_size = 0.3 * Math.sqrt(path.area(d));
-						return font_size * 0.02;
+						return font_size * 0.01;
 					})
 					.attr("x", function(d){
 						return path.centroid(d)[0] - (0.3 * Math.sqrt(path.area(d)));
@@ -126,22 +132,24 @@
 			})
 		}
 
-	display(" BMI ", "2005")
+	display(" BMI ", "2005", data);
 
 	// When the button is changed, run the updateChart function
 	d3.select("#selection-x").on("change", function(event,d) {
 		// recover the option that has been chosen
-		const selectedOptionX = d3.select(this).property("value")
+		var selectedOptionX = d3.select("#selection-x").property("value");
+		var selectedOptionY = d3.select("#selection-y").property("value");
 		// run the updateChart function with this selected option
-		display(selectedOptionX, d3.select("#selection-y").property("value"))
+		display(selectedOptionX, selectedOptionY, data)
 	})
 
 	// When the button is changed, run the updateChart function
 	d3.select("#selection-y").on("change", function(event,d) {
 		// recover the option that has been chosen
-		const selectedOptionY = d3.select(this).property("value")
+		var selectedOptionX = d3.select("#selection-x").property("value");
+		var selectedOptionY = d3.select("#selection-y").property("value");
 		// run the updateChart function with this selected option
-		display(d3.select("#selection-x").property("value"), selectedOptionY)
+		display(selectedOptionX, selectedOptionY, data)
 	})
 
 	})

@@ -11,7 +11,4 @@
       dai filtri per scegliere i top 10 paesi, aggiungere opzione crescente e decrescente
       rappresentare tutti i paesi senza legenda, e il country lo si vede andando sopra al punto
 
-
-- Violin ->
-      la density è buggata e fissa, non so come riparare
-      aggiungere label asse y
+      Provare a rappresentare su asse x la life Expectancy e sulla y i valori, così i pallini si spostano da sx a dx e non salendo

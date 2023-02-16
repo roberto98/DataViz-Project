@@ -1,6 +1,6 @@
 d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
 
-    const margin = {top: 40, right: 10, bottom: 60, left: 200},
+    const margin = {top: 40, right: 10, bottom: 60, left: 155},
         width = 700 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
@@ -122,6 +122,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
             .padding(.1);
         svg.append("g")
             .call(d3.axisLeft(y))
+            .style("font-size", 9)
         svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Diseases").style("font-size", 14)
 
         // colors
