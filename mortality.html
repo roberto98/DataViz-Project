@@ -46,7 +46,7 @@
             </a>
           </li>
           <li class="nav-item col-3">
-            <a class="nav-link white" href="mortality.html">Mortality</a>
+            <a class="nav-link white" href="mortality.html">General Mortality</a>
           </li>
           <li class="nav-item col-3">
             <a class="nav-link white" href="diseases.html">Disease factors</a>
@@ -61,14 +61,44 @@
 
   <div class="container center mt-5 pt-5">
     <!-- ################################################### MORTALITY  ########################################## -->
-        <h1 class="title">Mortality</h1>
+        <h1 class="title">General Mortality Causes and Life Expectancy</h1>
         <p class="subtitle left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-           molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-           numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+          In this section, we explore the distribution of life expectancy across different countries and the various factors that contribute to it.
+          We use a variety of visualizations, including a histogram, heatmap, timeline, and stacked bar chart, to help you understand
+          the trends and patterns in life expectancy across the world.
         </p>
 
-        <h3 class="title left">Time linechart</h3> <!-- ############################################ LINECHART  ### -->
+        <h3 class="title left">Reaching for the Stars: A Look at Life Expectancy by Country</h3> <!-- ############################################ HISTOGRAM  ### -->
+          <p class="subtitle left">
+            This chart displays a distribution of life expectancies across different countries.
+            It helps to identify the range of values that exist and see how many countries fall into each range.
+          </p>
+
+          <p>Year: <span id="Histogram_yearDisplay"></span></p>
+            <button id="Histogram_yearPlay">Play</button>
+            <input type="range" style="width:50%;" min="2000" max="2015" value="2015" id="Histogram_yearSlider">
+          <br>
+          <div id = "histogram" class="font svg-container"></div>
+
+        <h3 class="title left">The Correlating Factors that Affect Life Expectancy"</h3> <!-- ############################################ HEATMAP  ### -->
+          <p class="subtitle left">
+             This chart displays a correlation matrix of various factors that impact life expectancy.
+             It helps to identify which factors are positively and negatively correlated with life expectancy and how strong the correlations are.
+
+             Correlation is a statistical measure that quantifies the strength of the linear relationship between two variables.
+             It is calculated as the covariance between two variables divided by the product of their standard deviations, hence
+             if all the values in a column are the same, the correlation between that column and any other column is undefined.
+           </p>
+            <select id="heatmapCountry" style="width:50%;"></select>
+            <br>
+            <div id = "heatmap" class="font svg-container"></div>
+
+        <h3 class="title left">From Cradle to Grave: A Look at How Life Expectancy Changes Over Time</h3> <!-- ############################################ LINECHART  ### -->
+          <p class="subtitle left">
+            The timeline chart is like a time machine, taking us on a journey through the history of life expectancy across the world.
+            We can see how life expectancy has improved in different countries over time.
+          </p>
+
           <select id="CountryButton"  class="select2-multiple" multiple="multiple" data-use-select2="true"></select>
           <select id="VariableButton">
             <option value="LifeExpectancy">Life Expectancy</option>
@@ -77,42 +107,19 @@
           <div id = "time_line" class="font svg-container"></div>
 
 
+
+
+        <h3 class="title left">Surviving the Ages: The Ranges of Ages People Live to See</h3> <!-- ############################################ STACKED BAR CHART  ### -->
           <p class="subtitle left">
-            ......... few lines of description ..........
+            This chart displays the age ranges of people who survive in different countries.
+            It helps to identify the distribution of ages that people live to in different parts of the world.
           </p>
 
-        <h3 class="title left">Heatmap</h3> <!-- ############################################ HEATMAP  ### -->
-        <!--
-          <p>Year: <span id="heatmap_yearDisplay"></span></p>
-          <button id="heatmap_yearPlay">Play</button>
-          <input type="range" style="width:50%;" min="2000" max="2015" value="2015" id="heatmap_yearSlider">
-          <br><br> -->
-          <select id="heatmapCountry" style="width:50%;"></select>
-          <br>
-          <div id = "heatmap" class="font svg-container"></div>
-          <p class="subtitle left">
-            If all the values in a column are the same, the correlation between that column and any other column is undefined. Correlation is a statistical measure that quantifies the strength of the linear relationship between two variables. It is calculated as the covariance between two variables divided by the product of their standard deviations.
-
-            When all the values in a column are the same, the variance and standard deviation of that column are equal to 0, and division by 0 is undefined. Hence, the correlation between that column and any other column is undefined in such a scenario.          </p>
-
-        <h3 class="title left">Histogram</h3> <!-- ############################################ HISTOGRAM  ### -->
-          <p>Year: <span id="Histogram_yearDisplay"></span></p>
-            <button id="Histogram_yearPlay">Play</button>
-            <input type="range" style="width:50%;" min="2000" max="2015" value="2015" id="Histogram_yearSlider">
-          <br>
-          <div id = "histogram" class="font svg-container"></div>
-          <p class="subtitle left">
-            ......... few lines of description ..........
-          </p>
-
-        <h3 class="title left">Stacked Bar chart</h3> <!-- ############################################ STACKED BAR CHART  ### -->
-          <p> Select Year:
-            <select id="stackedButtom" style="width:50%;"></select>
-          </p>
+          <p>Year: <span id="stacked_yearDisplay"></span></p>
+          <button id="stacked_yearPlay">Play</button>
+          <input type="range" style="width:50%;" min="0" max="3" value="0" id="stacked_yearSlider">
           <div id = "stacked" class="font svg-container"></div>
-          <p class="subtitle left">
-            ......... few lines of description ..........
-          </p>
+
   </div>
 
 

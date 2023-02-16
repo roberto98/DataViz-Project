@@ -46,7 +46,7 @@
             </a>
           </li>
           <li class="nav-item col-3">
-            <a class="nav-link white" href="mortality.html">Mortality</a>
+            <a class="nav-link white" href="mortality.html">General Mortality</a>
           </li>
           <li class="nav-item col-3">
             <a class="nav-link white" href="diseases.html">Disease factors</a>
@@ -61,36 +61,41 @@
 
   <div class="container center mt-5 pt-5">
     <!-- ################################################### DISEASES  ########################################## -->
-      <h1 class="title">Disease factors</h1>
+      <h1 class="title">Life Expectancy Correlated with Diseases</h1>
       <p class="subtitle left">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-         numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+          In this section, we take a closer look at the impact of different diseases on life expectancy in different countries.
+          We use a horizontal barchart, scatterplot, and sankey alluvial diagram to explore which diseases have the most significant impact on
+          life expectancy, and how they are interconnected across different regions.
       </p>
 
-      <h3 class="title left">Horizontal Barchart</h3> <!-- ############################################ BARCHART  ### -->
+      <h3 class="title left">The Top Ten Most Wanted: Diseases that Take the Biggest Toll on Life Expectancy</h3> <!-- ############################################ BARCHART  ### -->
+        <p class="subtitle left">
+          The horizontal barchart compares the impact of different diseases on life expectancy in different countries.
+          It helps to identify the diseases that have the greatest impact on life expectancy and how they vary by country.
+        </p>
         <p>Year: <span id="barchart_yearDisplay"></span></p>
         <button id="barchart_yearPlay">Play</button>
-        <input type="range" style="width:50%;" min="0" max="2" value="0" id="barchart_yearSlider">
+        <input type="range" style="width:50%;" min="0" max="3" value="0" id="barchart_yearSlider">
         <br>
         <p>Select Country:
           <select id="barchart_bottom" ></select>
         </p>
         <div id="barchart" class="font svg-container"> </div>
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
 
-      <h3 class="title left">Scatterplot</h3> <!-- ############################################ SCATTERPLOT  ### -->
+
+      <h3 class="title left">Life and Death: How Different Diseases Affect Life Expectancy in Different Countries</h3> <!-- ############################################ SCATTERPLOT  ### -->
+        <p class="subtitle left">
+          This chart correlates the incidence rate of various diseases with life expectancy for different countries.
+          It helps to identify the diseases that have the greatest impact on life expectancy and how strongly they are related to one another.
+        </p>
         <div id="scatter1" class="font svg-container"> </div>
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
 
-      <h3 class="title left">Sankey</h3> <!-- ############################################ SANKEY  ### -->
+
+      <h3 class="title left">How Diseases Interact to Impact Life Expectancy?</h3> <!-- ############################################ SANKEY  ### -->
         <div id="sankey" class="font svg-container"> </div>
         <p class="subtitle left">
-          ......... few lines of description ..........
+          This chart shows how different categories of diseases are interconnected and how much they affect life expectancy in different countries.
+          It helps to identify how different diseases interact with one another and how they impact life expectancy.
         </p>
   </div>
 

@@ -46,7 +46,7 @@
             </a>
           </li>
           <li class="nav-item col-3">
-            <a class="nav-link white" href="mortality.html">Mortality</a>
+            <a class="nav-link white" href="mortality.html">General Mortality</a>
           </li>
           <li class="nav-item col-3">
             <a class="nav-link white" href="diseases.html">Disease factors</a>
@@ -61,26 +61,33 @@
 
   <div class="container center mt-5 pt-5">
     <!-- ################################################### ECONOMIC  ########################################## -->
-      <h1 class="title">Economic factors</h1>
+      <h1 class="title">Life Expectancy Correlated with Economic Factors</h1>
       <p class="subtitle left">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-         numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+        In this section, we examine the relationship between wealth, development, and life expectancy in different countries.
+        We use a violin boxplot, scatterplot, and map to explore how economic factors impact life expectancy and identify the countries with the highest life expectancy rates.
       </p>
 
 
-      <h3 class="title left">Violin boxplot</h3> <!-- ############################################ VIOLIN  ### -->
+      <h3 class="title left">The Density of Life Expectancy: Who's Living the Longest</h3> <!-- ############################################ VIOLIN  ### -->
+        <p class="subtitle left">
+          The violin boxplot shows us the density of people reaching a specific life expectancy in developed and developing countries.
+          It's like a financial report card - we can see how wealth and development impact life expectancy.
+        </p>
+
         <p>Year: <span id="Violin_yearDisplay"></span></p>
         <button id="Violin_yearPlay">Play</button>
         <input type="range" style="width:50%;" min="2000" max="2015" value="2015" id="Violin_yearSlider">
         <br>
         <div id="violin" class="font svg-container"> </div>
 
+
+
+      <h3 class="title left">Money Can't Buy You Love, But Does It Buy You More Life?</h3> <!-- ############################################ SCATTER PLOT  ### -->
         <p class="subtitle left">
-          ......... few lines of description ..........
+          The scatterplot, correlated with the GDP, allows you to see how economic factors influence life expectancy in different countries.
+          By hovering over the chart, you can see which countries have the highest GDP and life expectancy.
         </p>
 
-      <h3 class="title left">Scatter plot</h3> <!-- ############################################ SCATTER PLOT  ### -->
         <p>Year: <span id="Scatter2_yearDisplay"></span></p>
         <button id="Scatter2_yearPlay">Play</button>
         <input type="range" style="width:50%;" min="2000" max="2015" value="2015" id="Scatter2_yearSlider">
@@ -93,14 +100,12 @@
         </p>
         <br>
         <div id="scatter2" class="font svg-container"> </div>
-        <p class="subtitle left">
-          ......... few lines of description ..........
-        </p>
 
-      <h3 class="title left">Map</h3> <!-- ############################################ CHOROPLET MAP  ### -->
+
+      <h3 class="title left">Where in the World Can You Live the Longest?</h3> <!-- ############################################ CHOROPLET MAP  ### -->
         <div id="map" class="font svg-container"> </div>
         <p class="subtitle left">
-          ......... few lines of description ..........
+          Finally, we use a map to display which countries have the highest life expectancy.
         </p>
   </div>
 
