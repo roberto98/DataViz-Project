@@ -34,62 +34,6 @@ d3.csv("./python/CSV/country_heatmap.csv").then(data => {
     .append("div")
     .attr("class", "tooltip")
 
-  // -------------------------------------------------------------------------------------------------------------------------------- //
-  // --------------------------------------------------------------- PLAY BUTTON ---------------------------------------------------- //
-  /*
-  function Play(){
-      var playButton = d3.select("#heatmap_yearPlay")
-      var slider = d3.select("#heatmap_yearSlider")
-      var heatmap_yearDisplay = d3.select("#heatmap_yearDisplay")
-
-      var playing = false;
-      var interval;
-      var currentYear = 2000;
-      var currentCountry = "Italy";
-      var years = [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015];
-
-      // I set default values
-      heatmap_yearDisplay.text(currentYear);
-      slider.property("value", currentYear);
-      updateChart(currentYear, currentCountry);
-
-      // When the input of the slider changes, i update
-      slider.on("input", function() {
-        currentYear = this.value;
-        heatmap_yearDisplay.text(currentYear);
-        currentCountry = d3.select("#heatmapCountry").property("value");
-        updateChart(currentYear, currentCountry);
-      });
-
-      // When Play start the animation
-      playButton.on("click", function() {
-        if (!playing) {
-          playing = true;
-          playButton.text("Pause");
-          interval = setInterval(function() {
-            currentYear = +slider.property("value");
-            if (currentYear >= 2015) {
-              currentYear = 2000;
-              slider.property("value", currentYear);
-            } else {
-              currentYear++;
-              slider.property("value", currentYear);
-            }
-            heatmap_yearDisplay.text(currentYear);
-            currentCountry = d3.select("#heatmapCountry").property("value");
-            updateChart(currentYear, currentCountry);
-          }, 500);
-        } else {
-          playing = false;
-          playButton.text("Play");
-          clearInterval(interval);
-        }
-      });
-  }
-
-  window.addEventListener('load',Play());
-
-*/
 selectedCountry = d3.select("#heatmapCountry").property("value");
 updateChart(selectedCountry)
 // -------------------------------------------------------------------------------------------------------------------------------- //

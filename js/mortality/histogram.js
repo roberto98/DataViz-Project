@@ -76,10 +76,6 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
         const filteredData = data.filter(function(d){return d.Year === selectedYear});
         var maxVal = d3.max(data, d => d.LifeExpectancy);
         var minVal = d3.min(data, d => d.LifeExpectancy);
-        //console.log(filteredData);
-
-
-
 
         // --------------------------- X axis ------------------------ //
         // X axis: scale and draw:
@@ -91,8 +87,6 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             .call(d3.axisBottom(x));
         svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Life Expectancy").style("font-size", 15)
 
-
-
         //-------------------------- Histogram---------------------------//
         // set the parameters for the histogram
         var histogram = d3.histogram()
@@ -103,8 +97,6 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
 
         // And apply this function to data to get the bins
         var bins = histogram(filteredData);
-
-        //console.log(histogram)
 
         // ----------------------------- Y axis ------------------------- //
 
@@ -118,7 +110,6 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             .call(d3.axisLeft(y));
 
         svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Number of Countries").style("font-size", 12)
-
 
         //--------------------TOOLTIP--------------------
 
@@ -184,32 +175,6 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             .on("mousemove", moveTooltip )
             .on("mouseleave", hideTooltip )
 
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 })
