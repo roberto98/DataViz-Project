@@ -1,4 +1,5 @@
-d3.csv("./python/CSV/stacked.csv").then(function (data) {
+d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
+    //console.log(data)
     const margin = {top: 60, right: 15, bottom: 75, left: 87},
     width = 1000 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -24,18 +25,18 @@ d3.csv("./python/CSV/stacked.csv").then(function (data) {
         var currentYear = 2000;
         var i = 0;
         const years = ["2000", "2010", "2015", "2019"];
-        console.log(years);
+        //console.log(years);
         // I set default values
         Stacked_yearDisplay.text(currentYear);
         slider.property("value", i);
-        updateChart(currentYear);
+        updateChart(currentYear, playing);
 
         // When the input of the slider changes, i update
         slider.on("input", function() {
         i = this.value;
         currentYear = years[i];
         Stacked_yearDisplay.text(currentYear);
-        updateChart(currentYear);
+        updateChart(currentYear, playing);
       });
 
       // When Play start the animation
@@ -53,14 +54,15 @@ d3.csv("./python/CSV/stacked.csv").then(function (data) {
             } else {
                 i+=1;
                 currentYear=years[i];
-              slider.property("value", i);
+                slider.property("value", i);
             }
             Stacked_yearDisplay.text(currentYear);
-            updateChart(currentYear);
+            updateChart(currentYear, playing);
           }, 750);
         } else {
           playing = false;
           playButton.text("Play");
+          updateChart(currentYear, playing);
           clearInterval(interval);
         }
       });
@@ -71,7 +73,8 @@ d3.csv("./python/CSV/stacked.csv").then(function (data) {
 
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
-  function updateChart(year) {
+  function updateChart(year,playing) {
+      
       d3.select("#stacked").selectAll("svg > g > *").remove();
 
       selectedYear = String(year);
@@ -108,7 +111,7 @@ d3.csv("./python/CSV/stacked.csv").then(function (data) {
                      "85+":   (+d["85+ years"])
                     };
         });
-
+        console.log(newTable)
         var columnNewTable = Object.keys(newTable[0]);
         // Select the columns from the third column to the end
         var rangeColumns = columnNewTable.slice(2);
@@ -136,6 +139,7 @@ d3.csv("./python/CSV/stacked.csv").then(function (data) {
         const color = d3.scaleOrdinal()
         .domain(rangeColumns)
         .range(colors_list);
+
         var stackedData = d3.stack()
             .keys(rangeColumns)
             (newTable)
@@ -143,7 +147,10 @@ d3.csv("./python/CSV/stacked.csv").then(function (data) {
         // ------------------------------- Tooltip ------------------------------ //
         const tooltip = d3.select("#stacked")
             .append("div")
+            .attr("id", "tool")
             .attr("class", "tooltip")
+
+        console.log(stackedData)
 
 
         // ------------------------------- Plot ------------------------------- //
@@ -158,17 +165,17 @@ d3.csv("./python/CSV/stacked.csv").then(function (data) {
             // enter a second time = loop subgroup per subgroup to add all rectangles
             .data(d => d)
             .join("rect")
-            //.attr('x', d => x(d[0]))
-            .attr('x', function(d) { return x(d[0])})
+            .attr('x', d => x(d[0]))
+            //.attr('x', function(d) { return x(d[0])})
             .attr('y', d => y(d.data.Country))
             .attr('height', y.bandwidth())
             .attr('width', d => (x(d[1]) - x(d[0])))
             .attr("stroke", "grey")
             .on("mouseover", function (event, d) { // What happens when user hover a bar
-
-                // what subgroup are we hovering?
+                if(!playing){
+                  // what subgroup are we hovering?
                 var rangeClass = d3.select(this.parentNode).datum().key
-                console.log(rangeClass)
+                //console.log(rangeClass)
                 tooltip.transition()
                     .duration(200)
                     .style("opacity", 1);
@@ -185,16 +192,22 @@ d3.csv("./python/CSV/stacked.csv").then(function (data) {
                 // It is possible to select them since they have a specific class = their name.
                 d3.selectAll(".range" + rangeClass.replaceAll('-', '_').replaceAll('+', ''))
                     .style("opacity", 1)
+
+                }
+
             })
             .on("mouseleave", function () { // When user do not hover anymore
-
-                tooltip.transition()
+                if(!playing){
+                  tooltip.transition()
                     .duration(200)
                     .style("opacity", 0);
 
-                // Back to normal opacity: 1
-                d3.selectAll(".myRect")
-                    .style("opacity", 1)
+                  // Back to normal opacity: 1
+                  d3.selectAll(".myRect")
+                      .style("opacity", 1)
+
+                }
+                
             })
   }
 
