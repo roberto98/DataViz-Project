@@ -45,14 +45,14 @@ function Play(){
     // I set default values
     Map_yearDisplay.text(currentYear);
     slider.property("value", currentYear);
-    updateChart(currentYear, currentVariable, data);
+    updateChart(currentYear, currentVariable, data, playing);
 
     // When the input of the slider changes, i update
     slider.on("input", function() {
       currentYear = this.value;
       Map_yearDisplay.text(currentYear);
       currentVariable = d3.select("#selectdVariableMap").property("value");
-      updateChart(currentYear, currentVariable, data);
+      updateChart(currentYear, currentVariable, data, playing);
     });
 
     // When Play start the animation
@@ -71,7 +71,7 @@ function Play(){
           }
           Map_yearDisplay.text(currentYear);
           currentVariable = d3.select("#selectdVariableMap").property("value");
-          updateChart(currentYear, currentVariable, data);
+          updateChart(currentYear, currentVariable, data, playing);
         }, 500);
       } else {
         playing = false;
@@ -85,7 +85,7 @@ Play();
 
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
-function updateChart(year, variable, data) {
+function updateChart(year, variable, data, playing) {
 
   selectedYear = String(year);
   selectedVariable = String(variable);
@@ -175,6 +175,11 @@ function updateChart(year, variable, data) {
       .style("stroke", "gray")
       .style("stroke-width", 0.3)
       .style("opacity", 0.8)
+      .attr("class", function (d) {
+        var value = d.properties.value;
+        if (!isNaN(value)){ return "Country"; }
+        else { return "Country_" + "no_data"; }
+      })
       .merge(map_path)
       .transition()
       .duration(500)
@@ -228,7 +233,50 @@ function updateChart(year, variable, data) {
     // remove labels that are no longer needed
     lifeLabels.exit().remove();
 
+    //---------------------------------------------------- Tooltip ----------------------------------- //
+    // create a tooltip
+    const tooltip = d3.select("#map")
+        .append("div")
+        .attr("class", "tooltip")
 
+    svg.selectAll(".Country")
+        .on("mousemove", function (event, d) {
+            if(!playing){
+              svg.selectAll(".Country")
+                  .style("opacity", 0.35);
+
+              d3.select(this)
+                  .style("opacity", 1)
+                  .style("stroke", "black")
+                  .style("stroke-width", 1);
+              console.log(d);
+              tooltip.transition()
+                  .duration(200)
+                  .style("opacity", 1);
+              tooltip.html("<span class='tooltiptext'>"
+                + "Country: " + d.properties.name + "<br>"
+                + "Life Expectancy: " + d.properties.lifeExp + "<br>"
+                +  `${selectedVariable}: ` + d.properties.value + "<br>"
+                + "</span>")
+                  .style("left", (event.pageX) + "px")
+                  .style("top", (event.pageY - 28) + "px");
+            }
+
+        })
+        .on("mouseleave", function (event, d) {
+            if(!playing){
+              svg.selectAll(".Country")
+                  .style("opacity", 0.8);
+
+              d3.select(this)
+                  .style("stroke", "gray")
+                  .style("stroke-width", 0.3);
+
+              tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
+            }
+        });
 
       }); // chiude json
 }
@@ -239,7 +287,8 @@ function updateChart(year, variable, data) {
 d3.select("#selectdVariableMap").on("change", function(event,d) {
   selectedYear = d3.select("#map_yearSlider").property("value");
   selectedVariable = d3.select("#selectdVariableMap").property("value");
-  updateChart(selectedYear, selectedVariable, data);
+  playing = false;
+  updateChart(selectedYear, selectedVariable, data, playing);
 })
 
 
