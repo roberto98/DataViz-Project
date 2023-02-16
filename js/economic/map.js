@@ -90,7 +90,7 @@ function updateChart(year, variable, data, playing) {
   selectedYear = String(year);
   selectedVariable = String(variable);
   // ----------------------------------------- Projection -------------------------------- //
-  const projection = d3.geoMercator()
+  const projection = d3.geoNaturalEarth1()
       .scale(180)
       .center([0, 20])
       .translate([width / 2, height / 2]);
