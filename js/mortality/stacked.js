@@ -24,7 +24,7 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
         var interval;
         var currentYear = 2000;
         var i = 0;
-        const years = ["2000", "2010", "2015", "2019"];
+        const years = [2000, 2010, 2015, 2019];
         //console.log(years);
         // I set default values
         Stacked_yearDisplay.text(currentYear);
@@ -74,7 +74,7 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
   function updateChart(year,playing) {
-      
+
       d3.select("#stacked").selectAll("svg > g > *").remove();
 
       selectedYear = String(year);
@@ -207,7 +207,7 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
                       .style("opacity", 1)
 
                 }
-                
+
             })
   }
 

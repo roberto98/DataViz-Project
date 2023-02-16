@@ -123,7 +123,7 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
             var dateString = x.invert(d3.pointer(event)[0])
             var date = new Date(dateString);
             var year = date.getFullYear();
-            
+
             var arr_years = country_data.map(d => d.Year);
             var i = arr_years.indexOf(String(year));
 
@@ -290,7 +290,7 @@ function start_select2_handler() {
     // default selection
     // get animated after lines are drawn in
     setTimeout(function () {
-        $("#CountryButton").val(["Italy", "Zimbabwe", "Canada", "Chad"]);
+        $("#CountryButton").val(["Italy", "Yemen", "Zimbabwe"]);
         $("#CountryButton").trigger("change");
     }, 1000);
 }

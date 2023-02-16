@@ -144,7 +144,7 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
 
               var val = d3.pointer(event)[1]
               //console.log(val);
-              
+
               var arr = filteredDataElement.map(d => y(d.LifeExpectancy));
               //console.log(arr);
 
@@ -161,13 +161,13 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
                 return closestIndex;
               }
 
-              
+
               var closestIndex = findClosest(arr, val);
 
               kde_arr = kde(filteredData.filter(d => d.Status === key).map(d => d.LifeExpectancy));
               kde_index = findClosest(arr, val);
-              console.log(kde_arr);
-              console.log(kde_index);
+              //console.log(kde_arr);
+              //console.log(kde_index);
 
               tooltip.html("<span class='tooltiptext'>" +
                 "Year: " + filteredDataElement[closestIndex].Year + "<br>" +
@@ -176,12 +176,22 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
                 "KDE: " +  kde_arr[kde_index] + "</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY) + "px");
+
+
+                d3.selectAll("path")
+                    .style("opacity", 0.4);
+                d3.select(this)
+                  .style("opacity", 1);
             })
 
             .on("mouseout", function () {
               tooltip.transition()
                   .duration(200)
                   .style("opacity", 0);
+
+              // Back to normal opacity: 1
+              d3.selectAll("path")
+                  .style("opacity", 1);
             });
 
   }

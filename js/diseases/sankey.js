@@ -155,11 +155,10 @@ d3.sankey = function() {
   }
 
   function computeNodeDepths(iterations) {
-    var nodesByBreadth = d3.nest()
-        .key(function(d) { return d.x; })
-        .sortKeys(d3.ascending)
-        .entries(nodes)
-        .map(function(d) { return d.values; });
+    var nodesByBreadth = Array.from(
+      d3.rollup(nodes, v => v, d => d.x)
+    ).sort((a, b) => d3.ascending(a[0], b[0]))
+      .map(d => d[1]);
 
     //
     initializeNodeDepth();
@@ -173,7 +172,7 @@ d3.sankey = function() {
 
     function initializeNodeDepth() {
       var ky = d3.min(nodesByBreadth, function(nodes) {
-        return (size[1] - (nodes.length - 1) * nodePadding) / d3.sum(nodes, value);
+        return (size[1] - (nodes.length - 1) * nodePadding) / d3.sum(nodes, d => d.value);
       });
 
       nodesByBreadth.forEach(function(nodes) {
@@ -192,7 +191,7 @@ d3.sankey = function() {
       nodesByBreadth.forEach(function(nodes, breadth) {
         nodes.forEach(function(node) {
           if (node.targetLinks.length) {
-            var y = d3.sum(node.targetLinks, weightedSource) / d3.sum(node.targetLinks, value);
+            var y = d3.sum(node.targetLinks, weightedSource) / d3.sum(node.targetLinks, d => d.value);
             node.y += (y - center(node)) * alpha;
           }
         });
@@ -207,7 +206,7 @@ d3.sankey = function() {
       nodesByBreadth.slice().reverse().forEach(function(nodes) {
         nodes.forEach(function(node) {
           if (node.sourceLinks.length) {
-            var y = d3.sum(node.sourceLinks, weightedTarget) / d3.sum(node.sourceLinks, value);
+            var y = d3.sum(node.sourceLinks, weightedTarget) / d3.sum(node.sourceLinks, d => d.value);
             node.y += (y - center(node)) * alpha;
           }
         });

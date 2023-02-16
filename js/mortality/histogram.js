@@ -39,7 +39,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
         playButton.on("click", function() {
         if (!playing) {
             playing = true;
-            
+
             playButton.text("Pause");
             interval = setInterval(function() {
             currentYear = +slider.property("value");
@@ -59,7 +59,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             clearInterval(interval);
         }
         });
-    }   
+    }
 
     Play();
 
@@ -69,7 +69,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
 
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
-    
+
     function updateChart(year) {
         d3.select("#histogram").selectAll("svg > g > *").remove();
         selectedYear = String(year);
@@ -77,10 +77,10 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
         var maxVal = d3.max(data, d => d.LifeExpectancy);
         var minVal = d3.min(data, d => d.LifeExpectancy);
         //console.log(filteredData);
-        
-       
 
-        
+
+
+
         // --------------------------- X axis ------------------------ //
         // X axis: scale and draw:
         var x = d3.scaleLinear()
@@ -91,8 +91,8 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             .call(d3.axisBottom(x));
         svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Life Expectancy").style("font-size", 15)
 
-        
-        
+
+
         //-------------------------- Histogram---------------------------//
         // set the parameters for the histogram
         var histogram = d3.histogram()
@@ -113,10 +113,10 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             .range([height, 0]);
         //var maxbin = d3.max(bins, function(d) { return d.length; })
         y.domain([0, 40]);   // d3.hist has to be called before the Y axis obviously
-        
+
         svg.append("g")
             .call(d3.axisLeft(y));
-        
+
         svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Number of Countries").style("font-size", 12)
 
 
@@ -131,27 +131,36 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             .style("border-radius", "5px")
             .style("padding", "10px")
 
-        
+
         var showTooltip = function(event, d) {
+
             tooltip
                 .transition()
                 .duration(200)
                 .style("opacity", 1)
-            tooltip.html("<span class='tooltiptext'>" + "Age range: " + d.x0 + " - " + d.x1 + "<br>" 
+            tooltip.html("<span class='tooltiptext'>" + "Age range: " + d.x0 + " - " + d.x1 + "<br>"
                 + "Number of countries: " + d.length + "</span>")
             .style("left", (event.pageX) + "px")
             .style("top", (event.pageY - 28) + "px")
 
+            d3.selectAll("rect")
+                .style("opacity", 0.4)
+
             d3.select(this)
               .style("stroke", "black")
+              .style("opacity", 1)
         }
-        
+
         var hideTooltip = function(event) {
             tooltip.transition()
                 .duration(2)
                 .style("opacity", 0);
             d3.select(this)
               .style("stroke", "none")
+
+            // Back to normal opacity: 1
+            d3.selectAll("rect")
+                .style("opacity", 1)
         }
 
         var moveTooltip = function(event) {
@@ -169,15 +178,15 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; })
             .attr("width", function(d) { return x(d.x1) - x(d.x0) -1 ; })
             .attr("height", function(d) { return height - y(d.length); })
-            .style("fill", "#69b3a2")
+            .style("fill", "#FF595E")
             // Show tooltip on hover
             .on("mouseover", showTooltip )
             .on("mousemove", moveTooltip )
             .on("mouseleave", hideTooltip )
-        
 
-       
-        
+
+
+
     }
 
 

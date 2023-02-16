@@ -1,6 +1,6 @@
 d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
 
-    const margin = {top: 40, right: 10, bottom: 50, left: 200},
+    const margin = {top: 40, right: 10, bottom: 60, left: 200},
         width = 700 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
@@ -63,7 +63,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
           interval = setInterval(function() {
             i = +slider.property("value");
             currentYear = years[i];
-            if (currentYear >= 2015) {
+            if (currentYear >= 2019) {
               i = 0
               currentYear = 2000;
               slider.property("value", i);
@@ -75,7 +75,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
             barchart_yearDisplay.text(currentYear);
             currentCountry = d3.select("#barchart_bottom").property("value");
             updateChart(currentYear, currentCountry);
-          }, 750);
+          }, 1000);
         } else {
           playing = false;
           playButton.text("Play");
@@ -113,7 +113,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
             .selectAll("text")
                 .attr("transform", "translate(-10,0)rotate(-45)")
                 .style("text-anchor", "end");
-        svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Number of deaths").style("font-size", 12)
+        svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Number of deaths per 100 000 population").style("font-size", 12)
 
         // Y axis
         const y = d3.scaleBand()
@@ -144,12 +144,16 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
             .attr("y", d => y(d.Disease))
             .attr("height", y.bandwidth())
             .attr("fill", d => colorScale(d.Disease))
-            .style("opacity", 0.8)
+            .style("opacity", 1)
             .attr("width", x(0)) // always equal to 0
             .attr("x", x(0))
             .on("mouseover", function (event, d) {
 
                 var diseasesClass = d3.select(this).attr("class").split(" ")[1]
+
+                // Reduce opacity of all rect to 0.2
+                d3.selectAll(".myRect")
+                    .style("opacity", 0.4)
 
                 // Highlight all rects of this subgroup with opacity 1.
                 // It is possible to select them since they have a specific class = their name.
@@ -162,7 +166,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
 
                 tooltip.html("<span class='tooltiptext'>" +
                   d.Disease + "<br>" +
-                  "Deaths: " + (+d.Deaths).toFixed(2)+"</span>")
+                  (+d.Deaths).toFixed(2)+ " deaths per 100 000 population" + "</span>")
                     .style("left", (event.pageX) + "px")
                     .style("top", (event.pageY - 28) + "px");
             })
@@ -174,8 +178,11 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
                     .duration(200)
                     .style("opacity", 0);
 
+                // Back to normal opacity: 1
+                d3.selectAll(".myRect")
+                    .style("opacity", 1)
                 d3.selectAll("." + diseasesClass.replaceAll(' ', '_'))
-                    .style("opacity", 0.8)
+                    .style("opacity", 1)
             });
 
         // Animation
@@ -187,6 +194,8 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
             .delay((d, i) => {
                 return i * 10
             })
+
+
     }
 
     d3.select("#barchart_bottom").on("change", function(event,d) {
