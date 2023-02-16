@@ -17,33 +17,35 @@
 		width = +svg.attr("width"),
 		height = +svg.attr("height");
 
-	var projection = d3.geoMercator()
+	var projection = d3.geoLaskowski()
 		.scale(70)
 		.center([0,20])
 		.translate([width / 2, height / 2]);
 
+	var path = d3.geoPath().projection(projection);
+
+	var formatDecimals = d3.format(".3")
 	var color = d3.scaleQuantize()
 		.range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
 	
 	d3.csv("kaggle_dataset.csv",function(data){
 		var targetYear = "2015";
-		var targetCol = "Alcohol";
+		var targetCol = " BMI ";
 		var data = data.filter(function(d){return d.Year==targetYear})
-		console.log(data);
 
-
+		var allExpectancies = []
 		var allValues = []
 		d3.json("world.json", function(json){
 			for (var i = 0; i < data.length; i++) {
 				var dataCountry = data[i].Country;
-				console.log(data[i][targetCol])
 				var dataValue = parseFloat(data[i][targetCol]);
-
+				var dataLifeExp = parseFloat(data[i]["Life expectancy "]);
 				for (var j = 0; j < json.features.length; j++) {
 					var jsonCountry = json.features[j].properties.name;
 					if (dataCountry == jsonCountry) {
-						console.log(dataValue)
 						json.features[j].properties.value = dataValue;
+						json.features[j].properties.lifeExp = dataLifeExp;
+						allExpectancies.push(dataLifeExp);
 						allValues.push(dataValue);
 						break;
 					}
@@ -51,18 +53,45 @@
 			}
 			color.domain([d3.min(allValues), d3.max(allValues)]);
 
+			// ---------- DISEGNA MAPPA ------- //
 			svg.selectAll("path")
 				.data(json.features)
 				.enter()
 				.append("path")
-				.attr("d", d3.geoPath().projection(projection))
+				.attr("d", path)
 				.style("fill", function(d){
 					var value = d.properties.value;
 					if (value)
 						return color(value);
 					else
 						return "#ccc";
+				});
+			svg.selectAll("text")
+				.data(json.features)
+				.enter()
+				.append("text")
+				.attr("font-family", "Arial")
+				.attr("font-size", function(d){
+					return 0.3 * Math.sqrt(path.area(d));
 				})
+				.attr("fill", "black")
+				.attr("stroke", "white")
+				.attr("stroke-width", function(d){
+					var font_size = 0.3 * Math.sqrt(path.area(d));
+					return font_size * 0.02;
+				})
+				.attr("x", function(d){
+					return path.centroid(d)[0] - (0.3 * Math.sqrt(path.area(d)));
+				})
+				.attr("y", function(d){
+					return path.centroid(d)[1] + (0.3 * Math.sqrt(path.area(d))/2);
+				})
+				.text(function(d){
+					if (d.properties.lifeExp){
+						return formatDecimals(d.properties.lifeExp);
+					}
+				})
+
 
 		})
 	})
