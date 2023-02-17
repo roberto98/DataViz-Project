@@ -1,7 +1,7 @@
 
 d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
-  const margin = {top: 40, right: 190, bottom: 50, left: 35},
+  const margin = {top: 40, right: 190, bottom: 60, left: 35},
       width = 700 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
@@ -21,7 +21,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
       const allVariables = ["GDP","%Expenditure"]
       const countriesFilters = ["Population", "GDP", "%Expenditure"]
 
-      // Variables y-axis
+      // Variables
       d3.select("#scatter2Variable")
         .selectAll('myOptions')
         .data(allVariables)
@@ -56,12 +56,13 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
       var currentYear = 2000;
       var currentVariable = "GDP"
       var currentCountriesFilter = "Population"
+      var currentSort = "Desc";
       var years = [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015];
 
       // I set default values
       Scatter2_yearDisplay.text(currentYear);
       slider.property("value", currentYear);
-      updateChart(currentYear, currentVariable, currentCountriesFilter);
+      updateChart(currentYear, currentVariable, currentCountriesFilter, currentSort, playing);
 
       // When the input of the slider changes, i update
       slider.on("input", function() {
@@ -69,7 +70,8 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
         Scatter2_yearDisplay.text(currentYear);
         currentVariable = d3.select("#scatter2Variable").property("value");
         currentCountriesFilter = d3.select("#scatter2Countries").property("value");
-        updateChart(currentYear, currentVariable, currentCountriesFilter);
+        currentSort = d3.select("#scatter2Sort").property("value");
+        updateChart(currentYear, currentVariable, currentCountriesFilter, currentSort, playing);
       });
 
       // When Play start the animation
@@ -89,7 +91,8 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
             Scatter2_yearDisplay.text(currentYear);
             currentVariable = d3.select("#scatter2Variable").property("value");
             currentCountriesFilter = d3.select("#scatter2Countries").property("value");
-            updateChart(currentYear, currentVariable, currentCountriesFilter);
+            currentSort = d3.select("#scatter2Sort").property("value");
+            updateChart(currentYear, currentVariable, currentCountriesFilter, currentSort, playing);
           }, 500);
         } else {
           playing = false;
@@ -104,18 +107,44 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
   // -------------------------------------------------------------------------------------------------------------------------------- //
   // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
-  function updateChart(year, variable, countries) {
+  function updateChart(year, variable, countries, sort, playing) {
     d3.select("#scatter2").selectAll("svg > g > *").remove();
+    sort = String(sort);
+    yVal = String(variable);
+    xVal = "LifeExpectancy";
+
     selectedYear = String(year);
-    xVal = String(variable);
-    yVal = "LifeExpectancy";
     CountriesFilter = String(countries);
 
-    var filteredData = data.filter(function(d){return d.Year === selectedYear});
+    const selectedCountries = data.sort((a, b) => {
+        if (sort === 'Asc') {
+            return a[CountriesFilter] - b[CountriesFilter];
+        } else if (sort === 'Desc') {
+            return b[CountriesFilter] - a[CountriesFilter];
+        } else {
+            // Default to ascending order if sort is not set or has an invalid value
+            return a[CountriesFilter] - b[CountriesFilter];
+        }
+    })
+    .reduce((unique, item) => {
+        if (!unique.some(d => d.Country === item.Country)) {
+            unique.push(item);
+        }
+        return unique;
+    }, [])
+    .slice(0, 20)
+    .map(d => d.Country);
 
+
+    var filteredData = data.filter(function(d){
+        return selectedCountries.includes(d.Country) && d.Year === selectedYear;
+    });
     // --------------------------- X axis ------------------------ //
-    x = d3.scaleLinear()
-        .domain(d3.extent(data, function(d) {return +d[xVal]}))
+    var min_max_x = d3.extent(data, function(d) {return +d[xVal]});
+    var min_max_y = d3.extent(data, function(d) {return +d[yVal]});
+
+    var x = d3.scaleLinear()
+        .domain([min_max_x[0], min_max_x[1]+10])
         .range([0, width]);
     svg.append("g")
         .attr("transform", "translate(0," + height + ")")
@@ -124,14 +153,14 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
     // Add X axis label:
     svg.append("text")
         .attr("text-anchor", "end")
-        .attr("x", width - margin.right)
+        .attr("x", width)
         .attr("y", height + 50)
         .text(xVal)
         .style("font-size", 10)
 
     // ----------------------------- Y axis ------------------------- //
-    y = d3.scaleLinear()
-        .domain(d3.extent(data, function(d) {return +d[yVal]}))
+    var y = d3.scaleLinear()
+        .domain([min_max_y[0], min_max_y[1]*1.1])
         .range([height, 0]);
     svg.append("g")
         .call(d3.axisLeft(y).tickFormat(d3.format(".2s")));
@@ -154,24 +183,9 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
         .attr("x", 0)
         .attr("y", 0);
 
-    //const allCountries = new Set(data.map(d => d.Country))
-    // Color scale: give me a specie name, I return a color
-
-    const allCountries = data.sort((a, b) => b[CountriesFilter] - a[CountriesFilter])
-                            .reduce((unique, item) => {
-                                if (!unique.some(d => d.Country === item.Country)) {
-                                    unique.push(item);
-                                }
-                                return unique;
-                            }, [])
-                            .slice(0, 20)
-                            .map(d => d.Country);
-
-    filteredData = filteredData.filter(d => allCountries.includes(d.Country));
-
     const colors = ["#FF595E", "#FF924C", "#FFCA3A", "#C5CA30", "#8AC926", "#36949D", "#1982C4", "#4267AC", "#565AA0", "#6A4C93"];
     const color = d3.scaleOrdinal()
-        .domain(allCountries)
+        .domain(selectedCountries)
         .range(colors);
 
     // Create the scatter variable: where both the circles and the brush take place
@@ -199,33 +213,6 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
             .style("opacity", 1)
     }
 
-    // A function that change this tooltip when the user hover a point.
-    // Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
-    const showTooltip = function (event, d) {
-        tooltip.transition()
-            .duration(200)
-            .style("opacity", 1);
-
-        tooltip.html("<span class='tooltiptext'>" + "Year: "+ d.Year + "<br>"
-                                                  + "Country: " + d.Country + "<br>"
-                                                  + "Life Expectancy: " + d.LifeExpectancy + "<br>"
-                                                  + `${xVal}: ` + d[xVal]  +"</span>")
-            .style("left", (event.pageX) + "px")
-            .style("top", (event.pageY - 28) + "px");
-    }
-    const moveTooltip = function (event, d) {
-        tooltip
-            .style("left", (event.pageX) + "px")
-            .style("top", (event.pageY - 28) + "px")
-    }
-    // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
-    const hideTooltip = function () {
-        tooltip
-            .transition()
-            .duration(100)
-            .style("opacity", 0)
-    }
-
     // --------------------------------- Plot ---------------------------- //
     // Add circles
     scatter.append("g")
@@ -247,9 +234,35 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
             return color(d.Country.replaceAll(' ', '_'))
         })
         // Show tooltip on hover
-        .on("mouseover", showTooltip)
-        .on("mousemove", moveTooltip)
-        .on("mouseleave", hideTooltip)
+        .on("mouseover", function (event, d){
+          if(!playing){
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+
+            tooltip.html("<span class='tooltiptext'>" + "Year: "+ d.Year + "<br>"
+                                                      + "Country: " + d.Country + "<br>"
+                                                      + `${xVal}: ` + d[xVal] + "<br>"
+                                                      + `${yVal}: ` + d[yVal]  +"</span>")
+                .style("left", (event.pageX) + "px")
+                .style("top", (event.pageY - 28) + "px");
+          }
+        })
+        .on("mousemove", function (event, d){
+          if(!playing){
+            tooltip
+                .style("left", (event.pageX) + "px")
+                .style("top", (event.pageY - 28) + "px");
+          }
+        })
+        .on("mouseleave", function (event, d){
+          if(!playing){
+            tooltip
+                .transition()
+                .duration(100)
+                .style("opacity", 0)
+          }
+        })
 
 
     // animation circles ?
@@ -282,7 +295,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
     // Add one dot in the legend for each name.
     legendContainer.selectAll("myrect")
-      .data(allCountries)
+      .data(selectedCountries)
       .join("circle")
       .attr("cx", size * 0.6)
       .attr("cy", (d, i) => i * (size + 5))
@@ -293,7 +306,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
     // Add labels beside legend dots
     legendContainer.selectAll("mylabels")
-      .data(allCountries)
+      .data(selectedCountries)
       .enter()
       .append("text")
       .attr("x", size * 1.2)
@@ -316,14 +329,39 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
     selectedYear = d3.select("#Scatter2_yearSlider").property("value");
     selectedVariable = d3.select("#scatter2Variable").property("value");
     selectedCountriesFilter = d3.select("#scatter2Countries").property("value");
-    updateChart(selectedYear, selectedVariable, selectedCountriesFilter);
+    selectedSort = d3.select("#scatter2Sort").property("value");
+
+    var playing = false;
+    play_button = d3.select("#Scatter2_yearPlay").text();
+    if(play_button === "Pause") {playing = true;}
+
+    updateChart(selectedYear, selectedVariable, selectedCountriesFilter, selectedSort, playing);
   })
 
   d3.select("#scatter2Countries").on("change", function(event,d) {
     selectedYear = d3.select("#Scatter2_yearSlider").property("value");
     selectedVariable = d3.select("#scatter2Variable").property("value");
     selectedCountriesFilter = d3.select("#scatter2Countries").property("value");
-    updateChart(selectedYear, selectedVariable, selectedCountriesFilter);
+    selectedSort = d3.select("#scatter2Sort").property("value");
+
+    var playing = false;
+    play_button = d3.select("#Scatter2_yearPlay").text();
+    if(play_button === "Pause") {playing = true;}
+
+    updateChart(selectedYear, selectedVariable, selectedCountriesFilter, selectedSort, playing);
+  })
+
+  d3.select("#scatter2Sort").on("change", function(event,d) {
+    selectedYear = d3.select("#Scatter2_yearSlider").property("value");
+    selectedVariable = d3.select("#scatter2Variable").property("value");
+    selectedCountriesFilter = d3.select("#scatter2Countries").property("value");
+    selectedSort = d3.select("#scatter2Sort").property("value");
+
+    var playing = false;
+    play_button = d3.select("#Scatter2_yearPlay").text();
+    if(play_button === "Pause") {playing = true;}
+
+    updateChart(selectedYear, selectedVariable, selectedCountriesFilter, selectedSort, playing);
   })
 
 });

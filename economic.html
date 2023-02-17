@@ -92,11 +92,14 @@
         <button id="Scatter2_yearPlay">Play</button>
         <input type="range" style="width:50%;" min="2000" max="2015" value="2015" id="Scatter2_yearSlider">
         <br>
-        <p> Select the Variables you want to visualize on y-axis:
+        <p> Variable:
             <select id="scatter2Variable" ></select>
-            <br>
-            and in which way you to filters the top 10 countries:
+            Top 20 countries by:
             <select id="scatter2Countries" ></select>
+            <select id="scatter2Sort">
+              <option value="Desc">Desc</option>
+              <option value="Asc">Asc</option>
+            </select>
         </p>
         <br>
         <div id="scatter2" class="font svg-container"> </div>
