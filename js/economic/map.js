@@ -1,7 +1,7 @@
 
 d3.csv("./python/data/kaggle_dataset.csv").then(function (data) {
 
-  const margin = {top: 10, right: 10, bottom: 10, left: 10},
+  const margin = {top: 10, right: 140, bottom: 10, left: 10},
       width = 1200 - margin.left - margin.right,
       height = 800 - margin.top - margin.bottom;
 
@@ -100,9 +100,8 @@ function updateChart(year, variable, data, playing) {
   // ----------------------------------------- Colors ------------------------------------//
 	var formatDecimals = d3.format(".3")
 
-  color_arr = d3.schemeGreens[6].slice(1);
   var color = d3.scaleQuantize()
-      .range([color_arr[0], color_arr[color_arr.length-1]]);
+      .range(d3.schemeGreens[5]);
 
   var data = data.filter(function(d){return d.Year === selectedYear})
 
@@ -230,7 +229,7 @@ function updateChart(year, variable, data, playing) {
                   .style("opacity", 1);
               tooltip.html("<span class='tooltiptext'>"
                 + "Country: " + d.properties.name + "<br>"
-                + "Life Expectancy: " + d.properties.lifeExp + "<br>"
+                + "Life Expectancy: " + d.properties.lifeExp + " years <br>"
                 +  `${selectedVariable}: ` + d.properties.value + "<br>"
                 + "</span>")
                   .style("left", (event.pageX) + "px")
@@ -258,10 +257,9 @@ function updateChart(year, variable, data, playing) {
       var legend = d3.legendColor()
           .scale(color)
           .ascending(true)
-          .shapeHeight(15)
+          .shapeHeight(35)
           .shapeWidth(15)
           .title("Color values:")
-          .useClass(true)
           .labels(function ({ // custom function that changes how each label is printed, allows us to have printing
               i,              // like for thresholded scales, which are not implemented for quantized ones
               genLength,
@@ -280,13 +278,12 @@ function updateChart(year, variable, data, playing) {
 
           // adding the legend, if already present we need to remove the previous one first
           var l = svg.select("#legend")
-
           if (!l.empty()) {
               l.remove()
           }
 
           svg.append("g")
-              .attr("transform", `translate(${width * 0.9}, 120)`)
+              .attr("transform", `translate(${width}, 110)`)
               .attr("id", "legend")
               .call(legend);
       }); // chiude json
