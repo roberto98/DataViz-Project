@@ -1,9 +1,9 @@
 
 d3.csv("./python/data/kaggle_dataset.csv").then(function (data) {
 
-  const margin = {top: 25, right: 15, bottom: 0, left: 15},
-      width = 1280 - margin.left - margin.right,
-      height = 900 - margin.top - margin.bottom;
+  const margin = {top: 10, right: 10, bottom: 10, left: 10},
+      width = 1200 - margin.left - margin.right,
+      height = 800 - margin.top - margin.bottom;
 
   // append the svg object to the body of the page
   const svg = d3.select("#map")
@@ -91,7 +91,7 @@ function updateChart(year, variable, data, playing) {
   selectedVariable = String(variable);
   // ----------------------------------------- Projection -------------------------------- //
   const projection = d3.geoNaturalEarth1()
-      .scale(180)
+      .scale(250)
       .center([0, 20])
       .translate([width / 2, height / 2]);
 
@@ -127,31 +127,6 @@ function updateChart(year, variable, data, playing) {
 
     //color.domain([d3.min(allValues), d3.max(allValues)]);
     color.domain([0, d3.max(allValues) * 0.85]);
-    // --------------------------------------------- Legend -------------------------------- //
-    // Add a legend, requires Susie Lu's d3-legend script
-    /*
-    var legend = d3.legendColor()
-        .scale(colorScaleStr)
-        .ascending(true)
-        .shapeHeight(15)
-        .shapeWidth(15)
-        .title(variable_type == "cases" ? "New cases per million inhabitants" : "Vaccination %")
-        .useClass(true)
-        .labels(function ({ // custom function that changes how each label is printed, allows us to have printing
-            i,              // like for thresholded scales, which are not implemented for quantized ones
-            genLength,
-            generatedLabels,
-            labelDelimiter
-        }) {
-            if (i === 0) {
-                const values = generatedLabels[i].split(" to ");
-                return `Less than ${values[1]}`;
-            } else if (i === genLength - 1) {
-                const values = generatedLabels[i].split(" to ");
-                return `${values[0]} or more`;
-            }
-            return generatedLabels[i];
-        }); */
 
     // ----------------------------------------- Plot the map --------------------------- //
     const no_data_color = "#888888";
@@ -249,7 +224,7 @@ function updateChart(year, variable, data, playing) {
                   .style("opacity", 1)
                   .style("stroke", "black")
                   .style("stroke-width", 1);
-              console.log(d);
+
               tooltip.transition()
                   .duration(200)
                   .style("opacity", 1);
@@ -261,7 +236,6 @@ function updateChart(year, variable, data, playing) {
                   .style("left", (event.pageX) + "px")
                   .style("top", (event.pageY - 28) + "px");
             }
-
         })
         .on("mouseleave", function (event, d) {
             if(!playing){
@@ -278,6 +252,43 @@ function updateChart(year, variable, data, playing) {
             }
         });
 
+      // --------------------------------------------- Legend -------------------------------- //
+      // Add a legend, requires Susie Lu's d3-legend script
+
+      var legend = d3.legendColor()
+          .scale(color)
+          .ascending(true)
+          .shapeHeight(15)
+          .shapeWidth(15)
+          .title("Color values:")
+          .useClass(true)
+          .labels(function ({ // custom function that changes how each label is printed, allows us to have printing
+              i,              // like for thresholded scales, which are not implemented for quantized ones
+              genLength,
+              generatedLabels,
+              labelDelimiter
+          }) {
+              if (i === 0) {
+                  const values = generatedLabels[i].split(" to ");
+                  return `Less than ${values[1]}`;
+              } else if (i === genLength - 1) {
+                  const values = generatedLabels[i].split(" to ");
+                  return `${values[0]} or more`;
+              }
+              return generatedLabels[i];
+          });
+
+          // adding the legend, if already present we need to remove the previous one first
+          var l = svg.select("#legend")
+
+          if (!l.empty()) {
+              l.remove()
+          }
+
+          svg.append("g")
+              .attr("transform", `translate(${width * 0.9}, 120)`)
+              .attr("id", "legend")
+              .call(legend);
       }); // chiude json
 }
 

@@ -105,16 +105,14 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
             return {"Country": d.Country,
                     "Year": d.Year,
                     "0-14":  (+d["<1 year"]) +     (+d["1-4 years"]) +   (+d["5-9 years"]) +   (+d["10-14 years"]),
-                     "15-34": (+d["15-19 years"]) + (+d["20-24 years"]) + (+d["25-30 years"]) + (+d["30-34 years"]),
+                     "15-34": (+d["15-19  years"]) + (+d["20-24 years"]) + (+d["25-29 years"]) + (+d["30-34 years"]),
                      "35-60": (+d["35-39 years"]) + (+d["40-44 years"]) + (+d["45-49 years"]) + (+d["50-54 years"]) + (+d["55-59 years"]),
                      "61-84": (+d["60-64 years"]) + (+d["65-69 years"]) + (+d["70-74 years"]) + (+d["75-79 years"]) + (+d["80-84 years"]),
                      "85+":   (+d["85+ years"])
                     };
         });
-        console.log(newTable)
-        var columnNewTable = Object.keys(newTable[0]);
-        // Select the columns from the third column to the end
-        var rangeColumns = columnNewTable.slice(2);
+
+        var rangeColumns = Object.keys(newTable[0]).filter(d => d !== "Country" && d !== "Year");
 
          // ---------------------------- Axis x -------------------------- //
         const x = d3.scaleLinear()
@@ -140,6 +138,24 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
         .domain(rangeColumns)
         .range(colors_list);
 
+        // Normalize the data -> sum of each group must be 100!
+        newTable.forEach(function (d) {
+            // Compute the total
+            tot = 0
+            for (i in newTable) {
+                name = newTable[i];
+                console.log("d",name);
+
+                tot += +d[name]
+            }
+
+            // Now normalize
+            for (i in newTable) {
+                name = newTable[i];
+                d[name] = d[name] / tot * 100
+            }
+        })
+
         var stackedData = d3.stack()
             .keys(rangeColumns)
             (newTable)
@@ -149,9 +165,6 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
             .append("div")
             .attr("id", "tool")
             .attr("class", "tooltip")
-
-        console.log(stackedData)
-
 
         // ------------------------------- Plot ------------------------------- //
         svg.append("g")

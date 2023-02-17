@@ -1538,87 +1538,87 @@ Bhutan,Schooling,TotalExpenditure,-0.5755214734739573
 Bhutan,Schooling,GDP,0.6111278054717949
 Bhutan,Schooling,Population,0.439831169753314
 Bhutan,Schooling,Schooling,1.0
-Bolivia (Plurinational State of),LifeExpectancy,LifeExpectancy,1.0
-Bolivia (Plurinational State of),LifeExpectancy,AdultMortality,-0.12583102324422624
-Bolivia (Plurinational State of),LifeExpectancy,InfantDeaths,-0.8898611204415974
-Bolivia (Plurinational State of),LifeExpectancy,BodyMassIndex,0.1269178883575923
-Bolivia (Plurinational State of),LifeExpectancy,DeathsUnder5,-0.8974114922460605
-Bolivia (Plurinational State of),LifeExpectancy,TotalExpenditure,0.17012355511964092
-Bolivia (Plurinational State of),LifeExpectancy,GDP,nan
-Bolivia (Plurinational State of),LifeExpectancy,Population,nan
-Bolivia (Plurinational State of),LifeExpectancy,Schooling,-0.21123674072382534
-Bolivia (Plurinational State of),AdultMortality,LifeExpectancy,-0.12583102324422624
-Bolivia (Plurinational State of),AdultMortality,AdultMortality,1.0
-Bolivia (Plurinational State of),AdultMortality,InfantDeaths,0.2261249348891483
-Bolivia (Plurinational State of),AdultMortality,BodyMassIndex,-0.11537350465961606
-Bolivia (Plurinational State of),AdultMortality,DeathsUnder5,0.2571995118515303
-Bolivia (Plurinational State of),AdultMortality,TotalExpenditure,0.15094550232156917
-Bolivia (Plurinational State of),AdultMortality,GDP,nan
-Bolivia (Plurinational State of),AdultMortality,Population,nan
-Bolivia (Plurinational State of),AdultMortality,Schooling,-0.04078552586000637
-Bolivia (Plurinational State of),InfantDeaths,LifeExpectancy,-0.8898611204415974
-Bolivia (Plurinational State of),InfantDeaths,AdultMortality,0.2261249348891483
-Bolivia (Plurinational State of),InfantDeaths,InfantDeaths,1.0
-Bolivia (Plurinational State of),InfantDeaths,BodyMassIndex,0.03465044632625726
-Bolivia (Plurinational State of),InfantDeaths,DeathsUnder5,0.9899494936611666
-Bolivia (Plurinational State of),InfantDeaths,TotalExpenditure,0.07618882968151318
-Bolivia (Plurinational State of),InfantDeaths,GDP,nan
-Bolivia (Plurinational State of),InfantDeaths,Population,nan
-Bolivia (Plurinational State of),InfantDeaths,Schooling,0.11513362029735298
-Bolivia (Plurinational State of),BodyMassIndex,LifeExpectancy,0.1269178883575923
-Bolivia (Plurinational State of),BodyMassIndex,AdultMortality,-0.11537350465961606
-Bolivia (Plurinational State of),BodyMassIndex,InfantDeaths,0.03465044632625726
-Bolivia (Plurinational State of),BodyMassIndex,BodyMassIndex,1.0
-Bolivia (Plurinational State of),BodyMassIndex,DeathsUnder5,-0.03891157722928076
-Bolivia (Plurinational State of),BodyMassIndex,TotalExpenditure,0.05988971895390619
-Bolivia (Plurinational State of),BodyMassIndex,GDP,nan
-Bolivia (Plurinational State of),BodyMassIndex,Population,nan
-Bolivia (Plurinational State of),BodyMassIndex,Schooling,0.08428026629517
-Bolivia (Plurinational State of),DeathsUnder5,LifeExpectancy,-0.8974114922460605
-Bolivia (Plurinational State of),DeathsUnder5,AdultMortality,0.2571995118515303
-Bolivia (Plurinational State of),DeathsUnder5,InfantDeaths,0.9899494936611666
-Bolivia (Plurinational State of),DeathsUnder5,BodyMassIndex,-0.03891157722928076
-Bolivia (Plurinational State of),DeathsUnder5,DeathsUnder5,1.0
-Bolivia (Plurinational State of),DeathsUnder5,TotalExpenditure,0.04591330940148613
-Bolivia (Plurinational State of),DeathsUnder5,GDP,nan
-Bolivia (Plurinational State of),DeathsUnder5,Population,nan
-Bolivia (Plurinational State of),DeathsUnder5,Schooling,0.13267102225229166
-Bolivia (Plurinational State of),TotalExpenditure,LifeExpectancy,0.17012355511964092
-Bolivia (Plurinational State of),TotalExpenditure,AdultMortality,0.15094550232156917
-Bolivia (Plurinational State of),TotalExpenditure,InfantDeaths,0.07618882968151318
-Bolivia (Plurinational State of),TotalExpenditure,BodyMassIndex,0.05988971895390619
-Bolivia (Plurinational State of),TotalExpenditure,DeathsUnder5,0.04591330940148613
-Bolivia (Plurinational State of),TotalExpenditure,TotalExpenditure,1.0
-Bolivia (Plurinational State of),TotalExpenditure,GDP,nan
-Bolivia (Plurinational State of),TotalExpenditure,Population,nan
-Bolivia (Plurinational State of),TotalExpenditure,Schooling,-0.42783643367420315
-Bolivia (Plurinational State of),GDP,LifeExpectancy,nan
-Bolivia (Plurinational State of),GDP,AdultMortality,nan
-Bolivia (Plurinational State of),GDP,InfantDeaths,nan
-Bolivia (Plurinational State of),GDP,BodyMassIndex,nan
-Bolivia (Plurinational State of),GDP,DeathsUnder5,nan
-Bolivia (Plurinational State of),GDP,TotalExpenditure,nan
-Bolivia (Plurinational State of),GDP,GDP,nan
-Bolivia (Plurinational State of),GDP,Population,nan
-Bolivia (Plurinational State of),GDP,Schooling,nan
-Bolivia (Plurinational State of),Population,LifeExpectancy,nan
-Bolivia (Plurinational State of),Population,AdultMortality,nan
-Bolivia (Plurinational State of),Population,InfantDeaths,nan
-Bolivia (Plurinational State of),Population,BodyMassIndex,nan
-Bolivia (Plurinational State of),Population,DeathsUnder5,nan
-Bolivia (Plurinational State of),Population,TotalExpenditure,nan
-Bolivia (Plurinational State of),Population,GDP,nan
-Bolivia (Plurinational State of),Population,Population,nan
-Bolivia (Plurinational State of),Population,Schooling,nan
-Bolivia (Plurinational State of),Schooling,LifeExpectancy,-0.21123674072382534
-Bolivia (Plurinational State of),Schooling,AdultMortality,-0.04078552586000637
-Bolivia (Plurinational State of),Schooling,InfantDeaths,0.11513362029735298
-Bolivia (Plurinational State of),Schooling,BodyMassIndex,0.08428026629517
-Bolivia (Plurinational State of),Schooling,DeathsUnder5,0.13267102225229166
-Bolivia (Plurinational State of),Schooling,TotalExpenditure,-0.42783643367420315
-Bolivia (Plurinational State of),Schooling,GDP,nan
-Bolivia (Plurinational State of),Schooling,Population,nan
-Bolivia (Plurinational State of),Schooling,Schooling,1.0
+Bolivia,LifeExpectancy,LifeExpectancy,1.0
+Bolivia,LifeExpectancy,AdultMortality,-0.12583102324422624
+Bolivia,LifeExpectancy,InfantDeaths,-0.8898611204415974
+Bolivia,LifeExpectancy,BodyMassIndex,0.1269178883575923
+Bolivia,LifeExpectancy,DeathsUnder5,-0.8974114922460605
+Bolivia,LifeExpectancy,TotalExpenditure,0.17012355511964092
+Bolivia,LifeExpectancy,GDP,nan
+Bolivia,LifeExpectancy,Population,nan
+Bolivia,LifeExpectancy,Schooling,-0.21123674072382534
+Bolivia,AdultMortality,LifeExpectancy,-0.12583102324422624
+Bolivia,AdultMortality,AdultMortality,1.0
+Bolivia,AdultMortality,InfantDeaths,0.2261249348891483
+Bolivia,AdultMortality,BodyMassIndex,-0.11537350465961606
+Bolivia,AdultMortality,DeathsUnder5,0.2571995118515303
+Bolivia,AdultMortality,TotalExpenditure,0.15094550232156917
+Bolivia,AdultMortality,GDP,nan
+Bolivia,AdultMortality,Population,nan
+Bolivia,AdultMortality,Schooling,-0.04078552586000637
+Bolivia,InfantDeaths,LifeExpectancy,-0.8898611204415974
+Bolivia,InfantDeaths,AdultMortality,0.2261249348891483
+Bolivia,InfantDeaths,InfantDeaths,1.0
+Bolivia,InfantDeaths,BodyMassIndex,0.03465044632625726
+Bolivia,InfantDeaths,DeathsUnder5,0.9899494936611666
+Bolivia,InfantDeaths,TotalExpenditure,0.07618882968151318
+Bolivia,InfantDeaths,GDP,nan
+Bolivia,InfantDeaths,Population,nan
+Bolivia,InfantDeaths,Schooling,0.11513362029735298
+Bolivia,BodyMassIndex,LifeExpectancy,0.1269178883575923
+Bolivia,BodyMassIndex,AdultMortality,-0.11537350465961606
+Bolivia,BodyMassIndex,InfantDeaths,0.03465044632625726
+Bolivia,BodyMassIndex,BodyMassIndex,1.0
+Bolivia,BodyMassIndex,DeathsUnder5,-0.03891157722928076
+Bolivia,BodyMassIndex,TotalExpenditure,0.05988971895390619
+Bolivia,BodyMassIndex,GDP,nan
+Bolivia,BodyMassIndex,Population,nan
+Bolivia,BodyMassIndex,Schooling,0.08428026629517
+Bolivia,DeathsUnder5,LifeExpectancy,-0.8974114922460605
+Bolivia,DeathsUnder5,AdultMortality,0.2571995118515303
+Bolivia,DeathsUnder5,InfantDeaths,0.9899494936611666
+Bolivia,DeathsUnder5,BodyMassIndex,-0.03891157722928076
+Bolivia,DeathsUnder5,DeathsUnder5,1.0
+Bolivia,DeathsUnder5,TotalExpenditure,0.04591330940148613
+Bolivia,DeathsUnder5,GDP,nan
+Bolivia,DeathsUnder5,Population,nan
+Bolivia,DeathsUnder5,Schooling,0.13267102225229166
+Bolivia,TotalExpenditure,LifeExpectancy,0.17012355511964092
+Bolivia,TotalExpenditure,AdultMortality,0.15094550232156917
+Bolivia,TotalExpenditure,InfantDeaths,0.07618882968151318
+Bolivia,TotalExpenditure,BodyMassIndex,0.05988971895390619
+Bolivia,TotalExpenditure,DeathsUnder5,0.04591330940148613
+Bolivia,TotalExpenditure,TotalExpenditure,1.0
+Bolivia,TotalExpenditure,GDP,nan
+Bolivia,TotalExpenditure,Population,nan
+Bolivia,TotalExpenditure,Schooling,-0.42783643367420315
+Bolivia,GDP,LifeExpectancy,nan
+Bolivia,GDP,AdultMortality,nan
+Bolivia,GDP,InfantDeaths,nan
+Bolivia,GDP,BodyMassIndex,nan
+Bolivia,GDP,DeathsUnder5,nan
+Bolivia,GDP,TotalExpenditure,nan
+Bolivia,GDP,GDP,nan
+Bolivia,GDP,Population,nan
+Bolivia,GDP,Schooling,nan
+Bolivia,Population,LifeExpectancy,nan
+Bolivia,Population,AdultMortality,nan
+Bolivia,Population,InfantDeaths,nan
+Bolivia,Population,BodyMassIndex,nan
+Bolivia,Population,DeathsUnder5,nan
+Bolivia,Population,TotalExpenditure,nan
+Bolivia,Population,GDP,nan
+Bolivia,Population,Population,nan
+Bolivia,Population,Schooling,nan
+Bolivia,Schooling,LifeExpectancy,-0.21123674072382534
+Bolivia,Schooling,AdultMortality,-0.04078552586000637
+Bolivia,Schooling,InfantDeaths,0.11513362029735298
+Bolivia,Schooling,BodyMassIndex,0.08428026629517
+Bolivia,Schooling,DeathsUnder5,0.13267102225229166
+Bolivia,Schooling,TotalExpenditure,-0.42783643367420315
+Bolivia,Schooling,GDP,nan
+Bolivia,Schooling,Population,nan
+Bolivia,Schooling,Schooling,1.0
 Bosnia and Herzegovina,LifeExpectancy,LifeExpectancy,1.0
 Bosnia and Herzegovina,LifeExpectancy,AdultMortality,0.16972457448382328
 Bosnia and Herzegovina,LifeExpectancy,InfantDeaths,nan
@@ -2186,87 +2186,87 @@ Burundi,Schooling,TotalExpenditure,0.2753022856777354
 Burundi,Schooling,GDP,0.32203985010831054
 Burundi,Schooling,Population,-0.6873911970474983
 Burundi,Schooling,Schooling,1.0
-Côte d'Ivoire,LifeExpectancy,LifeExpectancy,1.0
-Côte d'Ivoire,LifeExpectancy,AdultMortality,-0.49590959327873546
-Côte d'Ivoire,LifeExpectancy,InfantDeaths,-0.920151473305758
-Côte d'Ivoire,LifeExpectancy,BodyMassIndex,0.6823611601434113
-Côte d'Ivoire,LifeExpectancy,DeathsUnder5,-0.9244148190599308
-Côte d'Ivoire,LifeExpectancy,TotalExpenditure,0.6646216480280788
-Côte d'Ivoire,LifeExpectancy,GDP,nan
-Côte d'Ivoire,LifeExpectancy,Population,nan
-Côte d'Ivoire,LifeExpectancy,Schooling,nan
-Côte d'Ivoire,AdultMortality,LifeExpectancy,-0.49590959327873546
-Côte d'Ivoire,AdultMortality,AdultMortality,1.0
-Côte d'Ivoire,AdultMortality,InfantDeaths,0.5287725175443357
-Côte d'Ivoire,AdultMortality,BodyMassIndex,-0.3765698160078897
-Côte d'Ivoire,AdultMortality,DeathsUnder5,0.5563130442824076
-Côte d'Ivoire,AdultMortality,TotalExpenditure,-0.17480054746085794
-Côte d'Ivoire,AdultMortality,GDP,nan
-Côte d'Ivoire,AdultMortality,Population,nan
-Côte d'Ivoire,AdultMortality,Schooling,nan
-Côte d'Ivoire,InfantDeaths,LifeExpectancy,-0.920151473305758
-Côte d'Ivoire,InfantDeaths,AdultMortality,0.5287725175443357
-Côte d'Ivoire,InfantDeaths,InfantDeaths,1.0
-Côte d'Ivoire,InfantDeaths,BodyMassIndex,-0.673636106803726
-Côte d'Ivoire,InfantDeaths,DeathsUnder5,0.9859097516715944
-Côte d'Ivoire,InfantDeaths,TotalExpenditure,-0.5989704252313629
-Côte d'Ivoire,InfantDeaths,GDP,nan
-Côte d'Ivoire,InfantDeaths,Population,nan
-Côte d'Ivoire,InfantDeaths,Schooling,nan
-Côte d'Ivoire,BodyMassIndex,LifeExpectancy,0.6823611601434113
-Côte d'Ivoire,BodyMassIndex,AdultMortality,-0.3765698160078897
-Côte d'Ivoire,BodyMassIndex,InfantDeaths,-0.673636106803726
-Côte d'Ivoire,BodyMassIndex,BodyMassIndex,1.0
-Côte d'Ivoire,BodyMassIndex,DeathsUnder5,-0.6924100764690214
-Côte d'Ivoire,BodyMassIndex,TotalExpenditure,0.7817470819189342
-Côte d'Ivoire,BodyMassIndex,GDP,nan
-Côte d'Ivoire,BodyMassIndex,Population,nan
-Côte d'Ivoire,BodyMassIndex,Schooling,nan
-Côte d'Ivoire,DeathsUnder5,LifeExpectancy,-0.9244148190599308
-Côte d'Ivoire,DeathsUnder5,AdultMortality,0.5563130442824076
-Côte d'Ivoire,DeathsUnder5,InfantDeaths,0.9859097516715944
-Côte d'Ivoire,DeathsUnder5,BodyMassIndex,-0.6924100764690214
-Côte d'Ivoire,DeathsUnder5,DeathsUnder5,1.0
-Côte d'Ivoire,DeathsUnder5,TotalExpenditure,-0.6226647080447805
-Côte d'Ivoire,DeathsUnder5,GDP,nan
-Côte d'Ivoire,DeathsUnder5,Population,nan
-Côte d'Ivoire,DeathsUnder5,Schooling,nan
-Côte d'Ivoire,TotalExpenditure,LifeExpectancy,0.6646216480280788
-Côte d'Ivoire,TotalExpenditure,AdultMortality,-0.17480054746085794
-Côte d'Ivoire,TotalExpenditure,InfantDeaths,-0.5989704252313629
-Côte d'Ivoire,TotalExpenditure,BodyMassIndex,0.7817470819189342
-Côte d'Ivoire,TotalExpenditure,DeathsUnder5,-0.6226647080447805
-Côte d'Ivoire,TotalExpenditure,TotalExpenditure,1.0
-Côte d'Ivoire,TotalExpenditure,GDP,nan
-Côte d'Ivoire,TotalExpenditure,Population,nan
-Côte d'Ivoire,TotalExpenditure,Schooling,nan
-Côte d'Ivoire,GDP,LifeExpectancy,nan
-Côte d'Ivoire,GDP,AdultMortality,nan
-Côte d'Ivoire,GDP,InfantDeaths,nan
-Côte d'Ivoire,GDP,BodyMassIndex,nan
-Côte d'Ivoire,GDP,DeathsUnder5,nan
-Côte d'Ivoire,GDP,TotalExpenditure,nan
-Côte d'Ivoire,GDP,GDP,nan
-Côte d'Ivoire,GDP,Population,nan
-Côte d'Ivoire,GDP,Schooling,nan
-Côte d'Ivoire,Population,LifeExpectancy,nan
-Côte d'Ivoire,Population,AdultMortality,nan
-Côte d'Ivoire,Population,InfantDeaths,nan
-Côte d'Ivoire,Population,BodyMassIndex,nan
-Côte d'Ivoire,Population,DeathsUnder5,nan
-Côte d'Ivoire,Population,TotalExpenditure,nan
-Côte d'Ivoire,Population,GDP,nan
-Côte d'Ivoire,Population,Population,nan
-Côte d'Ivoire,Population,Schooling,nan
-Côte d'Ivoire,Schooling,LifeExpectancy,nan
-Côte d'Ivoire,Schooling,AdultMortality,nan
-Côte d'Ivoire,Schooling,InfantDeaths,nan
-Côte d'Ivoire,Schooling,BodyMassIndex,nan
-Côte d'Ivoire,Schooling,DeathsUnder5,nan
-Côte d'Ivoire,Schooling,TotalExpenditure,nan
-Côte d'Ivoire,Schooling,GDP,nan
-Côte d'Ivoire,Schooling,Population,nan
-Côte d'Ivoire,Schooling,Schooling,nan
+Ivory Coast,LifeExpectancy,LifeExpectancy,1.0
+Ivory Coast,LifeExpectancy,AdultMortality,-0.49590959327873546
+Ivory Coast,LifeExpectancy,InfantDeaths,-0.920151473305758
+Ivory Coast,LifeExpectancy,BodyMassIndex,0.6823611601434113
+Ivory Coast,LifeExpectancy,DeathsUnder5,-0.9244148190599308
+Ivory Coast,LifeExpectancy,TotalExpenditure,0.6646216480280788
+Ivory Coast,LifeExpectancy,GDP,nan
+Ivory Coast,LifeExpectancy,Population,nan
+Ivory Coast,LifeExpectancy,Schooling,nan
+Ivory Coast,AdultMortality,LifeExpectancy,-0.49590959327873546
+Ivory Coast,AdultMortality,AdultMortality,1.0
+Ivory Coast,AdultMortality,InfantDeaths,0.5287725175443357
+Ivory Coast,AdultMortality,BodyMassIndex,-0.3765698160078897
+Ivory Coast,AdultMortality,DeathsUnder5,0.5563130442824076
+Ivory Coast,AdultMortality,TotalExpenditure,-0.17480054746085794
+Ivory Coast,AdultMortality,GDP,nan
+Ivory Coast,AdultMortality,Population,nan
+Ivory Coast,AdultMortality,Schooling,nan
+Ivory Coast,InfantDeaths,LifeExpectancy,-0.920151473305758
+Ivory Coast,InfantDeaths,AdultMortality,0.5287725175443357
+Ivory Coast,InfantDeaths,InfantDeaths,1.0
+Ivory Coast,InfantDeaths,BodyMassIndex,-0.673636106803726
+Ivory Coast,InfantDeaths,DeathsUnder5,0.9859097516715944
+Ivory Coast,InfantDeaths,TotalExpenditure,-0.5989704252313629
+Ivory Coast,InfantDeaths,GDP,nan
+Ivory Coast,InfantDeaths,Population,nan
+Ivory Coast,InfantDeaths,Schooling,nan
+Ivory Coast,BodyMassIndex,LifeExpectancy,0.6823611601434113
+Ivory Coast,BodyMassIndex,AdultMortality,-0.3765698160078897
+Ivory Coast,BodyMassIndex,InfantDeaths,-0.673636106803726
+Ivory Coast,BodyMassIndex,BodyMassIndex,1.0
+Ivory Coast,BodyMassIndex,DeathsUnder5,-0.6924100764690214
+Ivory Coast,BodyMassIndex,TotalExpenditure,0.7817470819189342
+Ivory Coast,BodyMassIndex,GDP,nan
+Ivory Coast,BodyMassIndex,Population,nan
+Ivory Coast,BodyMassIndex,Schooling,nan
+Ivory Coast,DeathsUnder5,LifeExpectancy,-0.9244148190599308
+Ivory Coast,DeathsUnder5,AdultMortality,0.5563130442824076
+Ivory Coast,DeathsUnder5,InfantDeaths,0.9859097516715944
+Ivory Coast,DeathsUnder5,BodyMassIndex,-0.6924100764690214
+Ivory Coast,DeathsUnder5,DeathsUnder5,1.0
+Ivory Coast,DeathsUnder5,TotalExpenditure,-0.6226647080447805
+Ivory Coast,DeathsUnder5,GDP,nan
+Ivory Coast,DeathsUnder5,Population,nan
+Ivory Coast,DeathsUnder5,Schooling,nan
+Ivory Coast,TotalExpenditure,LifeExpectancy,0.6646216480280788
+Ivory Coast,TotalExpenditure,AdultMortality,-0.17480054746085794
+Ivory Coast,TotalExpenditure,InfantDeaths,-0.5989704252313629
+Ivory Coast,TotalExpenditure,BodyMassIndex,0.7817470819189342
+Ivory Coast,TotalExpenditure,DeathsUnder5,-0.6226647080447805
+Ivory Coast,TotalExpenditure,TotalExpenditure,1.0
+Ivory Coast,TotalExpenditure,GDP,nan
+Ivory Coast,TotalExpenditure,Population,nan
+Ivory Coast,TotalExpenditure,Schooling,nan
+Ivory Coast,GDP,LifeExpectancy,nan
+Ivory Coast,GDP,AdultMortality,nan
+Ivory Coast,GDP,InfantDeaths,nan
+Ivory Coast,GDP,BodyMassIndex,nan
+Ivory Coast,GDP,DeathsUnder5,nan
+Ivory Coast,GDP,TotalExpenditure,nan
+Ivory Coast,GDP,GDP,nan
+Ivory Coast,GDP,Population,nan
+Ivory Coast,GDP,Schooling,nan
+Ivory Coast,Population,LifeExpectancy,nan
+Ivory Coast,Population,AdultMortality,nan
+Ivory Coast,Population,InfantDeaths,nan
+Ivory Coast,Population,BodyMassIndex,nan
+Ivory Coast,Population,DeathsUnder5,nan
+Ivory Coast,Population,TotalExpenditure,nan
+Ivory Coast,Population,GDP,nan
+Ivory Coast,Population,Population,nan
+Ivory Coast,Population,Schooling,nan
+Ivory Coast,Schooling,LifeExpectancy,nan
+Ivory Coast,Schooling,AdultMortality,nan
+Ivory Coast,Schooling,InfantDeaths,nan
+Ivory Coast,Schooling,BodyMassIndex,nan
+Ivory Coast,Schooling,DeathsUnder5,nan
+Ivory Coast,Schooling,TotalExpenditure,nan
+Ivory Coast,Schooling,GDP,nan
+Ivory Coast,Schooling,Population,nan
+Ivory Coast,Schooling,Schooling,nan
 Cabo Verde,LifeExpectancy,LifeExpectancy,1.0
 Cabo Verde,LifeExpectancy,AdultMortality,0.08791717614436882
 Cabo Verde,LifeExpectancy,InfantDeaths,nan
@@ -3077,87 +3077,87 @@ Comoros,Schooling,TotalExpenditure,0.891416111453608
 Comoros,Schooling,GDP,0.6878424786002617
 Comoros,Schooling,Population,-0.038541798845593465
 Comoros,Schooling,Schooling,1.0
-Congo,LifeExpectancy,LifeExpectancy,1.0
-Congo,LifeExpectancy,AdultMortality,-0.37287280036973813
-Congo,LifeExpectancy,InfantDeaths,-0.9537715286887375
-Congo,LifeExpectancy,BodyMassIndex,0.6829238079213736
-Congo,LifeExpectancy,DeathsUnder5,-0.9118860149620294
-Congo,LifeExpectancy,TotalExpenditure,0.5628485638270113
-Congo,LifeExpectancy,GDP,nan
-Congo,LifeExpectancy,Population,nan
-Congo,LifeExpectancy,Schooling,0.8324492133360993
-Congo,AdultMortality,LifeExpectancy,-0.37287280036973813
-Congo,AdultMortality,AdultMortality,1.0
-Congo,AdultMortality,InfantDeaths,0.3064656934219064
-Congo,AdultMortality,BodyMassIndex,-0.4791007065244649
-Congo,AdultMortality,DeathsUnder5,0.43962871732423053
-Congo,AdultMortality,TotalExpenditure,-0.33203775117276985
-Congo,AdultMortality,GDP,nan
-Congo,AdultMortality,Population,nan
-Congo,AdultMortality,Schooling,-0.2406911981482168
-Congo,InfantDeaths,LifeExpectancy,-0.9537715286887375
-Congo,InfantDeaths,AdultMortality,0.3064656934219064
-Congo,InfantDeaths,InfantDeaths,1.0
-Congo,InfantDeaths,BodyMassIndex,-0.7191421640240505
-Congo,InfantDeaths,DeathsUnder5,0.9461386396426089
-Congo,InfantDeaths,TotalExpenditure,-0.5608315960554205
-Congo,InfantDeaths,GDP,nan
-Congo,InfantDeaths,Population,nan
-Congo,InfantDeaths,Schooling,-0.8385834611335349
-Congo,BodyMassIndex,LifeExpectancy,0.6829238079213736
-Congo,BodyMassIndex,AdultMortality,-0.4791007065244649
-Congo,BodyMassIndex,InfantDeaths,-0.7191421640240505
-Congo,BodyMassIndex,BodyMassIndex,1.0
-Congo,BodyMassIndex,DeathsUnder5,-0.7520631469469299
-Congo,BodyMassIndex,TotalExpenditure,0.4211118468265377
-Congo,BodyMassIndex,GDP,nan
-Congo,BodyMassIndex,Population,nan
-Congo,BodyMassIndex,Schooling,0.6129556545825547
-Congo,DeathsUnder5,LifeExpectancy,-0.9118860149620294
-Congo,DeathsUnder5,AdultMortality,0.43962871732423053
-Congo,DeathsUnder5,InfantDeaths,0.9461386396426089
-Congo,DeathsUnder5,BodyMassIndex,-0.7520631469469299
-Congo,DeathsUnder5,DeathsUnder5,1.0
-Congo,DeathsUnder5,TotalExpenditure,-0.5875156679151101
-Congo,DeathsUnder5,GDP,nan
-Congo,DeathsUnder5,Population,nan
-Congo,DeathsUnder5,Schooling,-0.8247553448703053
-Congo,TotalExpenditure,LifeExpectancy,0.5628485638270113
-Congo,TotalExpenditure,AdultMortality,-0.33203775117276985
-Congo,TotalExpenditure,InfantDeaths,-0.5608315960554205
-Congo,TotalExpenditure,BodyMassIndex,0.4211118468265377
-Congo,TotalExpenditure,DeathsUnder5,-0.5875156679151101
-Congo,TotalExpenditure,TotalExpenditure,1.0
-Congo,TotalExpenditure,GDP,nan
-Congo,TotalExpenditure,Population,nan
-Congo,TotalExpenditure,Schooling,0.775132371572526
-Congo,GDP,LifeExpectancy,nan
-Congo,GDP,AdultMortality,nan
-Congo,GDP,InfantDeaths,nan
-Congo,GDP,BodyMassIndex,nan
-Congo,GDP,DeathsUnder5,nan
-Congo,GDP,TotalExpenditure,nan
-Congo,GDP,GDP,nan
-Congo,GDP,Population,nan
-Congo,GDP,Schooling,nan
-Congo,Population,LifeExpectancy,nan
-Congo,Population,AdultMortality,nan
-Congo,Population,InfantDeaths,nan
-Congo,Population,BodyMassIndex,nan
-Congo,Population,DeathsUnder5,nan
-Congo,Population,TotalExpenditure,nan
-Congo,Population,GDP,nan
-Congo,Population,Population,nan
-Congo,Population,Schooling,nan
-Congo,Schooling,LifeExpectancy,0.8324492133360993
-Congo,Schooling,AdultMortality,-0.2406911981482168
-Congo,Schooling,InfantDeaths,-0.8385834611335349
-Congo,Schooling,BodyMassIndex,0.6129556545825547
-Congo,Schooling,DeathsUnder5,-0.8247553448703053
-Congo,Schooling,TotalExpenditure,0.775132371572526
-Congo,Schooling,GDP,nan
-Congo,Schooling,Population,nan
-Congo,Schooling,Schooling,1.0
+Republic of Congo,LifeExpectancy,LifeExpectancy,1.0
+Republic of Congo,LifeExpectancy,AdultMortality,-0.37287280036973813
+Republic of Congo,LifeExpectancy,InfantDeaths,-0.9537715286887375
+Republic of Congo,LifeExpectancy,BodyMassIndex,0.6829238079213736
+Republic of Congo,LifeExpectancy,DeathsUnder5,-0.9118860149620294
+Republic of Congo,LifeExpectancy,TotalExpenditure,0.5628485638270113
+Republic of Congo,LifeExpectancy,GDP,nan
+Republic of Congo,LifeExpectancy,Population,nan
+Republic of Congo,LifeExpectancy,Schooling,0.8324492133360993
+Republic of Congo,AdultMortality,LifeExpectancy,-0.37287280036973813
+Republic of Congo,AdultMortality,AdultMortality,1.0
+Republic of Congo,AdultMortality,InfantDeaths,0.3064656934219064
+Republic of Congo,AdultMortality,BodyMassIndex,-0.4791007065244649
+Republic of Congo,AdultMortality,DeathsUnder5,0.43962871732423053
+Republic of Congo,AdultMortality,TotalExpenditure,-0.33203775117276985
+Republic of Congo,AdultMortality,GDP,nan
+Republic of Congo,AdultMortality,Population,nan
+Republic of Congo,AdultMortality,Schooling,-0.2406911981482168
+Republic of Congo,InfantDeaths,LifeExpectancy,-0.9537715286887375
+Republic of Congo,InfantDeaths,AdultMortality,0.3064656934219064
+Republic of Congo,InfantDeaths,InfantDeaths,1.0
+Republic of Congo,InfantDeaths,BodyMassIndex,-0.7191421640240505
+Republic of Congo,InfantDeaths,DeathsUnder5,0.9461386396426089
+Republic of Congo,InfantDeaths,TotalExpenditure,-0.5608315960554205
+Republic of Congo,InfantDeaths,GDP,nan
+Republic of Congo,InfantDeaths,Population,nan
+Republic of Congo,InfantDeaths,Schooling,-0.8385834611335349
+Republic of Congo,BodyMassIndex,LifeExpectancy,0.6829238079213736
+Republic of Congo,BodyMassIndex,AdultMortality,-0.4791007065244649
+Republic of Congo,BodyMassIndex,InfantDeaths,-0.7191421640240505
+Republic of Congo,BodyMassIndex,BodyMassIndex,1.0
+Republic of Congo,BodyMassIndex,DeathsUnder5,-0.7520631469469299
+Republic of Congo,BodyMassIndex,TotalExpenditure,0.4211118468265377
+Republic of Congo,BodyMassIndex,GDP,nan
+Republic of Congo,BodyMassIndex,Population,nan
+Republic of Congo,BodyMassIndex,Schooling,0.6129556545825547
+Republic of Congo,DeathsUnder5,LifeExpectancy,-0.9118860149620294
+Republic of Congo,DeathsUnder5,AdultMortality,0.43962871732423053
+Republic of Congo,DeathsUnder5,InfantDeaths,0.9461386396426089
+Republic of Congo,DeathsUnder5,BodyMassIndex,-0.7520631469469299
+Republic of Congo,DeathsUnder5,DeathsUnder5,1.0
+Republic of Congo,DeathsUnder5,TotalExpenditure,-0.5875156679151101
+Republic of Congo,DeathsUnder5,GDP,nan
+Republic of Congo,DeathsUnder5,Population,nan
+Republic of Congo,DeathsUnder5,Schooling,-0.8247553448703053
+Republic of Congo,TotalExpenditure,LifeExpectancy,0.5628485638270113
+Republic of Congo,TotalExpenditure,AdultMortality,-0.33203775117276985
+Republic of Congo,TotalExpenditure,InfantDeaths,-0.5608315960554205
+Republic of Congo,TotalExpenditure,BodyMassIndex,0.4211118468265377
+Republic of Congo,TotalExpenditure,DeathsUnder5,-0.5875156679151101
+Republic of Congo,TotalExpenditure,TotalExpenditure,1.0
+Republic of Congo,TotalExpenditure,GDP,nan
+Republic of Congo,TotalExpenditure,Population,nan
+Republic of Congo,TotalExpenditure,Schooling,0.775132371572526
+Republic of Congo,GDP,LifeExpectancy,nan
+Republic of Congo,GDP,AdultMortality,nan
+Republic of Congo,GDP,InfantDeaths,nan
+Republic of Congo,GDP,BodyMassIndex,nan
+Republic of Congo,GDP,DeathsUnder5,nan
+Republic of Congo,GDP,TotalExpenditure,nan
+Republic of Congo,GDP,GDP,nan
+Republic of Congo,GDP,Population,nan
+Republic of Congo,GDP,Schooling,nan
+Republic of Congo,Population,LifeExpectancy,nan
+Republic of Congo,Population,AdultMortality,nan
+Republic of Congo,Population,InfantDeaths,nan
+Republic of Congo,Population,BodyMassIndex,nan
+Republic of Congo,Population,DeathsUnder5,nan
+Republic of Congo,Population,TotalExpenditure,nan
+Republic of Congo,Population,GDP,nan
+Republic of Congo,Population,Population,nan
+Republic of Congo,Population,Schooling,nan
+Republic of Congo,Schooling,LifeExpectancy,0.8324492133360993
+Republic of Congo,Schooling,AdultMortality,-0.2406911981482168
+Republic of Congo,Schooling,InfantDeaths,-0.8385834611335349
+Republic of Congo,Schooling,BodyMassIndex,0.6129556545825547
+Republic of Congo,Schooling,DeathsUnder5,-0.8247553448703053
+Republic of Congo,Schooling,TotalExpenditure,0.775132371572526
+Republic of Congo,Schooling,GDP,nan
+Republic of Congo,Schooling,Population,nan
+Republic of Congo,Schooling,Schooling,1.0
 Cook Islands,LifeExpectancy,LifeExpectancy,nan
 Cook Islands,LifeExpectancy,AdultMortality,nan
 Cook Islands,LifeExpectancy,InfantDeaths,nan
@@ -6317,87 +6317,87 @@ Indonesia,Schooling,TotalExpenditure,0.5494577263731082
 Indonesia,Schooling,GDP,0.6601322741507946
 Indonesia,Schooling,Population,0.48897744745175636
 Indonesia,Schooling,Schooling,1.0
-Iran (Islamic Republic of),LifeExpectancy,LifeExpectancy,1.0
-Iran (Islamic Republic of),LifeExpectancy,AdultMortality,-0.19510375481606804
-Iran (Islamic Republic of),LifeExpectancy,InfantDeaths,-0.23472724884809362
-Iran (Islamic Republic of),LifeExpectancy,BodyMassIndex,0.33601128340837216
-Iran (Islamic Republic of),LifeExpectancy,DeathsUnder5,-0.20659812979766443
-Iran (Islamic Republic of),LifeExpectancy,TotalExpenditure,0.06978311176930979
-Iran (Islamic Republic of),LifeExpectancy,GDP,nan
-Iran (Islamic Republic of),LifeExpectancy,Population,nan
-Iran (Islamic Republic of),LifeExpectancy,Schooling,0.49822695337231343
-Iran (Islamic Republic of),AdultMortality,LifeExpectancy,-0.19510375481606804
-Iran (Islamic Republic of),AdultMortality,AdultMortality,1.0
-Iran (Islamic Republic of),AdultMortality,InfantDeaths,0.22852063066087827
-Iran (Islamic Republic of),AdultMortality,BodyMassIndex,-0.3115827502876336
-Iran (Islamic Republic of),AdultMortality,DeathsUnder5,0.19548980620053086
-Iran (Islamic Republic of),AdultMortality,TotalExpenditure,-0.2631774581770374
-Iran (Islamic Republic of),AdultMortality,GDP,nan
-Iran (Islamic Republic of),AdultMortality,Population,nan
-Iran (Islamic Republic of),AdultMortality,Schooling,-0.4345828402940006
-Iran (Islamic Republic of),InfantDeaths,LifeExpectancy,-0.23472724884809362
-Iran (Islamic Republic of),InfantDeaths,AdultMortality,0.22852063066087827
-Iran (Islamic Republic of),InfantDeaths,InfantDeaths,1.0
-Iran (Islamic Republic of),InfantDeaths,BodyMassIndex,-0.36094970748280947
-Iran (Islamic Republic of),InfantDeaths,DeathsUnder5,0.9979989245830532
-Iran (Islamic Republic of),InfantDeaths,TotalExpenditure,-0.7265510566462325
-Iran (Islamic Republic of),InfantDeaths,GDP,nan
-Iran (Islamic Republic of),InfantDeaths,Population,nan
-Iran (Islamic Republic of),InfantDeaths,Schooling,-0.8168417966053525
-Iran (Islamic Republic of),BodyMassIndex,LifeExpectancy,0.33601128340837216
-Iran (Islamic Republic of),BodyMassIndex,AdultMortality,-0.3115827502876336
-Iran (Islamic Republic of),BodyMassIndex,InfantDeaths,-0.36094970748280947
-Iran (Islamic Republic of),BodyMassIndex,BodyMassIndex,1.0
-Iran (Islamic Republic of),BodyMassIndex,DeathsUnder5,-0.34055605841405506
-Iran (Islamic Republic of),BodyMassIndex,TotalExpenditure,0.34602323154450704
-Iran (Islamic Republic of),BodyMassIndex,GDP,nan
-Iran (Islamic Republic of),BodyMassIndex,Population,nan
-Iran (Islamic Republic of),BodyMassIndex,Schooling,0.5136700987182842
-Iran (Islamic Republic of),DeathsUnder5,LifeExpectancy,-0.20659812979766443
-Iran (Islamic Republic of),DeathsUnder5,AdultMortality,0.19548980620053086
-Iran (Islamic Republic of),DeathsUnder5,InfantDeaths,0.9979989245830532
-Iran (Islamic Republic of),DeathsUnder5,BodyMassIndex,-0.34055605841405506
-Iran (Islamic Republic of),DeathsUnder5,DeathsUnder5,1.0
-Iran (Islamic Republic of),DeathsUnder5,TotalExpenditure,-0.72917697232829
-Iran (Islamic Republic of),DeathsUnder5,GDP,nan
-Iran (Islamic Republic of),DeathsUnder5,Population,nan
-Iran (Islamic Republic of),DeathsUnder5,Schooling,-0.7941053144579615
-Iran (Islamic Republic of),TotalExpenditure,LifeExpectancy,0.06978311176930979
-Iran (Islamic Republic of),TotalExpenditure,AdultMortality,-0.2631774581770374
-Iran (Islamic Republic of),TotalExpenditure,InfantDeaths,-0.7265510566462325
-Iran (Islamic Republic of),TotalExpenditure,BodyMassIndex,0.34602323154450704
-Iran (Islamic Republic of),TotalExpenditure,DeathsUnder5,-0.72917697232829
-Iran (Islamic Republic of),TotalExpenditure,TotalExpenditure,1.0
-Iran (Islamic Republic of),TotalExpenditure,GDP,nan
-Iran (Islamic Republic of),TotalExpenditure,Population,nan
-Iran (Islamic Republic of),TotalExpenditure,Schooling,0.4337976628240499
-Iran (Islamic Republic of),GDP,LifeExpectancy,nan
-Iran (Islamic Republic of),GDP,AdultMortality,nan
-Iran (Islamic Republic of),GDP,InfantDeaths,nan
-Iran (Islamic Republic of),GDP,BodyMassIndex,nan
-Iran (Islamic Republic of),GDP,DeathsUnder5,nan
-Iran (Islamic Republic of),GDP,TotalExpenditure,nan
-Iran (Islamic Republic of),GDP,GDP,nan
-Iran (Islamic Republic of),GDP,Population,nan
-Iran (Islamic Republic of),GDP,Schooling,nan
-Iran (Islamic Republic of),Population,LifeExpectancy,nan
-Iran (Islamic Republic of),Population,AdultMortality,nan
-Iran (Islamic Republic of),Population,InfantDeaths,nan
-Iran (Islamic Republic of),Population,BodyMassIndex,nan
-Iran (Islamic Republic of),Population,DeathsUnder5,nan
-Iran (Islamic Republic of),Population,TotalExpenditure,nan
-Iran (Islamic Republic of),Population,GDP,nan
-Iran (Islamic Republic of),Population,Population,nan
-Iran (Islamic Republic of),Population,Schooling,nan
-Iran (Islamic Republic of),Schooling,LifeExpectancy,0.49822695337231343
-Iran (Islamic Republic of),Schooling,AdultMortality,-0.4345828402940006
-Iran (Islamic Republic of),Schooling,InfantDeaths,-0.8168417966053525
-Iran (Islamic Republic of),Schooling,BodyMassIndex,0.5136700987182842
-Iran (Islamic Republic of),Schooling,DeathsUnder5,-0.7941053144579615
-Iran (Islamic Republic of),Schooling,TotalExpenditure,0.4337976628240499
-Iran (Islamic Republic of),Schooling,GDP,nan
-Iran (Islamic Republic of),Schooling,Population,nan
-Iran (Islamic Republic of),Schooling,Schooling,1.0
+Iran,LifeExpectancy,LifeExpectancy,1.0
+Iran,LifeExpectancy,AdultMortality,-0.19510375481606804
+Iran,LifeExpectancy,InfantDeaths,-0.23472724884809362
+Iran,LifeExpectancy,BodyMassIndex,0.33601128340837216
+Iran,LifeExpectancy,DeathsUnder5,-0.20659812979766443
+Iran,LifeExpectancy,TotalExpenditure,0.06978311176930979
+Iran,LifeExpectancy,GDP,nan
+Iran,LifeExpectancy,Population,nan
+Iran,LifeExpectancy,Schooling,0.49822695337231343
+Iran,AdultMortality,LifeExpectancy,-0.19510375481606804
+Iran,AdultMortality,AdultMortality,1.0
+Iran,AdultMortality,InfantDeaths,0.22852063066087827
+Iran,AdultMortality,BodyMassIndex,-0.3115827502876336
+Iran,AdultMortality,DeathsUnder5,0.19548980620053086
+Iran,AdultMortality,TotalExpenditure,-0.2631774581770374
+Iran,AdultMortality,GDP,nan
+Iran,AdultMortality,Population,nan
+Iran,AdultMortality,Schooling,-0.4345828402940006
+Iran,InfantDeaths,LifeExpectancy,-0.23472724884809362
+Iran,InfantDeaths,AdultMortality,0.22852063066087827
+Iran,InfantDeaths,InfantDeaths,1.0
+Iran,InfantDeaths,BodyMassIndex,-0.36094970748280947
+Iran,InfantDeaths,DeathsUnder5,0.9979989245830532
+Iran,InfantDeaths,TotalExpenditure,-0.7265510566462325
+Iran,InfantDeaths,GDP,nan
+Iran,InfantDeaths,Population,nan
+Iran,InfantDeaths,Schooling,-0.8168417966053525
+Iran,BodyMassIndex,LifeExpectancy,0.33601128340837216
+Iran,BodyMassIndex,AdultMortality,-0.3115827502876336
+Iran,BodyMassIndex,InfantDeaths,-0.36094970748280947
+Iran,BodyMassIndex,BodyMassIndex,1.0
+Iran,BodyMassIndex,DeathsUnder5,-0.34055605841405506
+Iran,BodyMassIndex,TotalExpenditure,0.34602323154450704
+Iran,BodyMassIndex,GDP,nan
+Iran,BodyMassIndex,Population,nan
+Iran,BodyMassIndex,Schooling,0.5136700987182842
+Iran,DeathsUnder5,LifeExpectancy,-0.20659812979766443
+Iran,DeathsUnder5,AdultMortality,0.19548980620053086
+Iran,DeathsUnder5,InfantDeaths,0.9979989245830532
+Iran,DeathsUnder5,BodyMassIndex,-0.34055605841405506
+Iran,DeathsUnder5,DeathsUnder5,1.0
+Iran,DeathsUnder5,TotalExpenditure,-0.72917697232829
+Iran,DeathsUnder5,GDP,nan
+Iran,DeathsUnder5,Population,nan
+Iran,DeathsUnder5,Schooling,-0.7941053144579615
+Iran,TotalExpenditure,LifeExpectancy,0.06978311176930979
+Iran,TotalExpenditure,AdultMortality,-0.2631774581770374
+Iran,TotalExpenditure,InfantDeaths,-0.7265510566462325
+Iran,TotalExpenditure,BodyMassIndex,0.34602323154450704
+Iran,TotalExpenditure,DeathsUnder5,-0.72917697232829
+Iran,TotalExpenditure,TotalExpenditure,1.0
+Iran,TotalExpenditure,GDP,nan
+Iran,TotalExpenditure,Population,nan
+Iran,TotalExpenditure,Schooling,0.4337976628240499
+Iran,GDP,LifeExpectancy,nan
+Iran,GDP,AdultMortality,nan
+Iran,GDP,InfantDeaths,nan
+Iran,GDP,BodyMassIndex,nan
+Iran,GDP,DeathsUnder5,nan
+Iran,GDP,TotalExpenditure,nan
+Iran,GDP,GDP,nan
+Iran,GDP,Population,nan
+Iran,GDP,Schooling,nan
+Iran,Population,LifeExpectancy,nan
+Iran,Population,AdultMortality,nan
+Iran,Population,InfantDeaths,nan
+Iran,Population,BodyMassIndex,nan
+Iran,Population,DeathsUnder5,nan
+Iran,Population,TotalExpenditure,nan
+Iran,Population,GDP,nan
+Iran,Population,Population,nan
+Iran,Population,Schooling,nan
+Iran,Schooling,LifeExpectancy,0.49822695337231343
+Iran,Schooling,AdultMortality,-0.4345828402940006
+Iran,Schooling,InfantDeaths,-0.8168417966053525
+Iran,Schooling,BodyMassIndex,0.5136700987182842
+Iran,Schooling,DeathsUnder5,-0.7941053144579615
+Iran,Schooling,TotalExpenditure,0.4337976628240499
+Iran,Schooling,GDP,nan
+Iran,Schooling,Population,nan
+Iran,Schooling,Schooling,1.0
 Iraq,LifeExpectancy,LifeExpectancy,1.0
 Iraq,LifeExpectancy,AdultMortality,-0.21415814586082557
 Iraq,LifeExpectancy,InfantDeaths,0.3287344056122915
@@ -14903,87 +14903,87 @@ United Republic of Tanzania,Schooling,TotalExpenditure,nan
 United Republic of Tanzania,Schooling,GDP,nan
 United Republic of Tanzania,Schooling,Population,nan
 United Republic of Tanzania,Schooling,Schooling,nan
-United States of America,LifeExpectancy,LifeExpectancy,1.0
-United States of America,LifeExpectancy,AdultMortality,-0.9015021265493286
-United States of America,LifeExpectancy,InfantDeaths,-0.9179025644651371
-United States of America,LifeExpectancy,BodyMassIndex,0.6596335368838216
-United States of America,LifeExpectancy,DeathsUnder5,-0.9116828991157346
-United States of America,LifeExpectancy,TotalExpenditure,0.034206458067517494
-United States of America,LifeExpectancy,GDP,nan
-United States of America,LifeExpectancy,Population,nan
-United States of America,LifeExpectancy,Schooling,nan
-United States of America,AdultMortality,LifeExpectancy,-0.9015021265493286
-United States of America,AdultMortality,AdultMortality,1.0
-United States of America,AdultMortality,InfantDeaths,0.8114720689897407
-United States of America,AdultMortality,BodyMassIndex,-0.522562010748927
-United States of America,AdultMortality,DeathsUnder5,0.7997209919245528
-United States of America,AdultMortality,TotalExpenditure,-0.15492757246828237
-United States of America,AdultMortality,GDP,nan
-United States of America,AdultMortality,Population,nan
-United States of America,AdultMortality,Schooling,nan
-United States of America,InfantDeaths,LifeExpectancy,-0.9179025644651371
-United States of America,InfantDeaths,AdultMortality,0.8114720689897407
-United States of America,InfantDeaths,InfantDeaths,1.0
-United States of America,InfantDeaths,BodyMassIndex,-0.4481816024538844
-United States of America,InfantDeaths,DeathsUnder5,0.9889174665944239
-United States of America,InfantDeaths,TotalExpenditure,0.0375144607108194
-United States of America,InfantDeaths,GDP,nan
-United States of America,InfantDeaths,Population,nan
-United States of America,InfantDeaths,Schooling,nan
-United States of America,BodyMassIndex,LifeExpectancy,0.6596335368838216
-United States of America,BodyMassIndex,AdultMortality,-0.522562010748927
-United States of America,BodyMassIndex,InfantDeaths,-0.4481816024538844
-United States of America,BodyMassIndex,BodyMassIndex,1.0
-United States of America,BodyMassIndex,DeathsUnder5,-0.4435565843779049
-United States of America,BodyMassIndex,TotalExpenditure,0.1998131966278904
-United States of America,BodyMassIndex,GDP,nan
-United States of America,BodyMassIndex,Population,nan
-United States of America,BodyMassIndex,Schooling,nan
-United States of America,DeathsUnder5,LifeExpectancy,-0.9116828991157346
-United States of America,DeathsUnder5,AdultMortality,0.7997209919245528
-United States of America,DeathsUnder5,InfantDeaths,0.9889174665944239
-United States of America,DeathsUnder5,BodyMassIndex,-0.4435565843779049
-United States of America,DeathsUnder5,DeathsUnder5,1.0
-United States of America,DeathsUnder5,TotalExpenditure,0.12127769389116778
-United States of America,DeathsUnder5,GDP,nan
-United States of America,DeathsUnder5,Population,nan
-United States of America,DeathsUnder5,Schooling,nan
-United States of America,TotalExpenditure,LifeExpectancy,0.034206458067517494
-United States of America,TotalExpenditure,AdultMortality,-0.15492757246828237
-United States of America,TotalExpenditure,InfantDeaths,0.0375144607108194
-United States of America,TotalExpenditure,BodyMassIndex,0.1998131966278904
-United States of America,TotalExpenditure,DeathsUnder5,0.12127769389116778
-United States of America,TotalExpenditure,TotalExpenditure,1.0
-United States of America,TotalExpenditure,GDP,nan
-United States of America,TotalExpenditure,Population,nan
-United States of America,TotalExpenditure,Schooling,nan
-United States of America,GDP,LifeExpectancy,nan
-United States of America,GDP,AdultMortality,nan
-United States of America,GDP,InfantDeaths,nan
-United States of America,GDP,BodyMassIndex,nan
-United States of America,GDP,DeathsUnder5,nan
-United States of America,GDP,TotalExpenditure,nan
-United States of America,GDP,GDP,nan
-United States of America,GDP,Population,nan
-United States of America,GDP,Schooling,nan
-United States of America,Population,LifeExpectancy,nan
-United States of America,Population,AdultMortality,nan
-United States of America,Population,InfantDeaths,nan
-United States of America,Population,BodyMassIndex,nan
-United States of America,Population,DeathsUnder5,nan
-United States of America,Population,TotalExpenditure,nan
-United States of America,Population,GDP,nan
-United States of America,Population,Population,nan
-United States of America,Population,Schooling,nan
-United States of America,Schooling,LifeExpectancy,nan
-United States of America,Schooling,AdultMortality,nan
-United States of America,Schooling,InfantDeaths,nan
-United States of America,Schooling,BodyMassIndex,nan
-United States of America,Schooling,DeathsUnder5,nan
-United States of America,Schooling,TotalExpenditure,nan
-United States of America,Schooling,GDP,nan
-United States of America,Schooling,Population,nan
-United States of America,Schooling,Schooling,nan
+USA,LifeExpectancy,LifeExpectancy,1.0
+USA,LifeExpectancy,AdultMortality,-0.9015021265493286
+USA,LifeExpectancy,InfantDeaths,-0.9179025644651371
+USA,LifeExpectancy,BodyMassIndex,0.6596335368838216
+USA,LifeExpectancy,DeathsUnder5,-0.9116828991157346
+USA,LifeExpectancy,TotalExpenditure,0.034206458067517494
+USA,LifeExpectancy,GDP,nan
+USA,LifeExpectancy,Population,nan
+USA,LifeExpectancy,Schooling,nan
+USA,AdultMortality,LifeExpectancy,-0.9015021265493286
+USA,AdultMortality,AdultMortality,1.0
+USA,AdultMortality,InfantDeaths,0.8114720689897407
+USA,AdultMortality,BodyMassIndex,-0.522562010748927
+USA,AdultMortality,DeathsUnder5,0.7997209919245528
+USA,AdultMortality,TotalExpenditure,-0.15492757246828237
+USA,AdultMortality,GDP,nan
+USA,AdultMortality,Population,nan
+USA,AdultMortality,Schooling,nan
+USA,InfantDeaths,LifeExpectancy,-0.9179025644651371
+USA,InfantDeaths,AdultMortality,0.8114720689897407
+USA,InfantDeaths,InfantDeaths,1.0
+USA,InfantDeaths,BodyMassIndex,-0.4481816024538844
+USA,InfantDeaths,DeathsUnder5,0.9889174665944239
+USA,InfantDeaths,TotalExpenditure,0.0375144607108194
+USA,InfantDeaths,GDP,nan
+USA,InfantDeaths,Population,nan
+USA,InfantDeaths,Schooling,nan
+USA,BodyMassIndex,LifeExpectancy,0.6596335368838216
+USA,BodyMassIndex,AdultMortality,-0.522562010748927
+USA,BodyMassIndex,InfantDeaths,-0.4481816024538844
+USA,BodyMassIndex,BodyMassIndex,1.0
+USA,BodyMassIndex,DeathsUnder5,-0.4435565843779049
+USA,BodyMassIndex,TotalExpenditure,0.1998131966278904
+USA,BodyMassIndex,GDP,nan
+USA,BodyMassIndex,Population,nan
+USA,BodyMassIndex,Schooling,nan
+USA,DeathsUnder5,LifeExpectancy,-0.9116828991157346
+USA,DeathsUnder5,AdultMortality,0.7997209919245528
+USA,DeathsUnder5,InfantDeaths,0.9889174665944239
+USA,DeathsUnder5,BodyMassIndex,-0.4435565843779049
+USA,DeathsUnder5,DeathsUnder5,1.0
+USA,DeathsUnder5,TotalExpenditure,0.12127769389116778
+USA,DeathsUnder5,GDP,nan
+USA,DeathsUnder5,Population,nan
+USA,DeathsUnder5,Schooling,nan
+USA,TotalExpenditure,LifeExpectancy,0.034206458067517494
+USA,TotalExpenditure,AdultMortality,-0.15492757246828237
+USA,TotalExpenditure,InfantDeaths,0.0375144607108194
+USA,TotalExpenditure,BodyMassIndex,0.1998131966278904
+USA,TotalExpenditure,DeathsUnder5,0.12127769389116778
+USA,TotalExpenditure,TotalExpenditure,1.0
+USA,TotalExpenditure,GDP,nan
+USA,TotalExpenditure,Population,nan
+USA,TotalExpenditure,Schooling,nan
+USA,GDP,LifeExpectancy,nan
+USA,GDP,AdultMortality,nan
+USA,GDP,InfantDeaths,nan
+USA,GDP,BodyMassIndex,nan
+USA,GDP,DeathsUnder5,nan
+USA,GDP,TotalExpenditure,nan
+USA,GDP,GDP,nan
+USA,GDP,Population,nan
+USA,GDP,Schooling,nan
+USA,Population,LifeExpectancy,nan
+USA,Population,AdultMortality,nan
+USA,Population,InfantDeaths,nan
+USA,Population,BodyMassIndex,nan
+USA,Population,DeathsUnder5,nan
+USA,Population,TotalExpenditure,nan
+USA,Population,GDP,nan
+USA,Population,Population,nan
+USA,Population,Schooling,nan
+USA,Schooling,LifeExpectancy,nan
+USA,Schooling,AdultMortality,nan
+USA,Schooling,InfantDeaths,nan
+USA,Schooling,BodyMassIndex,nan
+USA,Schooling,DeathsUnder5,nan
+USA,Schooling,TotalExpenditure,nan
+USA,Schooling,GDP,nan
+USA,Schooling,Population,nan
+USA,Schooling,Schooling,nan
 Uruguay,LifeExpectancy,LifeExpectancy,1.0
 Uruguay,LifeExpectancy,AdultMortality,-0.8785659163829522
 Uruguay,LifeExpectancy,InfantDeaths,-0.8481507478456543
@@ -15308,87 +15308,87 @@ Venezuela (Bolivarian Republic of),Schooling,TotalExpenditure,0.3211118812742732
 Venezuela (Bolivarian Republic of),Schooling,GDP,nan
 Venezuela (Bolivarian Republic of),Schooling,Population,nan
 Venezuela (Bolivarian Republic of),Schooling,Schooling,1.0
-Viet Nam,LifeExpectancy,LifeExpectancy,1.0
-Viet Nam,LifeExpectancy,AdultMortality,-0.37295403792260867
-Viet Nam,LifeExpectancy,InfantDeaths,-0.7629328140005242
-Viet Nam,LifeExpectancy,BodyMassIndex,0.796982496473737
-Viet Nam,LifeExpectancy,DeathsUnder5,-0.7650701857541296
-Viet Nam,LifeExpectancy,TotalExpenditure,0.8069486454953405
-Viet Nam,LifeExpectancy,GDP,nan
-Viet Nam,LifeExpectancy,Population,nan
-Viet Nam,LifeExpectancy,Schooling,0.9976604935493546
-Viet Nam,AdultMortality,LifeExpectancy,-0.37295403792260867
-Viet Nam,AdultMortality,AdultMortality,1.0
-Viet Nam,AdultMortality,InfantDeaths,0.10897756024090684
-Viet Nam,AdultMortality,BodyMassIndex,-0.28570975645488617
-Viet Nam,AdultMortality,DeathsUnder5,0.12679955433258702
-Viet Nam,AdultMortality,TotalExpenditure,-0.3726109721621755
-Viet Nam,AdultMortality,GDP,nan
-Viet Nam,AdultMortality,Population,nan
-Viet Nam,AdultMortality,Schooling,-0.3716115315505283
-Viet Nam,InfantDeaths,LifeExpectancy,-0.7629328140005242
-Viet Nam,InfantDeaths,AdultMortality,0.10897756024090684
-Viet Nam,InfantDeaths,InfantDeaths,1.0
-Viet Nam,InfantDeaths,BodyMassIndex,-0.4455539206648495
-Viet Nam,InfantDeaths,DeathsUnder5,0.9639226944827414
-Viet Nam,InfantDeaths,TotalExpenditure,-0.6119292802873515
-Viet Nam,InfantDeaths,GDP,nan
-Viet Nam,InfantDeaths,Population,nan
-Viet Nam,InfantDeaths,Schooling,-0.7313999226783862
-Viet Nam,BodyMassIndex,LifeExpectancy,0.796982496473737
-Viet Nam,BodyMassIndex,AdultMortality,-0.28570975645488617
-Viet Nam,BodyMassIndex,InfantDeaths,-0.4455539206648495
-Viet Nam,BodyMassIndex,BodyMassIndex,1.0
-Viet Nam,BodyMassIndex,DeathsUnder5,-0.4475808530438849
-Viet Nam,BodyMassIndex,TotalExpenditure,0.6928273507907362
-Viet Nam,BodyMassIndex,GDP,nan
-Viet Nam,BodyMassIndex,Population,nan
-Viet Nam,BodyMassIndex,Schooling,0.7966085236635067
-Viet Nam,DeathsUnder5,LifeExpectancy,-0.7650701857541296
-Viet Nam,DeathsUnder5,AdultMortality,0.12679955433258702
-Viet Nam,DeathsUnder5,InfantDeaths,0.9639226944827414
-Viet Nam,DeathsUnder5,BodyMassIndex,-0.4475808530438849
-Viet Nam,DeathsUnder5,DeathsUnder5,1.0
-Viet Nam,DeathsUnder5,TotalExpenditure,-0.6237782160230445
-Viet Nam,DeathsUnder5,GDP,nan
-Viet Nam,DeathsUnder5,Population,nan
-Viet Nam,DeathsUnder5,Schooling,-0.7349884274650468
-Viet Nam,TotalExpenditure,LifeExpectancy,0.8069486454953405
-Viet Nam,TotalExpenditure,AdultMortality,-0.3726109721621755
-Viet Nam,TotalExpenditure,InfantDeaths,-0.6119292802873515
-Viet Nam,TotalExpenditure,BodyMassIndex,0.6928273507907362
-Viet Nam,TotalExpenditure,DeathsUnder5,-0.6237782160230445
-Viet Nam,TotalExpenditure,TotalExpenditure,1.0
-Viet Nam,TotalExpenditure,GDP,nan
-Viet Nam,TotalExpenditure,Population,nan
-Viet Nam,TotalExpenditure,Schooling,0.802273779961174
-Viet Nam,GDP,LifeExpectancy,nan
-Viet Nam,GDP,AdultMortality,nan
-Viet Nam,GDP,InfantDeaths,nan
-Viet Nam,GDP,BodyMassIndex,nan
-Viet Nam,GDP,DeathsUnder5,nan
-Viet Nam,GDP,TotalExpenditure,nan
-Viet Nam,GDP,GDP,nan
-Viet Nam,GDP,Population,nan
-Viet Nam,GDP,Schooling,nan
-Viet Nam,Population,LifeExpectancy,nan
-Viet Nam,Population,AdultMortality,nan
-Viet Nam,Population,InfantDeaths,nan
-Viet Nam,Population,BodyMassIndex,nan
-Viet Nam,Population,DeathsUnder5,nan
-Viet Nam,Population,TotalExpenditure,nan
-Viet Nam,Population,GDP,nan
-Viet Nam,Population,Population,nan
-Viet Nam,Population,Schooling,nan
-Viet Nam,Schooling,LifeExpectancy,0.9976604935493546
-Viet Nam,Schooling,AdultMortality,-0.3716115315505283
-Viet Nam,Schooling,InfantDeaths,-0.7313999226783862
-Viet Nam,Schooling,BodyMassIndex,0.7966085236635067
-Viet Nam,Schooling,DeathsUnder5,-0.7349884274650468
-Viet Nam,Schooling,TotalExpenditure,0.802273779961174
-Viet Nam,Schooling,GDP,nan
-Viet Nam,Schooling,Population,nan
-Viet Nam,Schooling,Schooling,1.0
+Vietnam,LifeExpectancy,LifeExpectancy,1.0
+Vietnam,LifeExpectancy,AdultMortality,-0.37295403792260867
+Vietnam,LifeExpectancy,InfantDeaths,-0.7629328140005242
+Vietnam,LifeExpectancy,BodyMassIndex,0.796982496473737
+Vietnam,LifeExpectancy,DeathsUnder5,-0.7650701857541296
+Vietnam,LifeExpectancy,TotalExpenditure,0.8069486454953405
+Vietnam,LifeExpectancy,GDP,nan
+Vietnam,LifeExpectancy,Population,nan
+Vietnam,LifeExpectancy,Schooling,0.9976604935493546
+Vietnam,AdultMortality,LifeExpectancy,-0.37295403792260867
+Vietnam,AdultMortality,AdultMortality,1.0
+Vietnam,AdultMortality,InfantDeaths,0.10897756024090684
+Vietnam,AdultMortality,BodyMassIndex,-0.28570975645488617
+Vietnam,AdultMortality,DeathsUnder5,0.12679955433258702
+Vietnam,AdultMortality,TotalExpenditure,-0.3726109721621755
+Vietnam,AdultMortality,GDP,nan
+Vietnam,AdultMortality,Population,nan
+Vietnam,AdultMortality,Schooling,-0.3716115315505283
+Vietnam,InfantDeaths,LifeExpectancy,-0.7629328140005242
+Vietnam,InfantDeaths,AdultMortality,0.10897756024090684
+Vietnam,InfantDeaths,InfantDeaths,1.0
+Vietnam,InfantDeaths,BodyMassIndex,-0.4455539206648495
+Vietnam,InfantDeaths,DeathsUnder5,0.9639226944827414
+Vietnam,InfantDeaths,TotalExpenditure,-0.6119292802873515
+Vietnam,InfantDeaths,GDP,nan
+Vietnam,InfantDeaths,Population,nan
+Vietnam,InfantDeaths,Schooling,-0.7313999226783862
+Vietnam,BodyMassIndex,LifeExpectancy,0.796982496473737
+Vietnam,BodyMassIndex,AdultMortality,-0.28570975645488617
+Vietnam,BodyMassIndex,InfantDeaths,-0.4455539206648495
+Vietnam,BodyMassIndex,BodyMassIndex,1.0
+Vietnam,BodyMassIndex,DeathsUnder5,-0.4475808530438849
+Vietnam,BodyMassIndex,TotalExpenditure,0.6928273507907362
+Vietnam,BodyMassIndex,GDP,nan
+Vietnam,BodyMassIndex,Population,nan
+Vietnam,BodyMassIndex,Schooling,0.7966085236635067
+Vietnam,DeathsUnder5,LifeExpectancy,-0.7650701857541296
+Vietnam,DeathsUnder5,AdultMortality,0.12679955433258702
+Vietnam,DeathsUnder5,InfantDeaths,0.9639226944827414
+Vietnam,DeathsUnder5,BodyMassIndex,-0.4475808530438849
+Vietnam,DeathsUnder5,DeathsUnder5,1.0
+Vietnam,DeathsUnder5,TotalExpenditure,-0.6237782160230445
+Vietnam,DeathsUnder5,GDP,nan
+Vietnam,DeathsUnder5,Population,nan
+Vietnam,DeathsUnder5,Schooling,-0.7349884274650468
+Vietnam,TotalExpenditure,LifeExpectancy,0.8069486454953405
+Vietnam,TotalExpenditure,AdultMortality,-0.3726109721621755
+Vietnam,TotalExpenditure,InfantDeaths,-0.6119292802873515
+Vietnam,TotalExpenditure,BodyMassIndex,0.6928273507907362
+Vietnam,TotalExpenditure,DeathsUnder5,-0.6237782160230445
+Vietnam,TotalExpenditure,TotalExpenditure,1.0
+Vietnam,TotalExpenditure,GDP,nan
+Vietnam,TotalExpenditure,Population,nan
+Vietnam,TotalExpenditure,Schooling,0.802273779961174
+Vietnam,GDP,LifeExpectancy,nan
+Vietnam,GDP,AdultMortality,nan
+Vietnam,GDP,InfantDeaths,nan
+Vietnam,GDP,BodyMassIndex,nan
+Vietnam,GDP,DeathsUnder5,nan
+Vietnam,GDP,TotalExpenditure,nan
+Vietnam,GDP,GDP,nan
+Vietnam,GDP,Population,nan
+Vietnam,GDP,Schooling,nan
+Vietnam,Population,LifeExpectancy,nan
+Vietnam,Population,AdultMortality,nan
+Vietnam,Population,InfantDeaths,nan
+Vietnam,Population,BodyMassIndex,nan
+Vietnam,Population,DeathsUnder5,nan
+Vietnam,Population,TotalExpenditure,nan
+Vietnam,Population,GDP,nan
+Vietnam,Population,Population,nan
+Vietnam,Population,Schooling,nan
+Vietnam,Schooling,LifeExpectancy,0.9976604935493546
+Vietnam,Schooling,AdultMortality,-0.3716115315505283
+Vietnam,Schooling,InfantDeaths,-0.7313999226783862
+Vietnam,Schooling,BodyMassIndex,0.7966085236635067
+Vietnam,Schooling,DeathsUnder5,-0.7349884274650468
+Vietnam,Schooling,TotalExpenditure,0.802273779961174
+Vietnam,Schooling,GDP,nan
+Vietnam,Schooling,Population,nan
+Vietnam,Schooling,Schooling,1.0
 Yemen,LifeExpectancy,LifeExpectancy,1.0
 Yemen,LifeExpectancy,AdultMortality,0.2538726848706008
 Yemen,LifeExpectancy,InfantDeaths,-0.2597400688957189
