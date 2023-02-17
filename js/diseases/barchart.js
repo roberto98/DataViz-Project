@@ -44,7 +44,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
         // I set default values
         barchart_yearDisplay.text(currentYear);
         slider.property("value", i);
-        updateChart(currentYear, currentCountry);
+        updateChart(currentYear, currentCountry, playing);
 
         // When the input of the slider changes, i update
         slider.on("input", function() {
@@ -52,7 +52,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
         currentYear = years[i];
         barchart_yearDisplay.text(currentYear);
         currentCountriesFilter = d3.select("#barchart_bottom").property("value");
-        updateChart(currentYear, currentCountriesFilter);
+        updateChart(currentYear, currentCountriesFilter, playing);
       });
 
       // When Play start the animation
@@ -74,11 +74,12 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
             }
             barchart_yearDisplay.text(currentYear);
             currentCountry = d3.select("#barchart_bottom").property("value");
-            updateChart(currentYear, currentCountry);
+            updateChart(currentYear, currentCountry, playing);
           }, 1000);
         } else {
           playing = false;
           playButton.text("Play");
+          updateChart(currentYear, currentCountry, playing);
           clearInterval(interval);
         }
       });
@@ -91,7 +92,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
   // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
 
 
-    function updateChart(year, country) {
+    function updateChart(year, country, playing) {
         d3.select("#barchart").selectAll("svg > g > *").remove();
         selectedYear = String(year);
         selectedCountry = country;
@@ -149,7 +150,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
             .attr("width", x(0)) // always equal to 0
             .attr("x", x(0))
             .on("mouseover", function (event, d) {
-
+              if(!playing){
                 var diseasesClass = d3.select(this).attr("class").split(" ")[1]
 
                 // Reduce opacity of all rect to 0.2
@@ -170,9 +171,10 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
                   (+d.Deaths).toFixed(2)+ " deaths per 100 000 population" + "</span>")
                     .style("left", (event.pageX) + "px")
                     .style("top", (event.pageY - 28) + "px");
+              }
             })
             .on("mouseout", function () {
-
+              if(!playing){
                 var diseasesClass = d3.select(this).attr("class").split(" ")[1]
 
                 tooltip.transition()
@@ -184,17 +186,28 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
                     .style("opacity", 1)
                 d3.selectAll("." + diseasesClass.replaceAll(' ', '_'))
                     .style("opacity", 1)
+              }
             });
 
         // Animation
-        svg.selectAll("rect")
-            .transition()
-            .duration(500)
-            .attr("x", x(0))
-            .attr("width", d => x(d.Deaths))
-            .delay((d, i) => {
-                return i * 10
-            })
+        if(!playing){
+          svg.selectAll("rect")
+              .transition()
+              .duration(500)
+              .attr("x", x(0))
+              .attr("width", d => x(d.Deaths))
+              .delay((d, i) => {
+                  return i * 10
+              })
+        } else {
+          svg.selectAll("rect")
+              .attr("x", x(0))
+              .attr("width", d => x(d.Deaths))
+              /*
+              .delay((d, i) => {
+                  return i * 10
+              }) */
+        }
 
 
     }
@@ -203,7 +216,12 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
         indexYear = d3.select("#barchart_yearSlider").property("value");
         selectedYear = years[indexYear];
         selectedCountriesFilter = d3.select("#barchart_bottom").property("value");
-        updateChart(selectedYear, selectedCountriesFilter);
+
+        var playing = false;
+        play_button = d3.select("#barchart_yearPlay").text();
+        if(play_button === "Pause") {playing = true;}
+
+        updateChart(selectedYear, selectedCountriesFilter, playing);
       })
 
 

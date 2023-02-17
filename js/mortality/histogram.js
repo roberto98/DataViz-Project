@@ -26,13 +26,13 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
         // I set default values
         Histogram_yearDisplay.text(currentYear);
         slider.property("value", currentYear);
-        updateChart(currentYear);
+        updateChart(currentYear, playing);
 
         // When the input of the slider changes, i update
         slider.on("input", function() {
         currentYear = this.value;
         Histogram_yearDisplay.text(currentYear);
-        updateChart(currentYear);
+        updateChart(currentYear, playing);
         });
 
         // When Play start the animation
@@ -51,11 +51,12 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
                 slider.property("value", currentYear);
             }
             Histogram_yearDisplay.text(currentYear);
-            updateChart(currentYear);
+            updateChart(currentYear, playing);
             }, 750);
         } else {
             playing = false;
             playButton.text("Play");
+            updateChart(currentYear, playing);  
             clearInterval(interval);
         }
         });
@@ -70,7 +71,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
 
-    function updateChart(year) {
+    function updateChart(year, playing) {
         d3.select("#histogram").selectAll("svg > g > *").remove();
         selectedYear = String(year);
         const filteredData = data.filter(function(d){return d.Year === selectedYear});
@@ -124,7 +125,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
 
 
         var showTooltip = function(event, d) {
-
+          if(!playing){
             tooltip
                 .transition()
                 .duration(200)
@@ -140,9 +141,11 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             d3.select(this)
               .style("stroke", "black")
               .style("opacity", 1)
+          }
         }
 
         var hideTooltip = function(event) {
+          if(!playing){
             tooltip.transition()
                 .duration(2)
                 .style("opacity", 0);
@@ -152,13 +155,16 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             // Back to normal opacity: 1
             d3.selectAll("rect")
                 .style("opacity", 1)
+          }
         }
 
         var moveTooltip = function(event) {
+          if(!playing){
             tooltip
             .style("left", (event.pageX) + "px")
             .style("top", (event.pageY - 28) + "px")
           }
+        }
 
         // append the bar rectangles to the svg element
         svg.selectAll("rect")

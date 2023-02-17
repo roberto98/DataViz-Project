@@ -93,10 +93,11 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
             currentCountriesFilter = d3.select("#scatter2Countries").property("value");
             currentSort = d3.select("#scatter2Sort").property("value");
             updateChart(currentYear, currentVariable, currentCountriesFilter, currentSort, playing);
-          }, 500);
+          }, 300);
         } else {
           playing = false;
           playButton.text("Play");
+          updateChart(currentYear, currentVariable, currentCountriesFilter, currentSort, playing);
           clearInterval(interval);
         }
       });
@@ -160,7 +161,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
     // ----------------------------- Y axis ------------------------- //
     var y = d3.scaleLinear()
-        .domain([min_max_y[0], min_max_y[1]*1.1])
+        .domain([-1, min_max_y[1]*1.1]).nice()
         .range([height, 0]);
     svg.append("g")
         .call(d3.axisLeft(y).tickFormat(d3.format(".2s")));

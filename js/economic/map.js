@@ -76,6 +76,7 @@ function Play(){
       } else {
         playing = false;
         playButton.text("Play");
+        updateChart(currentYear, currentVariable, data, playing);
         clearInterval(interval);
       }
     });
@@ -286,6 +287,7 @@ function updateChart(year, variable, data, playing) {
               .attr("transform", `translate(${width}, 110)`)
               .attr("id", "legend")
               .call(legend);
+
       }); // chiude json
 }
 
