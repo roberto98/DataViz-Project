@@ -1,10 +1,10 @@
 //https://gist.github.com/kopelli/fce12e352d96188320ed1376fa57afbe
 // https://gist.github.com/malon/a3f7fc1e8fde18a1e1a7e674d01c5cb1
 
-d3.csv("./python/CSV/global_sankey.csv").then(data => {
+d3.csv("./python/CSV/sankey_no_injuries_3rdcolumn.csv").then(data => {
 
 // set the dimensions and margins of the graph
-var margin = {top: -7000, right: 10, bottom: 10, left: 10},
+var margin = {top: -10000, right: 10, bottom: 10, left: 10},
   width = 140000 - margin.left - margin.right,
   height = 100000 - margin.top - margin.bottom;
 
