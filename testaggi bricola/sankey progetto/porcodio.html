@@ -60,7 +60,7 @@ var sankey = d3.sankey()
 var path = sankey.link();
 
 var selectedCountry = "Argentina"
-d3.csv("global_sankey.csv", function(data) {
+d3.csv("sankey_no_injuries_3rdcolumn.csv", function(data) {
   var data = data.filter(function(d){return d.Zimbabwe==selectedCountry})
   
   graph = {"nodes" : [], "links" : []};
