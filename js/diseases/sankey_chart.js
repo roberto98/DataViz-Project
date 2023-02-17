@@ -3,11 +3,9 @@
 
 d3.csv("./python/CSV/sankey_no_injuries_3rdcolumn.csv").then(data => {
 
-// set the dimensions and margins of the graph
-var margin = {top: -10000, right: 10, bottom: 10, left: 10},
-  width = 140000 - margin.left - margin.right,
-  height = 100000 - margin.top - margin.bottom;
-
+var margin = {top: -2000, right: 10, bottom: 10, left: 10},
+    width = 6000 - margin.left - margin.right,
+    height = 5000 - margin.top - margin.bottom;
 // append the svg object to the body of the page
 var svg = d3.select("#sankey")
   .append("svg")
@@ -27,8 +25,8 @@ var svg = d3.select("#sankey")
 
   // Set the sankey diagram properties
   var sankey = d3.sankey()
-      .nodeWidth(10)
-      .nodePadding(10)
+      .nodeWidth(36)
+      .nodePadding(40)
       .size([width, height]);
 
   var path = sankey.link();
@@ -36,7 +34,7 @@ var svg = d3.select("#sankey")
   var selectedCountry = "Argentina"
   var selectedYear = "2000"
   var data = data.filter(function(d){return d.Country === selectedCountry && d.Year === selectedYear})
-
+  console.log(data);
   graph = {"nodes" : [], "links" : []};
 
   for (var i = 0; i < data.length; i++) {
