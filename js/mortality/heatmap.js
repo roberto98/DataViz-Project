@@ -2,7 +2,7 @@
 d3.csv("./python/CSV/country_heatmap.csv").then(data => {
 
   const margin = {top: 40, right: 15, bottom: 20, left: 40};
-  const width = 450 - margin.left - margin.right;
+  const width = 550 - margin.left - margin.right;
   const height = 450 - margin.top - margin.bottom;
 
   const svg = d3.select("#heatmap")
@@ -43,8 +43,11 @@ updateChart(selectedCountry)
 
     const filteredData = data.filter(d => d.Country === selectedCountry);
 
-    const myGroups = Array.from(new Set(filteredData.map(d => d.Group1)))
-    const myVars = Array.from(new Set(filteredData.map(d => d.Group2)))
+    const myGroups = Array.from(new Set(filteredData.map(d => d.Group1))).reverse();
+    const myVars = Array.from(new Set(filteredData.map(d => d.Group2))).reverse();
+
+    //const myGroups = ['Population', 'Life Expectancy (age)', 'Adult Mortality (between 15 and 60 years per 1000 population)', 'Infant Deaths (per 1000 population)', 'Deaths Under 5 (per 1000 population)', 'Total Expenditure (%)',
+    //'GDP (USD)', 'Schooling (years)', 'BodyMassIndex', 'Alcohol (per capita consumption)', 'Hepatitis B (immunization coverage %)', 'Measles (reported cases per 1000 population)', 'Polio (immunization coverage %)', 'HIV/AIDS (deaths per 1000 births)', 'Thinness 10-19 (%) years', 'Thinness 5-9 years (%)', 'Income composition of resources index']
 
     // Build X scales and axis:
     const x = d3.scaleBand()
@@ -69,11 +72,11 @@ updateChart(selectedCountry)
       .select(".domain").remove()
 
     // Build color scale
-    color_arr = d3.schemeGreens[8].slice(1);
+    color_arr = d3.schemeGreens[9].slice(1  );
     const myColor = d3.scalePow(/*d3.interpolateBlues*/)
         .domain([-1, 1])
         .range([color_arr[0], color_arr[color_arr.length-1]])
-        .exponent(0.6);
+        .exponent(0.8);
 
     // add the squares
     svg.selectAll()

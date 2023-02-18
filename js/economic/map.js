@@ -1,7 +1,7 @@
 
-d3.csv("./python/data/kaggle_dataset.csv").then(function (data) {
+d3.csv("./python/CSV/map_economic.csv").then(function (data) {
 
-  const margin = {top: 10, right: 140, bottom: 10, left: 10},
+  const margin = {top: 10, right: 180, bottom: 10, left: 10},
       width = 1200 - margin.left - margin.right,
       height = 800 - margin.top - margin.bottom;
 
@@ -17,7 +17,8 @@ d3.csv("./python/data/kaggle_dataset.csv").then(function (data) {
 
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- SELECT BUTTONS ---------------------------------------------------- //
-const allVariables = ["Adult Mortality", "infant deaths", "Alcohol", "percentage expenditure", "Hepatitis B", "Measles "," BMI ","under-five deaths ","Polio","Total expenditure","Diphtheria "," HIV/AIDS","GDP"," thinness  1-19 years"," thinness 5-9 years","Income composition of resources","Schooling"]
+//const allVariables = ["Adult Mortality", "infant deaths", "Alcohol", "percentage expenditure", "Hepatitis B", "Measles "," BMI ","under-five deaths ","Polio","Total expenditure","Diphtheria "," HIV/AIDS","GDP"," thinness  1-19 years"," thinness 5-9 years","Income composition of resources","Schooling"]
+const allVariables = ["ICOR",  "GDP", "Gov Health Expenditure", "Population", "AdultMortality", "Schooling"]
 
 d3.select("#selectdVariableMap")
   .selectAll('myOptions')
@@ -27,7 +28,7 @@ d3.select("#selectdVariableMap")
   .text(function (d) { return d; })
   .attr("value", function (d) { return d; })
 d3.select("#selectdVariableMap")
-  .property("value", "Adult Mortality");
+  .property("value", "GDP");
 
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- PLAY BUTTON ---------------------------------------------------- //
@@ -39,7 +40,7 @@ function Play(){
     var playing = false;
     var interval;
     var currentYear = 2000;
-    var currentVariable = "Adult Mortality"
+    var currentVariable = "GDP"
     var years = [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015];
 
     // I set default values
@@ -105,14 +106,14 @@ function updateChart(year, variable, data, playing) {
       .range(d3.schemeGreens[5]);
 
   var data = data.filter(function(d){return d.Year === selectedYear})
-
+  const format = d3.format(".2f");
   var allExpectancies = []
   var allValues = []
   d3.json("./python/data/world.json").then(function(json){
     for (var i = 0; i < data.length; i++) {
       var dataCountry = data[i].Country;
-      var dataValue = parseFloat(data[i][selectedVariable]);
-      var dataLifeExp = parseFloat(data[i]["Life expectancy "]);
+      var dataValue = format(parseFloat(data[i][selectedVariable]));
+      var dataLifeExp = parseFloat(data[i]["LifeExpectancy"]);
       for (var j = 0; j < json.features.length; j++) {
         var jsonCountry = json.features[j].properties.name;
         if (dataCountry == jsonCountry) {
@@ -209,6 +210,14 @@ function updateChart(year, variable, data, playing) {
     lifeLabels.exit().remove();
 
     //---------------------------------------------------- Tooltip ----------------------------------- //
+
+    var unit_measure = "";
+    if (selectedVariable === "AdultMortality"){ unit_measure = "per 1000 population";}
+    if (selectedVariable === "ICOR"){ unit_measure = "index";}
+    if (selectedVariable === "GDP"){ unit_measure = "USD";}
+    if (selectedVariable === "Gov Health Expenditure"){ unit_measure = "%";}
+    if (selectedVariable === "Schooling"){ unit_measure = "years";}
+
     // create a tooltip
     const tooltip = d3.select("#map")
         .append("div")
@@ -228,10 +237,11 @@ function updateChart(year, variable, data, playing) {
               tooltip.transition()
                   .duration(200)
                   .style("opacity", 1);
+
               tooltip.html("<span class='tooltiptext'>"
                 + "Country: " + d.properties.name + "<br>"
                 + "Life Expectancy: " + d.properties.lifeExp + " years <br>"
-                +  `${selectedVariable}: ` + d.properties.value + "<br>"
+                +  `${selectedVariable}: ` + d.properties.value + " " + unit_measure + "<br>"
                 + "</span>")
                   .style("left", (event.pageX) + "px")
                   .style("top", (event.pageY - 28) + "px");
@@ -260,7 +270,7 @@ function updateChart(year, variable, data, playing) {
           .ascending(true)
           .shapeHeight(35)
           .shapeWidth(15)
-          .title("Color values:")
+          .title(selectedVariable + " (" + unit_measure + ")" )
           .labels(function ({ // custom function that changes how each label is printed, allows us to have printing
               i,              // like for thresholded scales, which are not implemented for quantized ones
               genLength,

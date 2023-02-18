@@ -1,7 +1,7 @@
 
 d3.csv("./python/CSV/violin.csv").then(function (data) {
 
-  const margin ={top: 40, right: 30, bottom: 30, left: 35},
+  const margin ={top: 40, right: 30, bottom: 60, left: 35},
       width = 700 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
@@ -93,7 +93,7 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
       .domain(["Developing", "Developed"])
       .padding(0.05)
     svg.append("g").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x))
-    svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Country Status").style("font-size", 10)
+    svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 30).text("Country Status").style("font-size", 10)
 
     // ----------------------------- Kernel Density ------------------------- //
     kde = kernelDensityEstimator(kernelEpanechnikov(2), y.ticks(20))
@@ -170,9 +170,9 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
               //console.log(kde_index);
 
               tooltip.html("<span class='tooltiptext'>" +
-                "Year: " + filteredDataElement[closestIndex].Year + "<br>" +
-                "Status: " + key + "<br>" +
-                "Life expectancy: " + filteredDataElement[closestIndex].LifeExpectancy + " age" + "<br>" +
+                //"Year: " + filteredDataElement[closestIndex].Year + "<br>" +
+                //"Status: " + key + "<br>" +
+                "Life expectancy: " + filteredDataElement[closestIndex].LifeExpectancy + " years" + "<br>" +
                 "KDE: " +  kde_arr[kde_index] + "</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY) + "px");

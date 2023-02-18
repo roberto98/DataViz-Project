@@ -1,7 +1,7 @@
 
 d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
-  const margin = {top: 40, right: 190, bottom: 60, left: 35},
+  const margin = {top: 40, right: 190, bottom: 60, left: 50},
       width = 700 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
@@ -18,8 +18,8 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
   // -------------------------------------------------------------------------------------------------------------------------------- //
   // --------------------------------------------------------------- SELECT BUTTONS ---------------------------------------------------- //
-      const allVariables = ["GDP","%Expenditure"]
-      const countriesFilters = ["Population", "GDP", "%Expenditure"]
+      const allVariables = ["GDP", "TotalExpenditure", "Schooling"]
+      const countriesFilters = ["LifeExpectancy", "Population", "GDP", "TotalExpenditure", "Schooling"]
 
       // Variables
       d3.select("#scatter2Variable")
@@ -145,7 +145,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
     var min_max_y = d3.extent(data, function(d) {return +d[yVal]});
 
     var x = d3.scaleLinear()
-        .domain([min_max_x[0], min_max_x[1]+10])
+        .domain([min_max_x[0], min_max_x[1]]).nice()
         .range([0, width]);
     svg.append("g")
         .attr("transform", "translate(0," + height + ")")
@@ -166,12 +166,17 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
     svg.append("g")
         .call(d3.axisLeft(y).tickFormat(d3.format(".2s")));
 
+    var unit_measure = "";
+    if (yVal === "GDP"){ unit_measure = "USD";}
+    if (yVal === "Gov Health Expenditure"){ unit_measure = "%";}
+    if (yVal === "Schooling"){ unit_measure = "years";}
+
     // Add Y axis label:
     svg.append("text")
         .attr("text-anchor", "middle")
         .attr("x", 0)
         .attr("y", -20)
-        .text(yVal)
+        .text(yVal + " (" + unit_measure + ")")
         .style("font-size", 10)
 
     // ------------------------------ Scatter plot ---------------------- //
@@ -241,10 +246,11 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
                 .duration(200)
                 .style("opacity", 1);
 
-            tooltip.html("<span class='tooltiptext'>" + "Year: "+ d.Year + "<br>"
-                                                      + "Country: " + d.Country + "<br>"
-                                                      + `${xVal}: ` + d[xVal] + "<br>"
-                                                      + `${yVal}: ` + d[yVal]  +"</span>")
+            tooltip.html("<span class='tooltiptext'>"
+                  //+ "Year: "+ d.Year + "<br>"
+                  + "Country: " + d.Country + "<br>"
+                  + `${xVal}: ` + d[xVal] + " years <br>"
+                  + `${yVal}: ` + d[yVal]  + " " + unit_measure + "</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY - 28) + "px");
           }

@@ -56,7 +56,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
         } else {
             playing = false;
             playButton.text("Play");
-            updateChart(currentYear, playing);  
+            updateChart(currentYear, playing);
             clearInterval(interval);
         }
         });
@@ -86,7 +86,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x));
-        svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Life Expectancy").style("font-size", 15)
+        svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Life Expectancy (age)").style("font-size", 15)
 
         //-------------------------- Histogram---------------------------//
         // set the parameters for the histogram
@@ -175,7 +175,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
             .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; })
             .attr("width", function(d) { return x(d.x1) - x(d.x0) -1 ; })
             .attr("height", function(d) { return height - y(d.length); })
-            .style("fill", "#FF595E")
+            .style("fill", "#8ac926")
             // Show tooltip on hover
             .on("mouseover", showTooltip )
             .on("mousemove", moveTooltip )

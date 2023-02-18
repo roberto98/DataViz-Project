@@ -51,6 +51,7 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
   // --------------------------------------------------------------- UPDATE CHARTS ---------------------------------------------------- //
   function updateChart(selectedVariable) {
      d3.select("#time_line").selectAll("svg > g > *").remove();
+
     // --------------------------- X axis ------------------------ //
     x = d3.scaleTime()
       .domain(d3.extent(data, function(d) {return new Date(d.Year, 0, 1)}))
@@ -67,7 +68,18 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
         .range([ height, 0 ]);
       svg.append("g")
         .call(d3.axisLeft(y));
-      svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text(selectedVariable).style("font-size", 10)
+
+      var y_name = selectedVariable;
+      if (selectedVariable === "AdultMortality"){ y_name = "Adult Mortality (per 1000 population)"}
+
+      svg.append("text")
+        .attr("text-anchor", "end")
+        .attr("x", -50)
+        .attr("y", -40)
+        .attr("transform", "rotate(-90)")
+        .text(y_name)
+        .style("font-size", 10);
+
 
 
     // ------------------------------ Plot ---------------------- //
@@ -150,9 +162,13 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
                 .duration(200)
                 .style("opacity", 1);
 
+            var tooltip_name = "";
+            if (selectedVariable === "AdultMortality"){ tooltip_name = "deaths"}
+            if (selectedVariable === "LifeExpectancy"){ tooltip_name = "years"}
+
             tooltip.html("<span class='tooltiptext'>" + "Year: " + country_data[i].Year + "<br>"
                                                       + "Country: " +  country_data[i].Country + "<br>"
-                                                      + `${selectedVariable}: ` +  country_data[i][selectedVariable] +"</span>")
+                                                      + `${selectedVariable}: ` +  country_data[i][selectedVariable] + " " + tooltip_name + "</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY) + "px");
         })
