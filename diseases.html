@@ -88,7 +88,22 @@
           This chart correlates the incidence rate of various diseases with life expectancy for different countries.
           It helps to identify the diseases that have the greatest impact on life expectancy and how strongly they are related to one another.
         </p>
-        <div id="scatter1" class="font svg-container"> </div>
+
+        <p>Year: <span id="scatter_yearDisplay"></span></p>
+        <button id="scatter_yearPlay">Play</button>
+        <input type="range" style="width:50%;" min="0" max="3" value="0" id="scatter_yearSlider">
+        <br>
+        <p> Variable:
+            <select id="scatterVariable" ></select>
+            Top 20 countries by:
+            <select id="scatterCountries" ></select>
+            <select id="scatterSort">
+              <option value="Desc">Desc</option>
+              <option value="Asc">Asc</option>
+            </select>
+        </p>
+        <br>
+        <div id="scatter" class="font svg-container"> </div>
 
 
       <h3 class="title left">How Diseases Interact to Impact Life Expectancy?</h3> <!-- ############################################ SANKEY  ### -->
@@ -118,5 +133,6 @@
   <script src="./js/diseases/sankey.js"></script>
   <script src="./js/diseases/sankey_chart.js"></script>
   <script src="./js/diseases/barchart.js"></script>
+  <script src="./js/diseases/scatter_diseases.js"></script>
   </body>
   </html>

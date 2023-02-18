@@ -1,12 +1,12 @@
 
-d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
+d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
 
   const margin = {top: 40, right: 190, bottom: 60, left: 50},
       width = 700 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
   // append the svg object to the body of the page
-  const svg = d3.select("#scatter2")
+  const svg = d3.select("#scatter")
       .append("svg")
       .attr('width', '100%')
       .attr('viewBox', '0 0 ' + (width + margin.left + margin.right) + ' ' + (height + margin.top + margin.bottom))
@@ -18,59 +18,63 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
   // -------------------------------------------------------------------------------------------------------------------------------- //
   // --------------------------------------------------------------- SELECT BUTTONS ---------------------------------------------------- //
-      const allVariables = ["GDP", "TotalExpenditure", "Schooling"]
-      const countriesFilters = ["LifeExpectancy", "Population", "GDP", "TotalExpenditure", "Schooling"]
+      const allVariables = ['Infectious and parasitic diseases', 'Cardiovascular diseases', 'Respiratory diseases',
+                            'Digestive diseases', 'Neurological conditions', 'Mental and substance use disorders', 'Unintentional injuries', 'Intentional injuries'];
 
+      const countriesFilters = ['LifeExpectancy', 'Population', 'Infectious and parasitic diseases', 'Cardiovascular diseases', 'Respiratory diseases',
+                                'Digestive diseases', 'Neurological conditions', 'Mental and substance use disorders', 'Unintentional injuries', 'Intentional injuries'];
       // Variables
-      d3.select("#scatter2Variable")
+      d3.select("#scatterVariable")
         .selectAll('myOptions')
         .data(allVariables)
         .enter()
         .append('option')
         .text(function (d) { return d; })
         .attr("value", function (d) { return d; })
-      d3.select("#scatter2Variable")
-        .property("value", "GDP");
+      d3.select("#scatterVariable")
+        .property("value", "Infectious and parasitic diseases");
 
       // Countries in the legend
-      d3.select("#scatter2Countries")
+      d3.select("#scatterCountries")
         .selectAll('myOptions')
         .data(countriesFilters)
         .enter()
         .append('option')
         .text(function (d) { return d; })
         .attr("value", function (d) { return d; })
-      d3.select("#scatter2Countries")
+      d3.select("#scatterCountries")
         .property("value", "Population");
 
 
   // -------------------------------------------------------------------------------------------------------------------------------- //
   // --------------------------------------------------------------- PLAY BUTTON ---------------------------------------------------- //
   function Play(){
-      var playButton = d3.select("#Scatter2_yearPlay")
-      var slider = d3.select("#Scatter2_yearSlider")
-      var Scatter2_yearDisplay = d3.select("#Scatter2_yearDisplay")
+      var playButton = d3.select("#scatter_yearPlay")
+      var slider = d3.select("#scatter_yearSlider")
+      var scatter_yearDisplay = d3.select("#scatter_yearDisplay")
 
       var playing = false;
       var interval;
       var currentYear = 2000;
-      var currentVariable = "GDP"
+      var currentVariable = "Infectious and parasitic diseases"
       var currentCountriesFilter = "Population"
       var currentSort = "Desc";
-      var years = [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015];
+      var years = [2000, 2010, 2015, 2019];
+      var i = 0;
 
       // I set default values
-      Scatter2_yearDisplay.text(currentYear);
+      scatter_yearDisplay.text(currentYear);
       slider.property("value", currentYear);
       updateChart(currentYear, currentVariable, currentCountriesFilter, currentSort, playing);
 
       // When the input of the slider changes, i update
       slider.on("input", function() {
-        currentYear = this.value;
-        Scatter2_yearDisplay.text(currentYear);
-        currentVariable = d3.select("#scatter2Variable").property("value");
-        currentCountriesFilter = d3.select("#scatter2Countries").property("value");
-        currentSort = d3.select("#scatter2Sort").property("value");
+        i = this.value;
+        currentYear = years[i];
+        scatter_yearDisplay.text(currentYear);
+        currentVariable = d3.select("#scatterVariable").property("value");
+        currentCountriesFilter = d3.select("#scatterCountries").property("value");
+        currentSort = d3.select("#scatterSort").property("value");
         updateChart(currentYear, currentVariable, currentCountriesFilter, currentSort, playing);
       });
 
@@ -80,18 +84,21 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
           playing = true;
           playButton.text("Pause");
           interval = setInterval(function() {
-            currentYear = +slider.property("value");
-            if (currentYear >= 2015) {
+            i = +slider.property("value");
+            currentYear = years[i];
+            if (currentYear >= 2019) {
+              i = 0
               currentYear = 2000;
-              slider.property("value", currentYear);
+              slider.property("value", i);
             } else {
-              currentYear++;
-              slider.property("value", currentYear);
+              i+=1;
+              currentYear = years[i];
+              slider.property("value", i);
             }
-            Scatter2_yearDisplay.text(currentYear);
-            currentVariable = d3.select("#scatter2Variable").property("value");
-            currentCountriesFilter = d3.select("#scatter2Countries").property("value");
-            currentSort = d3.select("#scatter2Sort").property("value");
+            scatter_yearDisplay.text(currentYear);
+            currentVariable = d3.select("#scatterVariable").property("value");
+            currentCountriesFilter = d3.select("#scatterCountries").property("value");
+            currentSort = d3.select("#scatterSort").property("value");
             updateChart(currentYear, currentVariable, currentCountriesFilter, currentSort, playing);
           }, 300);
         } else {
@@ -109,7 +116,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
   // -------------------------------------------------------------------------------------------------------------------------------- //
   // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
   function updateChart(year, variable, countries, sort, playing) {
-    d3.select("#scatter2").selectAll("svg > g > *").remove();
+    d3.select("#scatter").selectAll("svg > g > *").remove();
     sort = String(sort);
     yVal = String(variable);
     xVal = "LifeExpectancy";
@@ -156,7 +163,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
         .attr("text-anchor", "end")
         .attr("x", width)
         .attr("y", height + 50)
-        .text(xVal)
+        .text(xVal + " (years)")
         .style("font-size", 10)
 
     // ----------------------------- Y axis ------------------------- //
@@ -166,16 +173,17 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
     svg.append("g")
         .call(d3.axisLeft(y).tickFormat(d3.format(".2s")));
 
-    var unit_measure = "";
+    var unit_measure = "per 100 000 population";
     if (yVal === "GDP"){ unit_measure = "USD";}
     if (yVal === "Gov Health Expenditure"){ unit_measure = "%";}
     if (yVal === "Schooling"){ unit_measure = "years";}
 
     // Add Y axis label:
     svg.append("text")
-        .attr("text-anchor", "middle")
-        .attr("x", 0)
-        .attr("y", -20)
+        .attr("text-anchor", "end")
+        .attr("x", -50)
+        .attr("y", -40)
+        .attr("transform", "rotate(-90)")
         .text(yVal + " (" + unit_measure + ")")
         .style("font-size", 10)
 
@@ -201,7 +209,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
     // --------------------------------- Tooltip ---------------------------- //
     // create a tooltip
-    const tooltip = d3.select("#scatter2")
+    const tooltip = d3.select("#scatter")
         .append("div")
         .attr("class", "tooltip")
 
@@ -250,7 +258,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
                   //+ "Year: "+ d.Year + "<br>"
                   + "Country: " + d.Country + "<br>"
                   + `${xVal}: ` + d[xVal] + " years <br>"
-                  + `${yVal}: ` + d[yVal]  + " " + unit_measure + "</span>")
+                  + `${yVal}` + d[yVal]  + " deaths " + unit_measure + "</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY - 28) + "px");
           }
@@ -288,7 +296,7 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
     // --------------------------------- Legend ---------------------------- //
     size = 12;
-    const legendContainer =  d3.select("#scatter2").select("svg").append("g")
+    const legendContainer =  d3.select("#scatter").select("svg").append("g")
       .attr("transform", "translate( 550, 10)")
 
     // Add a scrollable view to the container
@@ -332,40 +340,40 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
   // ---------------------------------------------------------------------------------------------------------------------------------------------- //
   // --------------------------------------------------------------- SELECT BUTTONS LISTENERS ---------------------------------------------------- //
 
-  d3.select("#scatter2Variable").on("change", function(event,d) {
-    selectedYear = d3.select("#Scatter2_yearSlider").property("value");
-    selectedVariable = d3.select("#scatter2Variable").property("value");
-    selectedCountriesFilter = d3.select("#scatter2Countries").property("value");
-    selectedSort = d3.select("#scatter2Sort").property("value");
+  d3.select("#scatterVariable").on("change", function(event,d) {
+    selectedYear = d3.select("#scatter_yearSlider").property("value");
+    selectedVariable = d3.select("#scatterVariable").property("value");
+    selectedCountriesFilter = d3.select("#scatterCountries").property("value");
+    selectedSort = d3.select("#scatterSort").property("value");
 
     var playing = false;
-    play_button = d3.select("#Scatter2_yearPlay").text();
+    play_button = d3.select("#scatter_yearPlay").text();
     if(play_button === "Pause") {playing = true;}
 
     updateChart(selectedYear, selectedVariable, selectedCountriesFilter, selectedSort, playing);
   })
 
-  d3.select("#scatter2Countries").on("change", function(event,d) {
-    selectedYear = d3.select("#Scatter2_yearSlider").property("value");
-    selectedVariable = d3.select("#scatter2Variable").property("value");
-    selectedCountriesFilter = d3.select("#scatter2Countries").property("value");
-    selectedSort = d3.select("#scatter2Sort").property("value");
+  d3.select("#scatterCountries").on("change", function(event,d) {
+    selectedYear = d3.select("#scatter_yearSlider").property("value");
+    selectedVariable = d3.select("#scatterVariable").property("value");
+    selectedCountriesFilter = d3.select("#scatterCountries").property("value");
+    selectedSort = d3.select("#scatterSort").property("value");
 
     var playing = false;
-    play_button = d3.select("#Scatter2_yearPlay").text();
+    play_button = d3.select("#scatter_yearPlay").text();
     if(play_button === "Pause") {playing = true;}
 
     updateChart(selectedYear, selectedVariable, selectedCountriesFilter, selectedSort, playing);
   })
 
-  d3.select("#scatter2Sort").on("change", function(event,d) {
-    selectedYear = d3.select("#Scatter2_yearSlider").property("value");
-    selectedVariable = d3.select("#scatter2Variable").property("value");
-    selectedCountriesFilter = d3.select("#scatter2Countries").property("value");
-    selectedSort = d3.select("#scatter2Sort").property("value");
+  d3.select("#scatterSort").on("change", function(event,d) {
+    selectedYear = d3.select("#scatter_yearSlider").property("value");
+    selectedVariable = d3.select("#scatterVariable").property("value");
+    selectedCountriesFilter = d3.select("#scatterCountries").property("value");
+    selectedSort = d3.select("#scatterSort").property("value");
 
     var playing = false;
-    play_button = d3.select("#Scatter2_yearPlay").text();
+    play_button = d3.select("#scatter_yearPlay").text();
     if(play_button === "Pause") {playing = true;}
 
     updateChart(selectedYear, selectedVariable, selectedCountriesFilter, selectedSort, playing);
