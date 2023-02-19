@@ -86,7 +86,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x));
-        svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Life Expectancy (age)").style("font-size", 15)
+        svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Life Expectancy (years)").style("font-size", 15)
 
         //-------------------------- Histogram---------------------------//
         // set the parameters for the histogram

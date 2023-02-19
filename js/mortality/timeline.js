@@ -59,7 +59,7 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x).ticks(d3.timeYear.every(1)));
-    svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Years").style("font-size", 10)
+    svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Time period").style("font-size", 10)
 
 
     // ----------------------------- Y axis ------------------------- //
@@ -69,15 +69,15 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
       svg.append("g")
         .call(d3.axisLeft(y));
 
-      var y_name = selectedVariable;
-      if (selectedVariable === "AdultMortality"){ y_name = "Adult Mortality (per 1000 population)"}
+      var unit_measure = "(years)";
+      if (selectedVariable === "AdultMortality"){ unit_measure = "(per 1000 population)"}
 
       svg.append("text")
         .attr("text-anchor", "end")
         .attr("x", -50)
         .attr("y", -40)
         .attr("transform", "rotate(-90)")
-        .text(y_name)
+        .text(selectedVariable + " " + unit_measure)
         .style("font-size", 10);
 
 

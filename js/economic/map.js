@@ -100,13 +100,13 @@ function updateChart(year, variable, data, playing) {
 	var path = d3.geoPath().projection(projection);
 
   // ----------------------------------------- Colors ------------------------------------//
-	var formatDecimals = d3.format(".3")
+  const format = d3.format(".2f");
 
   var color = d3.scaleQuantize()
       .range(d3.schemeGreens[5]);
 
   var data = data.filter(function(d){return d.Year === selectedYear})
-  const format = d3.format(".2f");
+
   var allExpectancies = []
   var allValues = []
   d3.json("./python/data/world.json").then(function(json){
@@ -202,7 +202,7 @@ function updateChart(year, variable, data, playing) {
       })
       .text(function(d){
           if (d.properties.lifeExp){
-              return formatDecimals(d.properties.lifeExp);
+              return format(d.properties.lifeExp);
           }
       });
 

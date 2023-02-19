@@ -228,6 +228,8 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
     }
 
     // --------------------------------- Plot ---------------------------- //
+    const format = d3.format(".2f");
+
     // Add circles
     scatter.append("g")
         .selectAll("dot")
@@ -258,7 +260,7 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
                   //+ "Year: "+ d.Year + "<br>"
                   + "Country: " + d.Country + "<br>"
                   + `${xVal}: ` + d[xVal] + " years <br>"
-                  + `${yVal}` + d[yVal]  + " deaths " + unit_measure + "</span>")
+                  + `${yVal}` + format(d[yVal])  + " deaths " + unit_measure + "</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY - 28) + "px");
           }

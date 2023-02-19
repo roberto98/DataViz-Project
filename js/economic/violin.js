@@ -1,7 +1,7 @@
 
 d3.csv("./python/CSV/violin.csv").then(function (data) {
 
-  const margin ={top: 40, right: 30, bottom: 60, left: 35},
+  const margin ={top: 40, right: 30, bottom: 60, left: 55},
       width = 700 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
@@ -85,7 +85,7 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
       .domain([minVal, maxVal])
       .range([height, 0])
     svg.append("g").call(d3.axisLeft(y))
-    svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Life Expectancy").style("font-size", 10)
+    svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Life Expectancy (years)").style("font-size", 10)
 
     // --------------------------- X axis ------------------------ //
     x = d3.scaleBand()
