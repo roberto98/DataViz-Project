@@ -107,12 +107,21 @@
 
 
       <h3 class="title left">How Diseases Interact to Impact Life Expectancy?</h3> <!-- ############################################ SANKEY  ### -->
-        <div id="sankey" class="font svg-container"> </div>
         <p class="subtitle left">
           This chart shows how different categories of diseases are interconnected and how much they affect life expectancy in different countries.
           It helps to identify how different diseases interact with one another and how they impact life expectancy.
         </p>
+        <p>Year: <span id="sankey_yearDisplay"></span></p>
+        <button id="sankey_yearPlay">Play</button>
+        <input type="range" style="width:50%;" min="0" max="3" value="0" id="sankey_yearSlider">
+        <br>
+        <p>Select Country:
+          <select id="sankey_select" ></select>
+        </p>
+        <div id="sankey" class="font svg-container"> </div>
+
   </div>
+  <br><br><br><br><br><br><br><br>
 
 
   <!-- ################################# FOOTER #################################### -->
