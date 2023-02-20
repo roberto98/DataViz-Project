@@ -1,11 +1,11 @@
 //https://gist.github.com/kopelli/fce12e352d96188320ed1376fa57afbe
 // https://gist.github.com/malon/a3f7fc1e8fde18a1e1a7e674d01c5cb1
 
-d3.csv("./python/CSV/sankey_no_injuries_3rdcolumn_normalized.csv").then(data => {
+d3.csv("./python/CSV/global_sankey.csv").then(data => {
 
-var margin = {top: -7000, right: 10, bottom: 10, left: 10},
-    width = 6000 - margin.left - margin.right,
-    height = 5000 - margin.top - margin.bottom;
+var margin = {top: 10, right: 10, bottom: 10, left: 10},
+    width = 1200 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
 // append the svg object to the body of the page
 var svg = d3.select("#sankey")
   .append("svg")
@@ -26,7 +26,7 @@ var svg = d3.select("#sankey")
   // Set the sankey diagram properties
   var sankey = d3.sankey()
       .nodeWidth(36)
-      .nodePadding(40)
+      .nodePadding(20)
       .size([width, height]);
 
   var path = sankey.link();
