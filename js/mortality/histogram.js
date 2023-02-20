@@ -81,7 +81,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
         // --------------------------- X axis ------------------------ //
         // X axis: scale and draw:
         var x = d3.scaleLinear()
-            .domain([minVal, maxVal])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
+            .domain([minVal, maxVal]).nice()     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
             .range([0, width]);
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
@@ -105,7 +105,7 @@ d3.csv("./python/CSV/histogram.csv").then(function (data) {
         var y = d3.scaleLinear()
             .range([height, 0]);
         //var maxbin = d3.max(bins, function(d) { return d.length; })
-        y.domain([0, 40]);   // d3.hist has to be called before the Y axis obviously
+        y.domain([0, 35]).nice();   // d3.hist has to be called before the Y axis obviously
 
         svg.append("g")
             .call(d3.axisLeft(y));

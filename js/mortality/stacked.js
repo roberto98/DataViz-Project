@@ -1,6 +1,6 @@
 d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
     //console.log(data)
-    const margin = {top: 60, right: 15, bottom: 75, left: 87},
+    const margin = {top: 60, right: 25, bottom: 75, left: 87},
     width = 1000 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -76,29 +76,30 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
   function updateChart(year,playing) {
 
       d3.select("#stacked").selectAll("svg > g > *").remove();
-
+    
       selectedYear = String(year);
-      var filteredData = data.filter(d => d.Year == selectedYear);
-
-      var columnNames = Object.keys(data[0]);
+      var filteredData = data.filter(d => d.Year == selectedYear );
+      console.log(filteredData)
+      
 
       // Get an array of the column names
       var columnNames = Object.keys(data[0]);
       // Select the columns from the third column to the end
-      var rangeColumns = columnNames.slice(2);
+      var rangeColumns = columnNames.slice(3);
+      //console.log(rangeColumns)
       // Compute the sum of the selected columns for each row
       filteredData.forEach(function(d) {
-          d.total = d3.sum(rangeColumns, function(key) { return +d[key]; });
+          d.sum = 0;
+          d.sum = d3.sum(rangeColumns, function(key) { return +d[key]; });
       });
       // Sort the data by descending order of total
       filteredData.sort(function(a, b) {
-          return b.total - a.total;
+          return b.sum - a.sum;
       });
 
       // Select the first 5 rows
       var top5 = filteredData.slice(0, 5);
 
-      var max = d3.max(top5, function(d) { return d.total; });
       var y_domain = top5.map(d => d.Country);
 
         var newTable = top5.map(function(d) {
@@ -108,15 +109,25 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
                      "15-34": (+d["15-19  years"]) + (+d["20-24 years"]) + (+d["25-29 years"]) + (+d["30-34 years"]),
                      "35-60": (+d["35-39 years"]) + (+d["40-44 years"]) + (+d["45-49 years"]) + (+d["50-54 years"]) + (+d["55-59 years"]),
                      "61-84": (+d["60-64 years"]) + (+d["65-69 years"]) + (+d["70-74 years"]) + (+d["75-79 years"]) + (+d["80-84 years"]),
-                     "85+":   (+d["85+ years"])
+                     "85+":   (+d["85+ years"]),
+                     "total": d.sum
                     };
         });
 
-        var rangeColumns = Object.keys(newTable[0]).filter(d => d !== "Country" && d !== "Year");
+        //console.log(newTable)
+        
+        var new_rangeColumns = Object.keys(newTable[0]).filter(d => d !== "Country" && d !== "Year" && d !== "total");
+
+        
+        var maxVal = 0
+        maxVal = d3.max(newTable, function(d) {  return +d.total; });
+        console.log(maxVal)
+
+        //console.log(maxVal)
 
          // ---------------------------- Axis x -------------------------- //
         const x = d3.scaleLinear()
-           .domain([0, max]).nice()
+           .domain([0, maxVal]).nice()
            .range([0, width]);
         svg.append('g')
            .attr('transform', `translate(0,${height})`)
@@ -135,16 +146,18 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
         // ----------------------------- Colors ------------------------------- //
         colors_list = ['#ff595e', '#ffca3a', '#8ac926', '#1982c4', '#6a4c93', '#023047'];
         const color = d3.scaleOrdinal()
-        .domain(rangeColumns)
+        .domain(new_rangeColumns)
         .range(colors_list);
+
+        /*
 
         // Normalize the data -> sum of each group must be 100!
         newTable.forEach(function (d) {
             // Compute the total
             tot = 0
             for (i in newTable) {
-                name = newTable[i];
-                console.log("d",name);
+                var name = newTable[i];
+                console.log(d);
 
                 tot += +d[name]
             }
@@ -155,9 +168,9 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
                 d[name] = d[name] / tot * 100
             }
         })
-
+        */
         var stackedData = d3.stack()
-            .keys(rangeColumns)
+            .keys(new_rangeColumns)
             (newTable)
 
         // ------------------------------- Tooltip ------------------------------ //
@@ -179,7 +192,6 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
             .data(d => d)
             .join("rect")
             .attr('x', d => x(d[0]))
-            //.attr('x', function(d) { return x(d[0])})
             .attr('y', d => y(d.data.Country))
             .attr('height', y.bandwidth())
             .attr('width', d => (x(d[1]) - x(d[0])))

@@ -64,7 +64,7 @@ d3.csv("./python/CSV/time_line.csv").then(function (data) {
 
     // ----------------------------- Y axis ------------------------- //
       y = d3.scaleLinear()
-        .domain(d3.extent(data, function(d) {return +d[selectedVariable]}))
+        .domain(d3.extent(data, function(d) {return +d[selectedVariable]})).nice()
         .range([ height, 0 ]);
       svg.append("g")
         .call(d3.axisLeft(y));

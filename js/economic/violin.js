@@ -79,10 +79,9 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
     var maxVal = d3.max(data, d => d.LifeExpectancy);
     var minVal = d3.min(data, d => d.LifeExpectancy);
     //console.log(maxVal);
-
     // ----------------------------- Y axis ------------------------- //
     y = d3.scaleLinear()
-      .domain([minVal, maxVal])
+      .domain([minVal, maxVal]).nice()
       .range([height, 0])
     svg.append("g").call(d3.axisLeft(y))
     svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Life Expectancy (years)").style("font-size", 10)
