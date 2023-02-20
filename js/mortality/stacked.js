@@ -1,6 +1,6 @@
 d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
     //console.log(data)
-    const margin = {top: 60, right: 25, bottom: 75, left: 87},
+    const margin = {top: 60, right: 25, bottom: 75, left: 130},
     width = 1000 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -74,13 +74,11 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
   function updateChart(year,playing) {
-
       d3.select("#stacked").selectAll("svg > g > *").remove();
-    
+      const format = d3.format(".2f");
+
       selectedYear = String(year);
       var filteredData = data.filter(d => d.Year == selectedYear );
-      console.log(filteredData)
-      
 
       // Get an array of the column names
       var columnNames = Object.keys(data[0]);
@@ -115,10 +113,10 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
         });
 
         //console.log(newTable)
-        
+
         var new_rangeColumns = Object.keys(newTable[0]).filter(d => d !== "Country" && d !== "Year" && d !== "total");
 
-        
+
         var maxVal = 0
         maxVal = d3.max(newTable, function(d) {  return +d.total; });
         console.log(maxVal)
@@ -132,7 +130,7 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
         svg.append('g')
            .attr('transform', `translate(0,${height})`)
            .call(d3.axisBottom(x))
-        svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Number of deaths").style("font-size", 15)
+        svg.append("text").attr("text-anchor", "end").attr("x", width - margin.right).attr("y", height + 50).text("Number of deaths (per 100 000 population)").style("font-size", 15)
 
         // ------------------------------- Axis y -------------------------- //
         const y = d3.scaleBand()
@@ -141,7 +139,7 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
            .padding(0.1);
         svg.append("g")
            .call(d3.axisLeft(y))
-        svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Top 5 countries (by deaths)").style("font-size", 14)
+        svg.append("text").attr("text-anchor", "middle").attr("x", 0).attr("y", -20).text("Top countries (by deaths)").style("font-size", 14)
 
         // ----------------------------- Colors ------------------------------- //
         colors_list = ['#ff595e', '#ffca3a', '#8ac926', '#1982c4', '#6a4c93', '#023047'];
@@ -205,7 +203,7 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
                     .duration(200)
                     .style("opacity", 1);
 
-                tooltip.html("<span class='tooltiptext'>" + "Range: " + rangeClass + "<br>" + "Deaths: " + `${d[1] - d[0]}` + "</span>")
+                tooltip.html("<span class='tooltiptext'>" + "Age range: " + rangeClass + "<br>" + "Deaths: " + `${format(d[1] - d[0])}` + " per 100 000 population </span>")
                     .style("left", (event.pageX) + "px")
                     .style("top", (event.pageY - 28) + "px");
 
