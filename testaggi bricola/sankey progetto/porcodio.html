@@ -36,7 +36,7 @@ var units = "Widgets";
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
     width = 1500 - margin.left - margin.right,
-    height = 5000 - margin.top - margin.bottom;
+    height = 1000 - margin.top - margin.bottom;
 
 // format variables
 var formatNumber = d3.format(",.0f"),    // zero decimal places
@@ -60,7 +60,7 @@ var sankey = d3.sankey()
 var path = sankey.link();
 
 var selectedCountry = "Argentina"
-d3.csv("sankey_no_injuries_3rdcolumn.csv", function(data) {
+d3.csv("sankey_no_injuries_3rdcolumn_normalized.csv", function(data) {
   var data = data.filter(function(d){return d.Zimbabwe==selectedCountry})
   
   graph = {"nodes" : [], "links" : []};
