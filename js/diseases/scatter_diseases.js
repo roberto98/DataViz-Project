@@ -48,6 +48,8 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
 
   // -------------------------------------------------------------------------------------------------------------------------------- //
   // --------------------------------------------------------------- PLAY BUTTON ---------------------------------------------------- //
+  var years = [2000, 2010, 2015];
+
   function Play(){
       var playButton = d3.select("#scatter_yearPlay")
       var slider = d3.select("#scatter_yearSlider")
@@ -59,12 +61,11 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
       var currentVariable = "Infectious and parasitic diseases"
       var currentCountriesFilter = "Population"
       var currentSort = "Desc";
-      var years = [2000, 2010, 2015, 2019];
       var i = 0;
 
       // I set default values
       scatter_yearDisplay.text(currentYear);
-      slider.property("value", currentYear);
+      slider.property("value", i);
       updateChart(currentYear, currentVariable, currentCountriesFilter, currentSort, playing);
 
       // When the input of the slider changes, i update
@@ -86,7 +87,7 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
           interval = setInterval(function() {
             i = +slider.property("value");
             currentYear = years[i];
-            if (currentYear >= 2019) {
+            if (currentYear >= 2015) {
               i = 0
               currentYear = 2000;
               slider.property("value", i);
@@ -117,6 +118,7 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
   // --------------------------------------------------------------- UPDATE CHART---------------------------------------------------- //
   function updateChart(year, variable, countries, sort, playing) {
     d3.select("#scatter").selectAll("svg > g > *").remove();
+
     sort = String(sort);
     yVal = String(variable);
     xVal = "LifeExpectancy";
@@ -143,10 +145,10 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
     .slice(0, 20)
     .map(d => d.Country);
 
-
     var filteredData = data.filter(function(d){
         return selectedCountries.includes(d.Country) && d.Year === selectedYear;
     });
+
     // --------------------------- X axis ------------------------ //
     var min_max_x = d3.extent(data, function(d) {return +d[xVal]});
     var min_max_y = d3.extent(data, function(d) {return +d[yVal]});
@@ -174,9 +176,6 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
         .call(d3.axisLeft(y).tickFormat(d3.format(".2s")));
 
     var unit_measure = "per 100 000 population";
-    if (yVal === "GDP"){ unit_measure = "USD";}
-    if (yVal === "Gov Health Expenditure"){ unit_measure = "%";}
-    if (yVal === "Schooling"){ unit_measure = "years";}
 
     // Add Y axis label:
     svg.append("text")
@@ -260,7 +259,7 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
                   //+ "Year: "+ d.Year + "<br>"
                   + "Country: " + d.Country + "<br>"
                   + `${xVal}: ` + d[xVal] + " years <br>"
-                  + `${yVal}` + format(d[yVal])  + " deaths " + unit_measure + "</span>")
+                  + `${yVal}: ` + " " + format(d[yVal])  + " deaths " + unit_measure + "</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY - 28) + "px");
           }
@@ -343,7 +342,8 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
   // --------------------------------------------------------------- SELECT BUTTONS LISTENERS ---------------------------------------------------- //
 
   d3.select("#scatterVariable").on("change", function(event,d) {
-    selectedYear = d3.select("#scatter_yearSlider").property("value");
+    indexYear = d3.select("#scatter_yearSlider").property("value");
+    selectedYear = years[indexYear];
     selectedVariable = d3.select("#scatterVariable").property("value");
     selectedCountriesFilter = d3.select("#scatterCountries").property("value");
     selectedSort = d3.select("#scatterSort").property("value");
@@ -356,7 +356,8 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
   })
 
   d3.select("#scatterCountries").on("change", function(event,d) {
-    selectedYear = d3.select("#scatter_yearSlider").property("value");
+    indexYear = d3.select("#scatter_yearSlider").property("value");
+    selectedYear = years[indexYear];
     selectedVariable = d3.select("#scatterVariable").property("value");
     selectedCountriesFilter = d3.select("#scatterCountries").property("value");
     selectedSort = d3.select("#scatterSort").property("value");
@@ -369,7 +370,8 @@ d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
   })
 
   d3.select("#scatterSort").on("change", function(event,d) {
-    selectedYear = d3.select("#scatter_yearSlider").property("value");
+    indexYear = d3.select("#scatter_yearSlider").property("value");
+    selectedYear = years[indexYear];
     selectedVariable = d3.select("#scatterVariable").property("value");
     selectedCountriesFilter = d3.select("#scatterCountries").property("value");
     selectedSort = d3.select("#scatterSort").property("value");
