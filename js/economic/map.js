@@ -1,8 +1,8 @@
 
 d3.csv("./python/CSV/map_economic.csv").then(function (data) {
 
-  const margin = {top: 10, right: 180, bottom: 10, left: 10},
-      width = 1200 - margin.left - margin.right,
+  const margin = {top: 0, right: 200, bottom: 10, left: 10},
+      width = 1300 - margin.left - margin.right,
       height = 800 - margin.top - margin.bottom;
 
   // append the svg object to the body of the page

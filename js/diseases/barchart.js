@@ -106,7 +106,7 @@ d3.csv("./python/CSV/horizontal_barchart.csv").then(function (data) {
 
         // Add X axis
         const x = d3.scaleLinear()
-            .domain([0, maxValue])
+            .domain([0, maxValue]).nice()
             .range([ 0, width]);
         svg.append("g")
             .attr("transform", `translate(0, ${height})`)

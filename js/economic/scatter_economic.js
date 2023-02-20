@@ -1,7 +1,7 @@
 
 d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
-  const margin = {top: 40, right: 190, bottom: 60, left: 50},
+  const margin = {top: 40, right: 190, bottom: 60, left:60},
       width = 700 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
@@ -18,8 +18,8 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
   // -------------------------------------------------------------------------------------------------------------------------------- //
   // --------------------------------------------------------------- SELECT BUTTONS ---------------------------------------------------- //
-      const allVariables = ["GDP", "TotalExpenditure", "Schooling"]
-      const countriesFilters = ["LifeExpectancy", "Population", "GDP", "TotalExpenditure", "Schooling"]
+      const allVariables = ["GDP", "Gov Health Expenditure", "Schooling"]
+      const countriesFilters = ["LifeExpectancy", "Population", "GDP", "Gov Health Expenditure", "Schooling"]
 
       // Variables
       d3.select("#scatter2Variable")
