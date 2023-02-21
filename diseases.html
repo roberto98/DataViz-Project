@@ -64,11 +64,11 @@
       <h1 class="title">Life Expectancy Correlated with Diseases</h1>
       <p class="subtitle left">
           In this section, we take a closer look at the impact of different diseases on life expectancy in different countries.
-          We use a horizontal barchart, scatterplot, and sankey alluvial diagram to explore which diseases have the most significant impact on
+          We use a horizontal barchart, sankey alluvial diagram, scatterplot and a map to explore which diseases have the most significant impact on
           life expectancy, and how they are interconnected across different regions.
       </p>
 
-      <h3 class="title left">The Top Ten Most Wanted: Diseases that Take the Biggest Toll on Life Expectancy</h3> <!-- ############################################ BARCHART  ### -->
+      <h3 class="title left">The Top Ten Diseases</h3> <!-- ############################################ BARCHART  ### -->
         <p class="subtitle left">
           The horizontal barchart compares the impact of different diseases on life expectancy in different countries.
           It helps to identify the diseases that have the greatest impact on life expectancy and how they vary by country.
@@ -82,8 +82,21 @@
         </p>
         <div id="barchart" class="font svg-container"> </div>
 
+        <h3 class="title left">How Diseases Interact to Impact Life Expectancy?</h3> <!-- ############################################ SANKEY  ### -->
+          <p class="subtitle left">
+            This chart shows how different categories of diseases are interconnected and how much they affect life expectancy in different countries.
+            It helps to identify how different diseases interact with one another and how they impact life expectancy.
+          </p>
+          <p>Year: <span id="sankey_yearDisplay"></span></p>
+          <button id="sankey_yearPlay">Play</button>
+          <input type="range" style="width:50%;" min="0" max="3" value="0" id="sankey_yearSlider">
+          <br>
+          <p>Select Country:
+            <select id="sankey_select" ></select>
+          </p>
+          <div id="sankey" class="font svg-container"> </div>
 
-      <h3 class="title left">Life and Death: How Different Diseases Affect Life Expectancy in Different Countries</h3> <!-- ############################################ SCATTERPLOT  ### -->
+      <h3 class="title left">How Different Diseases Affect Life Expectancy?</h3> <!-- ############################################ SCATTERPLOT  ### -->
         <p class="subtitle left">
           This chart correlates the incidence rate of various diseases with life expectancy for different countries.
           It helps to identify the diseases that have the greatest impact on life expectancy and how strongly they are related to one another.
@@ -108,24 +121,9 @@
         <div id="scatter" class="font svg-container"> </div>
 
 
-      <h3 class="title left">How Diseases Interact to Impact Life Expectancy?</h3> <!-- ############################################ SANKEY  ### -->
+      <h3 class="title left">Where in the World Can You Live the Longest?</h3> <!-- ############################################ MAP  ### -->
         <p class="subtitle left">
-          This chart shows how different categories of diseases are interconnected and how much they affect life expectancy in different countries.
-          It helps to identify how different diseases interact with one another and how they impact life expectancy.
-        </p>
-        <p>Year: <span id="sankey_yearDisplay"></span></p>
-        <button id="sankey_yearPlay">Play</button>
-        <input type="range" style="width:50%;" min="0" max="3" value="0" id="sankey_yearSlider">
-        <br>
-        <p>Select Country:
-          <select id="sankey_select" ></select>
-        </p>
-        <div id="sankey" class="font svg-container"> </div>
-
-      <h3 class="title left">Map</h3> <!-- ############################################ SANKEY  ### -->
-        <p class="subtitle left">
-          This chart shows how different categories of diseases are interconnected and how much they affect life expectancy in different countries.
-          It helps to identify how different diseases interact with one another and how they impact life expectancy.
+          Finally, we use a map to display which countries have the highest life expectancy and which has the highest diffusion of a specific disease.
         </p>
         <p>Year: <span id="map_yearDisplay"></span></p>
         <button id="map_yearPlay">Play</button>

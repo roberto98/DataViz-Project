@@ -1,7 +1,7 @@
 
 d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
-console.log(data);
-  const margin = {top: 0, right: 200, bottom: 10, left: 10},
+
+const margin = {top: 0, right: 200, bottom: 10, left: 10},
       width = 1300 - margin.left - margin.right,
       height = 800 - margin.top - margin.bottom;
 
@@ -218,7 +218,7 @@ function updateChart(year, variable, data, playing) {
 
     //---------------------------------------------------- Tooltip ----------------------------------- //
 
-    var unit_measure = "deaths";
+    var unit_measure = "";
 
     // create a tooltip
     const tooltip = d3.select("#map")
@@ -272,7 +272,7 @@ function updateChart(year, variable, data, playing) {
           .ascending(true)
           .shapeHeight(35)
           .shapeWidth(15)
-          .title(selectedVariable + " (" + unit_measure + ")" )
+          .title(selectedVariable)
           .labels(function ({ // custom function that changes how each label is printed, allows us to have printing
               i,              // like for thresholded scales, which are not implemented for quantized ones
               genLength,

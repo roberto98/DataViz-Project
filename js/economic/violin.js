@@ -171,8 +171,9 @@ d3.csv("./python/CSV/violin.csv").then(function (data) {
               tooltip.html("<span class='tooltiptext'>" +
                 //"Year: " + filteredDataElement[closestIndex].Year + "<br>" +
                 //"Status: " + key + "<br>" +
-                "Life expectancy: " + filteredDataElement[closestIndex].LifeExpectancy + " years" + "<br>" +
-                "KDE: " +  kde_arr[kde_index] + "</span>")
+                "Life expectancy: " + filteredDataElement[closestIndex].LifeExpectancy + " years" + "<br>"
+                //+ "KDE: " +  kde_arr[kde_index] 
+                + "</span>")
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY) + "px");
 

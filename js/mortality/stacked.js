@@ -112,16 +112,10 @@ d3.csv("./python/CSV/stacked_fixed.csv").then(function (data) {
                     };
         });
 
-        //console.log(newTable)
-
         var new_rangeColumns = Object.keys(newTable[0]).filter(d => d !== "Country" && d !== "Year" && d !== "total");
-
 
         var maxVal = 0
         maxVal = d3.max(newTable, function(d) {  return +d.total; });
-        console.log(maxVal)
-
-        //console.log(maxVal)
 
          // ---------------------------- Axis x -------------------------- //
         const x = d3.scaleLinear()
