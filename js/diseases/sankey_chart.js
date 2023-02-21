@@ -180,7 +180,7 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
           .on("mousemove", function (event, d) {
             if(!playing){
               tooltip
-              .html(get_value_by_graph(d.source, d.target) + " deaths")
+              .html(get_value_by_graph(d.source, d.target) + " deaths per 100 000 population")
               .style("opacity", 1)
               .style("left", (event.pageX) + "px")
               .style("top", (event.pageY - 28) + "px");
@@ -207,7 +207,7 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
             .on("start", function() {
               this.parentNode.appendChild(this);
             }))
-         
+
 
       // add the rectangles for the nodes
       node.append("rect")
