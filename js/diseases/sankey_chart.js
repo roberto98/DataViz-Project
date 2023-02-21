@@ -3,7 +3,7 @@
 
 d3.csv("./python/CSV/global_sankey.csv").then(data => {
 
-  var margin = {top: 10, right: 10, bottom: 10, left: 10},
+  var margin = {top: 10, right: 280, bottom: 10, left: 10},
       width = 1400 - margin.left - margin.right,
       height = 800 - margin.top - margin.bottom;
   // append the svg object to the body of the page
@@ -192,13 +192,7 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
                 .style("opacity", 0);
             }
           });
-/*
-      // add the link titles
-      link.append("title")
-            .text(function(d) {
-        		return d.source.name + " → " +
-                    d.target.name + "\n" + format(d.value); });
-*/
+
       // add in the nodes
       var node = svg.append("g").selectAll(".node")
           .data(graph.nodes)
@@ -223,19 +217,19 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
     		  return d.color = color(d.name.replace(/ .*/, "")); })
           .style("stroke", function(d) {
     		  return d3.rgb(d.color).darker(2); })
-        .append("title")
+          .append("title")
           .text(function(d) {
     		  return d.name + "\n" + format(d.value); });
 
       // add in the title for the nodes
       node.append("text")
-          .attr("x", -6)
+          .attr("x", function(d) { return d.x; })
           .attr("y", function(d) { return d.dy / 2; })
           .attr("dy", ".35em")
           .attr("text-anchor", "end")
           .attr("transform", null)
           .text(function(d) { return d.name; })
-        .filter(function(d) { return d.x < width / 2; })
+          //.filter(function(d) { return d.x < width / 2; })
           .attr("x", 6 + sankey.nodeWidth())
           .attr("text-anchor", "start");
 
