@@ -4,7 +4,7 @@
 d3.csv("./python/CSV/global_sankey.csv").then(data => {
 
   var margin = {top: 10, right: 10, bottom: 10, left: 10},
-      width = 1200 - margin.left - margin.right,
+      width = 1400 - margin.left - margin.right,
       height = 800 - margin.top - margin.bottom;
   // append the svg object to the body of the page
   var svg = d3.select("#sankey")
@@ -75,7 +75,7 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
           sankey_yearDisplay.text(currentYear);
           currentCountry = d3.select("#sankey_select").property("value");
           updateChart(currentYear, currentCountry, playing, data);
-        }, 1500);
+        }, 1000);
       } else {
         playing = false;
         playButton.text("Play");
@@ -147,7 +147,7 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
           var diseases_data = graph.links[i];
 
           if (source === diseases_data.source){
-            
+
             if(target == diseases_data.target){
 
               return diseases_data.real_deaths;
@@ -177,29 +177,28 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
           .attr("d", path)
           .style("stroke-width", function(d) { return Math.max(1, d.dy); })
           .sort(function(a, b) { return b.dy - a.dy; })
-          .on("mouseover", function (event, d) {
-
-            tooltip
+          .on("mousemove", function (event, d) {
+            if(!playing){
+              tooltip
+              .html(get_value_by_graph(d.source, d.target) + " deaths")
               .style("opacity", 1)
               .style("left", (event.pageX) + "px")
               .style("top", (event.pageY - 28) + "px");
-          })
-          .on("mousemove", function (event, d) {
-            
-            tooltip
-            .html(get_value_by_graph(d.source, d.target) + " deaths");
+            }
           })
           .on("mouseleave", function (event, d) {
-            tooltip
-              .style("opacity", 0);
+            if(!playing){
+              tooltip
+                .style("opacity", 0);
+            }
           });
-
+/*
       // add the link titles
       link.append("title")
             .text(function(d) {
         		return d.source.name + " → " +
                     d.target.name + "\n" + format(d.value); });
-
+*/
       // add in the nodes
       var node = svg.append("g").selectAll(".node")
           .data(graph.nodes)
@@ -213,8 +212,8 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
             })
             .on("start", function() {
               this.parentNode.appendChild(this);
-            })
-            .on("drag", dragmove));
+            }))
+          //  .on("drag", dragmove));
 
       // add the rectangles for the nodes
       node.append("rect")
