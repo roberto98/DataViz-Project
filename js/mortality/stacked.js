@@ -41,6 +41,7 @@ d3.select("#CountryButton2")
         // I set default values
         Stacked_yearDisplay.text(currentYear);
         slider.property("value", i);
+        $("#CountryButton2").val(["Italy", "Yemen", "Zimbabwe"]);
         updateChart(selected_classes_str, currentYear, playing);
 
         // When the input of the slider changes, i update
@@ -175,7 +176,8 @@ d3.select("#CountryButton2")
 
            // ---------------------------- Axis x -------------------------- //
           var x = d3.scaleLinear()
-             .domain([0, maxVal]).nice()
+             //.domain([0, maxVal]).nice()
+             .domain([0, 110000]).nice()
              .range([0, width]);
           svg.append('g')
              .attr('transform', `translate(0,${height})`)
@@ -282,11 +284,5 @@ d3.select("#CountryButton2")
               });
           } // Close if not undefined
       }
-
-
-            setTimeout(function () {
-                $("#CountryButton2").val(["Italy", "Yemen", "Zimbabwe"]);
-                $("#CountryButton2").trigger("change");
-            }, 1000);
 
 });
