@@ -96,9 +96,8 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
       d3.select("#sankey").selectAll("svg > g > *").remove();
       selectedYear = String(year);
       selectedCountry = country;
-      console.log(data);
+
       var data = data.filter(function(d){return d.Country === selectedCountry && d.Year === selectedYear})
-      console.log(data);
 
       var units = "Widgets";
 
@@ -122,7 +121,8 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
         graph.nodes.push({ "name": d.target });
         graph.links.push({ "source": d.source,
                            "target": d.target,
-                           "value": +d.value });
+                           "value": +d.value,
+                            "real_deaths": +d['real deaths']});
 
       }
 
@@ -141,6 +141,29 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
         graph.nodes[i] = { "name": d };
       });
 
+
+      function get_value_by_graph(source, target){
+        for(var i = 0; i < graph.links.length; i++){
+          var diseases_data = graph.links[i];
+
+          if (source === diseases_data.source){
+            
+            if(target == diseases_data.target){
+
+              return diseases_data.real_deaths;
+            }
+          }
+        }
+        return 0;
+      }
+
+      //Tooltip left links
+      var tooltip = d3.select("#sankey")
+        .append("div")
+        .style("opacity", 0)
+        .attr("class", "tooltip");
+
+
       sankey
           .nodes(graph.nodes)
           .links(graph.links)
@@ -149,11 +172,27 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
       // add in the links
       var link = svg.append("g").selectAll(".link")
           .data(graph.links)
-        .enter().append("path")
+          .enter().append("path")
           .attr("class", "link")
           .attr("d", path)
           .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-          .sort(function(a, b) { return b.dy - a.dy; });
+          .sort(function(a, b) { return b.dy - a.dy; })
+          .on("mouseover", function (event, d) {
+
+            tooltip
+              .style("opacity", 1)
+              .style("left", (event.pageX) + "px")
+              .style("top", (event.pageY - 28) + "px");
+          })
+          .on("mousemove", function (event, d) {
+            
+            tooltip
+            .html(get_value_by_graph(d.source, d.target) + " deaths");
+          })
+          .on("mouseleave", function (event, d) {
+            tooltip
+              .style("opacity", 0);
+          });
 
       // add the link titles
       link.append("title")
