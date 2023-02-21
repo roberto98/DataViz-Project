@@ -201,24 +201,62 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
 
     // --------------------------------- Tooltip ---------------------------- //
     // create a tooltip
-    const tooltip = d3.select("#scatter2")
+    const tooltip = d3.select("#scatter")
         .append("div")
         .attr("class", "tooltip")
 
     // Highlight the specie that is hovered
-    const highlight = function (event, d) {
-        selected_country = d
+    /*const highlight = function (event, d) {
+        var selected_country = d
         d3.selectAll(".dot")
             .style("opacity", 0)
         d3.selectAll("." + selected_country.replaceAll(' ', '_'))
             .style("opacity", 1)
     }
+    */
 
+
+    const highlight = function(event, d){
+      //var clickedCircle = d3.select(this);
+      var selected_country = d;
+
+      var selected_circle = d3.selectAll("." + selected_country.replaceAll(' ', '_'))
+
+      if(selected_circle.classed("selected")){
+        selected_circle.classed("selected", false)
+          .style("opacity", 0)
+      }
+      else{
+        d3.selectAll(".dot")
+              .style("opacity", 0)
+        d3.selectAll("." + selected_country.replaceAll(' ', '_'))
+              .classed("selected", true)
+              //.attr("class", "selected")
+        d3.selectAll(".selected")
+          .style("opacity", 1)
+      }
+    }
+    /*
     const doNotHighlight = function () {
         d3.selectAll(".dot")
             .style("opacity", 1)
     }
+    */
+    const reset = function(event){
+      d3.selectAll(".dot")
+        .classed("selected", false)
 
+    }
+
+    // Select the button element and add a click event listener
+    d3.select("#resetButton").on("click", function() {
+    // Select the elements you want to add classes to
+    var elements = d3.selectAll(".dot");
+
+    // Add the classes to the selected elements
+    elements.classed("selected", false)
+            .style("opacity", 1);
+    });
     // --------------------------------- Plot ---------------------------- //
     const format = d3.format(".2f");
     // Add circles
@@ -309,8 +347,9 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
       .attr("cy", (d, i) => i * (size + 5))
       .attr("r", 7)
       .style("fill", d => color(d))
-      .on("mouseover", highlight)
-      .on("mouseleave", doNotHighlight);
+      //.on("mouseover", highlight)
+      .on("click", highlight)
+      //.on("mouseleave", doNotHighlight);
 
     // Add labels beside legend dots
     legendContainer.selectAll("mylabels")
@@ -323,8 +362,8 @@ d3.csv("./python/CSV/scatter_economic.csv").then(function (data) {
       .text(d => d)
       .attr("text-anchor", "left")
       .style("alignment-baseline", "middle")
-      .on("mouseover", highlight)
-      .on("mouseleave", doNotHighlight);
+      .on("click", highlight)
+      //.on("mouseleave", doNotHighlight);
 
 
   }
