@@ -1,6 +1,6 @@
 
-d3.csv("./python/CSV/map_economic.csv").then(function (data) {
-
+d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
+console.log(data);
   const margin = {top: 0, right: 200, bottom: 10, left: 10},
       width = 1300 - margin.left - margin.right,
       height = 800 - margin.top - margin.bottom;
@@ -18,7 +18,8 @@ d3.csv("./python/CSV/map_economic.csv").then(function (data) {
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- SELECT BUTTONS ---------------------------------------------------- //
 //const allVariables = ["Adult Mortality", "infant deaths", "Alcohol", "percentage expenditure", "Hepatitis B", "Measles "," BMI ","under-five deaths ","Polio","Total expenditure","Diphtheria "," HIV/AIDS","GDP"," thinness  1-19 years"," thinness 5-9 years","Income composition of resources","Schooling"]
-const allVariables = ["ICOR",  "GDP", "Gov Health Expenditure", "Population", "AdultMortality", "Schooling"]
+const allVariables = ['Infectious and parasitic diseases', 'Cardiovascular diseases', 'Respiratory diseases',
+                      'Digestive diseases', 'Neurological conditions', 'Mental and substance use disorders', 'Unintentional injuries', 'Intentional injuries'];
 
 d3.select("#selectdVariableMap")
   .selectAll('myOptions')
@@ -28,10 +29,12 @@ d3.select("#selectdVariableMap")
   .text(function (d) { return d; })
   .attr("value", function (d) { return d; })
 d3.select("#selectdVariableMap")
-  .property("value", "GDP");
+  .property("value", 'Infectious and parasitic diseases');
 
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- PLAY BUTTON ---------------------------------------------------- //
+var years = [2000, 2010, 2015];
+
 function Play(){
     var playButton = d3.select("#map_yearPlay")
     var slider = d3.select("#map_yearSlider")
@@ -40,17 +43,18 @@ function Play(){
     var playing = false;
     var interval;
     var currentYear = 2000;
-    var currentVariable = "GDP"
-    var years = [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015];
+    var currentVariable = 'Infectious and parasitic diseases'
+    var i = 0;
 
     // I set default values
     Map_yearDisplay.text(currentYear);
-    slider.property("value", currentYear);
+    slider.property("value", i);
     updateChart(currentYear, currentVariable, data, playing);
 
     // When the input of the slider changes, i update
     slider.on("input", function() {
-      currentYear = this.value;
+      i = this.value;
+      currentYear = years[i];
       Map_yearDisplay.text(currentYear);
       currentVariable = d3.select("#selectdVariableMap").property("value");
       updateChart(currentYear, currentVariable, data, playing);
@@ -62,13 +66,16 @@ function Play(){
         playing = true;
         playButton.text("Pause");
         interval = setInterval(function() {
-          currentYear = +slider.property("value");
+          i = +slider.property("value");
+          currentYear = years[i];
           if (currentYear >= 2015) {
             currentYear = 2000;
-            slider.property("value", currentYear);
+            i = 0;
+            slider.property("value", i);
           } else {
-            currentYear++;
-            slider.property("value", currentYear);
+            i++;
+            currentYear = years[i];
+            slider.property("value", i);
           }
           Map_yearDisplay.text(currentYear);
           currentVariable = d3.select("#selectdVariableMap").property("value");
@@ -103,7 +110,7 @@ function updateChart(year, variable, data, playing) {
   const format = d3.format(".2f");
 
   var color = d3.scaleQuantize()
-      .range(d3.schemeGreens[5]);
+      .range(d3.schemeReds[5]);
 
   var data = data.filter(function(d){return d.Year === selectedYear})
 
@@ -211,12 +218,7 @@ function updateChart(year, variable, data, playing) {
 
     //---------------------------------------------------- Tooltip ----------------------------------- //
 
-    var unit_measure = "";
-    if (selectedVariable === "AdultMortality"){ unit_measure = "per 1000 population";}
-    if (selectedVariable === "ICOR"){ unit_measure = "index";}
-    if (selectedVariable === "GDP"){ unit_measure = "USD";}
-    if (selectedVariable === "Gov Health Expenditure"){ unit_measure = "%";}
-    if (selectedVariable === "Schooling"){ unit_measure = "years";}
+    var unit_measure = "deaths";
 
     // create a tooltip
     const tooltip = d3.select("#map")
@@ -305,13 +307,14 @@ function updateChart(year, variable, data, playing) {
 // ---------------------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------- SELECT BUTTONS LISTENERS ---------------------------------------------------- //
 d3.select("#selectdVariableMap").on("change", function(event,d) {
-  selectedYear = d3.select("#map_yearSlider").property("value");
+  indexYear = d3.select("#map_yearSlider").property("value");
+  selectedYear = years[indexYear];
   selectedVariable = d3.select("#selectdVariableMap").property("value");
 
   var playing = false;
   play_button = d3.select("#map_yearPlay").text();
   if(play_button === "Pause") {playing = true;}
-  
+
   updateChart(selectedYear, selectedVariable, data, playing);
 })
 

@@ -104,7 +104,7 @@
         </p>
         <button id="resetButton">Reset</button>
         <br>
-        
+
         <div id="scatter" class="font svg-container"> </div>
 
 
@@ -121,6 +121,18 @@
           <select id="sankey_select" ></select>
         </p>
         <div id="sankey" class="font svg-container"> </div>
+
+      <h3 class="title left">Map</h3> <!-- ############################################ SANKEY  ### -->
+        <p class="subtitle left">
+          This chart shows how different categories of diseases are interconnected and how much they affect life expectancy in different countries.
+          It helps to identify how different diseases interact with one another and how they impact life expectancy.
+        </p>
+        <p>Year: <span id="map_yearDisplay"></span></p>
+        <button id="map_yearPlay">Play</button>
+        <input type="range" style="width:50%;" min="0" max="2" value="0" id="map_yearSlider">
+        <br>
+        Variable: <select id="selectdVariableMap"></select>
+        <div id="map" class="font svg-container"> </div>
 
   </div>
   <br><br><br><br><br><br><br><br>
@@ -145,5 +157,7 @@
   <script src="./js/diseases/sankey_chart.js"></script>
   <script src="./js/diseases/barchart.js"></script>
   <script src="./js/diseases/scatter_diseases.js"></script>
+  <script src="./js/diseases/map.js"></script>
+
   </body>
   </html>
