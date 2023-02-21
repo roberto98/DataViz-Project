@@ -207,7 +207,7 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
             .on("start", function() {
               this.parentNode.appendChild(this);
             }))
-          //  .on("drag", dragmove));
+         
 
       // add the rectangles for the nodes
       node.append("rect")
@@ -217,9 +217,7 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
     		  return d.color = color(d.name.replace(/ .*/, "")); })
           .style("stroke", function(d) {
     		  return d3.rgb(d.color).darker(2); })
-          .append("title")
-          .text(function(d) {
-    		  return d.name + "\n" + format(d.value); });
+
 
       // add in the title for the nodes
       node.append("text")
@@ -233,21 +231,8 @@ d3.csv("./python/CSV/global_sankey.csv").then(data => {
           .attr("x", 6 + sankey.nodeWidth())
           .attr("text-anchor", "start");
 
-  }
 
-  // the function for moving the nodes
-  function dragmove(d) {
-    d3.select(this)
-      .attr("transform",
-            "translate("
-               + d.x + ","
-               + (d.y = Math.max(
-                  0, Math.min(height - d.dy, d3.event.y))
-                 ) + ")");
-    sankey.relayout();
-    link.attr("d", path);
-  }
-
+          }
 
   d3.select("#sankey_select").on("change", function(event,d) {
       indexYear = d3.select("#sankey_yearSlider").property("value");
