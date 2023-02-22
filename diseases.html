@@ -64,14 +64,15 @@
       <h1 class="title">Life Expectancy Correlated with Diseases</h1>
       <p class="subtitle left">
           In this section, we take a closer look at the impact of different diseases on life expectancy in different countries.
-          We use a horizontal barchart, sankey alluvial diagram, scatterplot and a map to explore which diseases have the most significant impact on
-          life expectancy, and how they are interconnected across different regions.
+          We use a horizontal barchart, sankey alluvial diagram, scatterplot and a geographical map to explore which diseases
+          have the most significant impact on life expectancy, and how differently diseases occur across world regions.
       </p>
 
-      <h3 class="title left">The Top Ten Diseases</h3> <!-- ############################################ BARCHART  ### -->
+      <h3 class="title left">Top Ten Lethal Diseases</h3> <!-- ############################################ BARCHART  ### -->
         <p class="subtitle left">
-          The horizontal barchart compares the impact of different diseases on life expectancy in different countries.
-          It helps to identify the diseases that have the greatest impact on life expectancy and how they vary by country.
+          The horizontal barchart exhibits the number of deaths that occurred in a given country.
+          The diceases are grouped by the cause and the most frequent ten causes of death are displayed 
+          with horizontal bars.
         </p>
         <p>Year: <span id="barchart_yearDisplay"></span></p>
         <button id="barchart_yearPlay">Play</button>
@@ -82,10 +83,12 @@
         </p>
         <div id="barchart" class="font svg-container"> </div>
 
-        <h3 class="title left">How Diseases Interact to Impact Life Expectancy?</h3> <!-- ############################################ SANKEY  ### -->
+        <h3 class="title left">Flux diagram of death causes</h3> <!-- ############################################ SANKEY  ### -->
           <p class="subtitle left">
-            This chart shows how different categories of diseases are interconnected and how much they affect life expectancy in different countries.
-            It helps to identify how different diseases interact with one another and how they impact life expectancy.
+              In developed countries the main causes of death are age-related cardiovascular conditions, while in a developing 
+              country causes like infectious disease, parasites, violent deaths may play a greater role. Cases of deaths are classified
+              into Communicable or prenata diseases, non communicable diseases and injuries, then they are divided into more specific
+              categories.
           </p>
           <p>Year: <span id="sankey_yearDisplay"></span></p>
           <button id="sankey_yearPlay">Play</button>
