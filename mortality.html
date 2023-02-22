@@ -83,10 +83,16 @@
         <h3 class="title left">Correlated Factors Affecting Life Expectancy</h3> <!-- ############################################ HEATMAP  ### -->
           <p class="subtitle left">
              This chart displays a correlation matrix of various factors that impact life expectancy.
-             It helps to identify which factors are positively and negatively correlated with life expectancy and how strong the correlations are.
+             The chart gives an intuition to see which factors are positively (or negatively) correlated with life expectancy, and stronger
+             colors suggest a stronger positive correlation.
              <br><br>
-             It is calculated as the covariance between two variables divided by the product of their standard deviations, hence
-             if all the values in a column are the same, the correlation between that column and any other column is undefined.
+             In mathematics the correlation of two statistical variables is calculated as
+             the covariance between the two variables divided by the product of their standard deviations.
+             The correlation ranges from -1 to +1, if the correlation is near to zero the variables are considered uncorrelated. Meanwhile a value near to
+             1 indicates a positive correlation so when the first variable grows, the second one grows too;
+             Analogously a correlation near to -1 indicates a negative correlation so when a variable grows the second
+             one decreases. The diagonal of a covariance matrix contains values equal to one because on the diagonal the correlation
+             of a variable is calculated with itself.
            </p>
             <select id="heatmapCountry" style="width:50%;"></select>
             <br>
