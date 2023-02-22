@@ -202,10 +202,14 @@ function updateChart(year, variable, data, playing) {
           return 0.3 * Math.sqrt(path.area(d));
       })
       .attr("x", function(d){
+          if(d.properties.name == "France")
+            return projection([2.96, 47.08])[0] - (0.3 * Math.sqrt(path.area(d)));
           return path.centroid(d)[0] - (0.3 * Math.sqrt(path.area(d)));
       })
       .attr("y", function(d){
-          return path.centroid(d)[1] + (0.3 * Math.sqrt(path.area(d))/2);
+        if(d.properties.name == "France")
+          return projection([2.96, 47.08])[1] + (0.3 * Math.sqrt(path.area(d))/2);
+        return path.centroid(d)[1] + (0.3 * Math.sqrt(path.area(d))/2);
       })
       .text(function(d){
           if (d.properties.lifeExp){
