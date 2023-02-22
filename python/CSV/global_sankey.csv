@@ -338,28 +338,28 @@
 455,Bhutan,2000,Noncommunicable diseases,Genitourinary diseases,0.5,0.1
 458,Bhutan,2000,Noncommunicable diseases,Congenital anomalies,0.5,0.1
 460,Bhutan,2000,Injuries,Unintentional injuries,2.0,0.4
-462,Bolivia (Plurinational State of),2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",7.65321375186846,25.6
-463,Bolivia (Plurinational State of),2000,All Causes,Noncommunicable diseases,10.642750373692076,35.6
-464,Bolivia (Plurinational State of),2000,All Causes,Injuries,1.7040358744394617,5.7
-465,Bolivia (Plurinational State of),2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,2.8656716417910455,9.6
-466,Bolivia (Plurinational State of),2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.268656716417911,7.6
-467,Bolivia (Plurinational State of),2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.14925373134328362,0.5
-468,Bolivia (Plurinational State of),2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.9701492537313436,6.6
-469,Bolivia (Plurinational State of),2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.38805970149253743,1.3
-470,Bolivia (Plurinational State of),2000,Noncommunicable diseases,Malignant neoplasms,1.761194029850747,5.9
-472,Bolivia (Plurinational State of),2000,Noncommunicable diseases,Diabetes mellitus,0.7462686567164181,2.5
-473,Bolivia (Plurinational State of),2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.08955223880597017,0.3
-474,Bolivia (Plurinational State of),2000,Noncommunicable diseases,Mental and substance use disorders,0.14925373134328362,0.5
-475,Bolivia (Plurinational State of),2000,Noncommunicable diseases,Neurological conditions,0.4477611940298509,1.5
-476,Bolivia (Plurinational State of),2000,Noncommunicable diseases,Cardiovascular diseases,3.7313432835820906,12.5
-477,Bolivia (Plurinational State of),2000,Noncommunicable diseases,Respiratory diseases,0.8358208955223883,2.8
-478,Bolivia (Plurinational State of),2000,Noncommunicable diseases,Digestive diseases,1.4626865671641796,4.9
-479,Bolivia (Plurinational State of),2000,Noncommunicable diseases,Genitourinary diseases,0.8358208955223883,2.8
-481,Bolivia (Plurinational State of),2000,Noncommunicable diseases,Musculoskeletal diseases,0.029850746268656726,0.1
-482,Bolivia (Plurinational State of),2000,Noncommunicable diseases,Congenital anomalies,0.5373134328358211,1.8
-483,Bolivia (Plurinational State of),2000,Noncommunicable diseases,Sudden infant death syndrome,0.029850746268656726,0.1
-484,Bolivia (Plurinational State of),2000,Injuries,Unintentional injuries,1.3432835820895526,4.5
-485,Bolivia (Plurinational State of),2000,Injuries,Intentional injuries,0.3582089552238807,1.2
+462,Bolivia,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",7.65321375186846,25.6
+463,Bolivia,2000,All Causes,Noncommunicable diseases,10.642750373692076,35.6
+464,Bolivia,2000,All Causes,Injuries,1.7040358744394617,5.7
+465,Bolivia,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,2.8656716417910455,9.6
+466,Bolivia,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.268656716417911,7.6
+467,Bolivia,2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.14925373134328362,0.5
+468,Bolivia,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.9701492537313436,6.6
+469,Bolivia,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.38805970149253743,1.3
+470,Bolivia,2000,Noncommunicable diseases,Malignant neoplasms,1.761194029850747,5.9
+472,Bolivia,2000,Noncommunicable diseases,Diabetes mellitus,0.7462686567164181,2.5
+473,Bolivia,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.08955223880597017,0.3
+474,Bolivia,2000,Noncommunicable diseases,Mental and substance use disorders,0.14925373134328362,0.5
+475,Bolivia,2000,Noncommunicable diseases,Neurological conditions,0.4477611940298509,1.5
+476,Bolivia,2000,Noncommunicable diseases,Cardiovascular diseases,3.7313432835820906,12.5
+477,Bolivia,2000,Noncommunicable diseases,Respiratory diseases,0.8358208955223883,2.8
+478,Bolivia,2000,Noncommunicable diseases,Digestive diseases,1.4626865671641796,4.9
+479,Bolivia,2000,Noncommunicable diseases,Genitourinary diseases,0.8358208955223883,2.8
+481,Bolivia,2000,Noncommunicable diseases,Musculoskeletal diseases,0.029850746268656726,0.1
+482,Bolivia,2000,Noncommunicable diseases,Congenital anomalies,0.5373134328358211,1.8
+483,Bolivia,2000,Noncommunicable diseases,Sudden infant death syndrome,0.029850746268656726,0.1
+484,Bolivia,2000,Injuries,Unintentional injuries,1.3432835820895526,4.5
+485,Bolivia,2000,Injuries,Intentional injuries,0.3582089552238807,1.2
 486,Bosnia and Herzegovina,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",0.6338028169014085,0.9
 487,Bosnia and Herzegovina,2000,All Causes,Noncommunicable diseases,18.098591549295776,25.7
 488,Bosnia and Herzegovina,2000,All Causes,Injuries,1.267605633802817,1.8
@@ -691,26 +691,26 @@
 900,Comoros,2000,Noncommunicable diseases,Congenital anomalies,0.45454545454545453,0.1
 902,Comoros,2000,Injuries,Unintentional injuries,1.3636363636363635,0.3
 903,Comoros,2000,Injuries,Intentional injuries,0.45454545454545453,0.1
-904,Congo,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",12.292191435768261,24.4
-905,Congo,2000,All Causes,Noncommunicable diseases,6.146095717884131,12.2
-906,Congo,2000,All Causes,Injuries,1.561712846347607,3.1
-907,Congo,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,8.142493638676845,16.0
-908,Congo,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.83206106870229,3.6
-909,Congo,2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.4580152671755725,0.9
-910,Congo,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.6793893129770991,3.3
-911,Congo,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.2544529262086514,0.5
-912,Congo,2000,Noncommunicable diseases,Malignant neoplasms,0.40712468193384227,0.8
-914,Congo,2000,Noncommunicable diseases,Diabetes mellitus,0.4580152671755725,0.9
-915,Congo,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.10178117048346057,0.2
-916,Congo,2000,Noncommunicable diseases,Mental and substance use disorders,0.050890585241730284,0.1
-917,Congo,2000,Noncommunicable diseases,Neurological conditions,0.15267175572519084,0.3
-918,Congo,2000,Noncommunicable diseases,Cardiovascular diseases,2.900763358778626,5.7
-919,Congo,2000,Noncommunicable diseases,Respiratory diseases,0.5089058524173028,1.0
-920,Congo,2000,Noncommunicable diseases,Digestive diseases,0.8142493638676845,1.6
-921,Congo,2000,Noncommunicable diseases,Genitourinary diseases,0.3562340966921119,0.7
-924,Congo,2000,Noncommunicable diseases,Congenital anomalies,0.3053435114503817,0.6
-926,Congo,2000,Injuries,Unintentional injuries,0.916030534351145,1.8
-927,Congo,2000,Injuries,Intentional injuries,0.6615776081424937,1.3
+904,Republic of Congo,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",12.292191435768261,24.4
+905,Republic of Congo,2000,All Causes,Noncommunicable diseases,6.146095717884131,12.2
+906,Republic of Congo,2000,All Causes,Injuries,1.561712846347607,3.1
+907,Republic of Congo,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,8.142493638676845,16.0
+908,Republic of Congo,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.83206106870229,3.6
+909,Republic of Congo,2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.4580152671755725,0.9
+910,Republic of Congo,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.6793893129770991,3.3
+911,Republic of Congo,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.2544529262086514,0.5
+912,Republic of Congo,2000,Noncommunicable diseases,Malignant neoplasms,0.40712468193384227,0.8
+914,Republic of Congo,2000,Noncommunicable diseases,Diabetes mellitus,0.4580152671755725,0.9
+915,Republic of Congo,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.10178117048346057,0.2
+916,Republic of Congo,2000,Noncommunicable diseases,Mental and substance use disorders,0.050890585241730284,0.1
+917,Republic of Congo,2000,Noncommunicable diseases,Neurological conditions,0.15267175572519084,0.3
+918,Republic of Congo,2000,Noncommunicable diseases,Cardiovascular diseases,2.900763358778626,5.7
+919,Republic of Congo,2000,Noncommunicable diseases,Respiratory diseases,0.5089058524173028,1.0
+920,Republic of Congo,2000,Noncommunicable diseases,Digestive diseases,0.8142493638676845,1.6
+921,Republic of Congo,2000,Noncommunicable diseases,Genitourinary diseases,0.3562340966921119,0.7
+924,Republic of Congo,2000,Noncommunicable diseases,Congenital anomalies,0.3053435114503817,0.6
+926,Republic of Congo,2000,Injuries,Unintentional injuries,0.916030534351145,1.8
+927,Republic of Congo,2000,Injuries,Intentional injuries,0.6615776081424937,1.3
 928,Costa Rica,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.74496644295302,1.3
 929,Costa Rica,2000,All Causes,Noncommunicable diseases,15.838926174496644,11.8
 930,Costa Rica,2000,All Causes,Injuries,2.416107382550335,1.8
@@ -732,27 +732,27 @@
 948,Costa Rica,2000,Noncommunicable diseases,Congenital anomalies,0.39999999999999997,0.3
 950,Costa Rica,2000,Injuries,Unintentional injuries,1.7333333333333334,1.3
 951,Costa Rica,2000,Injuries,Intentional injuries,0.6666666666666666,0.5
-952,Côte d'Ivoire,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",13.893129770992367,163.8
-953,Côte d'Ivoire,2000,All Causes,Noncommunicable diseases,4.809160305343512,56.7
-954,Côte d'Ivoire,2000,All Causes,Injuries,1.297709923664122,15.3
-955,Côte d'Ivoire,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,9.525021204410518,112.3
-956,Côte d'Ivoire,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.6878710771840544,19.9
-957,Côte d'Ivoire,2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.39016115351993214,4.6
-958,Côte d'Ivoire,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,2.179813401187447,25.7
-959,Côte d'Ivoire,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.11874469889737066,1.4
-960,Côte d'Ivoire,2000,Noncommunicable diseases,Malignant neoplasms,0.5937234944868534,7.0
-962,Côte d'Ivoire,2000,Noncommunicable diseases,Diabetes mellitus,0.2883799830364716,3.4
-963,Côte d'Ivoire,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11026293469041562,1.3
-964,Côte d'Ivoire,2000,Noncommunicable diseases,Mental and substance use disorders,0.03392705682782019,0.4
-965,Côte d'Ivoire,2000,Noncommunicable diseases,Neurological conditions,0.1441899915182358,1.7
-966,Côte d'Ivoire,2000,Noncommunicable diseases,Cardiovascular diseases,1.9253604749787958,22.7
-967,Côte d'Ivoire,2000,Noncommunicable diseases,Respiratory diseases,0.3392705682782019,4.0
-968,Côte d'Ivoire,2000,Noncommunicable diseases,Digestive diseases,0.7124681933842241,8.4
-969,Côte d'Ivoire,2000,Noncommunicable diseases,Genitourinary diseases,0.3477523324851569,4.1
-972,Côte d'Ivoire,2000,Noncommunicable diseases,Congenital anomalies,0.25445292620865145,3.0
-973,Côte d'Ivoire,2000,Noncommunicable diseases,Sudden infant death syndrome,0.025445292620865142,0.3
-974,Côte d'Ivoire,2000,Injuries,Unintentional injuries,0.882103477523325,10.4
-975,Côte d'Ivoire,2000,Injuries,Intentional injuries,0.41560644614079734,4.9
+952,Ivory Coast,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",13.893129770992367,163.8
+953,Ivory Coast,2000,All Causes,Noncommunicable diseases,4.809160305343512,56.7
+954,Ivory Coast,2000,All Causes,Injuries,1.297709923664122,15.3
+955,Ivory Coast,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,9.525021204410518,112.3
+956,Ivory Coast,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.6878710771840544,19.9
+957,Ivory Coast,2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.39016115351993214,4.6
+958,Ivory Coast,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,2.179813401187447,25.7
+959,Ivory Coast,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.11874469889737066,1.4
+960,Ivory Coast,2000,Noncommunicable diseases,Malignant neoplasms,0.5937234944868534,7.0
+962,Ivory Coast,2000,Noncommunicable diseases,Diabetes mellitus,0.2883799830364716,3.4
+963,Ivory Coast,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11026293469041562,1.3
+964,Ivory Coast,2000,Noncommunicable diseases,Mental and substance use disorders,0.03392705682782019,0.4
+965,Ivory Coast,2000,Noncommunicable diseases,Neurological conditions,0.1441899915182358,1.7
+966,Ivory Coast,2000,Noncommunicable diseases,Cardiovascular diseases,1.9253604749787958,22.7
+967,Ivory Coast,2000,Noncommunicable diseases,Respiratory diseases,0.3392705682782019,4.0
+968,Ivory Coast,2000,Noncommunicable diseases,Digestive diseases,0.7124681933842241,8.4
+969,Ivory Coast,2000,Noncommunicable diseases,Genitourinary diseases,0.3477523324851569,4.1
+972,Ivory Coast,2000,Noncommunicable diseases,Congenital anomalies,0.25445292620865145,3.0
+973,Ivory Coast,2000,Noncommunicable diseases,Sudden infant death syndrome,0.025445292620865142,0.3
+974,Ivory Coast,2000,Injuries,Unintentional injuries,0.882103477523325,10.4
+975,Ivory Coast,2000,Injuries,Intentional injuries,0.41560644614079734,4.9
 976,Croatia,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",0.6772908366533864,1.7
 977,Croatia,2000,All Causes,Noncommunicable diseases,18.167330677290835,45.6
 978,Croatia,2000,All Causes,Injuries,1.1553784860557768,2.9
@@ -1043,25 +1043,25 @@
 1337,Estonia,2000,Noncommunicable diseases,Congenital anomalies,0.10869565217391304,0.1
 1340,Estonia,2000,Injuries,Unintentional injuries,1.3043478260869563,1.2
 1341,Estonia,2000,Injuries,Intentional injuries,0.6521739130434782,0.6
-1342,Eswatini,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",12.533333333333333,9.4
-1343,Eswatini,2000,All Causes,Noncommunicable diseases,5.7333333333333325,4.3
-1344,Eswatini,2000,All Causes,Injuries,1.7333333333333334,1.3
-1345,Eswatini,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,9.864864864864867,7.3
-1346,Eswatini,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.4864864864864868,1.1
-1347,Eswatini,2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.27027027027027034,0.2
-1348,Eswatini,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.8108108108108109,0.6
-1349,Eswatini,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.13513513513513517,0.1
-1350,Eswatini,2000,Noncommunicable diseases,Malignant neoplasms,0.5405405405405407,0.4
-1352,Eswatini,2000,Noncommunicable diseases,Diabetes mellitus,0.8108108108108109,0.6
-1353,Eswatini,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.13513513513513517,0.1
-1355,Eswatini,2000,Noncommunicable diseases,Neurological conditions,0.13513513513513517,0.1
-1356,Eswatini,2000,Noncommunicable diseases,Cardiovascular diseases,2.1621621621621627,1.6
-1357,Eswatini,2000,Noncommunicable diseases,Respiratory diseases,0.5405405405405407,0.4
-1358,Eswatini,2000,Noncommunicable diseases,Digestive diseases,0.6756756756756758,0.5
-1359,Eswatini,2000,Noncommunicable diseases,Genitourinary diseases,0.40540540540540543,0.3
-1362,Eswatini,2000,Noncommunicable diseases,Congenital anomalies,0.27027027027027034,0.2
-1364,Eswatini,2000,Injuries,Unintentional injuries,1.0810810810810814,0.8
-1365,Eswatini,2000,Injuries,Intentional injuries,0.6756756756756758,0.5
+1342,Swaziland,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",12.533333333333333,9.4
+1343,Swaziland,2000,All Causes,Noncommunicable diseases,5.7333333333333325,4.3
+1344,Swaziland,2000,All Causes,Injuries,1.7333333333333334,1.3
+1345,Swaziland,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,9.864864864864867,7.3
+1346,Swaziland,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.4864864864864868,1.1
+1347,Swaziland,2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.27027027027027034,0.2
+1348,Swaziland,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.8108108108108109,0.6
+1349,Swaziland,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.13513513513513517,0.1
+1350,Swaziland,2000,Noncommunicable diseases,Malignant neoplasms,0.5405405405405407,0.4
+1352,Swaziland,2000,Noncommunicable diseases,Diabetes mellitus,0.8108108108108109,0.6
+1353,Swaziland,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.13513513513513517,0.1
+1355,Swaziland,2000,Noncommunicable diseases,Neurological conditions,0.13513513513513517,0.1
+1356,Swaziland,2000,Noncommunicable diseases,Cardiovascular diseases,2.1621621621621627,1.6
+1357,Swaziland,2000,Noncommunicable diseases,Respiratory diseases,0.5405405405405407,0.4
+1358,Swaziland,2000,Noncommunicable diseases,Digestive diseases,0.6756756756756758,0.5
+1359,Swaziland,2000,Noncommunicable diseases,Genitourinary diseases,0.40540540540540543,0.3
+1362,Swaziland,2000,Noncommunicable diseases,Congenital anomalies,0.27027027027027034,0.2
+1364,Swaziland,2000,Injuries,Unintentional injuries,1.0810810810810814,0.8
+1365,Swaziland,2000,Injuries,Intentional injuries,0.6756756756756758,0.5
 1366,Ethiopia,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",13.333333333333332,654.4
 1367,Ethiopia,2000,All Causes,Noncommunicable diseases,4.496740016299919,220.7
 1368,Ethiopia,2000,All Causes,Injuries,2.1699266503667483,106.5
@@ -1454,27 +1454,27 @@
 1874,Indonesia,2000,Noncommunicable diseases,Sudden infant death syndrome,0.021486892995272885,1.5
 1875,Indonesia,2000,Injuries,Unintentional injuries,1.0299384042400805,71.9
 1876,Indonesia,2000,Injuries,Intentional injuries,0.2907892852026931,20.3
-1877,Iran (Islamic Republic of),2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",2.9197080291970803,40.0
-1878,Iran (Islamic Republic of),2000,All Causes,Noncommunicable diseases,13.948905109489049,191.1
-1879,Iran (Islamic Republic of),2000,All Causes,Injuries,3.1313868613138682,42.9
-1880,Iran (Islamic Republic of),2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.6642335766423357,9.1
-1881,Iran (Islamic Republic of),2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.8613138686131386,11.8
-1882,Iran (Islamic Republic of),2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.029197080291970802,0.4
-1883,Iran (Islamic Republic of),2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.3430656934306566,18.4
-1884,Iran (Islamic Republic of),2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.0218978102189781,0.3
-1885,Iran (Islamic Republic of),2000,Noncommunicable diseases,Malignant neoplasms,2.0875912408759123,28.6
-1887,Iran (Islamic Republic of),2000,Noncommunicable diseases,Diabetes mellitus,0.30656934306569344,4.2
-1888,Iran (Islamic Republic of),2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.1021897810218978,1.4
-1889,Iran (Islamic Republic of),2000,Noncommunicable diseases,Mental and substance use disorders,0.21167883211678828,2.9
-1890,Iran (Islamic Republic of),2000,Noncommunicable diseases,Neurological conditions,0.4963503649635036,6.8
-1891,Iran (Islamic Republic of),2000,Noncommunicable diseases,Cardiovascular diseases,8.474452554744525,116.1
-1892,Iran (Islamic Republic of),2000,Noncommunicable diseases,Respiratory diseases,0.7226277372262774,9.9
-1893,Iran (Islamic Republic of),2000,Noncommunicable diseases,Digestive diseases,0.510948905109489,7.0
-1894,Iran (Islamic Republic of),2000,Noncommunicable diseases,Genitourinary diseases,0.5182481751824817,7.1
-1897,Iran (Islamic Republic of),2000,Noncommunicable diseases,Congenital anomalies,0.4598540145985401,6.3
-1898,Iran (Islamic Republic of),2000,Noncommunicable diseases,Sudden infant death syndrome,0.029197080291970802,0.4
-1899,Iran (Islamic Republic of),2000,Injuries,Unintentional injuries,2.45985401459854,33.7
-1900,Iran (Islamic Republic of),2000,Injuries,Intentional injuries,0.6715328467153283,9.2
+1877,Iran,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",2.9197080291970803,40.0
+1878,Iran,2000,All Causes,Noncommunicable diseases,13.948905109489049,191.1
+1879,Iran,2000,All Causes,Injuries,3.1313868613138682,42.9
+1880,Iran,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.6642335766423357,9.1
+1881,Iran,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.8613138686131386,11.8
+1882,Iran,2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.029197080291970802,0.4
+1883,Iran,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.3430656934306566,18.4
+1884,Iran,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.0218978102189781,0.3
+1885,Iran,2000,Noncommunicable diseases,Malignant neoplasms,2.0875912408759123,28.6
+1887,Iran,2000,Noncommunicable diseases,Diabetes mellitus,0.30656934306569344,4.2
+1888,Iran,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.1021897810218978,1.4
+1889,Iran,2000,Noncommunicable diseases,Mental and substance use disorders,0.21167883211678828,2.9
+1890,Iran,2000,Noncommunicable diseases,Neurological conditions,0.4963503649635036,6.8
+1891,Iran,2000,Noncommunicable diseases,Cardiovascular diseases,8.474452554744525,116.1
+1892,Iran,2000,Noncommunicable diseases,Respiratory diseases,0.7226277372262774,9.9
+1893,Iran,2000,Noncommunicable diseases,Digestive diseases,0.510948905109489,7.0
+1894,Iran,2000,Noncommunicable diseases,Genitourinary diseases,0.5182481751824817,7.1
+1897,Iran,2000,Noncommunicable diseases,Congenital anomalies,0.4598540145985401,6.3
+1898,Iran,2000,Noncommunicable diseases,Sudden infant death syndrome,0.029197080291970802,0.4
+1899,Iran,2000,Injuries,Unintentional injuries,2.45985401459854,33.7
+1900,Iran,2000,Injuries,Intentional injuries,0.6715328467153283,9.2
 1901,Iraq,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",5.096227867590454,33.1
 1902,Iraq,2000,All Causes,Noncommunicable diseases,11.762894534257121,76.4
 1903,Iraq,2000,All Causes,Injuries,3.1408775981524246,20.4
@@ -3221,27 +3221,27 @@
 4194,United Arab Emirates,2000,Noncommunicable diseases,Congenital anomalies,0.5333333333333333,0.2
 4196,United Arab Emirates,2000,Injuries,Unintentional injuries,3.1999999999999997,1.2
 4197,United Arab Emirates,2000,Injuries,Intentional injuries,0.7999999999999999,0.3
-4198,United Kingdom,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",2.333000997008973,70.2
-4199,United Kingdom,2000,All Causes,Noncommunicable diseases,17.04220671319375,512.8
-4200,United Kingdom,2000,All Causes,Injuries,0.6247922897972749,18.8
-4201,United Kingdom,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.15619807244931874,4.7
-4202,United Kingdom,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.090395480225989,62.9
-4204,United Kingdom,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.06979062811565305,2.1
-4206,United Kingdom,2000,Noncommunicable diseases,Malignant neoplasms,5.081422399468263,152.9
-4207,United Kingdom,2000,Noncommunicable diseases,Other neoplasms,0.08308408109006316,2.5
-4208,United Kingdom,2000,Noncommunicable diseases,Diabetes mellitus,0.19275506812894652,5.8
-4209,United Kingdom,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.10967098703888337,3.3
-4210,United Kingdom,2000,Noncommunicable diseases,Mental and substance use disorders,0.0997008973080758,3.0
-4211,United Kingdom,2000,Noncommunicable diseases,Neurological conditions,0.7377866400797608,22.2
-4213,United Kingdom,2000,Noncommunicable diseases,Cardiovascular diseases,7.87969425058159,237.1
-4214,United Kingdom,2000,Noncommunicable diseases,Respiratory diseases,1.4423396477234964,43.4
-4215,United Kingdom,2000,Noncommunicable diseases,Digestive diseases,0.8574277168494518,25.8
-4216,United Kingdom,2000,Noncommunicable diseases,Genitourinary diseases,0.3057494184114324,9.2
-4217,United Kingdom,2000,Noncommunicable diseases,Skin diseases,0.04652708541043537,1.4
-4218,United Kingdom,2000,Noncommunicable diseases,Musculoskeletal diseases,0.12961116650049853,3.9
-4219,United Kingdom,2000,Noncommunicable diseases,Congenital anomalies,0.06646726487205053,2.0
-4222,United Kingdom,2000,Injuries,Unintentional injuries,0.4154204054503158,12.5
-4223,United Kingdom,2000,Injuries,Intentional injuries,0.20937188434695916,6.3
+4198,United Kingdom of Great Britain and Northern Ireland,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",2.333000997008973,70.2
+4199,United Kingdom of Great Britain and Northern Ireland,2000,All Causes,Noncommunicable diseases,17.04220671319375,512.8
+4200,United Kingdom of Great Britain and Northern Ireland,2000,All Causes,Injuries,0.6247922897972749,18.8
+4201,United Kingdom of Great Britain and Northern Ireland,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.15619807244931874,4.7
+4202,United Kingdom of Great Britain and Northern Ireland,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.090395480225989,62.9
+4204,United Kingdom of Great Britain and Northern Ireland,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.06979062811565305,2.1
+4206,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Malignant neoplasms,5.081422399468263,152.9
+4207,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Other neoplasms,0.08308408109006316,2.5
+4208,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Diabetes mellitus,0.19275506812894652,5.8
+4209,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.10967098703888337,3.3
+4210,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Mental and substance use disorders,0.0997008973080758,3.0
+4211,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Neurological conditions,0.7377866400797608,22.2
+4213,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Cardiovascular diseases,7.87969425058159,237.1
+4214,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Respiratory diseases,1.4423396477234964,43.4
+4215,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Digestive diseases,0.8574277168494518,25.8
+4216,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Genitourinary diseases,0.3057494184114324,9.2
+4217,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Skin diseases,0.04652708541043537,1.4
+4218,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Musculoskeletal diseases,0.12961116650049853,3.9
+4219,United Kingdom of Great Britain and Northern Ireland,2000,Noncommunicable diseases,Congenital anomalies,0.06646726487205053,2.0
+4222,United Kingdom of Great Britain and Northern Ireland,2000,Injuries,Unintentional injuries,0.4154204054503158,12.5
+4223,United Kingdom of Great Britain and Northern Ireland,2000,Injuries,Intentional injuries,0.20937188434695916,6.3
 4224,United Republic of Tanzania,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",14.446564885496185,302.8
 4225,United Republic of Tanzania,2000,All Causes,Noncommunicable diseases,4.20324427480916,88.1
 4226,United Republic of Tanzania,2000,All Causes,Injuries,1.3501908396946567,28.3
@@ -3263,28 +3263,28 @@
 4245,United Republic of Tanzania,2000,Noncommunicable diseases,Sudden infant death syndrome,0.028619127116622935,0.6
 4246,United Republic of Tanzania,2000,Injuries,Unintentional injuries,1.063677557834486,22.3
 4247,United Republic of Tanzania,2000,Injuries,Intentional injuries,0.2861912711662294,6.0
-4248,United States of America,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.2563441218071385,151.0
-4249,United States of America,2000,All Causes,Noncommunicable diseases,17.574673433729927,2112.3
-4250,United States of America,2000,All Causes,Injuries,1.1689824444629335,140.5
-4251,United States of America,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.5149964640792046,61.9
-4252,United States of America,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.5607554390781647,67.4
-4254,United States of America,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.12063729772453097,14.5
-4255,United States of America,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.05657473272598693,6.8
-4256,United States of America,2000,Noncommunicable diseases,Malignant neoplasms,4.6557677108032784,559.6
-4257,United States of America,2000,Noncommunicable diseases,Other neoplasms,0.11314946545197387,13.6
-4258,United States of America,2000,Noncommunicable diseases,Diabetes mellitus,0.4808852281708889,57.8
-4259,United States of America,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.23212280044926992,27.9
-4260,United States of America,2000,Noncommunicable diseases,Mental and substance use disorders,0.18969175090477974,22.8
-4261,United States of America,2000,Noncommunicable diseases,Neurological conditions,1.0591122758850202,127.3
-4263,United States of America,2000,Noncommunicable diseases,Cardiovascular diseases,7.744914513914888,930.9
-4264,United States of America,2000,Noncommunicable diseases,Respiratory diseases,1.5533092058737883,186.7
-4265,United States of America,2000,Noncommunicable diseases,Digestive diseases,0.7063521777112193,84.9
-4266,United States of America,2000,Noncommunicable diseases,Genitourinary diseases,0.5640833645326344,67.8
-4267,United States of America,2000,Noncommunicable diseases,Skin diseases,0.03161529181746329,3.8
-4268,United States of America,2000,Noncommunicable diseases,Musculoskeletal diseases,0.11564540954282623,13.9
-4269,United States of America,2000,Noncommunicable diseases,Congenital anomalies,0.1089895586338866,13.1
-4272,United States of America,2000,Injuries,Unintentional injuries,0.758767003619119,91.2
-4273,United States of America,2000,Injuries,Intentional injuries,0.41016681226340523,49.3
+4248,USA,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.2563441218071385,151.0
+4249,USA,2000,All Causes,Noncommunicable diseases,17.574673433729927,2112.3
+4250,USA,2000,All Causes,Injuries,1.1689824444629335,140.5
+4251,USA,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.5149964640792046,61.9
+4252,USA,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.5607554390781647,67.4
+4254,USA,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.12063729772453097,14.5
+4255,USA,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.05657473272598693,6.8
+4256,USA,2000,Noncommunicable diseases,Malignant neoplasms,4.6557677108032784,559.6
+4257,USA,2000,Noncommunicable diseases,Other neoplasms,0.11314946545197387,13.6
+4258,USA,2000,Noncommunicable diseases,Diabetes mellitus,0.4808852281708889,57.8
+4259,USA,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.23212280044926992,27.9
+4260,USA,2000,Noncommunicable diseases,Mental and substance use disorders,0.18969175090477974,22.8
+4261,USA,2000,Noncommunicable diseases,Neurological conditions,1.0591122758850202,127.3
+4263,USA,2000,Noncommunicable diseases,Cardiovascular diseases,7.744914513914888,930.9
+4264,USA,2000,Noncommunicable diseases,Respiratory diseases,1.5533092058737883,186.7
+4265,USA,2000,Noncommunicable diseases,Digestive diseases,0.7063521777112193,84.9
+4266,USA,2000,Noncommunicable diseases,Genitourinary diseases,0.5640833645326344,67.8
+4267,USA,2000,Noncommunicable diseases,Skin diseases,0.03161529181746329,3.8
+4268,USA,2000,Noncommunicable diseases,Musculoskeletal diseases,0.11564540954282623,13.9
+4269,USA,2000,Noncommunicable diseases,Congenital anomalies,0.1089895586338866,13.1
+4272,USA,2000,Injuries,Unintentional injuries,0.758767003619119,91.2
+4273,USA,2000,Injuries,Intentional injuries,0.41016681226340523,49.3
 4274,Uruguay,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.4426229508196722,2.2
 4275,Uruguay,2000,All Causes,Noncommunicable diseases,17.114754098360656,26.1
 4276,Uruguay,2000,All Causes,Injuries,1.4426229508196722,2.2
@@ -3362,27 +3362,27 @@
 4368,Venezuela (Bolivarian Republic of),2000,Noncommunicable diseases,Congenital anomalies,0.4123711340206186,2.2
 4371,Venezuela (Bolivarian Republic of),2000,Injuries,Unintentional injuries,1.836925960637301,9.8
 4372,Venezuela (Bolivarian Republic of),2000,Injuries,Intentional injuries,2.2305529522024368,11.9
-4373,Viet Nam,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",3.626416568972255,92.8
-4374,Viet Nam,2000,All Causes,Noncommunicable diseases,14.579914028917548,373.1
-4375,Viet Nam,2000,All Causes,Injuries,1.7936694021101993,45.9
-4376,Viet Nam,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,2.1274931560422368,54.4
-4377,Viet Nam,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.8134532655455611,20.8
-4378,Viet Nam,2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.031286664059444656,0.8
-4379,Viet Nam,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.5866249511145873,15.0
-4380,Viet Nam,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.0664841611263199,1.7
-4381,Viet Nam,2000,Noncommunicable diseases,Malignant neoplasms,3.011341415721548,77.0
-4383,Viet Nam,2000,Noncommunicable diseases,Diabetes mellitus,0.6374657802111849,16.3
-4384,Viet Nam,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.04692999608916699,1.2
-4385,Viet Nam,2000,Noncommunicable diseases,Mental and substance use disorders,0.03910833007430582,1.0
-4386,Viet Nam,2000,Noncommunicable diseases,Neurological conditions,0.7156824403597966,18.3
-4387,Viet Nam,2000,Noncommunicable diseases,Cardiovascular diseases,6.98083691826359,178.5
-4388,Viet Nam,2000,Noncommunicable diseases,Respiratory diseases,1.3492373875635508,34.5
-4389,Viet Nam,2000,Noncommunicable diseases,Digestive diseases,0.9659757528353538,24.7
-4390,Viet Nam,2000,Noncommunicable diseases,Genitourinary diseases,0.5123191239734063,13.1
-4391,Viet Nam,2000,Noncommunicable diseases,Skin diseases,0.03910833007430582,1.0
-4393,Viet Nam,2000,Noncommunicable diseases,Congenital anomalies,0.26202581149784904,6.7
-4395,Viet Nam,2000,Injuries,Unintentional injuries,1.5486898709425105,39.6
-4396,Viet Nam,2000,Injuries,Intentional injuries,0.2424716464606961,6.2
+4373,Vietnam,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",3.626416568972255,92.8
+4374,Vietnam,2000,All Causes,Noncommunicable diseases,14.579914028917548,373.1
+4375,Vietnam,2000,All Causes,Injuries,1.7936694021101993,45.9
+4376,Vietnam,2000,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,2.1274931560422368,54.4
+4377,Vietnam,2000,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.8134532655455611,20.8
+4378,Vietnam,2000,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.031286664059444656,0.8
+4379,Vietnam,2000,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.5866249511145873,15.0
+4380,Vietnam,2000,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.0664841611263199,1.7
+4381,Vietnam,2000,Noncommunicable diseases,Malignant neoplasms,3.011341415721548,77.0
+4383,Vietnam,2000,Noncommunicable diseases,Diabetes mellitus,0.6374657802111849,16.3
+4384,Vietnam,2000,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.04692999608916699,1.2
+4385,Vietnam,2000,Noncommunicable diseases,Mental and substance use disorders,0.03910833007430582,1.0
+4386,Vietnam,2000,Noncommunicable diseases,Neurological conditions,0.7156824403597966,18.3
+4387,Vietnam,2000,Noncommunicable diseases,Cardiovascular diseases,6.98083691826359,178.5
+4388,Vietnam,2000,Noncommunicable diseases,Respiratory diseases,1.3492373875635508,34.5
+4389,Vietnam,2000,Noncommunicable diseases,Digestive diseases,0.9659757528353538,24.7
+4390,Vietnam,2000,Noncommunicable diseases,Genitourinary diseases,0.5123191239734063,13.1
+4391,Vietnam,2000,Noncommunicable diseases,Skin diseases,0.03910833007430582,1.0
+4393,Vietnam,2000,Noncommunicable diseases,Congenital anomalies,0.26202581149784904,6.7
+4395,Vietnam,2000,Injuries,Unintentional injuries,1.5486898709425105,39.6
+4396,Vietnam,2000,Injuries,Intentional injuries,0.2424716464606961,6.2
 4397,Yemen,2000,All Causes,"Communicable, maternal, perinatal and nutritional conditions",10.0,68.5
 4398,Yemen,2000,All Causes,Noncommunicable diseases,8.24817518248175,56.5
 4399,Yemen,2000,All Causes,Injuries,1.751824817518248,12.0
@@ -3787,28 +3787,28 @@
 458,Bhutan,2010,Noncommunicable diseases,Genitourinary diseases,0.5405405405405406,0.1
 461,Bhutan,2010,Noncommunicable diseases,Congenital anomalies,0.5405405405405406,0.1
 463,Bhutan,2010,Injuries,Unintentional injuries,1.6216216216216215,0.3
-465,Bolivia (Plurinational State of),2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",5.194805194805196,18.0
-466,Bolivia (Plurinational State of),2010,All Causes,Noncommunicable diseases,12.92929292929293,44.8
-467,Bolivia (Plurinational State of),2010,All Causes,Injuries,1.8759018759018762,6.5
-468,Bolivia (Plurinational State of),2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,1.6184971098265897,5.6
-469,Bolivia (Plurinational State of),2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.9364161849710986,6.7
-470,Bolivia (Plurinational State of),2010,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.08670520231213873,0.3
-471,Bolivia (Plurinational State of),2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.271676300578035,4.4
-472,Bolivia (Plurinational State of),2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.28901734104046245,1.0
-473,Bolivia (Plurinational State of),2010,Noncommunicable diseases,Malignant neoplasms,2.167630057803468,7.5
-475,Bolivia (Plurinational State of),2010,Noncommunicable diseases,Diabetes mellitus,0.953757225433526,3.3
-476,Bolivia (Plurinational State of),2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.08670520231213873,0.3
-477,Bolivia (Plurinational State of),2010,Noncommunicable diseases,Mental and substance use disorders,0.14450867052023122,0.5
-478,Bolivia (Plurinational State of),2010,Noncommunicable diseases,Neurological conditions,0.6647398843930635,2.3
-479,Bolivia (Plurinational State of),2010,Noncommunicable diseases,Cardiovascular diseases,4.508670520231214,15.6
-480,Bolivia (Plurinational State of),2010,Noncommunicable diseases,Respiratory diseases,1.0982658959537572,3.8
-481,Bolivia (Plurinational State of),2010,Noncommunicable diseases,Digestive diseases,1.5895953757225434,5.5
-482,Bolivia (Plurinational State of),2010,Noncommunicable diseases,Genitourinary diseases,1.2427745664739884,4.3
-483,Bolivia (Plurinational State of),2010,Noncommunicable diseases,Skin diseases,0.028901734104046246,0.1
-484,Bolivia (Plurinational State of),2010,Noncommunicable diseases,Musculoskeletal diseases,0.028901734104046246,0.1
-485,Bolivia (Plurinational State of),2010,Noncommunicable diseases,Congenital anomalies,0.4046242774566474,1.4
-487,Bolivia (Plurinational State of),2010,Injuries,Unintentional injuries,1.3583815028901736,4.7
-488,Bolivia (Plurinational State of),2010,Injuries,Intentional injuries,0.5202312138728324,1.8
+465,Bolivia,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",5.194805194805196,18.0
+466,Bolivia,2010,All Causes,Noncommunicable diseases,12.92929292929293,44.8
+467,Bolivia,2010,All Causes,Injuries,1.8759018759018762,6.5
+468,Bolivia,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,1.6184971098265897,5.6
+469,Bolivia,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.9364161849710986,6.7
+470,Bolivia,2010,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.08670520231213873,0.3
+471,Bolivia,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.271676300578035,4.4
+472,Bolivia,2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.28901734104046245,1.0
+473,Bolivia,2010,Noncommunicable diseases,Malignant neoplasms,2.167630057803468,7.5
+475,Bolivia,2010,Noncommunicable diseases,Diabetes mellitus,0.953757225433526,3.3
+476,Bolivia,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.08670520231213873,0.3
+477,Bolivia,2010,Noncommunicable diseases,Mental and substance use disorders,0.14450867052023122,0.5
+478,Bolivia,2010,Noncommunicable diseases,Neurological conditions,0.6647398843930635,2.3
+479,Bolivia,2010,Noncommunicable diseases,Cardiovascular diseases,4.508670520231214,15.6
+480,Bolivia,2010,Noncommunicable diseases,Respiratory diseases,1.0982658959537572,3.8
+481,Bolivia,2010,Noncommunicable diseases,Digestive diseases,1.5895953757225434,5.5
+482,Bolivia,2010,Noncommunicable diseases,Genitourinary diseases,1.2427745664739884,4.3
+483,Bolivia,2010,Noncommunicable diseases,Skin diseases,0.028901734104046246,0.1
+484,Bolivia,2010,Noncommunicable diseases,Musculoskeletal diseases,0.028901734104046246,0.1
+485,Bolivia,2010,Noncommunicable diseases,Congenital anomalies,0.4046242774566474,1.4
+487,Bolivia,2010,Injuries,Unintentional injuries,1.3583815028901736,4.7
+488,Bolivia,2010,Injuries,Intentional injuries,0.5202312138728324,1.8
 489,Bosnia and Herzegovina,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",0.42895442359249336,0.8
 490,Bosnia and Herzegovina,2010,All Causes,Noncommunicable diseases,18.659517426273457,34.8
 491,Bosnia and Herzegovina,2010,All Causes,Injuries,0.9115281501340483,1.7
@@ -4149,26 +4149,26 @@
 902,Comoros,2010,Noncommunicable diseases,Congenital anomalies,0.41666666666666674,0.1
 904,Comoros,2010,Injuries,Unintentional injuries,1.666666666666667,0.4
 905,Comoros,2010,Injuries,Intentional injuries,0.41666666666666674,0.1
-906,Congo,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",10.903790087463557,18.7
-907,Congo,2010,All Causes,Noncommunicable diseases,7.346938775510204,12.6
-908,Congo,2010,All Causes,Injuries,1.749271137026239,3.0
-909,Congo,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,6.627565982404694,11.3
-910,Congo,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.7595307917888567,3.0
-911,Congo,2010,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.5278592375366571,0.9
-912,Congo,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.8181818181818188,3.1
-913,Congo,2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.23460410557184758,0.4
-914,Congo,2010,Noncommunicable diseases,Malignant neoplasms,0.5865102639296189,1.0
-916,Congo,2010,Noncommunicable diseases,Diabetes mellitus,0.5278592375366571,0.9
-917,Congo,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11730205278592379,0.2
-918,Congo,2010,Noncommunicable diseases,Mental and substance use disorders,0.058651026392961894,0.1
-919,Congo,2010,Noncommunicable diseases,Neurological conditions,0.23460410557184758,0.4
-920,Congo,2010,Noncommunicable diseases,Cardiovascular diseases,3.4017595307917894,5.8
-921,Congo,2010,Noncommunicable diseases,Respiratory diseases,0.5278592375366571,0.9
-922,Congo,2010,Noncommunicable diseases,Digestive diseases,0.9970674486803521,1.7
-923,Congo,2010,Noncommunicable diseases,Genitourinary diseases,0.4105571847507332,0.7
-926,Congo,2010,Noncommunicable diseases,Congenital anomalies,0.4105571847507332,0.7
-928,Congo,2010,Injuries,Unintentional injuries,1.2316715542521999,2.1
-929,Congo,2010,Injuries,Intentional injuries,0.5278592375366571,0.9
+906,Republic of Congo,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",10.903790087463557,18.7
+907,Republic of Congo,2010,All Causes,Noncommunicable diseases,7.346938775510204,12.6
+908,Republic of Congo,2010,All Causes,Injuries,1.749271137026239,3.0
+909,Republic of Congo,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,6.627565982404694,11.3
+910,Republic of Congo,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.7595307917888567,3.0
+911,Republic of Congo,2010,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.5278592375366571,0.9
+912,Republic of Congo,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.8181818181818188,3.1
+913,Republic of Congo,2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.23460410557184758,0.4
+914,Republic of Congo,2010,Noncommunicable diseases,Malignant neoplasms,0.5865102639296189,1.0
+916,Republic of Congo,2010,Noncommunicable diseases,Diabetes mellitus,0.5278592375366571,0.9
+917,Republic of Congo,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11730205278592379,0.2
+918,Republic of Congo,2010,Noncommunicable diseases,Mental and substance use disorders,0.058651026392961894,0.1
+919,Republic of Congo,2010,Noncommunicable diseases,Neurological conditions,0.23460410557184758,0.4
+920,Republic of Congo,2010,Noncommunicable diseases,Cardiovascular diseases,3.4017595307917894,5.8
+921,Republic of Congo,2010,Noncommunicable diseases,Respiratory diseases,0.5278592375366571,0.9
+922,Republic of Congo,2010,Noncommunicable diseases,Digestive diseases,0.9970674486803521,1.7
+923,Republic of Congo,2010,Noncommunicable diseases,Genitourinary diseases,0.4105571847507332,0.7
+926,Republic of Congo,2010,Noncommunicable diseases,Congenital anomalies,0.4105571847507332,0.7
+928,Republic of Congo,2010,Injuries,Unintentional injuries,1.2316715542521999,2.1
+929,Republic of Congo,2010,Injuries,Intentional injuries,0.5278592375366571,0.9
 930,Costa Rica,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.368421052631579,1.3
 931,Costa Rica,2010,All Causes,Noncommunicable diseases,16.210526315789473,15.4
 932,Costa Rica,2010,All Causes,Injuries,2.421052631578947,2.3
@@ -4190,27 +4190,27 @@
 950,Costa Rica,2010,Noncommunicable diseases,Congenital anomalies,0.31746031746031744,0.3
 952,Costa Rica,2010,Injuries,Unintentional injuries,1.4814814814814814,1.4
 953,Costa Rica,2010,Injuries,Intentional injuries,0.8465608465608465,0.8
-954,Côte d'Ivoire,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",12.355140186915886,132.2
-955,Côte d'Ivoire,2010,All Causes,Noncommunicable diseases,6.009345794392523,64.3
-956,Côte d'Ivoire,2010,All Causes,Injuries,1.6355140186915886,17.5
-957,Côte d'Ivoire,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,7.296538821328346,78.0
-958,Côte d'Ivoire,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.1328344246959783,22.8
-959,Côte d'Ivoire,2010,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.3274087932647335,3.5
-960,Côte d'Ivoire,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,2.4976613657623954,26.7
-961,Côte d'Ivoire,2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.11225444340505147,1.2
-962,Côte d'Ivoire,2010,Noncommunicable diseases,Malignant neoplasms,0.7577174929840974,8.1
-964,Côte d'Ivoire,2010,Noncommunicable diseases,Diabetes mellitus,0.37418147801683826,4.0
-965,Côte d'Ivoire,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.14031805425631436,1.5
-966,Côte d'Ivoire,2010,Noncommunicable diseases,Mental and substance use disorders,0.0654817586529467,0.7
-967,Côte d'Ivoire,2010,Noncommunicable diseases,Neurological conditions,0.1964452759588401,2.1
-968,Côte d'Ivoire,2010,Noncommunicable diseases,Cardiovascular diseases,2.394761459307765,25.6
-969,Côte d'Ivoire,2010,Noncommunicable diseases,Respiratory diseases,0.4115996258185221,4.4
-970,Côte d'Ivoire,2010,Noncommunicable diseases,Digestive diseases,0.7857811038353604,8.4
-971,Côte d'Ivoire,2010,Noncommunicable diseases,Genitourinary diseases,0.430308699719364,4.6
-974,Côte d'Ivoire,2010,Noncommunicable diseases,Congenital anomalies,0.37418147801683826,4.0
-975,Côte d'Ivoire,2010,Noncommunicable diseases,Sudden infant death syndrome,0.03741814780168383,0.4
-976,Côte d'Ivoire,2010,Injuries,Unintentional injuries,1.1599625818521986,12.4
-977,Côte d'Ivoire,2010,Injuries,Intentional injuries,0.47708138447146875,5.1
+954,Ivory Coast,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",12.355140186915886,132.2
+955,Ivory Coast,2010,All Causes,Noncommunicable diseases,6.009345794392523,64.3
+956,Ivory Coast,2010,All Causes,Injuries,1.6355140186915886,17.5
+957,Ivory Coast,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,7.296538821328346,78.0
+958,Ivory Coast,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.1328344246959783,22.8
+959,Ivory Coast,2010,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.3274087932647335,3.5
+960,Ivory Coast,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,2.4976613657623954,26.7
+961,Ivory Coast,2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.11225444340505147,1.2
+962,Ivory Coast,2010,Noncommunicable diseases,Malignant neoplasms,0.7577174929840974,8.1
+964,Ivory Coast,2010,Noncommunicable diseases,Diabetes mellitus,0.37418147801683826,4.0
+965,Ivory Coast,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.14031805425631436,1.5
+966,Ivory Coast,2010,Noncommunicable diseases,Mental and substance use disorders,0.0654817586529467,0.7
+967,Ivory Coast,2010,Noncommunicable diseases,Neurological conditions,0.1964452759588401,2.1
+968,Ivory Coast,2010,Noncommunicable diseases,Cardiovascular diseases,2.394761459307765,25.6
+969,Ivory Coast,2010,Noncommunicable diseases,Respiratory diseases,0.4115996258185221,4.4
+970,Ivory Coast,2010,Noncommunicable diseases,Digestive diseases,0.7857811038353604,8.4
+971,Ivory Coast,2010,Noncommunicable diseases,Genitourinary diseases,0.430308699719364,4.6
+974,Ivory Coast,2010,Noncommunicable diseases,Congenital anomalies,0.37418147801683826,4.0
+975,Ivory Coast,2010,Noncommunicable diseases,Sudden infant death syndrome,0.03741814780168383,0.4
+976,Ivory Coast,2010,Injuries,Unintentional injuries,1.1599625818521986,12.4
+977,Ivory Coast,2010,Injuries,Intentional injuries,0.47708138447146875,5.1
 978,Croatia,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",0.34548944337811904,0.9
 979,Croatia,2010,All Causes,Noncommunicable diseases,18.54126679462572,48.3
 980,Croatia,2010,All Causes,Injuries,1.1132437619961613,2.9
@@ -4510,25 +4510,25 @@
 1338,Estonia,2010,Noncommunicable diseases,Musculoskeletal diseases,0.12738853503184716,0.1
 1342,Estonia,2010,Injuries,Unintentional injuries,0.7643312101910829,0.6
 1343,Estonia,2010,Injuries,Intentional injuries,0.3821656050955414,0.3
-1344,Eswatini,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",10.292397660818713,8.8
-1345,Eswatini,2010,All Causes,Noncommunicable diseases,7.602339181286549,6.5
-1346,Eswatini,2010,All Causes,Injuries,2.1052631578947367,1.8
-1347,Eswatini,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,7.529411764705884,6.4
-1348,Eswatini,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.6470588235294121,1.4
-1349,Eswatini,2010,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.23529411764705888,0.2
-1350,Eswatini,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.7058823529411766,0.6
-1351,Eswatini,2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.11764705882352944,0.1
-1352,Eswatini,2010,Noncommunicable diseases,Malignant neoplasms,0.7058823529411766,0.6
-1354,Eswatini,2010,Noncommunicable diseases,Diabetes mellitus,1.1764705882352944,1.0
-1355,Eswatini,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11764705882352944,0.1
-1357,Eswatini,2010,Noncommunicable diseases,Neurological conditions,0.23529411764705888,0.2
-1358,Eswatini,2010,Noncommunicable diseases,Cardiovascular diseases,2.941176470588236,2.5
-1359,Eswatini,2010,Noncommunicable diseases,Respiratory diseases,0.7058823529411766,0.6
-1360,Eswatini,2010,Noncommunicable diseases,Digestive diseases,0.8235294117647061,0.7
-1361,Eswatini,2010,Noncommunicable diseases,Genitourinary diseases,0.7058823529411766,0.6
-1364,Eswatini,2010,Noncommunicable diseases,Congenital anomalies,0.23529411764705888,0.2
-1366,Eswatini,2010,Injuries,Unintentional injuries,1.1764705882352944,1.0
-1367,Eswatini,2010,Injuries,Intentional injuries,0.9411764705882355,0.8
+1344,Swaziland,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",10.292397660818713,8.8
+1345,Swaziland,2010,All Causes,Noncommunicable diseases,7.602339181286549,6.5
+1346,Swaziland,2010,All Causes,Injuries,2.1052631578947367,1.8
+1347,Swaziland,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,7.529411764705884,6.4
+1348,Swaziland,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.6470588235294121,1.4
+1349,Swaziland,2010,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.23529411764705888,0.2
+1350,Swaziland,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.7058823529411766,0.6
+1351,Swaziland,2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.11764705882352944,0.1
+1352,Swaziland,2010,Noncommunicable diseases,Malignant neoplasms,0.7058823529411766,0.6
+1354,Swaziland,2010,Noncommunicable diseases,Diabetes mellitus,1.1764705882352944,1.0
+1355,Swaziland,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11764705882352944,0.1
+1357,Swaziland,2010,Noncommunicable diseases,Neurological conditions,0.23529411764705888,0.2
+1358,Swaziland,2010,Noncommunicable diseases,Cardiovascular diseases,2.941176470588236,2.5
+1359,Swaziland,2010,Noncommunicable diseases,Respiratory diseases,0.7058823529411766,0.6
+1360,Swaziland,2010,Noncommunicable diseases,Digestive diseases,0.8235294117647061,0.7
+1361,Swaziland,2010,Noncommunicable diseases,Genitourinary diseases,0.7058823529411766,0.6
+1364,Swaziland,2010,Noncommunicable diseases,Congenital anomalies,0.23529411764705888,0.2
+1366,Swaziland,2010,Injuries,Unintentional injuries,1.1764705882352944,1.0
+1367,Swaziland,2010,Injuries,Intentional injuries,0.9411764705882355,0.8
 1368,Ethiopia,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",11.509297967421077,399.2
 1369,Ethiopia,2010,All Causes,Noncommunicable diseases,6.550382009514199,227.2
 1370,Ethiopia,2010,All Causes,Injuries,1.9403200230647255,67.3
@@ -4927,25 +4927,25 @@
 1877,Indonesia,2010,Noncommunicable diseases,Congenital anomalies,0.23586719651326746,18.4
 1879,Indonesia,2010,Injuries,Unintentional injuries,0.8870657607998973,69.2
 1880,Indonesia,2010,Injuries,Intentional injuries,0.23330342263812326,18.2
-1881,Iran (Islamic Republic of),2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",2.0767195767195767,31.4
-1882,Iran (Islamic Republic of),2010,All Causes,Noncommunicable diseases,14.920634920634923,225.6
-1883,Iran (Islamic Republic of),2010,All Causes,Injuries,3.0026455026455032,45.4
-1884,Iran (Islamic Republic of),2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.496031746031746,7.5
-1885,Iran (Islamic Republic of),2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.701058201058201,10.6
-1887,Iran (Islamic Republic of),2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.8465608465608465,12.8
-1889,Iran (Islamic Republic of),2010,Noncommunicable diseases,Malignant neoplasms,2.705026455026455,40.9
-1891,Iran (Islamic Republic of),2010,Noncommunicable diseases,Diabetes mellitus,0.5291005291005291,8.0
-1892,Iran (Islamic Republic of),2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.0992063492063492,1.5
-1893,Iran (Islamic Republic of),2010,Noncommunicable diseases,Mental and substance use disorders,0.2579365079365079,3.9
-1894,Iran (Islamic Republic of),2010,Noncommunicable diseases,Neurological conditions,0.6878306878306878,10.4
-1895,Iran (Islamic Republic of),2010,Noncommunicable diseases,Cardiovascular diseases,8.293650793650794,125.4
-1896,Iran (Islamic Republic of),2010,Noncommunicable diseases,Respiratory diseases,0.8002645502645502,12.1
-1897,Iran (Islamic Republic of),2010,Noncommunicable diseases,Digestive diseases,0.5621693121693121,8.5
-1898,Iran (Islamic Republic of),2010,Noncommunicable diseases,Genitourinary diseases,0.5753968253968254,8.7
-1900,Iran (Islamic Republic of),2010,Noncommunicable diseases,Musculoskeletal diseases,0.026455026455026454,0.4
-1901,Iran (Islamic Republic of),2010,Noncommunicable diseases,Congenital anomalies,0.35714285714285715,5.4
-1903,Iran (Islamic Republic of),2010,Injuries,Unintentional injuries,2.4338624338624335,36.8
-1904,Iran (Islamic Republic of),2010,Injuries,Intentional injuries,0.5687830687830687,8.6
+1881,Iran,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",2.0767195767195767,31.4
+1882,Iran,2010,All Causes,Noncommunicable diseases,14.920634920634923,225.6
+1883,Iran,2010,All Causes,Injuries,3.0026455026455032,45.4
+1884,Iran,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.496031746031746,7.5
+1885,Iran,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.701058201058201,10.6
+1887,Iran,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.8465608465608465,12.8
+1889,Iran,2010,Noncommunicable diseases,Malignant neoplasms,2.705026455026455,40.9
+1891,Iran,2010,Noncommunicable diseases,Diabetes mellitus,0.5291005291005291,8.0
+1892,Iran,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.0992063492063492,1.5
+1893,Iran,2010,Noncommunicable diseases,Mental and substance use disorders,0.2579365079365079,3.9
+1894,Iran,2010,Noncommunicable diseases,Neurological conditions,0.6878306878306878,10.4
+1895,Iran,2010,Noncommunicable diseases,Cardiovascular diseases,8.293650793650794,125.4
+1896,Iran,2010,Noncommunicable diseases,Respiratory diseases,0.8002645502645502,12.1
+1897,Iran,2010,Noncommunicable diseases,Digestive diseases,0.5621693121693121,8.5
+1898,Iran,2010,Noncommunicable diseases,Genitourinary diseases,0.5753968253968254,8.7
+1900,Iran,2010,Noncommunicable diseases,Musculoskeletal diseases,0.026455026455026454,0.4
+1901,Iran,2010,Noncommunicable diseases,Congenital anomalies,0.35714285714285715,5.4
+1903,Iran,2010,Injuries,Unintentional injuries,2.4338624338624335,36.8
+1904,Iran,2010,Injuries,Intentional injuries,0.5687830687830687,8.6
 1905,Iraq,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",4.163775156141568,30.0
 1906,Iraq,2010,All Causes,Noncommunicable diseases,12.08882720333102,87.1
 1907,Iraq,2010,All Causes,Injuries,3.7473976405274114,27.0
@@ -6726,27 +6726,27 @@
 4196,United Arab Emirates,2010,Noncommunicable diseases,Congenital anomalies,0.3448275862068965,0.3
 4198,United Arab Emirates,2010,Injuries,Unintentional injuries,4.252873563218391,3.7
 4199,United Arab Emirates,2010,Injuries,Intentional injuries,0.9195402298850575,0.8
-4200,United Kingdom,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.4640154847791662,41.6
-4201,United Kingdom,2010,All Causes,Noncommunicable diseases,17.86732359669189,507.7
-4202,United Kingdom,2010,All Causes,Injuries,0.668660918528946,19.0
-4203,United Kingdom,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.228631727048892,6.5
-4204,United Kingdom,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.1466760464298276,32.6
-4206,United Kingdom,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.07386563489271895,2.1
-4208,United Kingdom,2010,Noncommunicable diseases,Malignant neoplasms,5.7122757650369325,162.4
-4209,United Kingdom,2010,Noncommunicable diseases,Other neoplasms,0.13014421385860006,3.7
-4210,United Kingdom,2010,Noncommunicable diseases,Diabetes mellitus,0.18642279282448118,5.3
-4211,United Kingdom,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11255715793176223,3.2
-4212,United Kingdom,2010,Noncommunicable diseases,Mental and substance use disorders,0.1371790362293352,3.9
-4213,United Kingdom,2010,Noncommunicable diseases,Neurological conditions,1.5300738656348927,43.5
-4215,United Kingdom,2010,Noncommunicable diseases,Cardiovascular diseases,6.408723179739711,182.2
-4216,United Kingdom,2010,Noncommunicable diseases,Respiratory diseases,1.6953921913471686,48.2
-4217,United Kingdom,2010,Noncommunicable diseases,Digestive diseases,1.0692930003517411,30.4
-4218,United Kingdom,2010,Noncommunicable diseases,Genitourinary diseases,0.5487161449173408,15.6
-4219,United Kingdom,2010,Noncommunicable diseases,Skin diseases,0.07386563489271895,2.1
-4220,United Kingdom,2010,Noncommunicable diseases,Musculoskeletal diseases,0.16883573689764333,4.8
-4221,United Kingdom,2010,Noncommunicable diseases,Congenital anomalies,0.08090045726345409,2.3
-4224,United Kingdom,2010,Injuries,Unintentional injuries,0.45374604291241644,12.9
-4225,United Kingdom,2010,Injuries,Intentional injuries,0.21456208230742171,6.1
+4200,United Kingdom of Great Britain and Northern Ireland,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.4640154847791662,41.6
+4201,United Kingdom of Great Britain and Northern Ireland,2010,All Causes,Noncommunicable diseases,17.86732359669189,507.7
+4202,United Kingdom of Great Britain and Northern Ireland,2010,All Causes,Injuries,0.668660918528946,19.0
+4203,United Kingdom of Great Britain and Northern Ireland,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.228631727048892,6.5
+4204,United Kingdom of Great Britain and Northern Ireland,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.1466760464298276,32.6
+4206,United Kingdom of Great Britain and Northern Ireland,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.07386563489271895,2.1
+4208,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Malignant neoplasms,5.7122757650369325,162.4
+4209,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Other neoplasms,0.13014421385860006,3.7
+4210,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Diabetes mellitus,0.18642279282448118,5.3
+4211,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11255715793176223,3.2
+4212,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Mental and substance use disorders,0.1371790362293352,3.9
+4213,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Neurological conditions,1.5300738656348927,43.5
+4215,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Cardiovascular diseases,6.408723179739711,182.2
+4216,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Respiratory diseases,1.6953921913471686,48.2
+4217,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Digestive diseases,1.0692930003517411,30.4
+4218,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Genitourinary diseases,0.5487161449173408,15.6
+4219,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Skin diseases,0.07386563489271895,2.1
+4220,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Musculoskeletal diseases,0.16883573689764333,4.8
+4221,United Kingdom of Great Britain and Northern Ireland,2010,Noncommunicable diseases,Congenital anomalies,0.08090045726345409,2.3
+4224,United Kingdom of Great Britain and Northern Ireland,2010,Injuries,Unintentional injuries,0.45374604291241644,12.9
+4225,United Kingdom of Great Britain and Northern Ireland,2010,Injuries,Intentional injuries,0.21456208230742171,6.1
 4226,United Republic of Tanzania,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",13.158195316961736,230.4
 4227,United Republic of Tanzania,2010,All Causes,Noncommunicable diseases,5.157053112507139,90.3
 4228,United Republic of Tanzania,2010,All Causes,Injuries,1.6847515705311251,29.5
@@ -6768,28 +6768,28 @@
 4247,United Republic of Tanzania,2010,Noncommunicable diseases,Sudden infant death syndrome,0.034266133637921185,0.6
 4248,United Republic of Tanzania,2010,Injuries,Unintentional injuries,1.3078241005139917,22.9
 4249,United Republic of Tanzania,2010,Injuries,Intentional injuries,0.376927470017133,6.6
-4250,United States of America,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.1390406800242867,140.7
-4251,United States of America,2010,All Causes,Noncommunicable diseases,17.6207245496863,2176.6
-4252,United States of America,2010,All Causes,Injuries,1.2402347702894152,153.2
-4253,United States of America,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.5650678000404775,69.8
-4254,United States of America,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.41934831005869244,51.8
-4256,United States of America,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.10119409026512849,12.5
-4257,United States of America,2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.04776361060514065,5.9
-4258,United States of America,2010,Noncommunicable diseases,Malignant neoplasms,4.713215948188625,582.2
-4259,United States of America,2010,Noncommunicable diseases,Other neoplasms,0.12224246104027521,15.1
-4260,United States of America,2010,Noncommunicable diseases,Diabetes mellitus,0.41611009917020836,51.4
-4261,United States of America,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.27686703096539156,34.2
-4262,United States of America,2010,Noncommunicable diseases,Mental and substance use disorders,0.3529649868447682,43.6
-4263,United States of America,2010,Noncommunicable diseases,Neurological conditions,2.0692167577413474,255.6
-4265,United States of America,2010,Noncommunicable diseases,Cardiovascular diseases,6.274843149160088,775.1
-4266,United States of America,2010,Noncommunicable diseases,Respiratory diseases,1.6911556365108273,208.9
-4267,United States of America,2010,Noncommunicable diseases,Digestive diseases,0.7472171625177088,92.3
-4268,United States of America,2010,Noncommunicable diseases,Genitourinary diseases,0.7026917628010522,86.8
-4269,United States of America,2010,Noncommunicable diseases,Skin diseases,0.033191661606962145,4.1
-4270,United States of America,2010,Noncommunicable diseases,Musculoskeletal diseases,0.10928961748633877,13.5
-4271,United States of America,2010,Noncommunicable diseases,Congenital anomalies,0.0955272212102813,11.8
-4274,United States of America,2010,Injuries,Unintentional injuries,0.7625986642380084,94.2
-4275,United States of America,2010,Injuries,Intentional injuries,0.4776361060514065,59.0
+4250,USA,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.1390406800242867,140.7
+4251,USA,2010,All Causes,Noncommunicable diseases,17.6207245496863,2176.6
+4252,USA,2010,All Causes,Injuries,1.2402347702894152,153.2
+4253,USA,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.5650678000404775,69.8
+4254,USA,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.41934831005869244,51.8
+4256,USA,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.10119409026512849,12.5
+4257,USA,2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.04776361060514065,5.9
+4258,USA,2010,Noncommunicable diseases,Malignant neoplasms,4.713215948188625,582.2
+4259,USA,2010,Noncommunicable diseases,Other neoplasms,0.12224246104027521,15.1
+4260,USA,2010,Noncommunicable diseases,Diabetes mellitus,0.41611009917020836,51.4
+4261,USA,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.27686703096539156,34.2
+4262,USA,2010,Noncommunicable diseases,Mental and substance use disorders,0.3529649868447682,43.6
+4263,USA,2010,Noncommunicable diseases,Neurological conditions,2.0692167577413474,255.6
+4265,USA,2010,Noncommunicable diseases,Cardiovascular diseases,6.274843149160088,775.1
+4266,USA,2010,Noncommunicable diseases,Respiratory diseases,1.6911556365108273,208.9
+4267,USA,2010,Noncommunicable diseases,Digestive diseases,0.7472171625177088,92.3
+4268,USA,2010,Noncommunicable diseases,Genitourinary diseases,0.7026917628010522,86.8
+4269,USA,2010,Noncommunicable diseases,Skin diseases,0.033191661606962145,4.1
+4270,USA,2010,Noncommunicable diseases,Musculoskeletal diseases,0.10928961748633877,13.5
+4271,USA,2010,Noncommunicable diseases,Congenital anomalies,0.0955272212102813,11.8
+4274,USA,2010,Injuries,Unintentional injuries,0.7625986642380084,94.2
+4275,USA,2010,Injuries,Intentional injuries,0.4776361060514065,59.0
 4276,Uruguay,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.5950920245398774,2.6
 4277,Uruguay,2010,All Causes,Noncommunicable diseases,17.05521472392638,27.8
 4278,Uruguay,2010,All Causes,Injuries,1.3496932515337425,2.2
@@ -6868,27 +6868,27 @@
 4369,Venezuela (Bolivarian Republic of),2010,Noncommunicable diseases,Congenital anomalies,0.3326102675343457,2.3
 4371,Venezuela (Bolivarian Republic of),2010,Injuries,Unintentional injuries,1.8365871294287783,12.7
 4372,Venezuela (Bolivarian Republic of),2010,Injuries,Intentional injuries,2.371655820679682,16.4
-4373,Viet Nam,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",2.571290478492025,79.8
-4374,Viet Nam,2010,All Causes,Noncommunicable diseases,15.682294183985821,486.7
-4375,Viet Nam,2010,All Causes,Injuries,1.7464153375221525,54.2
-4376,Viet Nam,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,1.2693298969072162,39.4
-4377,Viet Nam,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.8150773195876289,25.3
-4378,Viet Nam,2010,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.02577319587628866,0.8
-4379,Viet Nam,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.40592783505154634,12.6
-4380,Viet Nam,2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.054768041237113395,1.7
-4381,Viet Nam,2010,Noncommunicable diseases,Malignant neoplasms,3.1249999999999996,97.0
-4383,Viet Nam,2010,Noncommunicable diseases,Diabetes mellitus,0.7442010309278351,23.1
-4384,Viet Nam,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.054768041237113395,1.7
-4385,Viet Nam,2010,Noncommunicable diseases,Mental and substance use disorders,0.04832474226804123,1.5
-4386,Viet Nam,2010,Noncommunicable diseases,Neurological conditions,0.8795103092783505,27.3
-4387,Viet Nam,2010,Noncommunicable diseases,Cardiovascular diseases,7.928479381443298,246.1
-4388,Viet Nam,2010,Noncommunicable diseases,Respiratory diseases,1.2822164948453605,39.8
-4389,Viet Nam,2010,Noncommunicable diseases,Digestive diseases,0.7796391752577319,24.2
-4390,Viet Nam,2010,Noncommunicable diseases,Genitourinary diseases,0.5380154639175256,16.7
-4391,Viet Nam,2010,Noncommunicable diseases,Skin diseases,0.035438144329896906,1.1
-4393,Viet Nam,2010,Noncommunicable diseases,Congenital anomalies,0.22873711340206182,7.1
-4395,Viet Nam,2010,Injuries,Unintentional injuries,1.4980670103092781,46.5
-4396,Viet Nam,2010,Injuries,Intentional injuries,0.2512886597938144,7.8
+4373,Vietnam,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",2.571290478492025,79.8
+4374,Vietnam,2010,All Causes,Noncommunicable diseases,15.682294183985821,486.7
+4375,Vietnam,2010,All Causes,Injuries,1.7464153375221525,54.2
+4376,Vietnam,2010,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,1.2693298969072162,39.4
+4377,Vietnam,2010,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.8150773195876289,25.3
+4378,Vietnam,2010,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.02577319587628866,0.8
+4379,Vietnam,2010,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.40592783505154634,12.6
+4380,Vietnam,2010,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.054768041237113395,1.7
+4381,Vietnam,2010,Noncommunicable diseases,Malignant neoplasms,3.1249999999999996,97.0
+4383,Vietnam,2010,Noncommunicable diseases,Diabetes mellitus,0.7442010309278351,23.1
+4384,Vietnam,2010,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.054768041237113395,1.7
+4385,Vietnam,2010,Noncommunicable diseases,Mental and substance use disorders,0.04832474226804123,1.5
+4386,Vietnam,2010,Noncommunicable diseases,Neurological conditions,0.8795103092783505,27.3
+4387,Vietnam,2010,Noncommunicable diseases,Cardiovascular diseases,7.928479381443298,246.1
+4388,Vietnam,2010,Noncommunicable diseases,Respiratory diseases,1.2822164948453605,39.8
+4389,Vietnam,2010,Noncommunicable diseases,Digestive diseases,0.7796391752577319,24.2
+4390,Vietnam,2010,Noncommunicable diseases,Genitourinary diseases,0.5380154639175256,16.7
+4391,Vietnam,2010,Noncommunicable diseases,Skin diseases,0.035438144329896906,1.1
+4393,Vietnam,2010,Noncommunicable diseases,Congenital anomalies,0.22873711340206182,7.1
+4395,Vietnam,2010,Injuries,Unintentional injuries,1.4980670103092781,46.5
+4396,Vietnam,2010,Injuries,Intentional injuries,0.2512886597938144,7.8
 4397,Yemen,2010,All Causes,"Communicable, maternal, perinatal and nutritional conditions",7.40562248995984,46.1
 4398,Yemen,2010,All Causes,Noncommunicable diseases,10.248995983935743,63.8
 4399,Yemen,2010,All Causes,Injuries,2.3453815261044175,14.6
@@ -7280,27 +7280,27 @@
 441,Bhutan,2015,Noncommunicable diseases,Digestive diseases,1.5384615384615385,0.3
 444,Bhutan,2015,Noncommunicable diseases,Congenital anomalies,0.5128205128205129,0.1
 446,Bhutan,2015,Injuries,Unintentional injuries,1.5384615384615385,0.3
-448,Bolivia (Plurinational State of),2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",4.1655886157826645,16.1
-449,Bolivia (Plurinational State of),2015,All Causes,Noncommunicable diseases,14.049159120310476,54.3
-450,Bolivia (Plurinational State of),2015,All Causes,Injuries,1.7852522639068562,6.9
-451,Bolivia (Plurinational State of),2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,1.168289290681502,4.2
-452,Bolivia (Plurinational State of),2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.002781641168289,7.2
-453,Bolivia (Plurinational State of),2015,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.0834492350486787,0.3
-454,Bolivia (Plurinational State of),2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.9457579972183585,3.4
-455,Bolivia (Plurinational State of),2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.30598052851182195,1.1
-456,Bolivia (Plurinational State of),2015,Noncommunicable diseases,Malignant neoplasms,2.4478442280945756,8.8
-458,Bolivia (Plurinational State of),2015,Noncommunicable diseases,Diabetes mellitus,1.168289290681502,4.2
-459,Bolivia (Plurinational State of),2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.0834492350486787,0.3
-460,Bolivia (Plurinational State of),2015,Noncommunicable diseases,Mental and substance use disorders,0.1668984700973574,0.6
-461,Bolivia (Plurinational State of),2015,Noncommunicable diseases,Neurological conditions,0.8344923504867869,3.0
-462,Bolivia (Plurinational State of),2015,Noncommunicable diseases,Cardiovascular diseases,5.36856745479833,19.3
-463,Bolivia (Plurinational State of),2015,Noncommunicable diseases,Respiratory diseases,1.2795549374130732,4.6
-464,Bolivia (Plurinational State of),2015,Noncommunicable diseases,Digestive diseases,1.8080667593880384,6.5
-465,Bolivia (Plurinational State of),2015,Noncommunicable diseases,Skin diseases,0.0278164116828929,0.1
-466,Bolivia (Plurinational State of),2015,Noncommunicable diseases,Musculoskeletal diseases,0.0556328233657858,0.2
-467,Bolivia (Plurinational State of),2015,Noncommunicable diseases,Congenital anomalies,0.3337969401947148,1.2
-469,Bolivia (Plurinational State of),2015,Injuries,Unintentional injuries,1.446453407510431,5.2
-470,Bolivia (Plurinational State of),2015,Injuries,Intentional injuries,0.47287899860917926,1.7
+448,Bolivia,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",4.1655886157826645,16.1
+449,Bolivia,2015,All Causes,Noncommunicable diseases,14.049159120310476,54.3
+450,Bolivia,2015,All Causes,Injuries,1.7852522639068562,6.9
+451,Bolivia,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,1.168289290681502,4.2
+452,Bolivia,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.002781641168289,7.2
+453,Bolivia,2015,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.0834492350486787,0.3
+454,Bolivia,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.9457579972183585,3.4
+455,Bolivia,2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.30598052851182195,1.1
+456,Bolivia,2015,Noncommunicable diseases,Malignant neoplasms,2.4478442280945756,8.8
+458,Bolivia,2015,Noncommunicable diseases,Diabetes mellitus,1.168289290681502,4.2
+459,Bolivia,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.0834492350486787,0.3
+460,Bolivia,2015,Noncommunicable diseases,Mental and substance use disorders,0.1668984700973574,0.6
+461,Bolivia,2015,Noncommunicable diseases,Neurological conditions,0.8344923504867869,3.0
+462,Bolivia,2015,Noncommunicable diseases,Cardiovascular diseases,5.36856745479833,19.3
+463,Bolivia,2015,Noncommunicable diseases,Respiratory diseases,1.2795549374130732,4.6
+464,Bolivia,2015,Noncommunicable diseases,Digestive diseases,1.8080667593880384,6.5
+465,Bolivia,2015,Noncommunicable diseases,Skin diseases,0.0278164116828929,0.1
+466,Bolivia,2015,Noncommunicable diseases,Musculoskeletal diseases,0.0556328233657858,0.2
+467,Bolivia,2015,Noncommunicable diseases,Congenital anomalies,0.3337969401947148,1.2
+469,Bolivia,2015,Injuries,Unintentional injuries,1.446453407510431,5.2
+470,Bolivia,2015,Injuries,Intentional injuries,0.47287899860917926,1.7
 471,Bosnia and Herzegovina,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",0.3867403314917126,0.7
 472,Bosnia and Herzegovina,2015,All Causes,Noncommunicable diseases,18.78453038674033,34.0
 473,Bosnia and Herzegovina,2015,All Causes,Injuries,0.8287292817679557,1.5
@@ -7629,25 +7629,25 @@
 869,Comoros,2015,Noncommunicable diseases,Congenital anomalies,0.425531914893617,0.1
 871,Comoros,2015,Injuries,Unintentional injuries,1.702127659574468,0.4
 872,Comoros,2015,Injuries,Intentional injuries,0.425531914893617,0.1
-873,Congo,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",11.046511627906977,19.0
-874,Congo,2015,All Causes,Noncommunicable diseases,7.267441860465117,12.5
-875,Congo,2015,All Causes,Injuries,1.686046511627907,2.9
-876,Congo,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,7.55952380952381,12.7
-877,Congo,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.3690476190476193,2.3
-878,Congo,2015,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.41666666666666674,0.7
-879,Congo,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.785714285714286,3.0
-880,Congo,2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.1785714285714286,0.3
-881,Congo,2015,Noncommunicable diseases,Malignant neoplasms,0.7142857142857144,1.2
-883,Congo,2015,Noncommunicable diseases,Diabetes mellitus,0.5952380952380953,1.0
-884,Congo,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11904761904761907,0.2
-885,Congo,2015,Noncommunicable diseases,Mental and substance use disorders,0.059523809523809534,0.1
-886,Congo,2015,Noncommunicable diseases,Neurological conditions,0.23809523809523814,0.4
-887,Congo,2015,Noncommunicable diseases,Cardiovascular diseases,3.5119047619047628,5.9
-888,Congo,2015,Noncommunicable diseases,Respiratory diseases,0.4761904761904763,0.8
-889,Congo,2015,Noncommunicable diseases,Digestive diseases,0.8333333333333335,1.4
-892,Congo,2015,Noncommunicable diseases,Congenital anomalies,0.41666666666666674,0.7
-894,Congo,2015,Injuries,Unintentional injuries,1.2500000000000002,2.1
-895,Congo,2015,Injuries,Intentional injuries,0.4761904761904763,0.8
+873,Republic of Congo,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",11.046511627906977,19.0
+874,Republic of Congo,2015,All Causes,Noncommunicable diseases,7.267441860465117,12.5
+875,Republic of Congo,2015,All Causes,Injuries,1.686046511627907,2.9
+876,Republic of Congo,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,7.55952380952381,12.7
+877,Republic of Congo,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.3690476190476193,2.3
+878,Republic of Congo,2015,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.41666666666666674,0.7
+879,Republic of Congo,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.785714285714286,3.0
+880,Republic of Congo,2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.1785714285714286,0.3
+881,Republic of Congo,2015,Noncommunicable diseases,Malignant neoplasms,0.7142857142857144,1.2
+883,Republic of Congo,2015,Noncommunicable diseases,Diabetes mellitus,0.5952380952380953,1.0
+884,Republic of Congo,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11904761904761907,0.2
+885,Republic of Congo,2015,Noncommunicable diseases,Mental and substance use disorders,0.059523809523809534,0.1
+886,Republic of Congo,2015,Noncommunicable diseases,Neurological conditions,0.23809523809523814,0.4
+887,Republic of Congo,2015,Noncommunicable diseases,Cardiovascular diseases,3.5119047619047628,5.9
+888,Republic of Congo,2015,Noncommunicable diseases,Respiratory diseases,0.4761904761904763,0.8
+889,Republic of Congo,2015,Noncommunicable diseases,Digestive diseases,0.8333333333333335,1.4
+892,Republic of Congo,2015,Noncommunicable diseases,Congenital anomalies,0.41666666666666674,0.7
+894,Republic of Congo,2015,Injuries,Unintentional injuries,1.2500000000000002,2.1
+895,Republic of Congo,2015,Injuries,Intentional injuries,0.4761904761904763,0.8
 896,Costa Rica,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.4492753623188408,1.5
 897,Costa Rica,2015,All Causes,Noncommunicable diseases,16.231884057971016,16.8
 898,Costa Rica,2015,All Causes,Injuries,2.318840579710145,2.4
@@ -7668,27 +7668,27 @@
 915,Costa Rica,2015,Noncommunicable diseases,Congenital anomalies,0.30612244897959184,0.3
 918,Costa Rica,2015,Injuries,Unintentional injuries,1.5306122448979593,1.5
 919,Costa Rica,2015,Injuries,Intentional injuries,0.9183673469387755,0.9
-920,Côte d'Ivoire,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",11.578947368421053,117.7
-921,Côte d'Ivoire,2015,All Causes,Noncommunicable diseases,6.591244466305952,67.0
-922,Côte d'Ivoire,2015,All Causes,Injuries,1.8298081652729958,18.6
-923,Côte d'Ivoire,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,6.502264720684448,64.6
-924,Côte d'Ivoire,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.1741318570709613,21.6
-925,Côte d'Ivoire,2015,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.2617010568696528,2.6
-926,Côte d'Ivoire,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,2.7780573729240063,27.6
-927,Côte d'Ivoire,2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.1308505284348264,1.3
-928,Côte d'Ivoire,2015,Noncommunicable diseases,Malignant neoplasms,0.9562154001006543,9.5
-930,Côte d'Ivoire,2015,Noncommunicable diseases,Diabetes mellitus,0.40261701056869653,4.0
-931,Côte d'Ivoire,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.18117765475591344,1.8
-932,Côte d'Ivoire,2015,Noncommunicable diseases,Mental and substance use disorders,0.09058882737795672,0.9
-933,Côte d'Ivoire,2015,Noncommunicable diseases,Neurological conditions,0.2415702063412179,2.4
-934,Côte d'Ivoire,2015,Noncommunicable diseases,Cardiovascular diseases,2.556618017111223,25.4
-935,Côte d'Ivoire,2015,Noncommunicable diseases,Respiratory diseases,0.44287871162556625,4.4
-936,Côte d'Ivoire,2015,Noncommunicable diseases,Digestive diseases,0.8152994464016105,8.1
-937,Côte d'Ivoire,2015,Noncommunicable diseases,Skin diseases,0.02013085052843483,0.2
-939,Côte d'Ivoire,2015,Noncommunicable diseases,Congenital anomalies,0.5133366884750881,5.1
-940,Côte d'Ivoire,2015,Noncommunicable diseases,Sudden infant death syndrome,0.050327126321087066,0.5
-941,Côte d'Ivoire,2015,Injuries,Unintentional injuries,1.3487669854051334,13.4
-942,Côte d'Ivoire,2015,Injuries,Intentional injuries,0.5234021137393056,5.2
+920,Ivory Coast,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",11.578947368421053,117.7
+921,Ivory Coast,2015,All Causes,Noncommunicable diseases,6.591244466305952,67.0
+922,Ivory Coast,2015,All Causes,Injuries,1.8298081652729958,18.6
+923,Ivory Coast,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,6.502264720684448,64.6
+924,Ivory Coast,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.1741318570709613,21.6
+925,Ivory Coast,2015,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.2617010568696528,2.6
+926,Ivory Coast,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,2.7780573729240063,27.6
+927,Ivory Coast,2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.1308505284348264,1.3
+928,Ivory Coast,2015,Noncommunicable diseases,Malignant neoplasms,0.9562154001006543,9.5
+930,Ivory Coast,2015,Noncommunicable diseases,Diabetes mellitus,0.40261701056869653,4.0
+931,Ivory Coast,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.18117765475591344,1.8
+932,Ivory Coast,2015,Noncommunicable diseases,Mental and substance use disorders,0.09058882737795672,0.9
+933,Ivory Coast,2015,Noncommunicable diseases,Neurological conditions,0.2415702063412179,2.4
+934,Ivory Coast,2015,Noncommunicable diseases,Cardiovascular diseases,2.556618017111223,25.4
+935,Ivory Coast,2015,Noncommunicable diseases,Respiratory diseases,0.44287871162556625,4.4
+936,Ivory Coast,2015,Noncommunicable diseases,Digestive diseases,0.8152994464016105,8.1
+937,Ivory Coast,2015,Noncommunicable diseases,Skin diseases,0.02013085052843483,0.2
+939,Ivory Coast,2015,Noncommunicable diseases,Congenital anomalies,0.5133366884750881,5.1
+940,Ivory Coast,2015,Noncommunicable diseases,Sudden infant death syndrome,0.050327126321087066,0.5
+941,Ivory Coast,2015,Injuries,Unintentional injuries,1.3487669854051334,13.4
+942,Ivory Coast,2015,Injuries,Intentional injuries,0.5234021137393056,5.2
 943,Croatia,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",0.40665434380776344,1.1
 944,Croatia,2015,All Causes,Noncommunicable diseases,18.558225508317932,50.2
 945,Croatia,2015,All Causes,Injuries,1.0351201478743068,2.8
@@ -7977,24 +7977,24 @@
 1291,Estonia,2015,Noncommunicable diseases,Digestive diseases,0.8053691275167786,0.6
 1296,Estonia,2015,Injuries,Unintentional injuries,0.5369127516778524,0.4
 1297,Estonia,2015,Injuries,Intentional injuries,0.4026845637583893,0.3
-1298,Eswatini,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",9.242424242424242,6.1
-1299,Eswatini,2015,All Causes,Noncommunicable diseases,8.484848484848484,5.6
-1300,Eswatini,2015,All Causes,Injuries,2.2727272727272725,1.5
-1301,Eswatini,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,6.614173228346457,4.2
-1302,Eswatini,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.5748031496062993,1.0
-1303,Eswatini,2015,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.3149606299212599,0.2
-1304,Eswatini,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.9448818897637795,0.6
-1305,Eswatini,2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.15748031496062995,0.1
-1306,Eswatini,2015,Noncommunicable diseases,Malignant neoplasms,0.9448818897637795,0.6
-1308,Eswatini,2015,Noncommunicable diseases,Diabetes mellitus,1.4173228346456694,0.9
-1309,Eswatini,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.15748031496062995,0.1
-1311,Eswatini,2015,Noncommunicable diseases,Neurological conditions,0.3149606299212599,0.2
-1312,Eswatini,2015,Noncommunicable diseases,Cardiovascular diseases,3.3070866141732287,2.1
-1313,Eswatini,2015,Noncommunicable diseases,Respiratory diseases,0.7874015748031497,0.5
-1314,Eswatini,2015,Noncommunicable diseases,Digestive diseases,0.7874015748031497,0.5
-1317,Eswatini,2015,Noncommunicable diseases,Congenital anomalies,0.3149606299212599,0.2
-1319,Eswatini,2015,Injuries,Unintentional injuries,1.4173228346456694,0.9
-1320,Eswatini,2015,Injuries,Intentional injuries,0.9448818897637795,0.6
+1298,Swaziland,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",9.242424242424242,6.1
+1299,Swaziland,2015,All Causes,Noncommunicable diseases,8.484848484848484,5.6
+1300,Swaziland,2015,All Causes,Injuries,2.2727272727272725,1.5
+1301,Swaziland,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,6.614173228346457,4.2
+1302,Swaziland,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.5748031496062993,1.0
+1303,Swaziland,2015,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.3149606299212599,0.2
+1304,Swaziland,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.9448818897637795,0.6
+1305,Swaziland,2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.15748031496062995,0.1
+1306,Swaziland,2015,Noncommunicable diseases,Malignant neoplasms,0.9448818897637795,0.6
+1308,Swaziland,2015,Noncommunicable diseases,Diabetes mellitus,1.4173228346456694,0.9
+1309,Swaziland,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.15748031496062995,0.1
+1311,Swaziland,2015,Noncommunicable diseases,Neurological conditions,0.3149606299212599,0.2
+1312,Swaziland,2015,Noncommunicable diseases,Cardiovascular diseases,3.3070866141732287,2.1
+1313,Swaziland,2015,Noncommunicable diseases,Respiratory diseases,0.7874015748031497,0.5
+1314,Swaziland,2015,Noncommunicable diseases,Digestive diseases,0.7874015748031497,0.5
+1317,Swaziland,2015,Noncommunicable diseases,Congenital anomalies,0.3149606299212599,0.2
+1319,Swaziland,2015,Injuries,Unintentional injuries,1.4173228346456694,0.9
+1320,Swaziland,2015,Injuries,Intentional injuries,0.9448818897637795,0.6
 1321,Ethiopia,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",10.192065491183879,323.7
 1322,Ethiopia,2015,All Causes,Noncommunicable diseases,7.654282115869018,243.1
 1323,Ethiopia,2015,All Causes,Injuries,2.1536523929471034,68.4
@@ -8379,24 +8379,24 @@
 1810,Indonesia,2015,Noncommunicable diseases,Congenital anomalies,0.2050530941047235,16.8
 1812,Indonesia,2015,Injuries,Unintentional injuries,0.8165507140241669,66.9
 1813,Indonesia,2015,Injuries,Intentional injuries,0.22092029781520808,18.1
-1814,Iran (Islamic Republic of),2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.8203240058910166,30.9
-1815,Iran (Islamic Republic of),2015,All Causes,Noncommunicable diseases,15.858615611192933,269.2
-1816,Iran (Islamic Republic of),2015,All Causes,Injuries,2.3210603829160537,39.4
-1817,Iran (Islamic Republic of),2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.4685123212655918,7.7
-1818,Iran (Islamic Republic of),2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.6753878916945543,11.1
-1820,Iran (Islamic Republic of),2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.7058107696988135,11.6
-1822,Iran (Islamic Republic of),2015,Noncommunicable diseases,Malignant neoplasms,3.3100091268634015,54.4
-1824,Iran (Islamic Republic of),2015,Noncommunicable diseases,Diabetes mellitus,0.7484027989047765,12.3
-1825,Iran (Islamic Republic of),2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.12169151201703682,2.0
-1826,Iran (Islamic Republic of),2015,Noncommunicable diseases,Mental and substance use disorders,0.13994523881959234,2.3
-1827,Iran (Islamic Republic of),2015,Noncommunicable diseases,Neurological conditions,0.8092485549132948,13.3
-1828,Iran (Islamic Republic of),2015,Noncommunicable diseases,Cardiovascular diseases,8.71919683602069,143.3
-1829,Iran (Islamic Republic of),2015,Noncommunicable diseases,Respiratory diseases,0.8822634621235169,14.5
-1830,Iran (Islamic Republic of),2015,Noncommunicable diseases,Digestive diseases,0.608457560085184,10.0
-1832,Iran (Islamic Republic of),2015,Noncommunicable diseases,Musculoskeletal diseases,0.03650745360511105,0.6
-1833,Iran (Islamic Republic of),2015,Noncommunicable diseases,Congenital anomalies,0.3163979312442957,5.2
-1835,Iran (Islamic Republic of),2015,Injuries,Unintentional injuries,1.8862184362640706,31.0
-1836,Iran (Islamic Republic of),2015,Injuries,Intentional injuries,0.5111043504715547,8.4
+1814,Iran,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.8203240058910166,30.9
+1815,Iran,2015,All Causes,Noncommunicable diseases,15.858615611192933,269.2
+1816,Iran,2015,All Causes,Injuries,2.3210603829160537,39.4
+1817,Iran,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.4685123212655918,7.7
+1818,Iran,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.6753878916945543,11.1
+1820,Iran,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.7058107696988135,11.6
+1822,Iran,2015,Noncommunicable diseases,Malignant neoplasms,3.3100091268634015,54.4
+1824,Iran,2015,Noncommunicable diseases,Diabetes mellitus,0.7484027989047765,12.3
+1825,Iran,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.12169151201703682,2.0
+1826,Iran,2015,Noncommunicable diseases,Mental and substance use disorders,0.13994523881959234,2.3
+1827,Iran,2015,Noncommunicable diseases,Neurological conditions,0.8092485549132948,13.3
+1828,Iran,2015,Noncommunicable diseases,Cardiovascular diseases,8.71919683602069,143.3
+1829,Iran,2015,Noncommunicable diseases,Respiratory diseases,0.8822634621235169,14.5
+1830,Iran,2015,Noncommunicable diseases,Digestive diseases,0.608457560085184,10.0
+1832,Iran,2015,Noncommunicable diseases,Musculoskeletal diseases,0.03650745360511105,0.6
+1833,Iran,2015,Noncommunicable diseases,Congenital anomalies,0.3163979312442957,5.2
+1835,Iran,2015,Injuries,Unintentional injuries,1.8862184362640706,31.0
+1836,Iran,2015,Injuries,Intentional injuries,0.5111043504715547,8.4
 1837,Iraq,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",3.0457440648523453,26.3
 1838,Iraq,2015,All Causes,Noncommunicable diseases,11.129125651418645,96.1
 1839,Iraq,2015,All Causes,Injuries,5.82513028372901,50.3
@@ -10096,26 +10096,26 @@
 4034,United Arab Emirates,2015,Noncommunicable diseases,Congenital anomalies,0.3389830508474576,0.3
 4036,United Arab Emirates,2015,Injuries,Unintentional injuries,3.7288135593220337,3.3
 4037,United Arab Emirates,2015,Injuries,Intentional injuries,0.7909604519774011,0.7
-4038,United Kingdom,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.6120174446777584,49.9
-4039,United Kingdom,2015,All Causes,Noncommunicable diseases,17.699886932644166,547.9
-4040,United Kingdom,2015,All Causes,Injuries,0.6880956226780812,21.3
-4041,United Kingdom,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.24740227610094004,7.5
-4042,United Kingdom,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.3293748969157178,40.3
-4044,United Kingdom,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.05607784924954641,1.7
-4046,United Kingdom,2015,Noncommunicable diseases,Malignant neoplasms,5.637473198086754,170.9
-4047,United Kingdom,2015,Noncommunicable diseases,Other neoplasms,0.13194788058716803,4.0
-4048,United Kingdom,2015,Noncommunicable diseases,Diabetes mellitus,0.18472703282203523,5.6
-4049,United Kingdom,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11545439551377203,3.5
-4050,United Kingdom,2015,Noncommunicable diseases,Mental and substance use disorders,0.14184397163120563,4.3
-4051,United Kingdom,2015,Noncommunicable diseases,Neurological conditions,2.9886194952993557,90.6
-4053,United Kingdom,2015,Noncommunicable diseases,Cardiovascular diseases,5.442850074220681,165.0
-4054,United Kingdom,2015,Noncommunicable diseases,Respiratory diseases,1.7021276595744677,51.6
-4055,United Kingdom,2015,Noncommunicable diseases,Digestive diseases,0.9929078014184395,30.1
-4056,United Kingdom,2015,Noncommunicable diseases,Skin diseases,0.07257133432294242,2.2
-4057,United Kingdom,2015,Noncommunicable diseases,Musculoskeletal diseases,0.15833745670460161,4.8
-4058,United Kingdom,2015,Noncommunicable diseases,Congenital anomalies,0.07257133432294242,2.2
-4061,United Kingdom,2015,Injuries,Unintentional injuries,0.4816097641431633,14.6
-4062,United Kingdom,2015,Injuries,Intentional injuries,0.22101269998350645,6.7
+4038,United Kingdom of Great Britain and Northern Ireland,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.6120174446777584,49.9
+4039,United Kingdom of Great Britain and Northern Ireland,2015,All Causes,Noncommunicable diseases,17.699886932644166,547.9
+4040,United Kingdom of Great Britain and Northern Ireland,2015,All Causes,Injuries,0.6880956226780812,21.3
+4041,United Kingdom of Great Britain and Northern Ireland,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.24740227610094004,7.5
+4042,United Kingdom of Great Britain and Northern Ireland,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.3293748969157178,40.3
+4044,United Kingdom of Great Britain and Northern Ireland,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.05607784924954641,1.7
+4046,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,Malignant neoplasms,5.637473198086754,170.9
+4047,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,Other neoplasms,0.13194788058716803,4.0
+4048,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,Diabetes mellitus,0.18472703282203523,5.6
+4049,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11545439551377203,3.5
+4050,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,Mental and substance use disorders,0.14184397163120563,4.3
+4051,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,Neurological conditions,2.9886194952993557,90.6
+4053,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,Cardiovascular diseases,5.442850074220681,165.0
+4054,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,Respiratory diseases,1.7021276595744677,51.6
+4055,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,Digestive diseases,0.9929078014184395,30.1
+4056,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,Skin diseases,0.07257133432294242,2.2
+4057,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,Musculoskeletal diseases,0.15833745670460161,4.8
+4058,United Kingdom of Great Britain and Northern Ireland,2015,Noncommunicable diseases,Congenital anomalies,0.07257133432294242,2.2
+4061,United Kingdom of Great Britain and Northern Ireland,2015,Injuries,Unintentional injuries,0.4816097641431633,14.6
+4062,United Kingdom of Great Britain and Northern Ireland,2015,Injuries,Intentional injuries,0.22101269998350645,6.7
 4063,United Republic of Tanzania,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",11.881619937694703,190.7
 4064,United Republic of Tanzania,2015,All Causes,Noncommunicable diseases,6.062305295950155,97.3
 4065,United Republic of Tanzania,2015,All Causes,Injuries,2.05607476635514,33.0
@@ -10136,27 +10136,27 @@
 4083,United Republic of Tanzania,2015,Noncommunicable diseases,Sudden infant death syndrome,0.03798670465337132,0.6
 4084,United Republic of Tanzania,2015,Injuries,Unintentional injuries,1.671415004748338,26.4
 4085,United Republic of Tanzania,2015,Injuries,Intentional injuries,0.411522633744856,6.5
-4086,United States of America,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.1299476671334856,153.3
-4087,United States of America,2015,All Causes,Noncommunicable diseases,17.608903958133705,2389.0
-4088,United States of America,2015,All Causes,Injuries,1.2611483747328074,171.1
-4089,United States of America,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.5631973101023995,73.7
-4090,United States of America,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.44704264099037133,58.5
-4092,United States of America,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.09399358092618064,12.3
-4093,United States of America,2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.06342656273880483,8.3
-4094,United States of America,2015,Noncommunicable diseases,Malignant neoplasms,4.601100412654745,602.1
-4095,United States of America,2015,Noncommunicable diseases,Other neoplasms,0.12456059911355646,16.3
-4096,United States of America,2015,Noncommunicable diseases,Diabetes mellitus,0.41953232462173307,54.9
-4097,United States of America,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.31713281369402413,41.5
-4098,United States of America,2015,Noncommunicable diseases,Mental and substance use disorders,0.5502063273727648,72.0
-4099,United States of America,2015,Noncommunicable diseases,Neurological conditions,2.415558612257374,316.1
-4101,United States of America,2015,Noncommunicable diseases,Cardiovascular diseases,6.221916552040348,814.2
-4102,United States of America,2015,Noncommunicable diseases,Respiratory diseases,1.826379336695705,239.0
-4103,United States of America,2015,Noncommunicable diseases,Digestive diseases,0.7977991746905089,104.4
-4104,United States of America,2015,Noncommunicable diseases,Skin diseases,0.03668042182485098,4.8
-4105,United States of America,2015,Noncommunicable diseases,Musculoskeletal diseases,0.10469203729176217,13.7
-4106,United States of America,2015,Noncommunicable diseases,Congenital anomalies,0.09170105456212746,12.0
-4109,United States of America,2015,Injuries,Unintentional injuries,0.8046767537826683,105.3
-4110,United States of America,2015,Injuries,Intentional injuries,0.5028274491823321,65.8
+4086,USA,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.1299476671334856,153.3
+4087,USA,2015,All Causes,Noncommunicable diseases,17.608903958133705,2389.0
+4088,USA,2015,All Causes,Injuries,1.2611483747328074,171.1
+4089,USA,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.5631973101023995,73.7
+4090,USA,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.44704264099037133,58.5
+4092,USA,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.09399358092618064,12.3
+4093,USA,2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.06342656273880483,8.3
+4094,USA,2015,Noncommunicable diseases,Malignant neoplasms,4.601100412654745,602.1
+4095,USA,2015,Noncommunicable diseases,Other neoplasms,0.12456059911355646,16.3
+4096,USA,2015,Noncommunicable diseases,Diabetes mellitus,0.41953232462173307,54.9
+4097,USA,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.31713281369402413,41.5
+4098,USA,2015,Noncommunicable diseases,Mental and substance use disorders,0.5502063273727648,72.0
+4099,USA,2015,Noncommunicable diseases,Neurological conditions,2.415558612257374,316.1
+4101,USA,2015,Noncommunicable diseases,Cardiovascular diseases,6.221916552040348,814.2
+4102,USA,2015,Noncommunicable diseases,Respiratory diseases,1.826379336695705,239.0
+4103,USA,2015,Noncommunicable diseases,Digestive diseases,0.7977991746905089,104.4
+4104,USA,2015,Noncommunicable diseases,Skin diseases,0.03668042182485098,4.8
+4105,USA,2015,Noncommunicable diseases,Musculoskeletal diseases,0.10469203729176217,13.7
+4106,USA,2015,Noncommunicable diseases,Congenital anomalies,0.09170105456212746,12.0
+4109,USA,2015,Injuries,Unintentional injuries,0.8046767537826683,105.3
+4110,USA,2015,Injuries,Intentional injuries,0.5028274491823321,65.8
 4111,Uruguay,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.4545454545454546,2.4
 4112,Uruguay,2015,All Causes,Noncommunicable diseases,17.09090909090909,28.2
 4113,Uruguay,2015,All Causes,Injuries,1.4545454545454546,2.4
@@ -10231,27 +10231,27 @@
 4200,Venezuela (Bolivarian Republic of),2015,Noncommunicable diseases,Congenital anomalies,0.29889538661468484,2.3
 4202,Venezuela (Bolivarian Republic of),2015,Injuries,Unintentional injuries,1.793372319688109,13.8
 4203,Venezuela (Bolivarian Republic of),2015,Injuries,Intentional injuries,2.4951267056530213,19.2
-4204,Viet Nam,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",2.1515820456217805,73.1
-4205,Viet Nam,2015,All Causes,Noncommunicable diseases,16.08241353936718,546.4
-4206,Viet Nam,2015,All Causes,Injuries,1.7660044150110374,60.0
-4207,Viet Nam,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.9403530127814973,30.9
-4208,Viet Nam,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.8277541083384055,27.2
-4209,Viet Nam,2015,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.02434570906877663,0.8
-4210,Viet Nam,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.3895313451004261,12.8
-4211,Viet Nam,2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.04564820450395618,1.5
-4212,Viet Nam,2015,Noncommunicable diseases,Malignant neoplasms,3.244065733414486,106.6
-4214,Viet Nam,2015,Noncommunicable diseases,Diabetes mellitus,0.8825319537431529,29.0
-4215,Viet Nam,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.060864272671941576,2.0
-4216,Viet Nam,2015,Noncommunicable diseases,Mental and substance use disorders,0.060864272671941576,2.0
-4217,Viet Nam,2015,Noncommunicable diseases,Neurological conditions,0.9738283627510652,32.0
-4218,Viet Nam,2015,Noncommunicable diseases,Cardiovascular diseases,8.216676810712112,270.0
-4219,Viet Nam,2015,Noncommunicable diseases,Respiratory diseases,1.2964090079123556,42.6
-4220,Viet Nam,2015,Noncommunicable diseases,Digestive diseases,0.8916615946439441,29.3
-4221,Viet Nam,2015,Noncommunicable diseases,Skin diseases,0.039561777236762026,1.3
-4222,Viet Nam,2015,Noncommunicable diseases,Musculoskeletal diseases,0.02130249543517955,0.7
-4223,Viet Nam,2015,Noncommunicable diseases,Congenital anomalies,0.24041387705416922,7.9
-4225,Viet Nam,2015,Injuries,Unintentional injuries,1.5581253804017043,51.2
-4226,Viet Nam,2015,Injuries,Intentional injuries,0.267802799756543,8.8
+4204,Vietnam,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",2.1515820456217805,73.1
+4205,Vietnam,2015,All Causes,Noncommunicable diseases,16.08241353936718,546.4
+4206,Vietnam,2015,All Causes,Injuries,1.7660044150110374,60.0
+4207,Vietnam,2015,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.9403530127814973,30.9
+4208,Vietnam,2015,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.8277541083384055,27.2
+4209,Vietnam,2015,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.02434570906877663,0.8
+4210,Vietnam,2015,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.3895313451004261,12.8
+4211,Vietnam,2015,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.04564820450395618,1.5
+4212,Vietnam,2015,Noncommunicable diseases,Malignant neoplasms,3.244065733414486,106.6
+4214,Vietnam,2015,Noncommunicable diseases,Diabetes mellitus,0.8825319537431529,29.0
+4215,Vietnam,2015,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.060864272671941576,2.0
+4216,Vietnam,2015,Noncommunicable diseases,Mental and substance use disorders,0.060864272671941576,2.0
+4217,Vietnam,2015,Noncommunicable diseases,Neurological conditions,0.9738283627510652,32.0
+4218,Vietnam,2015,Noncommunicable diseases,Cardiovascular diseases,8.216676810712112,270.0
+4219,Vietnam,2015,Noncommunicable diseases,Respiratory diseases,1.2964090079123556,42.6
+4220,Vietnam,2015,Noncommunicable diseases,Digestive diseases,0.8916615946439441,29.3
+4221,Vietnam,2015,Noncommunicable diseases,Skin diseases,0.039561777236762026,1.3
+4222,Vietnam,2015,Noncommunicable diseases,Musculoskeletal diseases,0.02130249543517955,0.7
+4223,Vietnam,2015,Noncommunicable diseases,Congenital anomalies,0.24041387705416922,7.9
+4225,Vietnam,2015,Injuries,Unintentional injuries,1.5581253804017043,51.2
+4226,Vietnam,2015,Injuries,Intentional injuries,0.267802799756543,8.8
 4227,Yemen,2015,All Causes,"Communicable, maternal, perinatal and nutritional conditions",6.416382252559727,47.0
 4228,Yemen,2015,All Causes,Noncommunicable diseases,10.006825938566553,73.3
 4229,Yemen,2015,All Causes,Injuries,3.57679180887372,26.2
@@ -10658,28 +10658,28 @@
 359,Bhutan,2019,Noncommunicable diseases,Congenital anomalies,0.4166666666666668,0.1
 360,Bhutan,2019,Injuries,Unintentional injuries,1.6666666666666672,0.4
 361,Bhutan,2019,Injuries,Intentional injuries,0.4166666666666668,0.1
-362,Bolivia (Plurinational State of),2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",3.7268518518518516,16.1
-363,Bolivia (Plurinational State of),2019,All Causes,Noncommunicable diseases,14.537037037037035,62.8
-364,Bolivia (Plurinational State of),2019,All Causes,Injuries,1.736111111111111,7.5
-365,Bolivia (Plurinational State of),2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.8574739281575899,3.7
-366,Bolivia (Plurinational State of),2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.877172653534183,8.1
-367,Bolivia (Plurinational State of),2019,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.046349942062572425,0.2
-368,Bolivia (Plurinational State of),2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.6720741599073001,2.9
-369,Bolivia (Plurinational State of),2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.25492468134414836,1.1
-370,Bolivia (Plurinational State of),2019,Noncommunicable diseases,Malignant neoplasms,2.3870220162224802,10.3
-371,Bolivia (Plurinational State of),2019,Noncommunicable diseases,Diabetes mellitus,1.1355735805330245,4.9
-372,Bolivia (Plurinational State of),2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.09269988412514485,0.4
-373,Bolivia (Plurinational State of),2019,Noncommunicable diseases,Mental and substance use disorders,0.13904982618771727,0.6
-374,Bolivia (Plurinational State of),2019,Noncommunicable diseases,Neurological conditions,0.8574739281575899,3.7
-375,Bolivia (Plurinational State of),2019,Noncommunicable diseases,Cardiovascular diseases,5.1911935110081115,22.4
-376,Bolivia (Plurinational State of),2019,Noncommunicable diseases,Respiratory diseases,1.2282734646581692,5.3
-377,Bolivia (Plurinational State of),2019,Noncommunicable diseases,Digestive diseases,1.6917728852838934,7.3
-378,Bolivia (Plurinational State of),2019,Noncommunicable diseases,Genitourinary diseases,1.5063731170336039,6.5
-379,Bolivia (Plurinational State of),2019,Noncommunicable diseases,Skin diseases,0.023174971031286212,0.1
-380,Bolivia (Plurinational State of),2019,Noncommunicable diseases,Musculoskeletal diseases,0.046349942062572425,0.2
-381,Bolivia (Plurinational State of),2019,Noncommunicable diseases,Congenital anomalies,0.25492468134414836,1.1
-382,Bolivia (Plurinational State of),2019,Injuries,Unintentional injuries,1.3209733487833142,5.7
-383,Bolivia (Plurinational State of),2019,Injuries,Intentional injuries,0.4171494785631518,1.8
+362,Bolivia,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",3.7268518518518516,16.1
+363,Bolivia,2019,All Causes,Noncommunicable diseases,14.537037037037035,62.8
+364,Bolivia,2019,All Causes,Injuries,1.736111111111111,7.5
+365,Bolivia,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.8574739281575899,3.7
+366,Bolivia,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.877172653534183,8.1
+367,Bolivia,2019,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.046349942062572425,0.2
+368,Bolivia,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.6720741599073001,2.9
+369,Bolivia,2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.25492468134414836,1.1
+370,Bolivia,2019,Noncommunicable diseases,Malignant neoplasms,2.3870220162224802,10.3
+371,Bolivia,2019,Noncommunicable diseases,Diabetes mellitus,1.1355735805330245,4.9
+372,Bolivia,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.09269988412514485,0.4
+373,Bolivia,2019,Noncommunicable diseases,Mental and substance use disorders,0.13904982618771727,0.6
+374,Bolivia,2019,Noncommunicable diseases,Neurological conditions,0.8574739281575899,3.7
+375,Bolivia,2019,Noncommunicable diseases,Cardiovascular diseases,5.1911935110081115,22.4
+376,Bolivia,2019,Noncommunicable diseases,Respiratory diseases,1.2282734646581692,5.3
+377,Bolivia,2019,Noncommunicable diseases,Digestive diseases,1.6917728852838934,7.3
+378,Bolivia,2019,Noncommunicable diseases,Genitourinary diseases,1.5063731170336039,6.5
+379,Bolivia,2019,Noncommunicable diseases,Skin diseases,0.023174971031286212,0.1
+380,Bolivia,2019,Noncommunicable diseases,Musculoskeletal diseases,0.046349942062572425,0.2
+381,Bolivia,2019,Noncommunicable diseases,Congenital anomalies,0.25492468134414836,1.1
+382,Bolivia,2019,Injuries,Unintentional injuries,1.3209733487833142,5.7
+383,Bolivia,2019,Injuries,Intentional injuries,0.4171494785631518,1.8
 384,Bosnia and Herzegovina,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",0.37037037037037035,0.7
 385,Bosnia and Herzegovina,2019,All Causes,Noncommunicable diseases,18.88888888888889,35.7
 386,Bosnia and Herzegovina,2019,All Causes,Injuries,0.7407407407407407,1.4
@@ -11022,26 +11022,26 @@
 739,Comoros,2019,Noncommunicable diseases,Congenital anomalies,0.40816326530612257,0.1
 740,Comoros,2019,Injuries,Unintentional injuries,2.0408163265306127,0.5
 741,Comoros,2019,Injuries,Intentional injuries,0.40816326530612257,0.1
-742,Congo,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",10.399999999999999,18.2
-743,Congo,2019,All Causes,Noncommunicable diseases,7.7142857142857135,13.5
-744,Congo,2019,All Causes,Injuries,1.8857142857142855,3.3
-745,Congo,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,6.8011527377521634,11.8
-746,Congo,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.4985590778097986,2.6
-747,Congo,2019,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.34582132564841506,0.6
-748,Congo,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.671469740634006,2.9
-749,Congo,2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.17291066282420753,0.3
-750,Congo,2019,Noncommunicable diseases,Malignant neoplasms,0.8069164265129685,1.4
-751,Congo,2019,Noncommunicable diseases,Diabetes mellitus,0.5763688760806918,1
-752,Congo,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11527377521613835,0.2
-753,Congo,2019,Noncommunicable diseases,Mental and substance use disorders,0.057636887608069176,0.1
-754,Congo,2019,Noncommunicable diseases,Neurological conditions,0.2305475504322767,0.4
-755,Congo,2019,Noncommunicable diseases,Cardiovascular diseases,3.631123919308358,6.3
-756,Congo,2019,Noncommunicable diseases,Respiratory diseases,0.5187319884726226,0.9
-757,Congo,2019,Noncommunicable diseases,Digestive diseases,0.8645533141210376,1.5
-758,Congo,2019,Noncommunicable diseases,Genitourinary diseases,0.40345821325648423,0.7
-759,Congo,2019,Noncommunicable diseases,Congenital anomalies,0.40345821325648423,0.7
-760,Congo,2019,Injuries,Unintentional injuries,1.3832853025936602,2.4
-761,Congo,2019,Injuries,Intentional injuries,0.5187319884726226,0.9
+742,Republic of Congo,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",10.399999999999999,18.2
+743,Republic of Congo,2019,All Causes,Noncommunicable diseases,7.7142857142857135,13.5
+744,Republic of Congo,2019,All Causes,Injuries,1.8857142857142855,3.3
+745,Republic of Congo,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,6.8011527377521634,11.8
+746,Republic of Congo,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.4985590778097986,2.6
+747,Republic of Congo,2019,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.34582132564841506,0.6
+748,Republic of Congo,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,1.671469740634006,2.9
+749,Republic of Congo,2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.17291066282420753,0.3
+750,Republic of Congo,2019,Noncommunicable diseases,Malignant neoplasms,0.8069164265129685,1.4
+751,Republic of Congo,2019,Noncommunicable diseases,Diabetes mellitus,0.5763688760806918,1
+752,Republic of Congo,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11527377521613835,0.2
+753,Republic of Congo,2019,Noncommunicable diseases,Mental and substance use disorders,0.057636887608069176,0.1
+754,Republic of Congo,2019,Noncommunicable diseases,Neurological conditions,0.2305475504322767,0.4
+755,Republic of Congo,2019,Noncommunicable diseases,Cardiovascular diseases,3.631123919308358,6.3
+756,Republic of Congo,2019,Noncommunicable diseases,Respiratory diseases,0.5187319884726226,0.9
+757,Republic of Congo,2019,Noncommunicable diseases,Digestive diseases,0.8645533141210376,1.5
+758,Republic of Congo,2019,Noncommunicable diseases,Genitourinary diseases,0.40345821325648423,0.7
+759,Republic of Congo,2019,Noncommunicable diseases,Congenital anomalies,0.40345821325648423,0.7
+760,Republic of Congo,2019,Injuries,Unintentional injuries,1.3832853025936602,2.4
+761,Republic of Congo,2019,Injuries,Intentional injuries,0.5187319884726226,0.9
 762,Costa Rica,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.4225941422594142,1.7
 763,Costa Rica,2019,All Causes,Noncommunicable diseases,16.401673640167363,19.6
 764,Costa Rica,2019,All Causes,Injuries,2.1757322175732217,2.6
@@ -11064,28 +11064,28 @@
 781,Costa Rica,2019,Noncommunicable diseases,Congenital anomalies,0.25210084033613445,0.3
 782,Costa Rica,2019,Injuries,Unintentional injuries,1.3445378151260505,1.6
 783,Costa Rica,2019,Injuries,Intentional injuries,0.8403361344537815,1
-784,Côte d'Ivoire,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",10.860655737704919,106
-785,Côte d'Ivoire,2019,All Causes,Noncommunicable diseases,7.131147540983606,69.6
-786,Côte d'Ivoire,2019,All Causes,Injuries,2.0081967213114758,19.6
-787,Côte d'Ivoire,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,5.525371604305485,53.9
-788,Côte d'Ivoire,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.193746796514608,21.4
-789,Côte d'Ivoire,2019,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.20502306509482318,2
-790,Côte d'Ivoire,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,2.839569451563301,27.7
-791,Côte d'Ivoire,2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.11276268580215276,1.1
-792,Côte d'Ivoire,2019,Noncommunicable diseases,Malignant neoplasms,1.0558687852383395,10.3
-793,Côte d'Ivoire,2019,Noncommunicable diseases,Diabetes mellitus,0.4202972834443875,4.1
-794,Côte d'Ivoire,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.19477191184008202,1.9
-795,Côte d'Ivoire,2019,Noncommunicable diseases,Mental and substance use disorders,0.10251153254741159,1
-796,Côte d'Ivoire,2019,Noncommunicable diseases,Neurological conditions,0.26652998462327016,2.6
-797,Côte d'Ivoire,2019,Noncommunicable diseases,Cardiovascular diseases,2.65504869297796,25.9
-798,Côte d'Ivoire,2019,Noncommunicable diseases,Respiratory diseases,0.45105074320861105,4.4
-799,Côte d'Ivoire,2019,Noncommunicable diseases,Digestive diseases,0.8303434136340339,8.1
-800,Côte d'Ivoire,2019,Noncommunicable diseases,Genitourinary diseases,0.5023065094823168,4.9
-801,Côte d'Ivoire,2019,Noncommunicable diseases,Skin diseases,0.030753459764223477,0.3
-803,Côte d'Ivoire,2019,Noncommunicable diseases,Congenital anomalies,0.5330599692465403,5.2
-804,Côte d'Ivoire,2019,Noncommunicable diseases,Sudden infant death syndrome,0.06150691952844695,0.6
-805,Côte d'Ivoire,2019,Injuries,Unintentional injuries,1.4659149154279858,14.3
-806,Côte d'Ivoire,2019,Injuries,Intentional injuries,0.5433111225012814,5.3
+784,Ivory Coast,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",10.860655737704919,106
+785,Ivory Coast,2019,All Causes,Noncommunicable diseases,7.131147540983606,69.6
+786,Ivory Coast,2019,All Causes,Injuries,2.0081967213114758,19.6
+787,Ivory Coast,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,5.525371604305485,53.9
+788,Ivory Coast,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,2.193746796514608,21.4
+789,Ivory Coast,2019,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.20502306509482318,2
+790,Ivory Coast,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,2.839569451563301,27.7
+791,Ivory Coast,2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.11276268580215276,1.1
+792,Ivory Coast,2019,Noncommunicable diseases,Malignant neoplasms,1.0558687852383395,10.3
+793,Ivory Coast,2019,Noncommunicable diseases,Diabetes mellitus,0.4202972834443875,4.1
+794,Ivory Coast,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.19477191184008202,1.9
+795,Ivory Coast,2019,Noncommunicable diseases,Mental and substance use disorders,0.10251153254741159,1
+796,Ivory Coast,2019,Noncommunicable diseases,Neurological conditions,0.26652998462327016,2.6
+797,Ivory Coast,2019,Noncommunicable diseases,Cardiovascular diseases,2.65504869297796,25.9
+798,Ivory Coast,2019,Noncommunicable diseases,Respiratory diseases,0.45105074320861105,4.4
+799,Ivory Coast,2019,Noncommunicable diseases,Digestive diseases,0.8303434136340339,8.1
+800,Ivory Coast,2019,Noncommunicable diseases,Genitourinary diseases,0.5023065094823168,4.9
+801,Ivory Coast,2019,Noncommunicable diseases,Skin diseases,0.030753459764223477,0.3
+803,Ivory Coast,2019,Noncommunicable diseases,Congenital anomalies,0.5330599692465403,5.2
+804,Ivory Coast,2019,Noncommunicable diseases,Sudden infant death syndrome,0.06150691952844695,0.6
+805,Ivory Coast,2019,Injuries,Unintentional injuries,1.4659149154279858,14.3
+806,Ivory Coast,2019,Injuries,Intentional injuries,0.5433111225012814,5.3
 807,Croatia,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",0.694980694980695,1.8
 808,Croatia,2019,All Causes,Noncommunicable diseases,18.3011583011583,47.4
 809,Croatia,2019,All Causes,Injuries,1.0038610038610039,2.6
@@ -11391,25 +11391,25 @@
 1117,Estonia,2019,Noncommunicable diseases,Musculoskeletal diseases,0.13333333333333333,0.1
 1118,Estonia,2019,Injuries,Unintentional injuries,0.5333333333333333,0.4
 1119,Estonia,2019,Injuries,Intentional injuries,0.26666666666666666,0.2
-1120,Eswatini,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",8.47457627118644,5
-1121,Eswatini,2019,All Causes,Noncommunicable diseases,9.152542372881356,5.4
-1122,Eswatini,2019,All Causes,Injuries,2.3728813559322033,1.4
-1123,Eswatini,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,5.593220338983051,3.3
-1124,Eswatini,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.5254237288135595,0.9
-1125,Eswatini,2019,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.16949152542372883,0.1
-1126,Eswatini,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.8474576271186441,0.5
-1127,Eswatini,2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.16949152542372883,0.1
-1128,Eswatini,2019,Noncommunicable diseases,Malignant neoplasms,1.0169491525423728,0.6
-1129,Eswatini,2019,Noncommunicable diseases,Diabetes mellitus,1.5254237288135595,0.9
-1130,Eswatini,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.16949152542372883,0.1
-1131,Eswatini,2019,Noncommunicable diseases,Neurological conditions,0.33898305084745767,0.2
-1132,Eswatini,2019,Noncommunicable diseases,Cardiovascular diseases,3.5593220338983054,2.1
-1133,Eswatini,2019,Noncommunicable diseases,Respiratory diseases,0.6779661016949153,0.4
-1134,Eswatini,2019,Noncommunicable diseases,Digestive diseases,0.8474576271186441,0.5
-1135,Eswatini,2019,Noncommunicable diseases,Genitourinary diseases,0.6779661016949153,0.4
-1136,Eswatini,2019,Noncommunicable diseases,Congenital anomalies,0.33898305084745767,0.2
-1137,Eswatini,2019,Injuries,Unintentional injuries,1.5254237288135595,0.9
-1138,Eswatini,2019,Injuries,Intentional injuries,1.0169491525423728,0.6
+1120,Swaziland,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",8.47457627118644,5
+1121,Swaziland,2019,All Causes,Noncommunicable diseases,9.152542372881356,5.4
+1122,Swaziland,2019,All Causes,Injuries,2.3728813559322033,1.4
+1123,Swaziland,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,5.593220338983051,3.3
+1124,Swaziland,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.5254237288135595,0.9
+1125,Swaziland,2019,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.16949152542372883,0.1
+1126,Swaziland,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.8474576271186441,0.5
+1127,Swaziland,2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.16949152542372883,0.1
+1128,Swaziland,2019,Noncommunicable diseases,Malignant neoplasms,1.0169491525423728,0.6
+1129,Swaziland,2019,Noncommunicable diseases,Diabetes mellitus,1.5254237288135595,0.9
+1130,Swaziland,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.16949152542372883,0.1
+1131,Swaziland,2019,Noncommunicable diseases,Neurological conditions,0.33898305084745767,0.2
+1132,Swaziland,2019,Noncommunicable diseases,Cardiovascular diseases,3.5593220338983054,2.1
+1133,Swaziland,2019,Noncommunicable diseases,Respiratory diseases,0.6779661016949153,0.4
+1134,Swaziland,2019,Noncommunicable diseases,Digestive diseases,0.8474576271186441,0.5
+1135,Swaziland,2019,Noncommunicable diseases,Genitourinary diseases,0.6779661016949153,0.4
+1136,Swaziland,2019,Noncommunicable diseases,Congenital anomalies,0.33898305084745767,0.2
+1137,Swaziland,2019,Injuries,Unintentional injuries,1.5254237288135595,0.9
+1138,Swaziland,2019,Injuries,Intentional injuries,1.0169491525423728,0.6
 1139,Ethiopia,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",8.929995216073994,280
 1140,Ethiopia,2019,All Causes,Noncommunicable diseases,8.652527507574552,271.3
 1141,Ethiopia,2019,All Causes,Injuries,2.4174772763514594,75.8
@@ -11815,25 +11815,25 @@
 1563,Indonesia,2019,Noncommunicable diseases,Congenital anomalies,0.16407884594207683,14.9
 1565,Indonesia,2019,Injuries,Unintentional injuries,0.7477150093602025,67.9
 1566,Indonesia,2019,Injuries,Intentional injuries,0.20151965642550376,18.3
-1567,Iran (Islamic Republic of),2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.6182117388919366,29.5
-1568,Iran (Islamic Republic of),2019,All Causes,Noncommunicable diseases,16.25891387822271,296.4
-1569,Iran (Islamic Republic of),2019,All Causes,Injuries,2.122874382885354,38.7
-1570,Iran (Islamic Republic of),2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.41140976412506863,7.5
-1571,Iran (Islamic Republic of),2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.6198573779484368,11.3
-1573,Iran (Islamic Republic of),2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.565002742731761,10.3
-1575,Iran (Islamic Republic of),2019,Noncommunicable diseases,Malignant neoplasms,3.3516182117388924,61.1
-1577,Iran (Islamic Republic of),2019,Noncommunicable diseases,Diabetes mellitus,0.7624794295117938,13.9
-1578,Iran (Islamic Republic of),2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11519473395501921,2.1
-1579,Iran (Islamic Republic of),2019,Noncommunicable diseases,Mental and substance use disorders,0.13713658804168954,2.5
-1580,Iran (Islamic Republic of),2019,Noncommunicable diseases,Neurological conditions,0.83927591881514,15.3
-1581,Iran (Islamic Republic of),2019,Noncommunicable diseases,Cardiovascular diseases,8.612177729018104,157
-1582,Iran (Islamic Republic of),2019,Noncommunicable diseases,Respiratory diseases,0.8447613823368075,15.4
-1583,Iran (Islamic Republic of),2019,Noncommunicable diseases,Digestive diseases,0.5979155238617664,10.9
-1584,Iran (Islamic Republic of),2019,Noncommunicable diseases,Genitourinary diseases,0.6747120131651125,12.3
-1586,Iran (Islamic Republic of),2019,Noncommunicable diseases,Musculoskeletal diseases,0.03291278113000549,0.6
-1587,Iran (Islamic Republic of),2019,Noncommunicable diseases,Congenital anomalies,0.2633022490400439,4.8
-1589,Iran (Islamic Republic of),2019,Injuries,Unintentional injuries,1.6950082281952825,30.9
-1590,Iran (Islamic Republic of),2019,Injuries,Intentional injuries,0.42238069116840377,7.7
+1567,Iran,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.6182117388919366,29.5
+1568,Iran,2019,All Causes,Noncommunicable diseases,16.25891387822271,296.4
+1569,Iran,2019,All Causes,Injuries,2.122874382885354,38.7
+1570,Iran,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.41140976412506863,7.5
+1571,Iran,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.6198573779484368,11.3
+1573,Iran,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.565002742731761,10.3
+1575,Iran,2019,Noncommunicable diseases,Malignant neoplasms,3.3516182117388924,61.1
+1577,Iran,2019,Noncommunicable diseases,Diabetes mellitus,0.7624794295117938,13.9
+1578,Iran,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.11519473395501921,2.1
+1579,Iran,2019,Noncommunicable diseases,Mental and substance use disorders,0.13713658804168954,2.5
+1580,Iran,2019,Noncommunicable diseases,Neurological conditions,0.83927591881514,15.3
+1581,Iran,2019,Noncommunicable diseases,Cardiovascular diseases,8.612177729018104,157
+1582,Iran,2019,Noncommunicable diseases,Respiratory diseases,0.8447613823368075,15.4
+1583,Iran,2019,Noncommunicable diseases,Digestive diseases,0.5979155238617664,10.9
+1584,Iran,2019,Noncommunicable diseases,Genitourinary diseases,0.6747120131651125,12.3
+1586,Iran,2019,Noncommunicable diseases,Musculoskeletal diseases,0.03291278113000549,0.6
+1587,Iran,2019,Noncommunicable diseases,Congenital anomalies,0.2633022490400439,4.8
+1589,Iran,2019,Injuries,Unintentional injuries,1.6950082281952825,30.9
+1590,Iran,2019,Injuries,Intentional injuries,0.42238069116840377,7.7
 1591,Iraq,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",3.0586766541822725,24.5
 1592,Iraq,2019,All Causes,Noncommunicable diseases,13.383270911360801,107.2
 1593,Iraq,2019,All Causes,Injuries,3.558052434456929,28.5
@@ -13636,27 +13636,27 @@
 3461,United Arab Emirates,2019,Noncommunicable diseases,Congenital anomalies,0.38277511961722493,0.4
 3462,United Arab Emirates,2019,Injuries,Unintentional injuries,2.4880382775119623,2.6
 3463,United Arab Emirates,2019,Injuries,Intentional injuries,0.6698564593301436,0.7
-3464,United Kingdom,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.630593978844589,50.1
-3465,United Kingdom,2019,All Causes,Noncommunicable diseases,17.630593978844587,541.7
-3466,United Kingdom,2019,All Causes,Injuries,0.7388120423108216,22.7
-3467,United Kingdom,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.24088541666666666,7.4
-3468,United Kingdom,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.3216145833333333,40.6
-3469,United Kingdom,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.05533854166666666,1.7
-3471,United Kingdom,2019,Noncommunicable diseases,Malignant neoplasms,5.393880208333332,165.7
-3472,United Kingdom,2019,Noncommunicable diseases,Other neoplasms,0.13020833333333331,4
-3473,United Kingdom,2019,Noncommunicable diseases,Diabetes mellitus,0.1888020833333333,5.8
-3474,United Kingdom,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.10742187499999997,3.3
-3475,United Kingdom,2019,Noncommunicable diseases,Mental and substance use disorders,0.14648437499999997,4.5
-3476,United Kingdom,2019,Noncommunicable diseases,Neurological conditions,3.7923177083333326,116.5
-3477,United Kingdom,2019,Noncommunicable diseases,Cardiovascular diseases,4.74609375,145.8
-3478,United Kingdom,2019,Noncommunicable diseases,Respiratory diseases,1.5234374999999998,46.8
-3479,United Kingdom,2019,Noncommunicable diseases,Digestive diseases,0.9374999999999999,28.8
-3480,United Kingdom,2019,Noncommunicable diseases,Genitourinary diseases,0.3776041666666666,11.6
-3481,United Kingdom,2019,Noncommunicable diseases,Skin diseases,0.068359375,2.1
-3482,United Kingdom,2019,Noncommunicable diseases,Musculoskeletal diseases,0.14648437499999997,4.5
-3483,United Kingdom,2019,Noncommunicable diseases,Congenital anomalies,0.068359375,2.1
-3486,United Kingdom,2019,Injuries,Unintentional injuries,0.5338541666666665,16.4
-3487,United Kingdom,2019,Injuries,Intentional injuries,0.20182291666666666,6.2
+3464,United Kingdom of Great Britain and Northern Ireland,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.630593978844589,50.1
+3465,United Kingdom of Great Britain and Northern Ireland,2019,All Causes,Noncommunicable diseases,17.630593978844587,541.7
+3466,United Kingdom of Great Britain and Northern Ireland,2019,All Causes,Injuries,0.7388120423108216,22.7
+3467,United Kingdom of Great Britain and Northern Ireland,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.24088541666666666,7.4
+3468,United Kingdom of Great Britain and Northern Ireland,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,1.3216145833333333,40.6
+3469,United Kingdom of Great Britain and Northern Ireland,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.05533854166666666,1.7
+3471,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Malignant neoplasms,5.393880208333332,165.7
+3472,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Other neoplasms,0.13020833333333331,4
+3473,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Diabetes mellitus,0.1888020833333333,5.8
+3474,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.10742187499999997,3.3
+3475,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Mental and substance use disorders,0.14648437499999997,4.5
+3476,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Neurological conditions,3.7923177083333326,116.5
+3477,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Cardiovascular diseases,4.74609375,145.8
+3478,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Respiratory diseases,1.5234374999999998,46.8
+3479,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Digestive diseases,0.9374999999999999,28.8
+3480,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Genitourinary diseases,0.3776041666666666,11.6
+3481,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Skin diseases,0.068359375,2.1
+3482,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Musculoskeletal diseases,0.14648437499999997,4.5
+3483,United Kingdom of Great Britain and Northern Ireland,2019,Noncommunicable diseases,Congenital anomalies,0.068359375,2.1
+3486,United Kingdom of Great Britain and Northern Ireland,2019,Injuries,Unintentional injuries,0.5338541666666665,16.4
+3487,United Kingdom of Great Britain and Northern Ireland,2019,Injuries,Intentional injuries,0.20182291666666666,6.2
 3488,United Republic of Tanzania,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",10.867267640659,174.8
 3489,United Republic of Tanzania,2019,All Causes,Noncommunicable diseases,6.875971401927261,110.6
 3490,United Republic of Tanzania,2019,All Causes,Injuries,2.2567609574137393,36.3
@@ -13679,28 +13679,28 @@
 3509,United Republic of Tanzania,2019,Noncommunicable diseases,Sudden infant death syndrome,0.03729024238657551,0.6
 3510,United Republic of Tanzania,2019,Injuries,Unintentional injuries,1.8085767557489125,29.1
 3511,United Republic of Tanzania,2019,Injuries,Intentional injuries,0.44748290863890616,7.2
-3512,United States of America,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.060590648628488,156.4
-3513,United States of America,2019,All Causes,Noncommunicable diseases,17.62858983487607,2599.6
-3514,United States of America,2019,All Causes,Injuries,1.3108195164954395,193.3
-3515,United States of America,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.49774522768114465,73.4
-3516,United States of America,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.41094496999287966,60.6
-3518,United States of America,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.07662835249042145,11.3
-3519,United States of America,2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.06916895534533617,10.2
-3520,United States of America,2019,Noncommunicable diseases,Malignant neoplasms,4.188790560471976,617.7
-3521,United States of America,2019,Noncommunicable diseases,Other neoplasms,0.12002848133455395,17.7
-3522,United States of America,2019,Noncommunicable diseases,Diabetes mellitus,0.4163699860983962,61.4
-3523,United States of America,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.31871969619909807,47
-3524,United States of America,2019,Noncommunicable diseases,Mental and substance use disorders,0.6137049469365612,90.5
-3525,United States of America,2019,Noncommunicable diseases,Neurological conditions,2.5138168378937373,370.7
-3527,United States of America,2019,Noncommunicable diseases,Cardiovascular diseases,5.921405079171328,873.2
-3528,United States of America,2019,Noncommunicable diseases,Respiratory diseases,1.8038178550842572,266
-3529,United States of America,2019,Noncommunicable diseases,Digestive diseases,0.7778116841284372,114.7
-3530,United States of America,2019,Noncommunicable diseases,Genitourinary diseases,0.7228833960600819,106.6
-3531,United States of America,2019,Noncommunicable diseases,Skin diseases,0.0366188587122368,5.4
-3532,United States of America,2019,Noncommunicable diseases,Musculoskeletal diseases,0.10307530600481468,15.2
-3533,United States of America,2019,Noncommunicable diseases,Congenital anomalies,0.08001898755636931,11.8
-3536,United States of America,2019,Injuries,Unintentional injuries,0.8137524158274844,120
-3537,United States of America,2019,Injuries,Intentional injuries,0.49706710066795506,73.3
+3512,USA,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.060590648628488,156.4
+3513,USA,2019,All Causes,Noncommunicable diseases,17.62858983487607,2599.6
+3514,USA,2019,All Causes,Injuries,1.3108195164954395,193.3
+3515,USA,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.49774522768114465,73.4
+3516,USA,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.41094496999287966,60.6
+3518,USA,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.07662835249042145,11.3
+3519,USA,2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.06916895534533617,10.2
+3520,USA,2019,Noncommunicable diseases,Malignant neoplasms,4.188790560471976,617.7
+3521,USA,2019,Noncommunicable diseases,Other neoplasms,0.12002848133455395,17.7
+3522,USA,2019,Noncommunicable diseases,Diabetes mellitus,0.4163699860983962,61.4
+3523,USA,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.31871969619909807,47
+3524,USA,2019,Noncommunicable diseases,Mental and substance use disorders,0.6137049469365612,90.5
+3525,USA,2019,Noncommunicable diseases,Neurological conditions,2.5138168378937373,370.7
+3527,USA,2019,Noncommunicable diseases,Cardiovascular diseases,5.921405079171328,873.2
+3528,USA,2019,Noncommunicable diseases,Respiratory diseases,1.8038178550842572,266
+3529,USA,2019,Noncommunicable diseases,Digestive diseases,0.7778116841284372,114.7
+3530,USA,2019,Noncommunicable diseases,Genitourinary diseases,0.7228833960600819,106.6
+3531,USA,2019,Noncommunicable diseases,Skin diseases,0.0366188587122368,5.4
+3532,USA,2019,Noncommunicable diseases,Musculoskeletal diseases,0.10307530600481468,15.2
+3533,USA,2019,Noncommunicable diseases,Congenital anomalies,0.08001898755636931,11.8
+3536,USA,2019,Injuries,Unintentional injuries,0.8137524158274844,120
+3537,USA,2019,Injuries,Intentional injuries,0.49706710066795506,73.3
 3538,Uruguay,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.4326647564469916,2.5
 3539,Uruguay,2019,All Causes,Noncommunicable diseases,17.07736389684814,29.8
 3540,Uruguay,2019,All Causes,Injuries,1.4899713467048714,2.6
@@ -13779,28 +13779,28 @@
 3613,Venezuela (Bolivarian Republic of),2019,Noncommunicable diseases,Congenital anomalies,0.3255813953488371,2.8
 3614,Venezuela (Bolivarian Republic of),2019,Injuries,Unintentional injuries,1.6744186046511627,14.4
 3615,Venezuela (Bolivarian Republic of),2019,Injuries,Intentional injuries,2.1976744186046506,18.9
-3616,Viet Nam,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.860145624398956,67.7
-3617,Viet Nam,2019,All Causes,Noncommunicable diseases,16.274213490864128,592.3
-3618,Viet Nam,2019,All Causes,Injuries,1.8656408847369146,67.9
-3619,Viet Nam,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.7224282378794123,26.3
-3620,Viet Nam,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.7663782447466009,27.9
-3621,Viet Nam,2019,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.021975003433594292,0.8
-3622,Viet Nam,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.31589067435791796,11.5
-3623,Viet Nam,2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.03570938057959073,1.3
-3624,Viet Nam,2019,Noncommunicable diseases,Malignant neoplasms,3.1808817470127737,115.8
-3626,Viet Nam,2019,Noncommunicable diseases,Diabetes mellitus,0.9311907704985581,33.9
-3627,Viet Nam,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.05768438401318502,2.1
-3628,Viet Nam,2019,Noncommunicable diseases,Mental and substance use disorders,0.06043125944238431,2.2
-3629,Viet Nam,2019,Noncommunicable diseases,Neurological conditions,0.9833814036533445,35.8
-3630,Viet Nam,2019,Noncommunicable diseases,Cardiovascular diseases,7.889026232660351,287.2
-3631,Viet Nam,2019,Noncommunicable diseases,Respiratory diseases,1.2388408185688782,45.1
-3632,Viet Nam,2019,Noncommunicable diseases,Digestive diseases,0.9147095179233623,33.3
-3633,Viet Nam,2019,Noncommunicable diseases,Genitourinary diseases,0.7416563658838073,27
-3634,Viet Nam,2019,Noncommunicable diseases,Skin diseases,0.0412031314379893,1.5
-3635,Viet Nam,2019,Noncommunicable diseases,Musculoskeletal diseases,0.021975003433594292,0.8
-3636,Viet Nam,2019,Noncommunicable diseases,Congenital anomalies,0.19502815547314933,7.1
-3638,Viet Nam,2019,Injuries,Unintentional injuries,1.6151627523691805,58.8
-3639,Viet Nam,2019,Injuries,Intentional injuries,0.24996566405713508,9.1
+3616,Vietnam,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",1.860145624398956,67.7
+3617,Vietnam,2019,All Causes,Noncommunicable diseases,16.274213490864128,592.3
+3618,Vietnam,2019,All Causes,Injuries,1.8656408847369146,67.9
+3619,Vietnam,2019,"Communicable, maternal, perinatal and nutritional conditions",Infectious and parasitic diseases,0.7224282378794123,26.3
+3620,Vietnam,2019,"Communicable, maternal, perinatal and nutritional conditions",Respiratory Infectious ,0.7663782447466009,27.9
+3621,Vietnam,2019,"Communicable, maternal, perinatal and nutritional conditions",Maternal conditions,0.021975003433594292,0.8
+3622,Vietnam,2019,"Communicable, maternal, perinatal and nutritional conditions",Neonatal conditions,0.31589067435791796,11.5
+3623,Vietnam,2019,"Communicable, maternal, perinatal and nutritional conditions",Nutritional deficiencies,0.03570938057959073,1.3
+3624,Vietnam,2019,Noncommunicable diseases,Malignant neoplasms,3.1808817470127737,115.8
+3626,Vietnam,2019,Noncommunicable diseases,Diabetes mellitus,0.9311907704985581,33.9
+3627,Vietnam,2019,Noncommunicable diseases,"Endocrine, blood, immune disorders",0.05768438401318502,2.1
+3628,Vietnam,2019,Noncommunicable diseases,Mental and substance use disorders,0.06043125944238431,2.2
+3629,Vietnam,2019,Noncommunicable diseases,Neurological conditions,0.9833814036533445,35.8
+3630,Vietnam,2019,Noncommunicable diseases,Cardiovascular diseases,7.889026232660351,287.2
+3631,Vietnam,2019,Noncommunicable diseases,Respiratory diseases,1.2388408185688782,45.1
+3632,Vietnam,2019,Noncommunicable diseases,Digestive diseases,0.9147095179233623,33.3
+3633,Vietnam,2019,Noncommunicable diseases,Genitourinary diseases,0.7416563658838073,27
+3634,Vietnam,2019,Noncommunicable diseases,Skin diseases,0.0412031314379893,1.5
+3635,Vietnam,2019,Noncommunicable diseases,Musculoskeletal diseases,0.021975003433594292,0.8
+3636,Vietnam,2019,Noncommunicable diseases,Congenital anomalies,0.19502815547314933,7.1
+3638,Vietnam,2019,Injuries,Unintentional injuries,1.6151627523691805,58.8
+3639,Vietnam,2019,Injuries,Intentional injuries,0.24996566405713508,9.1
 3640,Yemen,2019,All Causes,"Communicable, maternal, perinatal and nutritional conditions",6.03529411764706,51.3
 3641,Yemen,2019,All Causes,Noncommunicable diseases,10.07058823529412,85.6
 3642,Yemen,2019,All Causes,Injuries,3.8941176470588243,33.1

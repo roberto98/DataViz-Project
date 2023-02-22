@@ -1,5 +1,5 @@
 
-d3.csv("./python/CSV/map_diseases.csv").then(function (data) {
+d3.csv("./python/CSV/scatter_diseases.csv").then(function (data) {
 
 const margin = {top: 0, right: 200, bottom: 10, left: 10},
       width = 1300 - margin.left - margin.right,
